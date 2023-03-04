@@ -3,3 +3,6 @@
 PATH="$PATH:%{_qt5_bindir}" ; export PATH
 source %{_libdir}/ros/setup.bash
 {% endblock %}
+{% block cmake_flags %}
+  -DOGRE_PLUGIN_DIR=%{_libdir}/OGRE \
+{% endblock %}

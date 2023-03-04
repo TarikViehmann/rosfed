@@ -1,12 +1,12 @@
 Name:           ros-smach
-Version:        noetic.2.5.0
-Release:        3%{?dist}
+Version:        noetic.2.5.1
+Release:        1%{?dist}
 Summary:        ROS package smach
 
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros-gbp/executive_smach-release/archive/release/noetic/smach/2.5.0-1.tar.gz#/ros-noetic-smach-2.5.0-source0.tar.gz
+Source0:        https://github.com/ros-gbp/executive_smach-release/archive/release/noetic/smach/2.5.1-1.tar.gz#/ros-noetic-smach-2.5.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -22,9 +22,9 @@ BuildRequires:  python-unversioned-command
 BuildRequires:  ros-noetic-catkin-devel
 
 
-Provides:  ros-noetic-smach = 2.5.0-3
-Obsoletes: ros-noetic-smach < 2.5.0-3
-Obsoletes: ros-kinetic-smach < 2.5.0-3
+Provides:  ros-noetic-smach = 2.5.1-1
+Obsoletes: ros-noetic-smach < 2.5.1-1
+Obsoletes: ros-kinetic-smach < 2.5.1-1
 
 
 
@@ -40,9 +40,9 @@ Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       ros-noetic-catkin-devel
 
-Provides: ros-noetic-smach-devel = 2.5.0-3
-Obsoletes: ros-noetic-smach-devel < 2.5.0-3
-Obsoletes: ros-kinetic-smach-devel < 2.5.0-3
+Provides: ros-noetic-smach-devel = 2.5.1-1
+Obsoletes: ros-noetic-smach-devel < 2.5.1-1
+Obsoletes: ros-kinetic-smach-devel < 2.5.1-1
 
 
 %description devel
@@ -137,6 +137,8 @@ done
 
 
 %changelog
+* Wed Mar 01 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.2.5.1-1
+- Update to latest release
 * Thu Oct 14 2021 Till Hofmann <thofmann@fedoraproject.org> - noetic.2.5.0-3
 - Rebuild to pull in updated dependencies
 * Tue Feb 23 2021 Till Hofmann <thofmann@fedoraproject.org> - noetic.2.5.0-2

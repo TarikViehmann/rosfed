@@ -1,12 +1,12 @@
 Name:           ros-eigenpy
-Version:        noetic.2.6.3
+Version:        noetic.2.9.2
 Release:        1%{?dist}
 Summary:        ROS package eigenpy
 
 License:        BSD
 URL:            https://github.com/stack-of-tasks/eigenpy
 
-Source0:        https://github.com/ipab-slmc/eigenpy_catkin-release/archive/release/noetic/eigenpy/2.6.3-1.tar.gz#/ros-noetic-eigenpy-2.6.3-source0.tar.gz
+Source0:        https://github.com/stack-of-tasks/eigenpy-ros-release/archive/release/noetic/eigenpy/2.9.2-1.tar.gz#/ros-noetic-eigenpy-2.9.2-source0.tar.gz
 
 
 
@@ -29,14 +29,13 @@ BuildRequires:  python3-numpy
 BuildRequires:  python3dist(numpy)
 BuildRequires:  ros-noetic-catkin-devel
 
-Requires:       doxygen
 Requires:       python3-numpy
 Requires:       python3dist(numpy)
 Requires:       ros-noetic-catkin
 
-Provides:  ros-noetic-eigenpy = 2.6.3-1
-Obsoletes: ros-noetic-eigenpy < 2.6.3-1
-Obsoletes: ros-kinetic-eigenpy < 2.6.3-1
+Provides:  ros-noetic-eigenpy = 2.9.2-1
+Obsoletes: ros-noetic-eigenpy < 2.9.2-1
+Obsoletes: ros-kinetic-eigenpy < 2.9.2-1
 
 
 
@@ -57,9 +56,9 @@ Requires:       python3-numpy
 Requires:       python3dist(numpy)
 Requires:       ros-noetic-catkin-devel
 
-Provides: ros-noetic-eigenpy-devel = 2.6.3-1
-Obsoletes: ros-noetic-eigenpy-devel < 2.6.3-1
-Obsoletes: ros-kinetic-eigenpy-devel < 2.6.3-1
+Provides: ros-noetic-eigenpy-devel = 2.9.2-1
+Obsoletes: ros-noetic-eigenpy-devel < 2.9.2-1
+Obsoletes: ros-kinetic-eigenpy-devel < 2.9.2-1
 
 
 %description devel
@@ -154,6 +153,8 @@ done
 
 
 %changelog
+* Fri Mar 03 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.2.9.2-1
+- Update to latest release
 * Wed May 26 2021 Till Hofmann <thofmann@fedoraproject.org> - noetic.2.6.3-1
 - Update to latest release
 * Fri Apr 17 2020 Till Hofmann <thofmann@fedoraproject.org> - melodic.2.3.1-1

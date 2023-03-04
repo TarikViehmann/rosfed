@@ -1,12 +1,12 @@
 Name:           ros-roslisp
-Version:        noetic.1.9.24
-Release:        3%{?dist}
+Version:        noetic.1.9.25
+Release:        1%{?dist}
 Summary:        ROS package roslisp
 
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros-gbp/roslisp-release/archive/release/noetic/roslisp/1.9.24-1.tar.gz#/ros-noetic-roslisp-1.9.24-source0.tar.gz
+Source0:        https://github.com/ros-gbp/roslisp-release/archive/release/noetic/roslisp/1.9.25-1.tar.gz#/ros-noetic-roslisp-1.9.25-source0.tar.gz
 
 
 BuildArch: noarch
@@ -28,9 +28,9 @@ Requires:       ros-noetic-roslang
 Requires:       ros-noetic-rospack
 Requires:       ros-noetic-std_srvs
 
-Provides:  ros-noetic-roslisp = 1.9.24-3
-Obsoletes: ros-noetic-roslisp < 1.9.24-3
-Obsoletes: ros-kinetic-roslisp < 1.9.24-3
+Provides:  ros-noetic-roslisp = 1.9.25-1
+Obsoletes: ros-noetic-roslisp < 1.9.25-1
+Obsoletes: ros-kinetic-roslisp < 1.9.25-1
 
 
 
@@ -47,9 +47,9 @@ Requires:       ros-noetic-roslang-devel
 Requires:       ros-noetic-rospack-devel
 Requires:       ros-noetic-std_srvs-devel
 
-Provides: ros-noetic-roslisp-devel = 1.9.24-3
-Obsoletes: ros-noetic-roslisp-devel < 1.9.24-3
-Obsoletes: ros-kinetic-roslisp-devel < 1.9.24-3
+Provides: ros-noetic-roslisp-devel = 1.9.25-1
+Obsoletes: ros-noetic-roslisp-devel < 1.9.25-1
+Obsoletes: ros-kinetic-roslisp-devel < 1.9.25-1
 
 
 %description devel
@@ -144,6 +144,8 @@ done
 
 
 %changelog
+* Wed Mar 01 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.1.9.25-1
+- Update to latest release
 * Thu Oct 14 2021 Till Hofmann <thofmann@fedoraproject.org> - noetic.1.9.24-3
 - Rebuild to pull in updated dependencies
 * Tue Feb 23 2021 Till Hofmann <thofmann@fedoraproject.org> - noetic.1.9.24-2

@@ -1,12 +1,12 @@
 Name:           ros-roswtf
-Version:        noetic.1.15.15
+Version:        noetic.1.16.0
 Release:        1%{?dist}
 Summary:        ROS package roswtf
 
 License:        BSD
 URL:            http://wiki.ros.org/roswtf
 
-Source0:        https://github.com/ros-gbp/ros_comm-release/archive/release/noetic/roswtf/1.15.15-1.tar.gz#/ros-noetic-roswtf-1.15.15-source0.tar.gz
+Source0:        https://github.com/ros-gbp/ros_comm-release/archive/release/noetic/roswtf/1.16.0-1.tar.gz#/ros-noetic-roswtf-1.16.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -35,9 +35,9 @@ Requires:       ros-noetic-roslib
 Requires:       ros-noetic-rosnode
 Requires:       ros-noetic-rosservice
 
-Provides:  ros-noetic-roswtf = 1.15.15-1
-Obsoletes: ros-noetic-roswtf < 1.15.15-1
-Obsoletes: ros-kinetic-roswtf < 1.15.15-1
+Provides:  ros-noetic-roswtf = 1.16.0-1
+Obsoletes: ros-noetic-roswtf < 1.16.0-1
+Obsoletes: ros-kinetic-roswtf < 1.16.0-1
 
 
 
@@ -61,9 +61,9 @@ Requires:       ros-noetic-roslib-devel
 Requires:       ros-noetic-rosnode-devel
 Requires:       ros-noetic-rosservice-devel
 
-Provides: ros-noetic-roswtf-devel = 1.15.15-1
-Obsoletes: ros-noetic-roswtf-devel < 1.15.15-1
-Obsoletes: ros-kinetic-roswtf-devel < 1.15.15-1
+Provides: ros-noetic-roswtf-devel = 1.16.0-1
+Obsoletes: ros-noetic-roswtf-devel < 1.16.0-1
+Obsoletes: ros-kinetic-roswtf-devel < 1.16.0-1
 
 
 %description devel
@@ -158,6 +158,8 @@ done
 
 
 %changelog
+* Wed Mar 01 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.1.16.0-1
+- Update to latest release
 * Mon Dec 26 2022 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.1.15.15-1
 - Update to latest release
 * Wed Jan 19 2022 Till Hofmann <thofmann@fedoraproject.org> - noetic.1.15.14-1

@@ -1,12 +1,12 @@
 Name:           ros-geometric_shapes
-Version:        melodic.0.6.1
+Version:        noetic.0.7.3
 Release:        1%{?dist}
 Summary:        ROS package geometric_shapes
 
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros-gbp/geometric_shapes-release/archive/release/melodic/geometric_shapes/0.6.1-0.tar.gz#/ros-melodic-geometric_shapes-0.6.1-source0.tar.gz
+Source0:        https://github.com/ros-gbp/geometric_shapes-release/archive/release/noetic/geometric_shapes/0.7.3-1.tar.gz#/ros-noetic-geometric_shapes-0.7.3-source0.tar.gz
 
 
 
@@ -16,64 +16,66 @@ BuildRequires:  console-bridge-devel
 BuildRequires:  gtest-devel
 BuildRequires:  log4cxx-devel
 BuildRequires:  python3-devel
+BuildRequires:  python-unversioned-command
 
 BuildRequires:  assimp-devel
-BuildRequires:  boost-devel boost-python3-devel boost-python3-devel
+BuildRequires:  boost-devel
 BuildRequires:  console-bridge-devel
 BuildRequires:  eigen3-devel
 BuildRequires:  gtest-devel
+BuildRequires:  octomap-devel
 BuildRequires:  pkgconfig
 BuildRequires:  qhull-devel
-BuildRequires:  ros-melodic-catkin-devel
-BuildRequires:  ros-melodic-eigen_stl_containers-devel
-BuildRequires:  ros-melodic-octomap-devel
-BuildRequires:  ros-melodic-random_numbers-devel
-BuildRequires:  ros-melodic-resource_retriever-devel
-BuildRequires:  ros-melodic-roscpp_serialization-devel
-BuildRequires:  ros-melodic-rosunit-devel
-BuildRequires:  ros-melodic-shape_msgs-devel
-BuildRequires:  ros-melodic-visualization_msgs-devel
+BuildRequires:  ros-noetic-catkin-devel
+BuildRequires:  ros-noetic-eigen_stl_containers-devel
+BuildRequires:  ros-noetic-random_numbers-devel
+BuildRequires:  ros-noetic-resource_retriever-devel
+BuildRequires:  ros-noetic-roscpp_serialization-devel
+BuildRequires:  ros-noetic-rosunit-devel
+BuildRequires:  ros-noetic-shape_msgs-devel
+BuildRequires:  ros-noetic-visualization_msgs-devel
 
 Requires:       assimp
-Requires:       ros-melodic-eigen_stl_containers
-Requires:       ros-melodic-octomap
-Requires:       ros-melodic-random_numbers
-Requires:       ros-melodic-resource_retriever
-Requires:       ros-melodic-shape_msgs
-Requires:       ros-melodic-visualization_msgs
+Requires:       octomap-devel
+Requires:       ros-noetic-eigen_stl_containers
+Requires:       ros-noetic-random_numbers
+Requires:       ros-noetic-resource_retriever
+Requires:       ros-noetic-shape_msgs
+Requires:       ros-noetic-visualization_msgs
 
-Provides:  ros-melodic-geometric_shapes = 0.6.1-1
-Obsoletes: ros-melodic-geometric_shapes < 0.6.1-1
-Obsoletes: ros-kinetic-geometric_shapes < 0.6.1-1
+Provides:  ros-noetic-geometric_shapes = 0.7.3-1
+Obsoletes: ros-noetic-geometric_shapes < 0.7.3-1
+Obsoletes: ros-kinetic-geometric_shapes < 0.7.3-1
+
 
 
 %description
-This package contains generic definitions of geometric shapes and
-bodies.
+Generic definitions of geometric shapes and bodies.
 
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros-melodic-catkin-devel
+Requires:       ros-noetic-catkin-devel
 Requires:       assimp-devel
-Requires:       boost-devel boost-python3-devel boost-python3-devel
+Requires:       boost-devel
 Requires:       console-bridge-devel
 Requires:       eigen3-devel
 Requires:       gtest-devel
+Requires:       octomap-devel
 Requires:       pkgconfig
 Requires:       qhull-devel
-Requires:       ros-melodic-eigen_stl_containers-devel
-Requires:       ros-melodic-octomap-devel
-Requires:       ros-melodic-random_numbers-devel
-Requires:       ros-melodic-resource_retriever-devel
-Requires:       ros-melodic-roscpp_serialization-devel
-Requires:       ros-melodic-rosunit-devel
-Requires:       ros-melodic-shape_msgs-devel
-Requires:       ros-melodic-visualization_msgs-devel
+Requires:       ros-noetic-eigen_stl_containers-devel
+Requires:       ros-noetic-random_numbers-devel
+Requires:       ros-noetic-resource_retriever-devel
+Requires:       ros-noetic-roscpp_serialization-devel
+Requires:       ros-noetic-rosunit-devel
+Requires:       ros-noetic-shape_msgs-devel
+Requires:       ros-noetic-visualization_msgs-devel
 
-Provides: ros-melodic-geometric_shapes-devel = 0.6.1-1
-Obsoletes: ros-melodic-geometric_shapes-devel < 0.6.1-1
-Obsoletes: ros-kinetic-geometric_shapes-devel < 0.6.1-1
+Provides: ros-noetic-geometric_shapes-devel = 0.7.3-1
+Obsoletes: ros-noetic-geometric_shapes-devel < 0.7.3-1
+Obsoletes: ros-kinetic-geometric_shapes-devel < 0.7.3-1
+
 
 %description devel
 The %{name}-devel package contains libraries and header files for developing
@@ -103,11 +105,7 @@ FCFLAGS="${FCFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FCFLAGS ; \
 source %{_libdir}/ros/setup.bash
 
 # substitute shebang before install block because we run the local catkin script
-for f in $(grep -rl python .) ; do
-  sed -i.orig '/^#!.*python\s*$/ { s/python/python3/ }' $f
-  touch -r $f.orig $f
-  rm $f.orig
-done
+%py3_shebang_fix .
 
 DESTDIR=%{buildroot} ; export DESTDIR
 
@@ -135,7 +133,7 @@ find %{buildroot}/%{_libdir}/ros/lib*/ -mindepth 1 -maxdepth 1 \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
-find %{buildroot}/%{_libdir}/ros/{include,lib*/pkgconfig} \
+find %{buildroot}/%{_libdir}/ros/{include,lib*/pkgconfig,share/geometric_shapes/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -144,26 +142,10 @@ find . -maxdepth 1 -type f -iname "*license*" | sed "s:^:%%license :" >> files.l
 
 
 # replace cmake python macro in shebang
-for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@*$' %{buildroot}) ; do
+for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@.*$' %{buildroot}) ; do
   sed -i.orig 's:^#!\s*@PYTHON_EXECUTABLE@\s*:%{__python3}:' $file
   touch -r $file.orig $file
   rm $file.orig
-done
-
-# replace unversioned python shebang
-for file in $(grep -rIl '^#!.*python\s*$' %{buildroot}) ; do
-  sed -i.orig '/^#!.*python\s*$/ { s/python/python3/ }' $file
-  touch -r $file.orig $file
-  rm $file.orig
-done
-
-# replace "/usr/bin/env $interpreter" with "/usr/bin/$interpreter"
-for interpreter in bash sh python2 python3 ; do
-  for file in $(grep -rIl "^#\!.*${interpreter}" %{buildroot}) ; do
-    sed -i.orig "s:^#\!\s*/usr/bin/env\s\+${interpreter}.*:#!/usr/bin/${interpreter}:" $file
-    touch -r $file.orig $file
-    rm $file.orig
-  done
 done
 
 
@@ -174,12 +156,21 @@ echo %{_docdir}/%{name} >> files.list
 install -m 0644 -p -D -t %{buildroot}/%{_docdir}/%{name}-devel README_FEDORA
 echo %{_docdir}/%{name}-devel >> files_devel.list
 
+%py3_shebang_fix %{buildroot}
+
+# Also fix .py.in files
+for pyfile in $(grep -rIl '^#!.*python.*$' %{buildroot}) ; do
+  %py3_shebang_fix $pyfile
+done
+
 
 %files -f files.list
 %files devel -f files_devel.list
 
 
 %changelog
+* Fri Mar 03 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.0.7.3-1
+- Update to latest release
 * Wed Jul 24 2019 Till Hofmann <thofmann@fedoraproject.org> - melodic.0.6.1-1
 - Update to latest release
 * Fri Jul 12 2019 Till Hofmann <thofmann@fedoraproject.org> - 0.5.4-4

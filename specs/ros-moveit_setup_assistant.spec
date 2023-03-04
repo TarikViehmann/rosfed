@@ -1,12 +1,12 @@
 Name:           ros-moveit_setup_assistant
-Version:        melodic.1.0.3
+Version:        noetic.1.1.11
 Release:        1%{?dist}
 Summary:        ROS package moveit_setup_assistant
 
 License:        BSD
 URL:            http://moveit.ros.org
 
-Source0:        https://github.com/ros-gbp/moveit-release/archive/release/melodic/moveit_setup_assistant/1.0.3-1.tar.gz#/ros-melodic-moveit_setup_assistant-1.0.3-source0.tar.gz
+Source0:        https://github.com/ros-gbp/moveit-release/archive/release/noetic/moveit_setup_assistant/1.1.11-1.tar.gz#/ros-noetic-moveit_setup_assistant-1.1.11-source0.tar.gz
 
 
 
@@ -16,76 +16,79 @@ BuildRequires:  console-bridge-devel
 BuildRequires:  gtest-devel
 BuildRequires:  log4cxx-devel
 BuildRequires:  python3-devel
+BuildRequires:  python-unversioned-command
 
 BuildRequires:  eigen3-devel
 BuildRequires:  fcl-devel
 BuildRequires:  ogre-devel
 BuildRequires:  poco-devel
-BuildRequires:  qt5-qtbase
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  tinyxml-devel
 BuildRequires:  tinyxml2-devel
 BuildRequires:  urdfdom-devel
 BuildRequires:  yaml-cpp-devel
-BuildRequires:  ros-melodic-catkin-devel
-BuildRequires:  ros-melodic-moveit_core-devel
-BuildRequires:  ros-melodic-moveit_resources-devel
-BuildRequires:  ros-melodic-moveit_ros_planning-devel
-BuildRequires:  ros-melodic-moveit_ros_visualization-devel
-BuildRequires:  ros-melodic-rosconsole-devel
-BuildRequires:  ros-melodic-roscpp-devel
-BuildRequires:  ros-melodic-rosunit-devel
-BuildRequires:  ros-melodic-rviz-devel
-BuildRequires:  ros-melodic-srdfdom-devel
-BuildRequires:  ros-melodic-urdf-devel
+BuildRequires:  ros-noetic-catkin-devel
+BuildRequires:  ros-noetic-moveit_core-devel
+BuildRequires:  ros-noetic-moveit_resources_panda_moveit_config-devel
+BuildRequires:  ros-noetic-moveit_ros_planning-devel
+BuildRequires:  ros-noetic-moveit_ros_visualization-devel
+BuildRequires:  ros-noetic-ompl-devel
+BuildRequires:  ros-noetic-rosconsole-devel
+BuildRequires:  ros-noetic-roscpp-devel
+BuildRequires:  ros-noetic-rosunit-devel
+BuildRequires:  ros-noetic-rviz-devel
+BuildRequires:  ros-noetic-srdfdom-devel
+BuildRequires:  ros-noetic-urdf-devel
 
-Requires:       ros-melodic-moveit_core
-Requires:       ros-melodic-moveit_ros_planning
-Requires:       ros-melodic-moveit_ros_visualization
-Requires:       ros-melodic-rosconsole
-Requires:       ros-melodic-roscpp
-Requires:       ros-melodic-rviz
-Requires:       ros-melodic-srdfdom
-Requires:       ros-melodic-urdf
-Requires:       ros-melodic-xacro
+Requires:       ros-noetic-moveit_core
+Requires:       ros-noetic-moveit_ros_planning
+Requires:       ros-noetic-moveit_ros_visualization
+Requires:       ros-noetic-rosconsole
+Requires:       ros-noetic-roscpp
+Requires:       ros-noetic-rviz
+Requires:       ros-noetic-srdfdom
+Requires:       ros-noetic-urdf
+Requires:       ros-noetic-xacro
 
-Provides:  ros-melodic-moveit_setup_assistant = 1.0.3-1
-Obsoletes: ros-melodic-moveit_setup_assistant < 1.0.3-1
-Obsoletes: ros-kinetic-moveit_setup_assistant < 1.0.3-1
+Provides:  ros-noetic-moveit_setup_assistant = 1.1.11-1
+Obsoletes: ros-noetic-moveit_setup_assistant < 1.1.11-1
+Obsoletes: ros-kinetic-moveit_setup_assistant < 1.1.11-1
+
 
 
 %description
-Generates a configuration package that makes it easy to use MoveIt!
+Generates a configuration package that makes it easy to use MoveIt
 
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros-melodic-catkin-devel
+Requires:       ros-noetic-catkin-devel
 Requires:       eigen3-devel
 Requires:       fcl-devel
 Requires:       ogre-devel
 Requires:       poco-devel
-Requires:       qt5-qtbase
 Requires:       qt5-qtbase-devel
 Requires:       tinyxml-devel
 Requires:       tinyxml2-devel
 Requires:       urdfdom-devel
 Requires:       yaml-cpp-devel
-Requires:       ros-melodic-moveit_core-devel
-Requires:       ros-melodic-moveit_resources-devel
-Requires:       ros-melodic-moveit_ros_planning-devel
-Requires:       ros-melodic-moveit_ros_visualization-devel
-Requires:       ros-melodic-rosconsole-devel
-Requires:       ros-melodic-roscpp-devel
-Requires:       ros-melodic-rosunit-devel
-Requires:       ros-melodic-rviz-devel
-Requires:       ros-melodic-srdfdom-devel
-Requires:       ros-melodic-urdf-devel
-Requires:       ros-melodic-xacro-devel
+Requires:       ros-noetic-moveit_core-devel
+Requires:       ros-noetic-moveit_resources_panda_moveit_config-devel
+Requires:       ros-noetic-moveit_ros_planning-devel
+Requires:       ros-noetic-moveit_ros_visualization-devel
+Requires:       ros-noetic-ompl-devel
+Requires:       ros-noetic-rosconsole-devel
+Requires:       ros-noetic-roscpp-devel
+Requires:       ros-noetic-rosunit-devel
+Requires:       ros-noetic-rviz-devel
+Requires:       ros-noetic-srdfdom-devel
+Requires:       ros-noetic-urdf-devel
+Requires:       ros-noetic-xacro-devel
 
-Provides: ros-melodic-moveit_setup_assistant-devel = 1.0.3-1
-Obsoletes: ros-melodic-moveit_setup_assistant-devel < 1.0.3-1
-Obsoletes: ros-kinetic-moveit_setup_assistant-devel < 1.0.3-1
+Provides: ros-noetic-moveit_setup_assistant-devel = 1.1.11-1
+Obsoletes: ros-noetic-moveit_setup_assistant-devel < 1.1.11-1
+Obsoletes: ros-kinetic-moveit_setup_assistant-devel < 1.1.11-1
+
 
 %description devel
 The %{name}-devel package contains libraries and header files for developing
@@ -115,11 +118,7 @@ FCFLAGS="${FCFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FCFLAGS ; \
 source %{_libdir}/ros/setup.bash
 
 # substitute shebang before install block because we run the local catkin script
-for f in $(grep -rl python .) ; do
-  sed -i.orig '/^#!.*python\s*$/ { s/python/python3/ }' $f
-  touch -r $f.orig $f
-  rm $f.orig
-done
+%py3_shebang_fix .
 
 DESTDIR=%{buildroot} ; export DESTDIR
 
@@ -147,7 +146,7 @@ find %{buildroot}/%{_libdir}/ros/lib*/ -mindepth 1 -maxdepth 1 \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
-find %{buildroot}/%{_libdir}/ros/{include,lib*/pkgconfig} \
+find %{buildroot}/%{_libdir}/ros/{include,lib*/pkgconfig,share/moveit_setup_assistant/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -156,26 +155,10 @@ find . -maxdepth 1 -type f -iname "*license*" | sed "s:^:%%license :" >> files.l
 
 
 # replace cmake python macro in shebang
-for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@*$' %{buildroot}) ; do
+for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@.*$' %{buildroot}) ; do
   sed -i.orig 's:^#!\s*@PYTHON_EXECUTABLE@\s*:%{__python3}:' $file
   touch -r $file.orig $file
   rm $file.orig
-done
-
-# replace unversioned python shebang
-for file in $(grep -rIl '^#!.*python\s*$' %{buildroot}) ; do
-  sed -i.orig '/^#!.*python\s*$/ { s/python/python3/ }' $file
-  touch -r $file.orig $file
-  rm $file.orig
-done
-
-# replace "/usr/bin/env $interpreter" with "/usr/bin/$interpreter"
-for interpreter in bash sh python2 python3 ; do
-  for file in $(grep -rIl "^#\!.*${interpreter}" %{buildroot}) ; do
-    sed -i.orig "s:^#\!\s*/usr/bin/env\s\+${interpreter}.*:#!/usr/bin/${interpreter}:" $file
-    touch -r $file.orig $file
-    rm $file.orig
-  done
 done
 
 
@@ -186,12 +169,21 @@ echo %{_docdir}/%{name} >> files.list
 install -m 0644 -p -D -t %{buildroot}/%{_docdir}/%{name}-devel README_FEDORA
 echo %{_docdir}/%{name}-devel >> files_devel.list
 
+%py3_shebang_fix %{buildroot}
+
+# Also fix .py.in files
+for pyfile in $(grep -rIl '^#!.*python.*$' %{buildroot}) ; do
+  %py3_shebang_fix $pyfile
+done
+
 
 %files -f files.list
 %files devel -f files_devel.list
 
 
 %changelog
+* Fri Mar 03 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.1.1.11-1
+- Update to latest release
 * Wed Apr 29 2020 Till Hofmann <thofmann@fedoraproject.org> - melodic.1.0.3-1
 - Update to latest release
 * Wed Jul 24 2019 Till Hofmann <thofmann@fedoraproject.org> - melodic.1.0.2-1

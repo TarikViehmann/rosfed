@@ -9,6 +9,20 @@ common:
           to:
             type: system
             pkg: opencv-devel
+        - octomap:
+          from:
+            type: ros
+            pkg: octomap
+          to:
+            type: system
+            pkg: octomap-devel
+        - fcl:
+          from:
+            type: ros
+            pkg: fcl
+          to:
+            type: system
+            pkg: fcl-devel
         - pyopengl:
           from:
             type: system
@@ -53,6 +67,20 @@ common:
           to:
             type: system
             pkg: opencv
+        - octomap:
+          from:
+            type: ros
+            pkg: octomap
+          to:
+            type: system
+            pkg: octomap-devel
+        - fcl:
+          from:
+            type: ros
+            pkg: fcl
+          to:
+            type: system
+            pkg: fcl-devel
         - python-opencv:
           from:
             type: system
@@ -101,6 +129,8 @@ common:
       libgazebo9: gazebo-libs
       libgpgme-dev: gpgme-devel
       libgpgme-dev: gpgme-devel
+      orocos_kdl: orocos-kdl
+      python-pyassimp: python3-assimp
       python-gnupg: python2-gnupg
       python-gnupg: python3-gnupg
       python-opengl: python3-pyopengl

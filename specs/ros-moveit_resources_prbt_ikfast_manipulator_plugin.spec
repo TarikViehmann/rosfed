@@ -1,13 +1,14 @@
-Name:           ros-moveit_ros_benchmarks
-Version:        noetic.1.1.11
+Name:           ros-moveit_resources_prbt_ikfast_manipulator_plugin
+Version:        noetic.0.8.2
 Release:        1%{?dist}
-Summary:        ROS package moveit_ros_benchmarks
+Summary:        ROS package moveit_resources_prbt_ikfast_manipulator_plugin
 
-License:        BSD
+License:        Apache 2.0
 URL:            http://moveit.ros.org
 
-Source0:        https://github.com/ros-gbp/moveit-release/archive/release/noetic/moveit_ros_benchmarks/1.1.11-1.tar.gz#/ros-noetic-moveit_ros_benchmarks-1.1.11-source0.tar.gz
+Source0:        https://github.com/ros-gbp/moveit_resources-release/archive/release/noetic/moveit_resources_prbt_ikfast_manipulator_plugin/0.8.2-1.tar.gz#/ros-noetic-moveit_resources_prbt_ikfast_manipulator_plugin-0.8.2-source0.tar.gz
 
+Patch0: ros-moveit_resources_prbt_ikfast_manipulator_plugin.build-with-cpp17.patch
 
 
 # common BRs
@@ -18,53 +19,43 @@ BuildRequires:  log4cxx-devel
 BuildRequires:  python3-devel
 BuildRequires:  python-unversioned-command
 
-BuildRequires:  eigen3-devel
-BuildRequires:  fcl-devel
-BuildRequires:  poco-devel
-BuildRequires:  tinyxml-devel
-BuildRequires:  tinyxml2-devel
-BuildRequires:  urdfdom-devel
 BuildRequires:  ros-noetic-catkin-devel
-BuildRequires:  ros-noetic-moveit_ros_planning-devel
-BuildRequires:  ros-noetic-moveit_ros_warehouse-devel
+BuildRequires:  ros-noetic-eigen_conversions-devel
+BuildRequires:  ros-noetic-moveit_core-devel
 BuildRequires:  ros-noetic-pluginlib-devel
 BuildRequires:  ros-noetic-roscpp-devel
 BuildRequires:  ros-noetic-tf2_eigen-devel
+BuildRequires:  ros-noetic-tf2_kdl-devel
 
-Requires:       ros-noetic-moveit_ros_planning
-Requires:       ros-noetic-moveit_ros_warehouse
+Requires:       ros-noetic-eigen_conversions
+Requires:       ros-noetic-moveit_core
 Requires:       ros-noetic-pluginlib
 Requires:       ros-noetic-roscpp
-Requires:       ros-noetic-tf2_eigen
+Requires:       ros-noetic-tf2_kdl
 
-Provides:  ros-noetic-moveit_ros_benchmarks = 1.1.11-1
-Obsoletes: ros-noetic-moveit_ros_benchmarks < 1.1.11-1
-Obsoletes: ros-kinetic-moveit_ros_benchmarks < 1.1.11-1
+Provides:  ros-noetic-moveit_resources_prbt_ikfast_manipulator_plugin = 0.8.2-1
+Obsoletes: ros-noetic-moveit_resources_prbt_ikfast_manipulator_plugin < 0.8.2-1
+Obsoletes: ros-kinetic-moveit_resources_prbt_ikfast_manipulator_plugin < 0.8.2-1
 
 
 
 %description
-Enhanced tools for benchmarks in MoveIt
+The prbt_ikfast_manipulator_plugin package
 
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       ros-noetic-catkin-devel
-Requires:       eigen3-devel
-Requires:       fcl-devel
-Requires:       poco-devel
-Requires:       tinyxml-devel
-Requires:       tinyxml2-devel
-Requires:       urdfdom-devel
-Requires:       ros-noetic-moveit_ros_planning-devel
-Requires:       ros-noetic-moveit_ros_warehouse-devel
+Requires:       ros-noetic-eigen_conversions-devel
+Requires:       ros-noetic-moveit_core-devel
 Requires:       ros-noetic-pluginlib-devel
 Requires:       ros-noetic-roscpp-devel
 Requires:       ros-noetic-tf2_eigen-devel
+Requires:       ros-noetic-tf2_kdl-devel
 
-Provides: ros-noetic-moveit_ros_benchmarks-devel = 1.1.11-1
-Obsoletes: ros-noetic-moveit_ros_benchmarks-devel < 1.1.11-1
-Obsoletes: ros-kinetic-moveit_ros_benchmarks-devel < 1.1.11-1
+Provides: ros-noetic-moveit_resources_prbt_ikfast_manipulator_plugin-devel = 0.8.2-1
+Obsoletes: ros-noetic-moveit_resources_prbt_ikfast_manipulator_plugin-devel < 0.8.2-1
+Obsoletes: ros-kinetic-moveit_resources_prbt_ikfast_manipulator_plugin-devel < 0.8.2-1
 
 
 %description devel
@@ -77,6 +68,7 @@ applications that use %{name}.
 
 %setup -c -T
 tar --strip-components=1 -xf %{SOURCE0}
+%patch0 -p1
 
 %build
 # nothing to do here
@@ -108,7 +100,7 @@ catkin_make_isolated \
   --source . \
   --install \
   --install-space %{_libdir}/ros/ \
-  --pkg moveit_ros_benchmarks
+  --pkg moveit_resources_prbt_ikfast_manipulator_plugin
 
 
 
@@ -123,7 +115,7 @@ find %{buildroot}/%{_libdir}/ros/lib*/ -mindepth 1 -maxdepth 1 \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
-find %{buildroot}/%{_libdir}/ros/{include,lib*/pkgconfig,share/moveit_ros_benchmarks/cmake} \
+find %{buildroot}/%{_libdir}/ros/{include,lib*/pkgconfig,share/moveit_resources_prbt_ikfast_manipulator_plugin/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -159,15 +151,5 @@ done
 
 
 %changelog
-* Fri Mar 03 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.1.1.11-1
+* Fri Mar 03 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.0.8.2-1
 - Update to latest release
-* Wed Apr 29 2020 Till Hofmann <thofmann@fedoraproject.org> - melodic.1.0.3-1
-- Update to latest release
-* Wed Jul 24 2019 Till Hofmann <thofmann@fedoraproject.org> - melodic.1.0.2-1
-- Update to latest release
-* Wed Nov 07 2018 Till Hofmann <thofmann@fedoraproject.org> - 0.9.15-1
-- Update to latest release
-* Wed May 30 2018 Till Hofmann <thofmann@fedoraproject.org> - 0.9.12-1
-- Update to latest release
-* Thu Jan 18 2018 Till Hofmann <thofmann@fedoraproject.org> - 0.9.11-1
-- Initial package

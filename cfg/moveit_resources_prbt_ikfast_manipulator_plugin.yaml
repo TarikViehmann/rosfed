@@ -1,0 +1,4 @@
+patches:
+  - ros-moveit_resources_prbt_ikfast_manipulator_plugin.build-with-cpp17.patch
+
+

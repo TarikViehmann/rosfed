@@ -1,12 +1,12 @@
 Name:           ros-moveit_core
-Version:        melodic.1.0.3
+Version:        noetic.1.1.11
 Release:        1%{?dist}
 Summary:        ROS package moveit_core
 
 License:        BSD
 URL:            http://moveit.ros.org
 
-Source0:        https://github.com/ros-gbp/moveit-release/archive/release/melodic/moveit_core/1.0.3-1.tar.gz#/ros-melodic-moveit_core-1.0.3-source0.tar.gz
+Source0:        https://github.com/ros-gbp/moveit-release/archive/release/noetic/moveit_core/1.1.11-1.tar.gz#/ros-noetic-moveit_core-1.1.11-source0.tar.gz
 
 
 
@@ -16,122 +16,143 @@ BuildRequires:  console-bridge-devel
 BuildRequires:  gtest-devel
 BuildRequires:  log4cxx-devel
 BuildRequires:  python3-devel
+BuildRequires:  python-unversioned-command
 
 BuildRequires:  assimp
-BuildRequires:  boost-devel boost-python3-devel boost-python3-devel
+BuildRequires:  boost-devel
+BuildRequires:  bullet-devel
 BuildRequires:  console-bridge-devel
 BuildRequires:  eigen3-devel
 BuildRequires:  fcl-devel
 BuildRequires:  libccd-devel
+BuildRequires:  octomap-devel
+BuildRequires:  orocos-kdl
+BuildRequires:  orocos-kdl-devel
 BuildRequires:  pkgconfig
+BuildRequires:  python3-devel
 BuildRequires:  tinyxml-devel
 BuildRequires:  urdfdom-devel
 BuildRequires:  urdfdom-headers-devel
-BuildRequires:  ros-melodic-angles-devel
-BuildRequires:  ros-melodic-catkin-devel
-BuildRequires:  ros-melodic-code_coverage-devel
-BuildRequires:  ros-melodic-eigen_stl_containers-devel
-BuildRequires:  ros-melodic-geometric_shapes-devel
-BuildRequires:  ros-melodic-geometry_msgs-devel
-BuildRequires:  ros-melodic-kdl_parser-devel
-BuildRequires:  ros-melodic-moveit_msgs-devel
-BuildRequires:  ros-melodic-moveit_resources-devel
-BuildRequires:  ros-melodic-octomap-devel
-BuildRequires:  ros-melodic-octomap_msgs-devel
-BuildRequires:  ros-melodic-orocos_kdl-devel
-BuildRequires:  ros-melodic-random_numbers-devel
-BuildRequires:  ros-melodic-rosconsole-devel
-BuildRequires:  ros-melodic-roslib-devel
-BuildRequires:  ros-melodic-rostime-devel
-BuildRequires:  ros-melodic-rosunit-devel
-BuildRequires:  ros-melodic-sensor_msgs-devel
-BuildRequires:  ros-melodic-shape_msgs-devel
-BuildRequires:  ros-melodic-srdfdom-devel
-BuildRequires:  ros-melodic-std_msgs-devel
-BuildRequires:  ros-melodic-tf2_eigen-devel
-BuildRequires:  ros-melodic-tf2_geometry_msgs-devel
-BuildRequires:  ros-melodic-tf2_kdl-devel
-BuildRequires:  ros-melodic-trajectory_msgs-devel
-BuildRequires:  ros-melodic-urdf-devel
-BuildRequires:  ros-melodic-visualization_msgs-devel
-BuildRequires:  ros-melodic-xmlrpcpp-devel
+BuildRequires:  ros-noetic-angles-devel
+BuildRequires:  ros-noetic-catkin-devel
+BuildRequires:  ros-noetic-eigen_stl_containers-devel
+BuildRequires:  ros-noetic-geometric_shapes-devel
+BuildRequires:  ros-noetic-geometry_msgs-devel
+BuildRequires:  ros-noetic-kdl_parser-devel
+BuildRequires:  ros-noetic-moveit_msgs-devel
+BuildRequires:  ros-noetic-moveit_resources_panda_moveit_config-devel
+BuildRequires:  ros-noetic-moveit_resources_pr2_description-devel
+BuildRequires:  ros-noetic-octomap_msgs-devel
+BuildRequires:  ros-noetic-pluginlib-devel
+BuildRequires:  ros-noetic-pybind11_catkin-devel
+BuildRequires:  ros-noetic-random_numbers-devel
+BuildRequires:  ros-noetic-rosconsole-devel
+BuildRequires:  ros-noetic-roslib-devel
+BuildRequires:  ros-noetic-rostest-devel
+BuildRequires:  ros-noetic-rostime-devel
+BuildRequires:  ros-noetic-rosunit-devel
+BuildRequires:  ros-noetic-ruckig-devel
+BuildRequires:  ros-noetic-sensor_msgs-devel
+BuildRequires:  ros-noetic-shape_msgs-devel
+BuildRequires:  ros-noetic-srdfdom-devel
+BuildRequires:  ros-noetic-std_msgs-devel
+BuildRequires:  ros-noetic-tf2_eigen-devel
+BuildRequires:  ros-noetic-tf2_geometry_msgs-devel
+BuildRequires:  ros-noetic-tf2_kdl-devel
+BuildRequires:  ros-noetic-trajectory_msgs-devel
+BuildRequires:  ros-noetic-urdf-devel
+BuildRequires:  ros-noetic-visualization_msgs-devel
+BuildRequires:  ros-noetic-xmlrpcpp-devel
 
 Requires:       assimp
-Requires:       ros-melodic-eigen_stl_containers
-Requires:       ros-melodic-geometric_shapes
-Requires:       ros-melodic-geometry_msgs
-Requires:       ros-melodic-kdl_parser
-Requires:       ros-melodic-moveit_msgs
-Requires:       ros-melodic-octomap
-Requires:       ros-melodic-octomap_msgs
-Requires:       ros-melodic-random_numbers
-Requires:       ros-melodic-rosconsole
-Requires:       ros-melodic-roslib
-Requires:       ros-melodic-rostime
-Requires:       ros-melodic-sensor_msgs
-Requires:       ros-melodic-shape_msgs
-Requires:       ros-melodic-srdfdom
-Requires:       ros-melodic-std_msgs
-Requires:       ros-melodic-tf2_eigen
-Requires:       ros-melodic-tf2_geometry_msgs
-Requires:       ros-melodic-trajectory_msgs
-Requires:       ros-melodic-urdf
-Requires:       ros-melodic-visualization_msgs
-Requires:       ros-melodic-xmlrpcpp
+Requires:       fcl-devel
+Requires:       octomap-devel
+Requires:       ros-noetic-eigen_stl_containers
+Requires:       ros-noetic-geometric_shapes
+Requires:       ros-noetic-geometry_msgs
+Requires:       ros-noetic-kdl_parser
+Requires:       ros-noetic-moveit_msgs
+Requires:       ros-noetic-octomap_msgs
+Requires:       ros-noetic-pluginlib
+Requires:       ros-noetic-pybind11_catkin
+Requires:       ros-noetic-random_numbers
+Requires:       ros-noetic-rosconsole
+Requires:       ros-noetic-roslib
+Requires:       ros-noetic-rostime
+Requires:       ros-noetic-ruckig
+Requires:       ros-noetic-sensor_msgs
+Requires:       ros-noetic-shape_msgs
+Requires:       ros-noetic-srdfdom
+Requires:       ros-noetic-std_msgs
+Requires:       ros-noetic-tf2_eigen
+Requires:       ros-noetic-tf2_geometry_msgs
+Requires:       ros-noetic-trajectory_msgs
+Requires:       ros-noetic-urdf
+Requires:       ros-noetic-visualization_msgs
+Requires:       ros-noetic-xmlrpcpp
 
-Provides:  ros-melodic-moveit_core = 1.0.3-1
-Obsoletes: ros-melodic-moveit_core < 1.0.3-1
-Obsoletes: ros-kinetic-moveit_core < 1.0.3-1
+Provides:  ros-noetic-moveit_core = 1.1.11-1
+Obsoletes: ros-noetic-moveit_core < 1.1.11-1
+Obsoletes: ros-kinetic-moveit_core < 1.1.11-1
+
 
 
 %description
-Core libraries used by MoveIt!
+Core libraries used by MoveIt
 
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       pkgconfig
-Requires:       ros-melodic-catkin-devel
+Requires:       ros-noetic-catkin-devel
 Requires:       assimp
-Requires:       boost-devel boost-python3-devel boost-python3-devel
+Requires:       boost-devel
+Requires:       bullet-devel
 Requires:       console-bridge-devel
 Requires:       eigen3-devel
 Requires:       fcl-devel
 Requires:       libccd-devel
+Requires:       octomap-devel
+Requires:       orocos-kdl
+Requires:       orocos-kdl-devel
+Requires:       python3-devel
 Requires:       tinyxml-devel
 Requires:       urdfdom-devel
 Requires:       urdfdom-headers-devel
-Requires:       ros-melodic-angles-devel
-Requires:       ros-melodic-code_coverage-devel
-Requires:       ros-melodic-eigen_stl_containers-devel
-Requires:       ros-melodic-geometric_shapes-devel
-Requires:       ros-melodic-geometry_msgs-devel
-Requires:       ros-melodic-kdl_parser-devel
-Requires:       ros-melodic-moveit_msgs-devel
-Requires:       ros-melodic-moveit_resources-devel
-Requires:       ros-melodic-octomap-devel
-Requires:       ros-melodic-octomap_msgs-devel
-Requires:       ros-melodic-orocos_kdl-devel
-Requires:       ros-melodic-random_numbers-devel
-Requires:       ros-melodic-rosconsole-devel
-Requires:       ros-melodic-roslib-devel
-Requires:       ros-melodic-rostime-devel
-Requires:       ros-melodic-rosunit-devel
-Requires:       ros-melodic-sensor_msgs-devel
-Requires:       ros-melodic-shape_msgs-devel
-Requires:       ros-melodic-srdfdom-devel
-Requires:       ros-melodic-std_msgs-devel
-Requires:       ros-melodic-tf2_eigen-devel
-Requires:       ros-melodic-tf2_geometry_msgs-devel
-Requires:       ros-melodic-tf2_kdl-devel
-Requires:       ros-melodic-trajectory_msgs-devel
-Requires:       ros-melodic-urdf-devel
-Requires:       ros-melodic-visualization_msgs-devel
-Requires:       ros-melodic-xmlrpcpp-devel
+Requires:       ros-noetic-angles-devel
+Requires:       ros-noetic-eigen_stl_containers-devel
+Requires:       ros-noetic-geometric_shapes-devel
+Requires:       ros-noetic-geometry_msgs-devel
+Requires:       ros-noetic-kdl_parser-devel
+Requires:       ros-noetic-moveit_msgs-devel
+Requires:       ros-noetic-moveit_resources_panda_moveit_config-devel
+Requires:       ros-noetic-moveit_resources_pr2_description-devel
+Requires:       ros-noetic-octomap_msgs-devel
+Requires:       ros-noetic-pluginlib-devel
+Requires:       ros-noetic-pybind11_catkin-devel
+Requires:       ros-noetic-random_numbers-devel
+Requires:       ros-noetic-rosconsole-devel
+Requires:       ros-noetic-roslib-devel
+Requires:       ros-noetic-rostest-devel
+Requires:       ros-noetic-rostime-devel
+Requires:       ros-noetic-rosunit-devel
+Requires:       ros-noetic-ruckig-devel
+Requires:       ros-noetic-sensor_msgs-devel
+Requires:       ros-noetic-shape_msgs-devel
+Requires:       ros-noetic-srdfdom-devel
+Requires:       ros-noetic-std_msgs-devel
+Requires:       ros-noetic-tf2_eigen-devel
+Requires:       ros-noetic-tf2_geometry_msgs-devel
+Requires:       ros-noetic-tf2_kdl-devel
+Requires:       ros-noetic-trajectory_msgs-devel
+Requires:       ros-noetic-urdf-devel
+Requires:       ros-noetic-visualization_msgs-devel
+Requires:       ros-noetic-xmlrpcpp-devel
 
-Provides: ros-melodic-moveit_core-devel = 1.0.3-1
-Obsoletes: ros-melodic-moveit_core-devel < 1.0.3-1
-Obsoletes: ros-kinetic-moveit_core-devel < 1.0.3-1
+Provides: ros-noetic-moveit_core-devel = 1.1.11-1
+Obsoletes: ros-noetic-moveit_core-devel < 1.1.11-1
+Obsoletes: ros-kinetic-moveit_core-devel < 1.1.11-1
+
 
 %description devel
 The %{name}-devel package contains libraries and header files for developing
@@ -161,11 +182,7 @@ FCFLAGS="${FCFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FCFLAGS ; \
 source %{_libdir}/ros/setup.bash
 
 # substitute shebang before install block because we run the local catkin script
-for f in $(grep -rl python .) ; do
-  sed -i.orig '/^#!.*python\s*$/ { s/python/python3/ }' $f
-  touch -r $f.orig $f
-  rm $f.orig
-done
+%py3_shebang_fix .
 
 DESTDIR=%{buildroot} ; export DESTDIR
 
@@ -193,7 +210,7 @@ find %{buildroot}/%{_libdir}/ros/lib*/ -mindepth 1 -maxdepth 1 \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
-find %{buildroot}/%{_libdir}/ros/{include,lib*/pkgconfig} \
+find %{buildroot}/%{_libdir}/ros/{include,lib*/pkgconfig,share/moveit_core/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -202,26 +219,10 @@ find . -maxdepth 1 -type f -iname "*license*" | sed "s:^:%%license :" >> files.l
 
 
 # replace cmake python macro in shebang
-for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@*$' %{buildroot}) ; do
+for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@.*$' %{buildroot}) ; do
   sed -i.orig 's:^#!\s*@PYTHON_EXECUTABLE@\s*:%{__python3}:' $file
   touch -r $file.orig $file
   rm $file.orig
-done
-
-# replace unversioned python shebang
-for file in $(grep -rIl '^#!.*python\s*$' %{buildroot}) ; do
-  sed -i.orig '/^#!.*python\s*$/ { s/python/python3/ }' $file
-  touch -r $file.orig $file
-  rm $file.orig
-done
-
-# replace "/usr/bin/env $interpreter" with "/usr/bin/$interpreter"
-for interpreter in bash sh python2 python3 ; do
-  for file in $(grep -rIl "^#\!.*${interpreter}" %{buildroot}) ; do
-    sed -i.orig "s:^#\!\s*/usr/bin/env\s\+${interpreter}.*:#!/usr/bin/${interpreter}:" $file
-    touch -r $file.orig $file
-    rm $file.orig
-  done
 done
 
 
@@ -232,12 +233,21 @@ echo %{_docdir}/%{name} >> files.list
 install -m 0644 -p -D -t %{buildroot}/%{_docdir}/%{name}-devel README_FEDORA
 echo %{_docdir}/%{name}-devel >> files_devel.list
 
+%py3_shebang_fix %{buildroot}
+
+# Also fix .py.in files
+for pyfile in $(grep -rIl '^#!.*python.*$' %{buildroot}) ; do
+  %py3_shebang_fix $pyfile
+done
+
 
 %files -f files.list
 %files devel -f files_devel.list
 
 
 %changelog
+* Fri Mar 03 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.1.1.11-1
+- Update to latest release
 * Wed Apr 29 2020 Till Hofmann <thofmann@fedoraproject.org> - melodic.1.0.3-1
 - Update to latest release
 * Wed Jul 24 2019 Till Hofmann <thofmann@fedoraproject.org> - melodic.1.0.2-1

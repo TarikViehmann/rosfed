@@ -24,7 +24,6 @@ BuildRequires:  python3-setuptools
 BuildRequires:  ros-noetic-catkin-devel
 
 Requires:       python3-pyyaml
-Requires:       python3dist(pyyaml)
 Requires:       ros-noetic-rospy
 
 Provides:  ros-noetic-urdfdom_py = 0.4.6-2

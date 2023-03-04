@@ -1,12 +1,12 @@
-Name:           ros-moveit_ros_benchmarks
+Name:           ros-pilz_industrial_motion_planner_testutils
 Version:        noetic.1.1.11
 Release:        1%{?dist}
-Summary:        ROS package moveit_ros_benchmarks
+Summary:        ROS package pilz_industrial_motion_planner_testutils
 
 License:        BSD
 URL:            http://moveit.ros.org
 
-Source0:        https://github.com/ros-gbp/moveit-release/archive/release/noetic/moveit_ros_benchmarks/1.1.11-1.tar.gz#/ros-noetic-moveit_ros_benchmarks-1.1.11-source0.tar.gz
+Source0:        https://github.com/ros-gbp/moveit-release/archive/release/noetic/pilz_industrial_motion_planner_testutils/1.1.11-1.tar.gz#/ros-noetic-pilz_industrial_motion_planner_testutils-1.1.11-source0.tar.gz
 
 
 
@@ -18,53 +18,36 @@ BuildRequires:  log4cxx-devel
 BuildRequires:  python3-devel
 BuildRequires:  python-unversioned-command
 
-BuildRequires:  eigen3-devel
-BuildRequires:  fcl-devel
-BuildRequires:  poco-devel
-BuildRequires:  tinyxml-devel
-BuildRequires:  tinyxml2-devel
-BuildRequires:  urdfdom-devel
 BuildRequires:  ros-noetic-catkin-devel
-BuildRequires:  ros-noetic-moveit_ros_planning-devel
-BuildRequires:  ros-noetic-moveit_ros_warehouse-devel
-BuildRequires:  ros-noetic-pluginlib-devel
-BuildRequires:  ros-noetic-roscpp-devel
+BuildRequires:  ros-noetic-moveit_core-devel
+BuildRequires:  ros-noetic-moveit_msgs-devel
 BuildRequires:  ros-noetic-tf2_eigen-devel
 
-Requires:       ros-noetic-moveit_ros_planning
-Requires:       ros-noetic-moveit_ros_warehouse
-Requires:       ros-noetic-pluginlib
-Requires:       ros-noetic-roscpp
-Requires:       ros-noetic-tf2_eigen
+Requires:       ros-noetic-moveit_commander
+Requires:       ros-noetic-moveit_core
+Requires:       ros-noetic-moveit_msgs
 
-Provides:  ros-noetic-moveit_ros_benchmarks = 1.1.11-1
-Obsoletes: ros-noetic-moveit_ros_benchmarks < 1.1.11-1
-Obsoletes: ros-kinetic-moveit_ros_benchmarks < 1.1.11-1
+Provides:  ros-noetic-pilz_industrial_motion_planner_testutils = 1.1.11-1
+Obsoletes: ros-noetic-pilz_industrial_motion_planner_testutils < 1.1.11-1
+Obsoletes: ros-kinetic-pilz_industrial_motion_planner_testutils < 1.1.11-1
 
 
 
 %description
-Enhanced tools for benchmarks in MoveIt
+Helper scripts and functionality to test industrial motion generation
 
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       ros-noetic-catkin-devel
-Requires:       eigen3-devel
-Requires:       fcl-devel
-Requires:       poco-devel
-Requires:       tinyxml-devel
-Requires:       tinyxml2-devel
-Requires:       urdfdom-devel
-Requires:       ros-noetic-moveit_ros_planning-devel
-Requires:       ros-noetic-moveit_ros_warehouse-devel
-Requires:       ros-noetic-pluginlib-devel
-Requires:       ros-noetic-roscpp-devel
+Requires:       ros-noetic-moveit_core-devel
+Requires:       ros-noetic-moveit_msgs-devel
 Requires:       ros-noetic-tf2_eigen-devel
+Requires:       ros-noetic-moveit_commander-devel
 
-Provides: ros-noetic-moveit_ros_benchmarks-devel = 1.1.11-1
-Obsoletes: ros-noetic-moveit_ros_benchmarks-devel < 1.1.11-1
-Obsoletes: ros-kinetic-moveit_ros_benchmarks-devel < 1.1.11-1
+Provides: ros-noetic-pilz_industrial_motion_planner_testutils-devel = 1.1.11-1
+Obsoletes: ros-noetic-pilz_industrial_motion_planner_testutils-devel < 1.1.11-1
+Obsoletes: ros-kinetic-pilz_industrial_motion_planner_testutils-devel < 1.1.11-1
 
 
 %description devel
@@ -108,7 +91,7 @@ catkin_make_isolated \
   --source . \
   --install \
   --install-space %{_libdir}/ros/ \
-  --pkg moveit_ros_benchmarks
+  --pkg pilz_industrial_motion_planner_testutils
 
 
 
@@ -123,7 +106,7 @@ find %{buildroot}/%{_libdir}/ros/lib*/ -mindepth 1 -maxdepth 1 \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
-find %{buildroot}/%{_libdir}/ros/{include,lib*/pkgconfig,share/moveit_ros_benchmarks/cmake} \
+find %{buildroot}/%{_libdir}/ros/{include,lib*/pkgconfig,share/pilz_industrial_motion_planner_testutils/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -161,13 +144,3 @@ done
 %changelog
 * Fri Mar 03 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.1.1.11-1
 - Update to latest release
-* Wed Apr 29 2020 Till Hofmann <thofmann@fedoraproject.org> - melodic.1.0.3-1
-- Update to latest release
-* Wed Jul 24 2019 Till Hofmann <thofmann@fedoraproject.org> - melodic.1.0.2-1
-- Update to latest release
-* Wed Nov 07 2018 Till Hofmann <thofmann@fedoraproject.org> - 0.9.15-1
-- Update to latest release
-* Wed May 30 2018 Till Hofmann <thofmann@fedoraproject.org> - 0.9.12-1
-- Update to latest release
-* Thu Jan 18 2018 Till Hofmann <thofmann@fedoraproject.org> - 0.9.11-1
-- Initial package

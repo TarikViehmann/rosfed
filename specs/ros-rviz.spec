@@ -190,6 +190,7 @@ catkin_make_isolated \
   -DCATKIN_ENABLE_TESTING=OFF \
   -DPYTHON_VERSION=%{python3_version} \
   -DPYTHON_VERSION_NODOTS=%{python3_version_nodots} \
+  -DOGRE_PLUGIN_DIR=%{_libdir}/OGRE \
   --source . \
   --install \
   --install-space %{_libdir}/ros/ \

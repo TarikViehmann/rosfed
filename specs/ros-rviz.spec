@@ -1,6 +1,6 @@
 Name:           ros-rviz
 Version:        noetic.1.14.19
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        ROS package rviz
 
 License:        BSD
@@ -88,9 +88,9 @@ Requires:       ros-noetic-tf2_ros
 Requires:       ros-noetic-urdf
 Requires:       ros-noetic-visualization_msgs
 
-Provides:  ros-noetic-rviz = 1.14.19-1
-Obsoletes: ros-noetic-rviz < 1.14.19-1
-Obsoletes: ros-kinetic-rviz < 1.14.19-1
+Provides:  ros-noetic-rviz = 1.14.19-2
+Obsoletes: ros-noetic-rviz < 1.14.19-2
+Obsoletes: ros-kinetic-rviz < 1.14.19-2
 
 
 
@@ -144,9 +144,9 @@ Requires:       ros-noetic-visualization_msgs-devel
 Requires:       ros-noetic-media_export-devel
 Requires:       ros-noetic-message_runtime-devel
 
-Provides: ros-noetic-rviz-devel = 1.14.19-1
-Obsoletes: ros-noetic-rviz-devel < 1.14.19-1
-Obsoletes: ros-kinetic-rviz-devel < 1.14.19-1
+Provides: ros-noetic-rviz-devel = 1.14.19-2
+Obsoletes: ros-noetic-rviz-devel < 1.14.19-2
+Obsoletes: ros-kinetic-rviz-devel < 1.14.19-2
 
 
 %description devel
@@ -245,6 +245,8 @@ done
 
 
 %changelog
+* Mon Mar 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.1.14.19-2
+- Fix broken orgre plugin path
 * Mon Dec 26 2022 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - noetic.1.14.19-1
 - Update to latest release
 * Mon Feb 14 2022 Till Hofmann <thofmann@fedoraproject.org> - noetic.1.14.14-1

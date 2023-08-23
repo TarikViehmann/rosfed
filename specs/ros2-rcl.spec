@@ -37,37 +37,45 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-launch_testing_ament_cmake-devel
-BuildRequires:  ros2-humble-mimick_vendor-devel
-BuildRequires:  ros2-humble-osrf_testing_tools_cpp-devel
-BuildRequires:  ros2-humble-rcl_interfaces-devel
-BuildRequires:  ros2-humble-rcl_logging_interface-devel
-BuildRequires:  ros2-humble-rcl_logging_spdlog-devel
-BuildRequires:  ros2-humble-rcl_yaml_param_parser-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rmw-devel
-BuildRequires:  ros2-humble-rmw_implementation-devel
-BuildRequires:  ros2-humble-rmw_implementation_cmake-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
-BuildRequires:  ros2-humble-test_msgs-devel
-BuildRequires:  ros2-humble-tracetools-devel
+BuildRequires:  libyaml
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-launch_testing_ament_cmake-devel
+BuildRequires:  ros2-iron-libyaml_vendor-devel
+BuildRequires:  ros2-iron-mimick_vendor-devel
+BuildRequires:  ros2-iron-osrf_testing_tools_cpp-devel
+BuildRequires:  ros2-iron-rcl_interfaces-devel
+BuildRequires:  ros2-iron-rcl_logging_interface-devel
+BuildRequires:  ros2-iron-rcl_logging_spdlog-devel
+BuildRequires:  ros2-iron-rcl_yaml_param_parser-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rmw-devel
+BuildRequires:  ros2-iron-rmw_implementation-devel
+BuildRequires:  ros2-iron-rmw_implementation_cmake-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-service_msgs-devel
+BuildRequires:  ros2-iron-test_msgs-devel
+BuildRequires:  ros2-iron-tracetools-devel
+BuildRequires:  ros2-iron-type_description_interfaces-devel
 
-Requires:       ros2-humble-rcl_interfaces
-Requires:       ros2-humble-rcl_logging_interface
-Requires:       ros2-humble-rcl_logging_spdlog
-Requires:       ros2-humble-rcl_yaml_param_parser
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rmw_implementation
-Requires:       ros2-humble-rosidl_runtime_c
-Requires:       ros2-humble-tracetools
+Requires:       libyaml
+Requires:       ros2-iron-libyaml_vendor
+Requires:       ros2-iron-rcl_interfaces
+Requires:       ros2-iron-rcl_logging_interface
+Requires:       ros2-iron-rcl_logging_spdlog
+Requires:       ros2-iron-rcl_yaml_param_parser
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rmw_implementation
+Requires:       ros2-iron-rosidl_runtime_c
+Requires:       ros2-iron-service_msgs
+Requires:       ros2-iron-tracetools
+Requires:       ros2-iron-type_description_interfaces
 
 Provides:  ros2-humble-rcl = 5.3.6-1
 Obsoletes: ros2-humble-rcl < 5.3.6-1
@@ -82,28 +90,32 @@ upon by the other ROS client libraries.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-rmw-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-launch_testing_ament_cmake-devel
-Requires:       ros2-humble-mimick_vendor-devel
-Requires:       ros2-humble-osrf_testing_tools_cpp-devel
-Requires:       ros2-humble-rcl_interfaces-devel
-Requires:       ros2-humble-rcl_logging_interface-devel
-Requires:       ros2-humble-rcl_logging_spdlog-devel
-Requires:       ros2-humble-rcl_yaml_param_parser-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rmw_implementation-devel
-Requires:       ros2-humble-rmw_implementation_cmake-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-test_msgs-devel
-Requires:       ros2-humble-tracetools-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-rmw-devel
+Requires:       libyaml
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-launch_testing_ament_cmake-devel
+Requires:       ros2-iron-libyaml_vendor-devel
+Requires:       ros2-iron-mimick_vendor-devel
+Requires:       ros2-iron-osrf_testing_tools_cpp-devel
+Requires:       ros2-iron-rcl_interfaces-devel
+Requires:       ros2-iron-rcl_logging_interface-devel
+Requires:       ros2-iron-rcl_logging_spdlog-devel
+Requires:       ros2-iron-rcl_yaml_param_parser-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rmw_implementation-devel
+Requires:       ros2-iron-rmw_implementation_cmake-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-service_msgs-devel
+Requires:       ros2-iron-test_msgs-devel
+Requires:       ros2-iron-tracetools-devel
+Requires:       ros2-iron-type_description_interfaces-devel
 
 Provides: ros2-humble-rcl-devel = 5.3.6-1
 Obsoletes: ros2-humble-rcl-devel < 5.3.6-1

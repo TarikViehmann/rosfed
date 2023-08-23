@@ -6,7 +6,7 @@ Summary:        ROS package webots_ros2_control
 License:        Apache License 2.0
 URL:            http://wiki.ros.org/webots_ros2
 
-Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/humble/webots_ros2_control/2023.1.1-2.tar.gz#/ros2-humble-webots_ros2_control-2023.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/iron/webots_ros2_control/2023.1.1-2.tar.gz#/ros2-iron-webots_ros2_control-2023.1.1-source0.tar.gz
 
 
 
@@ -37,27 +37,27 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-controller_manager-devel
-BuildRequires:  ros2-humble-hardware_interface-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-ros_environment-devel
-BuildRequires:  ros2-humble-webots_ros2_driver-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-controller_manager-devel
+BuildRequires:  ros2-iron-hardware_interface-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-ros_environment-devel
+BuildRequires:  ros2-iron-webots_ros2_driver-devel
 
-Requires:       ros2-humble-controller_manager
-Requires:       ros2-humble-hardware_interface
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-webots_ros2_driver
+Requires:       ros2-iron-controller_manager
+Requires:       ros2-iron-hardware_interface
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-webots_ros2_driver
 
-Provides:  ros2-humble-webots_ros2_control = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_control < 2023.1.1-1
+Provides:  ros2-iron-webots_ros2_control = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_control < 2023.1.1-1
 
 
 
@@ -67,20 +67,20 @@ ros2_control plugin for Webots
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-controller_manager-devel
-Requires:       ros2-humble-hardware_interface-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-ros_environment-devel
-Requires:       ros2-humble-webots_ros2_driver-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-controller_manager-devel
+Requires:       ros2-iron-hardware_interface-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-ros_environment-devel
+Requires:       ros2-iron-webots_ros2_driver-devel
 
-Provides: ros2-humble-webots_ros2_control-devel = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_control-devel < 2023.1.1-1
+Provides: ros2-iron-webots_ros2_control-devel = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_control-devel < 2023.1.1-1
 
 
 %description devel

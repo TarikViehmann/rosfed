@@ -38,36 +38,36 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-nav2_amcl
-Requires:       ros2-humble-nav2_behavior_tree
-Requires:       ros2-humble-nav2_behaviors
-Requires:       ros2-humble-nav2_bt_navigator
-Requires:       ros2-humble-nav2_collision_monitor
-Requires:       ros2-humble-nav2_constrained_smoother
-Requires:       ros2-humble-nav2_controller
-Requires:       ros2-humble-nav2_core
-Requires:       ros2-humble-nav2_costmap_2d
-Requires:       ros2-humble-nav2_dwb_controller
-Requires:       ros2-humble-nav2_lifecycle_manager
-Requires:       ros2-humble-nav2_map_server
-Requires:       ros2-humble-nav2_mppi_controller
-Requires:       ros2-humble-nav2_msgs
-Requires:       ros2-humble-nav2_navfn_planner
-Requires:       ros2-humble-nav2_planner
-Requires:       ros2-humble-nav2_regulated_pure_pursuit_controller
-Requires:       ros2-humble-nav2_rotation_shim_controller
-Requires:       ros2-humble-nav2_rviz_plugins
-Requires:       ros2-humble-nav2_simple_commander
-Requires:       ros2-humble-nav2_smac_planner
-Requires:       ros2-humble-nav2_smoother
-Requires:       ros2-humble-nav2_theta_star_planner
-Requires:       ros2-humble-nav2_util
-Requires:       ros2-humble-nav2_velocity_smoother
-Requires:       ros2-humble-nav2_voxel_grid
-Requires:       ros2-humble-nav2_waypoint_follower
+Requires:       ros2-iron-nav2_amcl
+Requires:       ros2-iron-nav2_behavior_tree
+Requires:       ros2-iron-nav2_behaviors
+Requires:       ros2-iron-nav2_bt_navigator
+Requires:       ros2-iron-nav2_collision_monitor
+Requires:       ros2-iron-nav2_constrained_smoother
+Requires:       ros2-iron-nav2_controller
+Requires:       ros2-iron-nav2_core
+Requires:       ros2-iron-nav2_costmap_2d
+Requires:       ros2-iron-nav2_dwb_controller
+Requires:       ros2-iron-nav2_lifecycle_manager
+Requires:       ros2-iron-nav2_map_server
+Requires:       ros2-iron-nav2_mppi_controller
+Requires:       ros2-iron-nav2_msgs
+Requires:       ros2-iron-nav2_navfn_planner
+Requires:       ros2-iron-nav2_planner
+Requires:       ros2-iron-nav2_regulated_pure_pursuit_controller
+Requires:       ros2-iron-nav2_rotation_shim_controller
+Requires:       ros2-iron-nav2_rviz_plugins
+Requires:       ros2-iron-nav2_simple_commander
+Requires:       ros2-iron-nav2_smac_planner
+Requires:       ros2-iron-nav2_smoother
+Requires:       ros2-iron-nav2_theta_star_planner
+Requires:       ros2-iron-nav2_util
+Requires:       ros2-iron-nav2_velocity_smoother
+Requires:       ros2-iron-nav2_voxel_grid
+Requires:       ros2-iron-nav2_waypoint_follower
 
 Provides:  ros2-humble-navigation2 = 1.1.12-1
 Obsoletes: ros2-humble-navigation2 < 1.1.12-1
@@ -80,35 +80,35 @@ ROS2 Navigation Stack
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-nav2_amcl-devel
-Requires:       ros2-humble-nav2_behavior_tree-devel
-Requires:       ros2-humble-nav2_behaviors-devel
-Requires:       ros2-humble-nav2_bt_navigator-devel
-Requires:       ros2-humble-nav2_collision_monitor-devel
-Requires:       ros2-humble-nav2_constrained_smoother-devel
-Requires:       ros2-humble-nav2_controller-devel
-Requires:       ros2-humble-nav2_core-devel
-Requires:       ros2-humble-nav2_costmap_2d-devel
-Requires:       ros2-humble-nav2_dwb_controller-devel
-Requires:       ros2-humble-nav2_lifecycle_manager-devel
-Requires:       ros2-humble-nav2_map_server-devel
-Requires:       ros2-humble-nav2_mppi_controller-devel
-Requires:       ros2-humble-nav2_msgs-devel
-Requires:       ros2-humble-nav2_navfn_planner-devel
-Requires:       ros2-humble-nav2_planner-devel
-Requires:       ros2-humble-nav2_regulated_pure_pursuit_controller-devel
-Requires:       ros2-humble-nav2_rotation_shim_controller-devel
-Requires:       ros2-humble-nav2_rviz_plugins-devel
-Requires:       ros2-humble-nav2_simple_commander-devel
-Requires:       ros2-humble-nav2_smac_planner-devel
-Requires:       ros2-humble-nav2_smoother-devel
-Requires:       ros2-humble-nav2_theta_star_planner-devel
-Requires:       ros2-humble-nav2_util-devel
-Requires:       ros2-humble-nav2_velocity_smoother-devel
-Requires:       ros2-humble-nav2_voxel_grid-devel
-Requires:       ros2-humble-nav2_waypoint_follower-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-nav2_amcl-devel
+Requires:       ros2-iron-nav2_behavior_tree-devel
+Requires:       ros2-iron-nav2_behaviors-devel
+Requires:       ros2-iron-nav2_bt_navigator-devel
+Requires:       ros2-iron-nav2_collision_monitor-devel
+Requires:       ros2-iron-nav2_constrained_smoother-devel
+Requires:       ros2-iron-nav2_controller-devel
+Requires:       ros2-iron-nav2_core-devel
+Requires:       ros2-iron-nav2_costmap_2d-devel
+Requires:       ros2-iron-nav2_dwb_controller-devel
+Requires:       ros2-iron-nav2_lifecycle_manager-devel
+Requires:       ros2-iron-nav2_map_server-devel
+Requires:       ros2-iron-nav2_mppi_controller-devel
+Requires:       ros2-iron-nav2_msgs-devel
+Requires:       ros2-iron-nav2_navfn_planner-devel
+Requires:       ros2-iron-nav2_planner-devel
+Requires:       ros2-iron-nav2_regulated_pure_pursuit_controller-devel
+Requires:       ros2-iron-nav2_rotation_shim_controller-devel
+Requires:       ros2-iron-nav2_rviz_plugins-devel
+Requires:       ros2-iron-nav2_simple_commander-devel
+Requires:       ros2-iron-nav2_smac_planner-devel
+Requires:       ros2-iron-nav2_smoother-devel
+Requires:       ros2-iron-nav2_theta_star_planner-devel
+Requires:       ros2-iron-nav2_util-devel
+Requires:       ros2-iron-nav2_velocity_smoother-devel
+Requires:       ros2-iron-nav2_voxel_grid-devel
+Requires:       ros2-iron-nav2_waypoint_follower-devel
 
 Provides: ros2-humble-navigation2-devel = 1.1.12-1
 Obsoletes: ros2-humble-navigation2-devel < 1.1.12-1

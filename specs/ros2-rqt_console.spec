@@ -6,7 +6,7 @@ Summary:        ROS package rqt_console
 License:        BSD
 URL:            http://wiki.ros.org/rqt_console
 
-Source0:        https://github.com/ros2-gbp/rqt_console-release/archive/release/humble/rqt_console/2.0.2-3.tar.gz#/ros2-humble-rqt_console-2.0.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt_console-release/archive/release/iron/rqt_console/2.1.1-3.tar.gz#/ros2-iron-rqt_console-2.1.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,18 +38,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-python_qt_binding
-Requires:       ros2-humble-rcl_interfaces
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-rqt_gui
-Requires:       ros2-humble-rqt_gui_py
-Requires:       ros2-humble-rqt_py_common
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-python_qt_binding
+Requires:       ros2-iron-rcl_interfaces
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-rqt_gui
+Requires:       ros2-iron-rqt_gui_py
+Requires:       ros2-iron-rqt_py_common
 
-Provides:  ros2-humble-rqt_console = 2.0.2-1
-Obsoletes: ros2-humble-rqt_console < 2.0.2-1
+Provides:  ros2-iron-rqt_console = 2.1.1-1
+Obsoletes: ros2-iron-rqt_console < 2.1.1-1
 
 
 
@@ -60,17 +60,17 @@ messages.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-python_qt_binding-devel
-Requires:       ros2-humble-rcl_interfaces-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-rqt_gui-devel
-Requires:       ros2-humble-rqt_gui_py-devel
-Requires:       ros2-humble-rqt_py_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-python_qt_binding-devel
+Requires:       ros2-iron-rcl_interfaces-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-rqt_gui-devel
+Requires:       ros2-iron-rqt_gui_py-devel
+Requires:       ros2-iron-rqt_py_common-devel
 
-Provides: ros2-humble-rqt_console-devel = 2.0.2-1
-Obsoletes: ros2-humble-rqt_console-devel < 2.0.2-1
+Provides: ros2-iron-rqt_console-devel = 2.1.1-1
+Obsoletes: ros2-iron-rqt_console-devel < 2.1.1-1
 
 
 %description devel

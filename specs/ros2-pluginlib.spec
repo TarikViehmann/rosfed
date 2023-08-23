@@ -6,7 +6,7 @@ Summary:        ROS package pluginlib
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/pluginlib-release/archive/release/humble/pluginlib/5.1.0-3.tar.gz#/ros2-humble-pluginlib-5.1.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/pluginlib-release/archive/release/iron/pluginlib/5.2.2-3.tar.gz#/ros2-iron-pluginlib-5.2.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -43,23 +43,23 @@ BuildRequires:  log4cxx-devel
 BuildRequires:  poco-devel
 BuildRequires:  tinyxml-devel
 BuildRequires:  tinyxml2-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_index_cpp-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-class_loader-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-tinyxml2_vendor-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_index_cpp-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-class_loader-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-tinyxml2_vendor-devel
 
-Requires:       ros2-humble-ament_index_cpp
-Requires:       ros2-humble-class_loader
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-tinyxml2_vendor
+Requires:       ros2-iron-ament_index_cpp
+Requires:       ros2-iron-class_loader
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-tinyxml2_vendor
 
-Provides:  ros2-humble-pluginlib = 5.1.0-1
-Obsoletes: ros2-humble-pluginlib < 5.1.0-1
+Provides:  ros2-iron-pluginlib = 5.2.2-1
+Obsoletes: ros2-iron-pluginlib < 5.2.2-1
 
 
 
@@ -72,22 +72,22 @@ package.xml of their package.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       console-bridge-devel
 Requires:       log4cxx-devel
 Requires:       poco-devel
 Requires:       tinyxml-devel
 Requires:       tinyxml2-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_index_cpp-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-class_loader-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-tinyxml2_vendor-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_index_cpp-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-class_loader-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-tinyxml2_vendor-devel
 
-Provides: ros2-humble-pluginlib-devel = 5.1.0-1
-Obsoletes: ros2-humble-pluginlib-devel < 5.1.0-1
+Provides: ros2-iron-pluginlib-devel = 5.2.2-1
+Obsoletes: ros2-iron-pluginlib-devel < 5.2.2-1
 
 
 %description devel

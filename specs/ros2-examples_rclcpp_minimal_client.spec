@@ -6,7 +6,7 @@ Summary:        ROS package examples_rclcpp_minimal_client
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/examples-release/archive/release/humble/examples_rclcpp_minimal_client/0.15.1-1.tar.gz#/ros2-humble-examples_rclcpp_minimal_client-0.15.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/examples-release/archive/release/iron/examples_rclcpp_minimal_client/0.18.0-2.tar.gz#/ros2-iron-examples_rclcpp_minimal_client-0.18.0-source0.tar.gz
 
 
 
@@ -37,18 +37,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-example_interfaces-devel
-BuildRequires:  ros2-humble-rclcpp-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-example_interfaces-devel
+BuildRequires:  ros2-iron-rclcpp-devel
 
-Requires:       ros2-humble-example_interfaces
-Requires:       ros2-humble-rclcpp
+Requires:       ros2-iron-example_interfaces
+Requires:       ros2-iron-rclcpp
 
-Provides:  ros2-humble-examples_rclcpp_minimal_client = 0.15.1-1
-Obsoletes: ros2-humble-examples_rclcpp_minimal_client < 0.15.1-1
+Provides:  ros2-iron-examples_rclcpp_minimal_client = 0.18.0-1
+Obsoletes: ros2-iron-examples_rclcpp_minimal_client < 0.18.0-1
 
 
 
@@ -58,15 +58,15 @@ Examples of minimal service clients
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-example_interfaces-devel
-Requires:       ros2-humble-rclcpp-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-example_interfaces-devel
+Requires:       ros2-iron-rclcpp-devel
 
-Provides: ros2-humble-examples_rclcpp_minimal_client-devel = 0.15.1-1
-Obsoletes: ros2-humble-examples_rclcpp_minimal_client-devel < 0.15.1-1
+Provides: ros2-iron-examples_rclcpp_minimal_client-devel = 0.18.0-1
+Obsoletes: ros2-iron-examples_rclcpp_minimal_client-devel < 0.18.0-1
 
 
 %description devel

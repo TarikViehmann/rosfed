@@ -6,7 +6,7 @@ Summary:        ROS package urdfdom_headers
 License:        BSD
 URL:            http://ros.org/wiki/urdf
 
-Source0:        https://github.com/ros2-gbp/urdfdom_headers-release/archive/release/humble/urdfdom_headers/1.0.6-2.tar.gz#/ros2-humble-urdfdom_headers-1.0.6-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/urdfdom_headers-release/archive/release/iron/urdfdom_headers/1.1.0-3.tar.gz#/ros2-iron-urdfdom_headers-1.1.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,11 +39,11 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  cmake
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-urdfdom_headers = 1.0.6-1
-Obsoletes: ros2-humble-urdfdom_headers < 1.0.6-1
+Provides:  ros2-iron-urdfdom_headers = 1.1.0-1
+Obsoletes: ros2-iron-urdfdom_headers < 1.1.0-1
 
 
 
@@ -54,10 +54,10 @@ C++ headers for URDF.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       cmake
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-urdfdom_headers-devel = 1.0.6-1
-Obsoletes: ros2-humble-urdfdom_headers-devel < 1.0.6-1
+Provides: ros2-iron-urdfdom_headers-devel = 1.1.0-1
+Obsoletes: ros2-iron-urdfdom_headers-devel < 1.1.0-1
 
 
 %description devel

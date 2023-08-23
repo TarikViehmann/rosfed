@@ -39,16 +39,16 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
 
-Requires:       ros2-humble-action_msgs
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-lifecycle_msgs
-Requires:       ros2-humble-nav2_msgs
-Requires:       ros2-humble-rclpy
+Requires:       ros2-iron-action_msgs
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-lifecycle_msgs
+Requires:       ros2-iron-nav2_msgs
+Requires:       ros2-iron-rclpy
 
 Provides:  ros2-humble-nav2_simple_commander = 1.1.12-1
 Obsoletes: ros2-humble-nav2_simple_commander < 1.1.12-1
@@ -62,15 +62,15 @@ An importable library for writing mobile robot applications in python3
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-action_msgs-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-lifecycle_msgs-devel
-Requires:       ros2-humble-nav2_msgs-devel
-Requires:       ros2-humble-rclpy-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-action_msgs-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-lifecycle_msgs-devel
+Requires:       ros2-iron-nav2_msgs-devel
+Requires:       ros2-iron-rclpy-devel
 
 Provides: ros2-humble-nav2_simple_commander-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_simple_commander-devel < 1.1.12-1

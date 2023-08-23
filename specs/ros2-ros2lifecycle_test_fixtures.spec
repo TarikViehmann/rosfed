@@ -6,7 +6,7 @@ Summary:        ROS package ros2lifecycle_test_fixtures
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ros2cli-release/archive/release/humble/ros2lifecycle_test_fixtures/0.18.7-1.tar.gz#/ros2-humble-ros2lifecycle_test_fixtures-0.18.7-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros2cli-release/archive/release/iron/ros2lifecycle_test_fixtures/0.25.2-1.tar.gz#/ros2-iron-ros2lifecycle_test_fixtures-0.25.2-source0.tar.gz
 
 
 
@@ -37,18 +37,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
 
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_lifecycle
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_lifecycle
 
-Provides:  ros2-humble-ros2lifecycle_test_fixtures = 0.18.7-1
-Obsoletes: ros2-humble-ros2lifecycle_test_fixtures < 0.18.7-1
+Provides:  ros2-iron-ros2lifecycle_test_fixtures = 0.25.2-1
+Obsoletes: ros2-iron-ros2lifecycle_test_fixtures < 0.25.2-1
 
 
 
@@ -58,15 +58,15 @@ Package containing fixture nodes for ros2lifecycle tests
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
 
-Provides: ros2-humble-ros2lifecycle_test_fixtures-devel = 0.18.7-1
-Obsoletes: ros2-humble-ros2lifecycle_test_fixtures-devel < 0.18.7-1
+Provides: ros2-iron-ros2lifecycle_test_fixtures-devel = 0.25.2-1
+Obsoletes: ros2-iron-ros2lifecycle_test_fixtures-devel < 0.25.2-1
 
 
 %description devel

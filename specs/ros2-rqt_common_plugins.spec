@@ -6,7 +6,7 @@ Summary:        ROS package rqt_common_plugins
 License:        BSD
 URL:            http://ros.org/wiki/rqt_common_plugins
 
-Source0:        https://github.com/ros2-gbp/rqt_common_plugins-release/archive/release/humble/rqt_common_plugins/1.2.0-1.tar.gz#/ros2-humble-rqt_common_plugins-1.2.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt_common_plugins-release/archive/release/iron/rqt_common_plugins/1.2.0-3.tar.gz#/ros2-iron-rqt_common_plugins-1.2.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,28 +38,28 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-rqt_action
-Requires:       ros2-humble-rqt_bag
-Requires:       ros2-humble-rqt_bag_plugins
-Requires:       ros2-humble-rqt_console
-Requires:       ros2-humble-rqt_graph
-Requires:       ros2-humble-rqt_image_view
-Requires:       ros2-humble-rqt_msg
-Requires:       ros2-humble-rqt_plot
-Requires:       ros2-humble-rqt_publisher
-Requires:       ros2-humble-rqt_py_common
-Requires:       ros2-humble-rqt_py_console
-Requires:       ros2-humble-rqt_reconfigure
-Requires:       ros2-humble-rqt_service_caller
-Requires:       ros2-humble-rqt_shell
-Requires:       ros2-humble-rqt_srv
-Requires:       ros2-humble-rqt_topic
+Requires:       ros2-iron-rqt_action
+Requires:       ros2-iron-rqt_bag
+Requires:       ros2-iron-rqt_bag_plugins
+Requires:       ros2-iron-rqt_console
+Requires:       ros2-iron-rqt_graph
+Requires:       ros2-iron-rqt_image_view
+Requires:       ros2-iron-rqt_msg
+Requires:       ros2-iron-rqt_plot
+Requires:       ros2-iron-rqt_publisher
+Requires:       ros2-iron-rqt_py_common
+Requires:       ros2-iron-rqt_py_console
+Requires:       ros2-iron-rqt_reconfigure
+Requires:       ros2-iron-rqt_service_caller
+Requires:       ros2-iron-rqt_shell
+Requires:       ros2-iron-rqt_srv
+Requires:       ros2-iron-rqt_topic
 
-Provides:  ros2-humble-rqt_common_plugins = 1.2.0-1
-Obsoletes: ros2-humble-rqt_common_plugins < 1.2.0-1
+Provides:  ros2-iron-rqt_common_plugins = 1.2.0-1
+Obsoletes: ros2-iron-rqt_common_plugins < 1.2.0-1
 
 
 
@@ -70,27 +70,27 @@ suite that can be used on/off of robot runtime.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rqt_action-devel
-Requires:       ros2-humble-rqt_bag-devel
-Requires:       ros2-humble-rqt_bag_plugins-devel
-Requires:       ros2-humble-rqt_console-devel
-Requires:       ros2-humble-rqt_graph-devel
-Requires:       ros2-humble-rqt_image_view-devel
-Requires:       ros2-humble-rqt_msg-devel
-Requires:       ros2-humble-rqt_plot-devel
-Requires:       ros2-humble-rqt_publisher-devel
-Requires:       ros2-humble-rqt_py_common-devel
-Requires:       ros2-humble-rqt_py_console-devel
-Requires:       ros2-humble-rqt_reconfigure-devel
-Requires:       ros2-humble-rqt_service_caller-devel
-Requires:       ros2-humble-rqt_shell-devel
-Requires:       ros2-humble-rqt_srv-devel
-Requires:       ros2-humble-rqt_topic-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rqt_action-devel
+Requires:       ros2-iron-rqt_bag-devel
+Requires:       ros2-iron-rqt_bag_plugins-devel
+Requires:       ros2-iron-rqt_console-devel
+Requires:       ros2-iron-rqt_graph-devel
+Requires:       ros2-iron-rqt_image_view-devel
+Requires:       ros2-iron-rqt_msg-devel
+Requires:       ros2-iron-rqt_plot-devel
+Requires:       ros2-iron-rqt_publisher-devel
+Requires:       ros2-iron-rqt_py_common-devel
+Requires:       ros2-iron-rqt_py_console-devel
+Requires:       ros2-iron-rqt_reconfigure-devel
+Requires:       ros2-iron-rqt_service_caller-devel
+Requires:       ros2-iron-rqt_shell-devel
+Requires:       ros2-iron-rqt_srv-devel
+Requires:       ros2-iron-rqt_topic-devel
 
-Provides: ros2-humble-rqt_common_plugins-devel = 1.2.0-1
-Obsoletes: ros2-humble-rqt_common_plugins-devel < 1.2.0-1
+Provides: ros2-iron-rqt_common_plugins-devel = 1.2.0-1
+Obsoletes: ros2-iron-rqt_common_plugins-devel < 1.2.0-1
 
 
 %description devel

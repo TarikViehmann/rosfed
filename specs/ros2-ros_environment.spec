@@ -6,7 +6,7 @@ Summary:        ROS package ros_environment
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ros_environment-release/archive/release/humble/ros_environment/3.2.2-1.tar.gz#/ros2-humble-ros_environment-3.2.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros_environment-release/archive/release/iron/ros_environment/4.1.1-1.tar.gz#/ros2-iron-ros_environment-4.1.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,12 +38,12 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-ros_environment = 3.2.2-1
-Obsoletes: ros2-humble-ros_environment < 3.2.2-1
+Provides:  ros2-iron-ros_environment = 4.1.1-1
+Obsoletes: ros2-iron-ros_environment < 4.1.1-1
 
 
 
@@ -54,11 +54,11 @@ The package provides the environment variables `ROS_VERSION` and
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-ros_environment-devel = 3.2.2-1
-Obsoletes: ros2-humble-ros_environment-devel < 3.2.2-1
+Provides: ros2-iron-ros_environment-devel = 4.1.1-1
+Obsoletes: ros2-iron-ros_environment-devel < 4.1.1-1
 
 
 %description devel

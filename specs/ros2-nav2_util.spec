@@ -95,7 +95,7 @@ TODO
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       boost-devel
 Requires:       ros2-humble-action_msgs-devel
 Requires:       ros2-humble-ament_cmake_gtest-devel

@@ -1,0 +1,11 @@
+diff -ur navigation2-release-release-iron-nav2_regulated_pure_pursuit_controller-1.2.2-1/CMakeLists.txt navigation2-release-release-iron-nav2_regulated_pure_pursuit_controller-1.2.2-1-new/CMakeLists.txt
+--- navigation2-release-release-iron-nav2_regulated_pure_pursuit_controller-1.2.2-1/CMakeLists.txt	2023-08-04 22:05:02.000000000 +0200
++++ navigation2-release-release-iron-nav2_regulated_pure_pursuit_controller-1.2.2-1-new/CMakeLists.txt	2023-08-22 11:48:17.213531033 +0200
+@@ -39,6 +39,7 @@
+         src/collision_checker.cpp
+         src/parameter_handler.cpp
+         src/path_handler.cpp)
++target_compile_options(${library_name} PRIVATE -Wno-all -Wformat)
+ 
+ ament_target_dependencies(${library_name}
+   ${dependencies}

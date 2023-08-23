@@ -6,7 +6,7 @@ Summary:        ROS package orocos_kdl_vendor
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/orocos_kdl_vendor-release/archive/release/humble/orocos_kdl_vendor/0.2.5-1.tar.gz#/ros2-humble-orocos_kdl_vendor-0.2.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/orocos_kdl_vendor-release/archive/release/iron/orocos_kdl_vendor/0.3.4-3.tar.gz#/ros2-iron-orocos_kdl_vendor-0.3.4-source0.tar.gz
 
 
 BuildArch: noarch
@@ -41,16 +41,16 @@ BuildRequires: python3-vcstool
 BuildRequires:  eigen3-devel
 BuildRequires:  git
 BuildRequires:  orocos-kdl-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-eigen3_cmake_module-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-eigen3_cmake_module-devel
 
-Requires:       ros2-humble-eigen3_cmake_module
+Requires:       ros2-iron-eigen3_cmake_module
 
-Provides:  ros2-humble-orocos_kdl_vendor = 0.2.5-1
-Obsoletes: ros2-humble-orocos_kdl_vendor < 0.2.5-1
+Provides:  ros2-iron-orocos_kdl_vendor = 0.3.4-1
+Obsoletes: ros2-iron-orocos_kdl_vendor < 0.3.4-1
 
 
 
@@ -63,16 +63,16 @@ orocos_kdl locally.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       git
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       eigen3-devel
 Requires:       orocos-kdl-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-eigen3_cmake_module-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-eigen3_cmake_module-devel
 
-Provides: ros2-humble-orocos_kdl_vendor-devel = 0.2.5-1
-Obsoletes: ros2-humble-orocos_kdl_vendor-devel < 0.2.5-1
+Provides: ros2-iron-orocos_kdl_vendor-devel = 0.3.4-1
+Obsoletes: ros2-iron-orocos_kdl_vendor-devel < 0.3.4-1
 
 
 %description devel

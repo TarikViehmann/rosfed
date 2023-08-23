@@ -40,8 +40,8 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  python3-pytest
 BuildRequires:  python3-pytest-mock
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       python3-mypy
 
@@ -58,8 +58,8 @@ Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
 Requires:       python3-pytest-mock
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-ament_mypy-devel = 0.12.9-1
 Obsoletes: ros2-humble-ament_mypy-devel < 0.12.9-1

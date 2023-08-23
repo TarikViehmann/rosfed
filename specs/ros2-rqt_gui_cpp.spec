@@ -6,7 +6,7 @@ Summary:        ROS package rqt_gui_cpp
 License:        BSD
 URL:            http://ros.org/wiki/rqt_gui_cpp
 
-Source0:        https://github.com/ros2-gbp/rqt-release/archive/release/humble/rqt_gui_cpp/1.1.5-2.tar.gz#/ros2-humble-rqt_gui_cpp-1.1.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt-release/archive/release/iron/rqt_gui_cpp/1.3.3-1.tar.gz#/ros2-iron-rqt_gui_cpp-1.3.3-source0.tar.gz
 
 
 
@@ -42,20 +42,20 @@ BuildRequires:  poco-devel
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  tinyxml-devel
 BuildRequires:  tinyxml2-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-qt_gui-devel
-BuildRequires:  ros2-humble-qt_gui_cpp-devel
-BuildRequires:  ros2-humble-rclcpp-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-qt_gui-devel
+BuildRequires:  ros2-iron-qt_gui_cpp-devel
+BuildRequires:  ros2-iron-rclcpp-devel
 
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-qt_gui
-Requires:       ros2-humble-qt_gui_cpp
-Requires:       ros2-humble-rclcpp
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-qt_gui
+Requires:       ros2-iron-qt_gui_cpp
+Requires:       ros2-iron-rclcpp
 
-Provides:  ros2-humble-rqt_gui_cpp = 1.1.5-1
-Obsoletes: ros2-humble-rqt_gui_cpp < 1.1.5-1
+Provides:  ros2-iron-rqt_gui_cpp = 1.3.3-1
+Obsoletes: ros2-iron-rqt_gui_cpp < 1.3.3-1
 
 
 
@@ -65,20 +65,20 @@ rqt_gui_cpp enables GUI plugins to use the C++ client library for ROS.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       libuuid-devel
 Requires:       poco-devel
 Requires:       qt5-qtbase-devel
 Requires:       tinyxml-devel
 Requires:       tinyxml2-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-qt_gui-devel
-Requires:       ros2-humble-qt_gui_cpp-devel
-Requires:       ros2-humble-rclcpp-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-qt_gui-devel
+Requires:       ros2-iron-qt_gui_cpp-devel
+Requires:       ros2-iron-rclcpp-devel
 
-Provides: ros2-humble-rqt_gui_cpp-devel = 1.1.5-1
-Obsoletes: ros2-humble-rqt_gui_cpp-devel < 1.1.5-1
+Provides: ros2-iron-rqt_gui_cpp-devel = 1.3.3-1
+Obsoletes: ros2-iron-rqt_gui_cpp-devel < 1.3.3-1
 
 
 %description devel

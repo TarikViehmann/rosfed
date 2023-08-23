@@ -39,8 +39,8 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  tinyxml2-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
 Provides:  ros2-humble-tinyxml2_vendor = 0.7.6-1
@@ -56,9 +56,9 @@ or even an ExternalProject build of tinyxml2.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       tinyxml2-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-tinyxml2_vendor-devel = 0.7.6-1
 Obsoletes: ros2-humble-tinyxml2_vendor-devel < 0.7.6-1

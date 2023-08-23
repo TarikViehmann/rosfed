@@ -6,7 +6,7 @@ Summary:        ROS package pybind11_vendor
 License:        Apache License 2.0
 URL:            https://github.com/pybind/pybind11
 
-Source0:        https://github.com/ros2-gbp/pybind11_vendor-release/archive/release/humble/pybind11_vendor/2.4.2-1.tar.gz#/ros2-humble-pybind11_vendor-2.4.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/pybind11_vendor-release/archive/release/iron/pybind11_vendor/3.0.3-3.tar.gz#/ros2-iron-pybind11_vendor-3.0.3-source0.tar.gz
 
 
 BuildArch: noarch
@@ -40,12 +40,12 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  git
 BuildRequires:  pybind11-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-pybind11_vendor = 2.4.2-1
-Obsoletes: ros2-humble-pybind11_vendor < 2.4.2-1
+Provides:  ros2-iron-pybind11_vendor = 3.0.3-1
+Obsoletes: ros2-iron-pybind11_vendor < 3.0.3-1
 
 
 
@@ -56,12 +56,12 @@ Wrapper around pybind11.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       git
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       pybind11-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-pybind11_vendor-devel = 2.4.2-1
-Obsoletes: ros2-humble-pybind11_vendor-devel < 2.4.2-1
+Provides: ros2-iron-pybind11_vendor-devel = 3.0.3-1
+Obsoletes: ros2-iron-pybind11_vendor-devel < 3.0.3-1
 
 
 %description devel

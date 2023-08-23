@@ -38,22 +38,23 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  libyaml
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-libyaml_vendor-devel
-BuildRequires:  ros2-humble-mimick_vendor-devel
-BuildRequires:  ros2-humble-osrf_testing_tools_cpp-devel
-BuildRequires:  ros2-humble-performance_test_fixture-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rmw-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-libyaml_vendor-devel
+BuildRequires:  ros2-iron-mimick_vendor-devel
+BuildRequires:  ros2-iron-osrf_testing_tools_cpp-devel
+BuildRequires:  ros2-iron-performance_test_fixture-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rmw-devel
 
 Requires:       libyaml
-Requires:       ros2-humble-libyaml_vendor
-Requires:       ros2-humble-rmw
+Requires:       ros2-iron-libyaml_vendor
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rmw
 
 Provides:  ros2-humble-rcl_yaml_param_parser = 5.3.6-1
 Obsoletes: ros2-humble-rcl_yaml_param_parser < 5.3.6-1
@@ -66,19 +67,19 @@ Parse a YAML parameter file and populate the C data structure.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
 Requires:       libyaml
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-libyaml_vendor-devel
-Requires:       ros2-humble-mimick_vendor-devel
-Requires:       ros2-humble-osrf_testing_tools_cpp-devel
-Requires:       ros2-humble-performance_test_fixture-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rmw-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-libyaml_vendor-devel
+Requires:       ros2-iron-mimick_vendor-devel
+Requires:       ros2-iron-osrf_testing_tools_cpp-devel
+Requires:       ros2-iron-performance_test_fixture-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rmw-devel
 
 Provides: ros2-humble-rcl_yaml_param_parser-devel = 5.3.6-1
 Obsoletes: ros2-humble-rcl_yaml_param_parser-devel < 5.3.6-1

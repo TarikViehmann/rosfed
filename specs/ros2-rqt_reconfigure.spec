@@ -38,20 +38,20 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_xmllint-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_xmllint-devel
 
 Requires:       python3-pyyaml
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-python_qt_binding
-Requires:       ros2-humble-qt_gui_py_common
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-rqt_console
-Requires:       ros2-humble-rqt_gui
-Requires:       ros2-humble-rqt_gui_py
-Requires:       ros2-humble-rqt_py_common
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-python_qt_binding
+Requires:       ros2-iron-qt_gui_py_common
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-rqt_console
+Requires:       ros2-iron-rqt_gui
+Requires:       ros2-iron-rqt_gui_py
+Requires:       ros2-iron-rqt_py_common
 
 Provides:  ros2-humble-rqt_reconfigure = 1.1.2-1
 Obsoletes: ros2-humble-rqt_reconfigure < 1.1.2-1
@@ -64,18 +64,18 @@ This rqt plugin provides a way to view and edit parameters on nodes.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_xmllint-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-python_qt_binding-devel
-Requires:       ros2-humble-qt_gui_py_common-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-rqt_console-devel
-Requires:       ros2-humble-rqt_gui-devel
-Requires:       ros2-humble-rqt_gui_py-devel
-Requires:       ros2-humble-rqt_py_common-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_xmllint-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-python_qt_binding-devel
+Requires:       ros2-iron-qt_gui_py_common-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-rqt_console-devel
+Requires:       ros2-iron-rqt_gui-devel
+Requires:       ros2-iron-rqt_gui_py-devel
+Requires:       ros2-iron-rqt_py_common-devel
 
 Provides: ros2-humble-rqt_reconfigure-devel = 1.1.2-1
 Obsoletes: ros2-humble-rqt_reconfigure-devel < 1.1.2-1

@@ -39,22 +39,22 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  qt5-qtbase-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_cppcheck-devel
-BuildRequires:  ros2-humble-ament_cmake_cpplint-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_lint_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_uncrustify-devel
-BuildRequires:  ros2-humble-ament_cmake_xmllint-devel
-BuildRequires:  ros2-humble-ament_index_cpp-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-resource_retriever-devel
-BuildRequires:  ros2-humble-rviz_rendering-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_cppcheck-devel
+BuildRequires:  ros2-iron-ament_cmake_cpplint-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_lint_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_uncrustify-devel
+BuildRequires:  ros2-iron-ament_cmake_xmllint-devel
+BuildRequires:  ros2-iron-ament_index_cpp-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-resource_retriever-devel
+BuildRequires:  ros2-iron-rviz_rendering-devel
 
-Requires:       ros2-humble-resource_retriever
-Requires:       ros2-humble-rviz_rendering
+Requires:       ros2-iron-resource_retriever
+Requires:       ros2-iron-rviz_rendering
 
 Provides:  ros2-humble-rviz_rendering_tests = 11.2.9-1
 Obsoletes: ros2-humble-rviz_rendering_tests < 11.2.9-1
@@ -67,20 +67,20 @@ Example plugin for RViz - documents and tests RViz plugin development
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       qt5-qtbase-devel
-Requires:       ros2-humble-ament_cmake_cppcheck-devel
-Requires:       ros2-humble-ament_cmake_cpplint-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_lint_cmake-devel
-Requires:       ros2-humble-ament_cmake_uncrustify-devel
-Requires:       ros2-humble-ament_cmake_xmllint-devel
-Requires:       ros2-humble-ament_index_cpp-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-resource_retriever-devel
-Requires:       ros2-humble-rviz_rendering-devel
+Requires:       ros2-iron-ament_cmake_cppcheck-devel
+Requires:       ros2-iron-ament_cmake_cpplint-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_lint_cmake-devel
+Requires:       ros2-iron-ament_cmake_uncrustify-devel
+Requires:       ros2-iron-ament_cmake_xmllint-devel
+Requires:       ros2-iron-ament_index_cpp-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-resource_retriever-devel
+Requires:       ros2-iron-rviz_rendering-devel
 
 Provides: ros2-humble-rviz_rendering_tests-devel = 11.2.9-1
 Obsoletes: ros2-humble-rviz_rendering_tests-devel < 11.2.9-1

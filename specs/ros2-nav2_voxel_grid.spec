@@ -37,15 +37,15 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-rclcpp-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-rclcpp-devel
 
-Requires:       ros2-humble-rclcpp
+Requires:       ros2-iron-rclcpp
 
 Provides:  ros2-humble-nav2_voxel_grid = 1.1.12-1
 Obsoletes: ros2-humble-nav2_voxel_grid < 1.1.12-1
@@ -65,13 +65,13 @@ quite fast compared to most 3D structures.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-rclcpp-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-rclcpp-devel
 
 Provides: ros2-humble-nav2_voxel_grid-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_voxel_grid-devel < 1.1.12-1

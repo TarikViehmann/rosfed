@@ -6,7 +6,7 @@ Summary:        ROS package spdlog_vendor
 License:        Apache License 2.0
 URL:            https://github.com/gabime/spdlog
 
-Source0:        https://github.com/ros2-gbp/spdlog_vendor-release/archive/release/humble/spdlog_vendor/1.3.1-1.tar.gz#/ros2-humble-spdlog_vendor-1.3.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/spdlog_vendor-release/archive/release/iron/spdlog_vendor/1.4.4-2.tar.gz#/ros2-iron-spdlog_vendor-1.4.4-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,14 +39,14 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  spdlog-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-spdlog_vendor = 1.3.1-1
-Obsoletes: ros2-humble-spdlog_vendor < 1.3.1-1
+Provides:  ros2-iron-spdlog_vendor = 1.4.4-1
+Obsoletes: ros2-iron-spdlog_vendor < 1.4.4-1
 
 
 
@@ -58,14 +58,14 @@ spdlog.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       spdlog-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-spdlog_vendor-devel = 1.3.1-1
-Obsoletes: ros2-humble-spdlog_vendor-devel < 1.3.1-1
+Provides: ros2-iron-spdlog_vendor-devel = 1.4.4-1
+Obsoletes: ros2-iron-spdlog_vendor-devel < 1.4.4-1
 
 
 %description devel

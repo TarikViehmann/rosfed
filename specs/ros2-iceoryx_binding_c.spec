@@ -38,9 +38,9 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  cmake
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-iceoryx_hoofs-devel
-BuildRequires:  ros2-humble-iceoryx_posh-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-iceoryx_hoofs-devel
+BuildRequires:  ros2-iron-iceoryx_posh-devel
 
 
 Provides:  ros2-humble-iceoryx_binding_c = 2.0.5-1
@@ -56,9 +56,9 @@ C-Language Binding
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       cmake
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-iceoryx_hoofs-devel
-Requires:       ros2-humble-iceoryx_posh-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-iceoryx_hoofs-devel
+Requires:       ros2-iron-iceoryx_posh-devel
 
 Provides: ros2-humble-iceoryx_binding_c-devel = 2.0.5-1
 Obsoletes: ros2-humble-iceoryx_binding_c-devel < 2.0.5-1

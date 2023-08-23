@@ -6,7 +6,7 @@ Summary:        ROS package rqt_service_caller
 License:        BSD
 URL:            http://wiki.ros.org/rqt_service_caller
 
-Source0:        https://github.com/ros2-gbp/rqt_service_caller-release/archive/release/humble/rqt_service_caller/1.0.5-3.tar.gz#/ros2-humble-rqt_service_caller-1.0.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt_service_caller-release/archive/release/iron/rqt_service_caller/1.1.1-3.tar.gz#/ros2-iron-rqt_service_caller-1.1.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,14 +38,14 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-rqt_gui
-Requires:       ros2-humble-rqt_gui_py
-Requires:       ros2-humble-rqt_py_common
+Requires:       ros2-iron-rqt_gui
+Requires:       ros2-iron-rqt_gui_py
+Requires:       ros2-iron-rqt_py_common
 
-Provides:  ros2-humble-rqt_service_caller = 1.0.5-1
-Obsoletes: ros2-humble-rqt_service_caller < 1.0.5-1
+Provides:  ros2-iron-rqt_service_caller = 1.1.1-1
+Obsoletes: ros2-iron-rqt_service_caller < 1.1.1-1
 
 
 
@@ -56,13 +56,13 @@ services.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rqt_gui-devel
-Requires:       ros2-humble-rqt_gui_py-devel
-Requires:       ros2-humble-rqt_py_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rqt_gui-devel
+Requires:       ros2-iron-rqt_gui_py-devel
+Requires:       ros2-iron-rqt_py_common-devel
 
-Provides: ros2-humble-rqt_service_caller-devel = 1.0.5-1
-Obsoletes: ros2-humble-rqt_service_caller-devel < 1.0.5-1
+Provides: ros2-iron-rqt_service_caller-devel = 1.1.1-1
+Obsoletes: ros2-iron-rqt_service_caller-devel < 1.1.1-1
 
 
 %description devel

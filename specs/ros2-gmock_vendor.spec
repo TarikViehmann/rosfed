@@ -6,7 +6,7 @@ Summary:        ROS package gmock_vendor
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/googletest-release/archive/release/humble/gmock_vendor/1.10.9004-4.tar.gz#/ros2-humble-gmock_vendor-1.10.9004-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/googletest-release/archive/release/iron/gmock_vendor/1.10.9005-2.tar.gz#/ros2-iron-gmock_vendor-1.10.9005-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,12 +39,12 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  cmake
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-gtest_vendor-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-gtest_vendor-devel
 
 
-Provides:  ros2-humble-gmock_vendor = 1.10.9004-1
-Obsoletes: ros2-humble-gmock_vendor < 1.10.9004-1
+Provides:  ros2-iron-gmock_vendor = 1.10.9005-1
+Obsoletes: ros2-iron-gmock_vendor < 1.10.9005-1
 
 
 
@@ -54,12 +54,12 @@ The package provides GoogleMock.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-gtest_vendor-devel
 Requires:       cmake
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-gtest_vendor-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-gmock_vendor-devel = 1.10.9004-1
-Obsoletes: ros2-humble-gmock_vendor-devel < 1.10.9004-1
+Provides: ros2-iron-gmock_vendor-devel = 1.10.9005-1
+Obsoletes: ros2-iron-gmock_vendor-devel < 1.10.9005-1
 
 
 %description devel

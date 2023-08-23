@@ -6,7 +6,7 @@ Summary:        ROS package libstatistics_collector
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/libstatistics_collector-release/archive/release/humble/libstatistics_collector/1.3.1-1.tar.gz#/ros2-humble-libstatistics_collector-1.3.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/libstatistics_collector-release/archive/release/iron/libstatistics_collector/1.5.1-2.tar.gz#/ros2-iron-libstatistics_collector-1.5.1-source0.tar.gz
 
 Patch0: ros2-libstatistics_collector.cstdint.patch
 
@@ -38,29 +38,28 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-builtin_interfaces-devel
-BuildRequires:  ros2-humble-performance_test_fixture-devel
-BuildRequires:  ros2-humble-rcl-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
-BuildRequires:  ros2-humble-statistics_msgs-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-performance_test_fixture-devel
+BuildRequires:  ros2-iron-rcl-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-rosidl_default_runtime-devel
+BuildRequires:  ros2-iron-statistics_msgs-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-rcl
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-rosidl_default_runtime
-Requires:       ros2-humble-statistics_msgs
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-rcl
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-statistics_msgs
 
-Provides:  ros2-humble-libstatistics_collector = 1.3.1-1
-Obsoletes: ros2-humble-libstatistics_collector < 1.3.1-1
+Provides:  ros2-iron-libstatistics_collector = 1.5.1-1
+Obsoletes: ros2-iron-libstatistics_collector < 1.5.1-1
 
 
 
@@ -71,23 +70,23 @@ message metrics.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-performance_test_fixture-devel
-Requires:       ros2-humble-rcl-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-statistics_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-performance_test_fixture-devel
+Requires:       ros2-iron-rcl-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
+Requires:       ros2-iron-statistics_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
 
-Provides: ros2-humble-libstatistics_collector-devel = 1.3.1-1
-Obsoletes: ros2-humble-libstatistics_collector-devel < 1.3.1-1
+Provides: ros2-iron-libstatistics_collector-devel = 1.5.1-1
+Obsoletes: ros2-iron-libstatistics_collector-devel < 1.5.1-1
 
 
 %description devel

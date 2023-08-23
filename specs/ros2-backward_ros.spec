@@ -6,7 +6,7 @@ Summary:        ROS package backward_ros
 License:        MIT
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/backward_ros-release/archive/release/humble/backward_ros/1.0.2-3.tar.gz#/ros2-humble-backward_ros-1.0.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/backward_ros-release/archive/release/iron/backward_ros/1.0.2-5.tar.gz#/ros2-iron-backward_ros-1.0.2-source0.tar.gz
 
 
 
@@ -38,12 +38,12 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  elfutils-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-backward_ros = 1.0.2-1
-Obsoletes: ros2-humble-backward_ros < 1.0.2-1
+Provides:  ros2-iron-backward_ros = 1.0.2-1
+Obsoletes: ros2-iron-backward_ros < 1.0.2-1
 
 
 
@@ -54,12 +54,12 @@ https://github.com/bombela/backward-cpp
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       elfutils-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-backward_ros-devel = 1.0.2-1
-Obsoletes: ros2-humble-backward_ros-devel < 1.0.2-1
+Provides: ros2-iron-backward_ros-devel = 1.0.2-1
+Obsoletes: ros2-iron-backward_ros-devel < 1.0.2-1
 
 
 %description devel

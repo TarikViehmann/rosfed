@@ -6,7 +6,7 @@ Summary:        ROS package rqt_bag_plugins
 License:        BSD
 URL:            http://wiki.ros.org/rqt_bag
 
-Source0:        https://github.com/ros2-gbp/rqt_bag-release/archive/release/humble/rqt_bag_plugins/1.1.4-1.tar.gz#/ros2-humble-rqt_bag_plugins-1.1.4-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt_bag-release/archive/release/iron/rqt_bag_plugins/1.3.3-1.tar.gz#/ros2-iron-rqt_bag_plugins-1.3.3-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,22 +38,22 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       python3-cairo
 Requires:       python3-pillow python3-pillow-qt
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-rosbag2
-Requires:       ros2-humble-rqt_bag
-Requires:       ros2-humble-rqt_gui
-Requires:       ros2-humble-rqt_gui_py
-Requires:       ros2-humble-rqt_plot
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-rosbag2
+Requires:       ros2-iron-rqt_bag
+Requires:       ros2-iron-rqt_gui
+Requires:       ros2-iron-rqt_gui_py
+Requires:       ros2-iron-rqt_plot
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-std_msgs
 
-Provides:  ros2-humble-rqt_bag_plugins = 1.1.4-1
-Obsoletes: ros2-humble-rqt_bag_plugins < 1.1.4-1
+Provides:  ros2-iron-rqt_bag_plugins = 1.3.3-1
+Obsoletes: ros2-iron-rqt_bag_plugins < 1.3.3-1
 
 
 
@@ -64,19 +64,19 @@ files.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-rosbag2-devel
-Requires:       ros2-humble-rqt_bag-devel
-Requires:       ros2-humble-rqt_gui-devel
-Requires:       ros2-humble-rqt_gui_py-devel
-Requires:       ros2-humble-rqt_plot-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-rosbag2-devel
+Requires:       ros2-iron-rqt_bag-devel
+Requires:       ros2-iron-rqt_gui-devel
+Requires:       ros2-iron-rqt_gui_py-devel
+Requires:       ros2-iron-rqt_plot-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
 
-Provides: ros2-humble-rqt_bag_plugins-devel = 1.1.4-1
-Obsoletes: ros2-humble-rqt_bag_plugins-devel < 1.1.4-1
+Provides: ros2-iron-rqt_bag_plugins-devel = 1.3.3-1
+Obsoletes: ros2-iron-rqt_bag_plugins-devel < 1.3.3-1
 
 
 %description devel

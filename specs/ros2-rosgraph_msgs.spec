@@ -6,7 +6,7 @@ Summary:        ROS package rosgraph_msgs
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rcl_interfaces-release/archive/release/humble/rosgraph_msgs/1.2.1-1.tar.gz#/ros2-humble-rosgraph_msgs-1.2.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rcl_interfaces-release/archive/release/iron/rosgraph_msgs/1.6.0-2.tar.gz#/ros2-iron-rosgraph_msgs-1.6.0-source0.tar.gz
 
 
 
@@ -37,17 +37,17 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-builtin_interfaces-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
 
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-rosidl_default_runtime
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-rosidl_default_runtime
 
-Provides:  ros2-humble-rosgraph_msgs = 1.2.1-1
-Obsoletes: ros2-humble-rosgraph_msgs < 1.2.1-1
+Provides:  ros2-iron-rosgraph_msgs = 1.6.0-1
+Obsoletes: ros2-iron-rosgraph_msgs < 1.6.0-1
 
 
 
@@ -59,15 +59,15 @@ with.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
 
-Provides: ros2-humble-rosgraph_msgs-devel = 1.2.1-1
-Obsoletes: ros2-humble-rosgraph_msgs-devel < 1.2.1-1
+Provides: ros2-iron-rosgraph_msgs-devel = 1.6.0-1
+Obsoletes: ros2-iron-rosgraph_msgs-devel < 1.6.0-1
 
 
 %description devel

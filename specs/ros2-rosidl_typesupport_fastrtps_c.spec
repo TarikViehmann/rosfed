@@ -38,34 +38,34 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_index_python-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-fastcdr-devel
-BuildRequires:  ros2-humble-fastrtps_cmake_module-devel
-BuildRequires:  ros2-humble-osrf_testing_tools_cpp-devel
-BuildRequires:  ros2-humble-performance_test_fixture-devel
-BuildRequires:  ros2-humble-rmw-devel
-BuildRequires:  ros2-humble-rosidl_cli-devel
-BuildRequires:  ros2-humble-rosidl_cmake-devel
-BuildRequires:  ros2-humble-rosidl_generator_c-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
-BuildRequires:  ros2-humble-rosidl_runtime_cpp-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_fastrtps_cpp-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_interface-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_index_python-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-fastcdr-devel
+BuildRequires:  ros2-iron-fastrtps_cmake_module-devel
+BuildRequires:  ros2-iron-osrf_testing_tools_cpp-devel
+BuildRequires:  ros2-iron-performance_test_fixture-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rmw-devel
+BuildRequires:  ros2-iron-rosidl_cli-devel
+BuildRequires:  ros2-iron-rosidl_generator_c-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-rosidl_runtime_cpp-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_fastrtps_cpp-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_interface-devel
 
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-fastcdr
-Requires:       ros2-humble-rmw
-Requires:       ros2-humble-rosidl_cli
-Requires:       ros2-humble-rosidl_cmake
-Requires:       ros2-humble-rosidl_runtime_c
-Requires:       ros2-humble-rosidl_typesupport_fastrtps_cpp
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-fastcdr
+Requires:       ros2-iron-rmw
+Requires:       ros2-iron-rosidl_cli
+Requires:       ros2-iron-rosidl_pycommon
+Requires:       ros2-iron-rosidl_runtime_c
+Requires:       ros2-iron-rosidl_typesupport_fastrtps_cpp
 
 Provides:  ros2-humble-rosidl_typesupport_fastrtps_c = 2.2.2-1
 Obsoletes: ros2-humble-rosidl_typesupport_fastrtps_c < 2.2.2-1
@@ -79,26 +79,27 @@ Generate the C interfaces for eProsima FastRTPS.
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       python3-devel
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-fastrtps_cmake_module-devel
-Requires:       ros2-humble-rosidl_generator_c-devel
-Requires:       ros2-humble-rosidl_runtime_cpp-devel
-Requires:       ros2-humble-rosidl_typesupport_interface-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-fastcdr-devel
-Requires:       ros2-humble-osrf_testing_tools_cpp-devel
-Requires:       ros2-humble-performance_test_fixture-devel
-Requires:       ros2-humble-rmw-devel
-Requires:       ros2-humble-rosidl_cli-devel
-Requires:       ros2-humble-rosidl_cmake-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-rosidl_typesupport_fastrtps_cpp-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-fastrtps_cmake_module-devel
+Requires:       ros2-iron-rosidl_generator_c-devel
+Requires:       ros2-iron-rosidl_runtime_cpp-devel
+Requires:       ros2-iron-rosidl_typesupport_interface-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-fastcdr-devel
+Requires:       ros2-iron-osrf_testing_tools_cpp-devel
+Requires:       ros2-iron-performance_test_fixture-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rmw-devel
+Requires:       ros2-iron-rosidl_cli-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-rosidl_typesupport_fastrtps_cpp-devel
+Requires:       ros2-iron-rosidl_pycommon-devel
 
 Provides: ros2-humble-rosidl_typesupport_fastrtps_c-devel = 2.2.2-1
 Obsoletes: ros2-humble-rosidl_typesupport_fastrtps_c-devel < 2.2.2-1

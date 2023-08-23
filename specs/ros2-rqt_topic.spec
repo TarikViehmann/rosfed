@@ -6,7 +6,7 @@ Summary:        ROS package rqt_topic
 License:        BSD
 URL:            http://wiki.ros.org/rqt_topic
 
-Source0:        https://github.com/ros2-gbp/rqt_topic-release/archive/release/humble/rqt_topic/1.5.0-1.tar.gz#/ros2-humble-rqt_topic-1.5.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt_topic-release/archive/release/iron/rqt_topic/1.6.1-3.tar.gz#/ros2-iron-rqt_topic-1.6.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,17 +38,19 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_xmllint-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_xmllint-devel
 
-Requires:       ros2-humble-python_qt_binding
-Requires:       ros2-humble-rqt_gui
-Requires:       ros2-humble-rqt_gui_py
-Requires:       ros2-humble-rqt_py_common
+Requires:       ros2-iron-python_qt_binding
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-ros2topic
+Requires:       ros2-iron-rqt_gui
+Requires:       ros2-iron-rqt_gui_py
+Requires:       ros2-iron-rqt_py_common
 
-Provides:  ros2-humble-rqt_topic = 1.5.0-1
-Obsoletes: ros2-humble-rqt_topic < 1.5.0-1
+Provides:  ros2-iron-rqt_topic = 1.6.1-1
+Obsoletes: ros2-iron-rqt_topic < 1.6.1-1
 
 
 
@@ -60,16 +62,18 @@ Messages.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_xmllint-devel
-Requires:       ros2-humble-python_qt_binding-devel
-Requires:       ros2-humble-rqt_gui-devel
-Requires:       ros2-humble-rqt_gui_py-devel
-Requires:       ros2-humble-rqt_py_common-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_xmllint-devel
+Requires:       ros2-iron-python_qt_binding-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-ros2topic-devel
+Requires:       ros2-iron-rqt_gui-devel
+Requires:       ros2-iron-rqt_gui_py-devel
+Requires:       ros2-iron-rqt_py_common-devel
 
-Provides: ros2-humble-rqt_topic-devel = 1.5.0-1
-Obsoletes: ros2-humble-rqt_topic-devel < 1.5.0-1
+Provides: ros2-iron-rqt_topic-devel = 1.6.1-1
+Obsoletes: ros2-iron-rqt_topic-devel < 1.6.1-1
 
 
 %description devel

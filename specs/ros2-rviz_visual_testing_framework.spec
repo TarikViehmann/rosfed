@@ -39,22 +39,36 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  qt5-qtbase-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_cppcheck-devel
-BuildRequires:  ros2-humble-ament_cmake_cpplint-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_lint_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_uncrustify-devel
-BuildRequires:  ros2-humble-ament_cmake_xmllint-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rviz_common-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_cppcheck-devel
+BuildRequires:  ros2-iron-ament_cmake_cpplint-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_lint_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_uncrustify-devel
+BuildRequires:  ros2-iron-ament_cmake_xmllint-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rviz_common-devel
+BuildRequires:  ros2-iron-rviz_ogre_vendor-devel
+BuildRequires:  ros2-iron-rviz_rendering-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-tf2-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
 
-Requires:       ros2-humble-ament_cmake_gtest
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rviz_common
+Requires:       ros2-iron-ament_cmake_gtest
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rviz_common
+Requires:       ros2-iron-rviz_ogre_vendor
+Requires:       ros2-iron-rviz_rendering
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-tf2
+Requires:       ros2-iron-tf2_ros
 
 Provides:  ros2-humble-rviz_visual_testing_framework = 11.2.9-1
 Obsoletes: ros2-humble-rviz_visual_testing_framework < 11.2.9-1
@@ -67,19 +81,26 @@ Obsoletes: ros2-humble-rviz_visual_testing_framework < 11.2.9-1
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       qt5-qtbase-devel
-Requires:       ros2-humble-ament_cmake_cppcheck-devel
-Requires:       ros2-humble-ament_cmake_cpplint-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_lint_cmake-devel
-Requires:       ros2-humble-ament_cmake_uncrustify-devel
-Requires:       ros2-humble-ament_cmake_xmllint-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rviz_common-devel
+Requires:       ros2-iron-ament_cmake_cppcheck-devel
+Requires:       ros2-iron-ament_cmake_cpplint-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_lint_cmake-devel
+Requires:       ros2-iron-ament_cmake_uncrustify-devel
+Requires:       ros2-iron-ament_cmake_xmllint-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rviz_common-devel
+Requires:       ros2-iron-rviz_ogre_vendor-devel
+Requires:       ros2-iron-rviz_rendering-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-tf2_ros-devel
 
 Provides: ros2-humble-rviz_visual_testing_framework-devel = 11.2.9-1
 Obsoletes: ros2-humble-rviz_visual_testing_framework-devel < 11.2.9-1

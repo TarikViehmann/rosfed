@@ -6,7 +6,7 @@ Summary:        ROS package desktop
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/variants-release/archive/release/humble/desktop/0.10.0-1.tar.gz#/ros2-humble-desktop-0.10.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/variants-release/archive/release/iron/desktop/0.10.0-3.tar.gz#/ros2-iron-desktop-0.10.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,60 +38,60 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-action_tutorials_cpp
-Requires:       ros2-humble-action_tutorials_interfaces
-Requires:       ros2-humble-action_tutorials_py
-Requires:       ros2-humble-angles
-Requires:       ros2-humble-composition
-Requires:       ros2-humble-demo_nodes_cpp
-Requires:       ros2-humble-demo_nodes_cpp_native
-Requires:       ros2-humble-demo_nodes_py
-Requires:       ros2-humble-depthimage_to_laserscan
-Requires:       ros2-humble-dummy_map_server
-Requires:       ros2-humble-dummy_robot_bringup
-Requires:       ros2-humble-dummy_sensors
-Requires:       ros2-humble-examples_rclcpp_minimal_action_client
-Requires:       ros2-humble-examples_rclcpp_minimal_action_server
-Requires:       ros2-humble-examples_rclcpp_minimal_client
-Requires:       ros2-humble-examples_rclcpp_minimal_composition
-Requires:       ros2-humble-examples_rclcpp_minimal_publisher
-Requires:       ros2-humble-examples_rclcpp_minimal_service
-Requires:       ros2-humble-examples_rclcpp_minimal_subscriber
-Requires:       ros2-humble-examples_rclcpp_minimal_timer
-Requires:       ros2-humble-examples_rclcpp_multithreaded_executor
-Requires:       ros2-humble-examples_rclpy_executors
-Requires:       ros2-humble-examples_rclpy_minimal_action_client
-Requires:       ros2-humble-examples_rclpy_minimal_action_server
-Requires:       ros2-humble-examples_rclpy_minimal_client
-Requires:       ros2-humble-examples_rclpy_minimal_publisher
-Requires:       ros2-humble-examples_rclpy_minimal_service
-Requires:       ros2-humble-examples_rclpy_minimal_subscriber
-Requires:       ros2-humble-image_tools
-Requires:       ros2-humble-intra_process_demo
-Requires:       ros2-humble-joy
-Requires:       ros2-humble-lifecycle
-Requires:       ros2-humble-logging_demo
-Requires:       ros2-humble-pcl_conversions
-Requires:       ros2-humble-pendulum_control
-Requires:       ros2-humble-pendulum_msgs
-Requires:       ros2-humble-quality_of_service_demo_cpp
-Requires:       ros2-humble-quality_of_service_demo_py
-Requires:       ros2-humble-ros_base
-Requires:       ros2-humble-rqt_common_plugins
-Requires:       ros2-humble-rviz2
-Requires:       ros2-humble-rviz_default_plugins
-Requires:       ros2-humble-teleop_twist_joy
-Requires:       ros2-humble-teleop_twist_keyboard
-Requires:       ros2-humble-tlsf
-Requires:       ros2-humble-tlsf_cpp
-Requires:       ros2-humble-topic_monitor
-Requires:       ros2-humble-turtlesim
+Requires:       ros2-iron-action_tutorials_cpp
+Requires:       ros2-iron-action_tutorials_interfaces
+Requires:       ros2-iron-action_tutorials_py
+Requires:       ros2-iron-angles
+Requires:       ros2-iron-composition
+Requires:       ros2-iron-demo_nodes_cpp
+Requires:       ros2-iron-demo_nodes_cpp_native
+Requires:       ros2-iron-demo_nodes_py
+Requires:       ros2-iron-depthimage_to_laserscan
+Requires:       ros2-iron-dummy_map_server
+Requires:       ros2-iron-dummy_robot_bringup
+Requires:       ros2-iron-dummy_sensors
+Requires:       ros2-iron-examples_rclcpp_minimal_action_client
+Requires:       ros2-iron-examples_rclcpp_minimal_action_server
+Requires:       ros2-iron-examples_rclcpp_minimal_client
+Requires:       ros2-iron-examples_rclcpp_minimal_composition
+Requires:       ros2-iron-examples_rclcpp_minimal_publisher
+Requires:       ros2-iron-examples_rclcpp_minimal_service
+Requires:       ros2-iron-examples_rclcpp_minimal_subscriber
+Requires:       ros2-iron-examples_rclcpp_minimal_timer
+Requires:       ros2-iron-examples_rclcpp_multithreaded_executor
+Requires:       ros2-iron-examples_rclpy_executors
+Requires:       ros2-iron-examples_rclpy_minimal_action_client
+Requires:       ros2-iron-examples_rclpy_minimal_action_server
+Requires:       ros2-iron-examples_rclpy_minimal_client
+Requires:       ros2-iron-examples_rclpy_minimal_publisher
+Requires:       ros2-iron-examples_rclpy_minimal_service
+Requires:       ros2-iron-examples_rclpy_minimal_subscriber
+Requires:       ros2-iron-image_tools
+Requires:       ros2-iron-intra_process_demo
+Requires:       ros2-iron-joy
+Requires:       ros2-iron-lifecycle
+Requires:       ros2-iron-logging_demo
+Requires:       ros2-iron-pcl_conversions
+Requires:       ros2-iron-pendulum_control
+Requires:       ros2-iron-pendulum_msgs
+Requires:       ros2-iron-quality_of_service_demo_cpp
+Requires:       ros2-iron-quality_of_service_demo_py
+Requires:       ros2-iron-ros_base
+Requires:       ros2-iron-rqt_common_plugins
+Requires:       ros2-iron-rviz2
+Requires:       ros2-iron-rviz_default_plugins
+Requires:       ros2-iron-teleop_twist_joy
+Requires:       ros2-iron-teleop_twist_keyboard
+Requires:       ros2-iron-tlsf
+Requires:       ros2-iron-tlsf_cpp
+Requires:       ros2-iron-topic_monitor
+Requires:       ros2-iron-turtlesim
 
-Provides:  ros2-humble-desktop = 0.10.0-1
-Obsoletes: ros2-humble-desktop < 0.10.0-1
+Provides:  ros2-iron-desktop = 0.10.0-1
+Obsoletes: ros2-iron-desktop < 0.10.0-1
 
 
 
@@ -102,59 +102,59 @@ like vizualization tools and demos.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-action_tutorials_cpp-devel
-Requires:       ros2-humble-action_tutorials_interfaces-devel
-Requires:       ros2-humble-action_tutorials_py-devel
-Requires:       ros2-humble-angles-devel
-Requires:       ros2-humble-composition-devel
-Requires:       ros2-humble-demo_nodes_cpp-devel
-Requires:       ros2-humble-demo_nodes_cpp_native-devel
-Requires:       ros2-humble-demo_nodes_py-devel
-Requires:       ros2-humble-depthimage_to_laserscan-devel
-Requires:       ros2-humble-dummy_map_server-devel
-Requires:       ros2-humble-dummy_robot_bringup-devel
-Requires:       ros2-humble-dummy_sensors-devel
-Requires:       ros2-humble-examples_rclcpp_minimal_action_client-devel
-Requires:       ros2-humble-examples_rclcpp_minimal_action_server-devel
-Requires:       ros2-humble-examples_rclcpp_minimal_client-devel
-Requires:       ros2-humble-examples_rclcpp_minimal_composition-devel
-Requires:       ros2-humble-examples_rclcpp_minimal_publisher-devel
-Requires:       ros2-humble-examples_rclcpp_minimal_service-devel
-Requires:       ros2-humble-examples_rclcpp_minimal_subscriber-devel
-Requires:       ros2-humble-examples_rclcpp_minimal_timer-devel
-Requires:       ros2-humble-examples_rclcpp_multithreaded_executor-devel
-Requires:       ros2-humble-examples_rclpy_executors-devel
-Requires:       ros2-humble-examples_rclpy_minimal_action_client-devel
-Requires:       ros2-humble-examples_rclpy_minimal_action_server-devel
-Requires:       ros2-humble-examples_rclpy_minimal_client-devel
-Requires:       ros2-humble-examples_rclpy_minimal_publisher-devel
-Requires:       ros2-humble-examples_rclpy_minimal_service-devel
-Requires:       ros2-humble-examples_rclpy_minimal_subscriber-devel
-Requires:       ros2-humble-image_tools-devel
-Requires:       ros2-humble-intra_process_demo-devel
-Requires:       ros2-humble-joy-devel
-Requires:       ros2-humble-lifecycle-devel
-Requires:       ros2-humble-logging_demo-devel
-Requires:       ros2-humble-pcl_conversions-devel
-Requires:       ros2-humble-pendulum_control-devel
-Requires:       ros2-humble-pendulum_msgs-devel
-Requires:       ros2-humble-quality_of_service_demo_cpp-devel
-Requires:       ros2-humble-quality_of_service_demo_py-devel
-Requires:       ros2-humble-ros_base-devel
-Requires:       ros2-humble-rqt_common_plugins-devel
-Requires:       ros2-humble-rviz2-devel
-Requires:       ros2-humble-rviz_default_plugins-devel
-Requires:       ros2-humble-teleop_twist_joy-devel
-Requires:       ros2-humble-teleop_twist_keyboard-devel
-Requires:       ros2-humble-tlsf-devel
-Requires:       ros2-humble-tlsf_cpp-devel
-Requires:       ros2-humble-topic_monitor-devel
-Requires:       ros2-humble-turtlesim-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-action_tutorials_cpp-devel
+Requires:       ros2-iron-action_tutorials_interfaces-devel
+Requires:       ros2-iron-action_tutorials_py-devel
+Requires:       ros2-iron-angles-devel
+Requires:       ros2-iron-composition-devel
+Requires:       ros2-iron-demo_nodes_cpp-devel
+Requires:       ros2-iron-demo_nodes_cpp_native-devel
+Requires:       ros2-iron-demo_nodes_py-devel
+Requires:       ros2-iron-depthimage_to_laserscan-devel
+Requires:       ros2-iron-dummy_map_server-devel
+Requires:       ros2-iron-dummy_robot_bringup-devel
+Requires:       ros2-iron-dummy_sensors-devel
+Requires:       ros2-iron-examples_rclcpp_minimal_action_client-devel
+Requires:       ros2-iron-examples_rclcpp_minimal_action_server-devel
+Requires:       ros2-iron-examples_rclcpp_minimal_client-devel
+Requires:       ros2-iron-examples_rclcpp_minimal_composition-devel
+Requires:       ros2-iron-examples_rclcpp_minimal_publisher-devel
+Requires:       ros2-iron-examples_rclcpp_minimal_service-devel
+Requires:       ros2-iron-examples_rclcpp_minimal_subscriber-devel
+Requires:       ros2-iron-examples_rclcpp_minimal_timer-devel
+Requires:       ros2-iron-examples_rclcpp_multithreaded_executor-devel
+Requires:       ros2-iron-examples_rclpy_executors-devel
+Requires:       ros2-iron-examples_rclpy_minimal_action_client-devel
+Requires:       ros2-iron-examples_rclpy_minimal_action_server-devel
+Requires:       ros2-iron-examples_rclpy_minimal_client-devel
+Requires:       ros2-iron-examples_rclpy_minimal_publisher-devel
+Requires:       ros2-iron-examples_rclpy_minimal_service-devel
+Requires:       ros2-iron-examples_rclpy_minimal_subscriber-devel
+Requires:       ros2-iron-image_tools-devel
+Requires:       ros2-iron-intra_process_demo-devel
+Requires:       ros2-iron-joy-devel
+Requires:       ros2-iron-lifecycle-devel
+Requires:       ros2-iron-logging_demo-devel
+Requires:       ros2-iron-pcl_conversions-devel
+Requires:       ros2-iron-pendulum_control-devel
+Requires:       ros2-iron-pendulum_msgs-devel
+Requires:       ros2-iron-quality_of_service_demo_cpp-devel
+Requires:       ros2-iron-quality_of_service_demo_py-devel
+Requires:       ros2-iron-ros_base-devel
+Requires:       ros2-iron-rqt_common_plugins-devel
+Requires:       ros2-iron-rviz2-devel
+Requires:       ros2-iron-rviz_default_plugins-devel
+Requires:       ros2-iron-teleop_twist_joy-devel
+Requires:       ros2-iron-teleop_twist_keyboard-devel
+Requires:       ros2-iron-tlsf-devel
+Requires:       ros2-iron-tlsf_cpp-devel
+Requires:       ros2-iron-topic_monitor-devel
+Requires:       ros2-iron-turtlesim-devel
 
-Provides: ros2-humble-desktop-devel = 0.10.0-1
-Obsoletes: ros2-humble-desktop-devel < 0.10.0-1
+Provides: ros2-iron-desktop-devel = 0.10.0-1
+Obsoletes: ros2-iron-desktop-devel < 0.10.0-1
 
 
 %description devel

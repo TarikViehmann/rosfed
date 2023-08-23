@@ -6,7 +6,7 @@ Summary:        ROS package mimick_vendor
 License:        Apache License 2.0
 URL:            https://github.com/Snaipe/Mimick
 
-Source0:        https://github.com/ros2-gbp/mimick_vendor-release/archive/release/humble/mimick_vendor/0.2.8-2.tar.gz#/ros2-humble-mimick_vendor-0.2.8-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/mimick_vendor-release/archive/release/iron/mimick_vendor/0.3.2-5.tar.gz#/ros2-iron-mimick_vendor-0.3.2-source0.tar.gz
 
 Patch0: mimick_vendor-optimization.patch
 
@@ -41,14 +41,14 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  git
 BuildRequires:  glibc-headers
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-mimick_vendor = 0.2.8-1
-Obsoletes: ros2-humble-mimick_vendor < 0.2.8-1
+Provides:  ros2-iron-mimick_vendor = 0.3.2-1
+Obsoletes: ros2-iron-mimick_vendor < 0.3.2-1
 
 
 
@@ -59,14 +59,14 @@ Wrapper around mimick, it provides an ExternalProject build of mimick.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       git
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       glibc-headers
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-mimick_vendor-devel = 0.2.8-1
-Obsoletes: ros2-humble-mimick_vendor-devel < 0.2.8-1
+Provides: ros2-iron-mimick_vendor-devel = 0.3.2-1
+Obsoletes: ros2-iron-mimick_vendor-devel < 0.3.2-1
 
 
 %description devel

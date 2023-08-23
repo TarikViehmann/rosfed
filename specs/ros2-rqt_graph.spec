@@ -6,7 +6,7 @@ Summary:        ROS package rqt_graph
 License:        BSD
 URL:            http://wiki.ros.org/rqt_graph
 
-Source0:        https://github.com/ros2-gbp/rqt_graph-release/archive/release/humble/rqt_graph/1.3.0-1.tar.gz#/ros2-humble-rqt_graph-1.3.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt_graph-release/archive/release/iron/rqt_graph/1.4.2-1.tar.gz#/ros2-iron-rqt_graph-1.4.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,16 +38,16 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-python_qt_binding
-Requires:       ros2-humble-qt_dotgraph
-Requires:       ros2-humble-rqt_gui
-Requires:       ros2-humble-rqt_gui_py
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-python_qt_binding
+Requires:       ros2-iron-qt_dotgraph
+Requires:       ros2-iron-rqt_gui
+Requires:       ros2-iron-rqt_gui_py
 
-Provides:  ros2-humble-rqt_graph = 1.3.0-1
-Obsoletes: ros2-humble-rqt_graph < 1.3.0-1
+Provides:  ros2-iron-rqt_graph = 1.4.2-1
+Obsoletes: ros2-iron-rqt_graph < 1.4.2-1
 
 
 
@@ -58,15 +58,15 @@ graph.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-python_qt_binding-devel
-Requires:       ros2-humble-qt_dotgraph-devel
-Requires:       ros2-humble-rqt_gui-devel
-Requires:       ros2-humble-rqt_gui_py-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-python_qt_binding-devel
+Requires:       ros2-iron-qt_dotgraph-devel
+Requires:       ros2-iron-rqt_gui-devel
+Requires:       ros2-iron-rqt_gui_py-devel
 
-Provides: ros2-humble-rqt_graph-devel = 1.3.0-1
-Obsoletes: ros2-humble-rqt_graph-devel < 1.3.0-1
+Provides: ros2-iron-rqt_graph-devel = 1.4.2-1
+Obsoletes: ros2-iron-rqt_graph-devel < 1.4.2-1
 
 
 %description devel

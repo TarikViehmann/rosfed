@@ -37,16 +37,13 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-hardware_interface-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-hardware_interface-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
 
-Requires:       ros2-humble-hardware_interface
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-sensor_msgs
 
 Provides:  ros2-humble-controller_interface = 2.35.1-1
 Obsoletes: ros2-humble-controller_interface < 2.35.1-1
@@ -59,12 +56,12 @@ Description of controller_interface
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-hardware_interface-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-sensor_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-hardware_interface-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-sensor_msgs-devel
 
 Provides: ros2-humble-controller_interface-devel = 2.35.1-1
 Obsoletes: ros2-humble-controller_interface-devel < 2.35.1-1

@@ -6,7 +6,7 @@ Summary:        ROS package ignition_math6_vendor
 License:        Apache License 2.0
 URL:            https://github.com/ignitionrobotics/ign-math
 
-Source0:        https://github.com/ros2-gbp/ignition_math6_vendor-release/archive/release/humble/ignition_math6_vendor/0.0.2-2.tar.gz#/ros2-humble-ignition_math6_vendor-0.0.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/gz_math6_vendor-release/archive/release/iron/ignition_math6_vendor/0.1.0-1.tar.gz#/ros2-iron-ignition_math6_vendor-0.1.0-source0.tar.gz
 
 
 
@@ -41,18 +41,18 @@ BuildRequires:  cmake
 BuildRequires:  eigen3-devel
 BuildRequires:  git
 BuildRequires:  ignition-math
-BuildRequires:  ros2-humble-ament_cmake_copyright-devel
-BuildRequires:  ros2-humble-ament_cmake_lint_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_test-devel
-BuildRequires:  ros2-humble-ament_cmake_xmllint-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ignition_cmake2_vendor-devel
+BuildRequires:  ros2-iron-ament_cmake_copyright-devel
+BuildRequires:  ros2-iron-ament_cmake_lint_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_test-devel
+BuildRequires:  ros2-iron-ament_cmake_xmllint-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ignition_cmake2_vendor-devel
 
 Requires:       ignition-math
-Requires:       ros2-humble-ignition_cmake2_vendor
+Requires:       ros2-iron-ignition_cmake2_vendor
 
-Provides:  ros2-humble-ignition_math6_vendor = 0.0.2-1
-Obsoletes: ros2-humble-ignition_math6_vendor < 0.0.2-1
+Provides:  ros2-iron-ignition_math6_vendor = 0.1.0-1
+Obsoletes: ros2-iron-ignition_math6_vendor < 0.1.0-1
 
 
 
@@ -64,17 +64,17 @@ Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       cmake
 Requires:       git
-Requires:       ros2-humble-ament_cmake_test-devel
+Requires:       ros2-iron-ament_cmake_test-devel
 Requires:       eigen3-devel
 Requires:       ignition-math
-Requires:       ros2-humble-ament_cmake_copyright-devel
-Requires:       ros2-humble-ament_cmake_lint_cmake-devel
-Requires:       ros2-humble-ament_cmake_xmllint-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ignition_cmake2_vendor-devel
+Requires:       ros2-iron-ament_cmake_copyright-devel
+Requires:       ros2-iron-ament_cmake_lint_cmake-devel
+Requires:       ros2-iron-ament_cmake_xmllint-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ignition_cmake2_vendor-devel
 
-Provides: ros2-humble-ignition_math6_vendor-devel = 0.0.2-1
-Obsoletes: ros2-humble-ignition_math6_vendor-devel < 0.0.2-1
+Provides: ros2-iron-ignition_math6_vendor-devel = 0.1.0-1
+Obsoletes: ros2-iron-ignition_math6_vendor-devel < 0.1.0-1
 
 
 %description devel

@@ -6,9 +6,10 @@ Summary:        ROS package libyaml_vendor
 License:        Apache License 2.0
 URL:            https://github.com/yaml/libyaml
 
-Source0:        https://github.com/ros2-gbp/libyaml_vendor-release/archive/release/humble/libyaml_vendor/1.2.2-2.tar.gz#/ros2-humble-libyaml_vendor-1.2.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/libyaml_vendor-release/archive/release/iron/libyaml_vendor/1.5.0-3.tar.gz#/ros2-iron-libyaml_vendor-1.5.0-source0.tar.gz
 
 
+BuildArch: noarch
 
 # common BRs
 BuildRequires: patchelf
@@ -38,17 +39,21 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  git
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-performance_test_fixture-devel
-BuildRequires:  ros2-humble-rcpputils-devel
+BuildRequires:  libyaml-devel
+BuildRequires:  pkgconfig
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-performance_test_fixture-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
 
+Requires:       libyaml
 
-Provides:  ros2-humble-libyaml_vendor = 1.2.2-1
-Obsoletes: ros2-humble-libyaml_vendor < 1.2.2-1
+Provides:  ros2-iron-libyaml_vendor = 1.5.0-1
+Obsoletes: ros2-iron-libyaml_vendor < 1.5.0-1
 
 
 
@@ -57,18 +62,21 @@ Vendored version of libyaml.
 
 %package        devel
 Summary:        Development files for %{name}
-Requires:       %{name}%{?_isa} = %{version}-%{release}
+Requires:       %{name} = %{version}-%{release}
 Requires:       git
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-performance_test_fixture-devel
-Requires:       ros2-humble-rcpputils-devel
+Requires:       libyaml-devel
+Requires:       pkgconfig
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-performance_test_fixture-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
 
-Provides: ros2-humble-libyaml_vendor-devel = 1.2.2-1
-Obsoletes: ros2-humble-libyaml_vendor-devel < 1.2.2-1
+Provides: ros2-iron-libyaml_vendor-devel = 1.5.0-1
+Obsoletes: ros2-iron-libyaml_vendor-devel < 1.5.0-1
 
 
 %description devel

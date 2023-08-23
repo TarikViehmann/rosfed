@@ -41,11 +41,11 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  python3-qt5
 BuildRequires:  qt5-qtbase-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       python3-qt5
 
@@ -70,10 +70,10 @@ Requires:       %{name} = %{version}-%{release}
 Requires:       ros2-humble-ament_cmake-devel
 Requires:       python3-qt5
 Requires:       qt5-qtbase-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-python_qt_binding-devel = 1.1.2-1
 Obsoletes: ros2-humble-python_qt_binding-devel < 1.1.2-1

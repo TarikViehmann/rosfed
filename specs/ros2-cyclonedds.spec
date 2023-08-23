@@ -40,15 +40,15 @@ BuildRequires: python3-vcstool
 BuildRequires:  cmake
 BuildRequires:  CUnit-devel
 BuildRequires:  openssl-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-iceoryx_binding_c-devel
-BuildRequires:  ros2-humble-iceoryx_hoofs-devel
-BuildRequires:  ros2-humble-iceoryx_posh-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-iceoryx_binding_c-devel
+BuildRequires:  ros2-iron-iceoryx_hoofs-devel
+BuildRequires:  ros2-iron-iceoryx_posh-devel
 
 Requires:       openssl
-Requires:       ros2-humble-iceoryx_binding_c
-Requires:       ros2-humble-iceoryx_hoofs
-Requires:       ros2-humble-iceoryx_posh
+Requires:       ros2-iron-iceoryx_binding_c
+Requires:       ros2-iron-iceoryx_hoofs
+Requires:       ros2-iron-iceoryx_posh
 
 Provides:  ros2-humble-cyclonedds = 0.10.3-1
 Obsoletes: ros2-humble-cyclonedds < 0.10.3-1
@@ -66,10 +66,10 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       cmake
 Requires:       CUnit-devel
 Requires:       openssl-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-iceoryx_binding_c-devel
-Requires:       ros2-humble-iceoryx_hoofs-devel
-Requires:       ros2-humble-iceoryx_posh-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-iceoryx_binding_c-devel
+Requires:       ros2-iron-iceoryx_hoofs-devel
+Requires:       ros2-iron-iceoryx_posh-devel
 
 Provides: ros2-humble-cyclonedds-devel = 0.10.3-1
 Obsoletes: ros2-humble-cyclonedds-devel < 0.10.3-1

@@ -6,7 +6,7 @@ Summary:        ROS package teleop_twist_keyboard
 License:        BSD License 2.0
 URL:            http://wiki.ros.org/teleop_twist_keyboard
 
-Source0:        https://github.com/ros2-gbp/teleop_twist_keyboard-release/archive/release/humble/teleop_twist_keyboard/2.3.2-4.tar.gz#/ros2-humble-teleop_twist_keyboard-2.3.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/teleop_twist_keyboard-release/archive/release/iron/teleop_twist_keyboard/2.3.2-5.tar.gz#/ros2-iron-teleop_twist_keyboard-2.3.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,16 +38,16 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
 
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-rclpy
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-rclpy
 
-Provides:  ros2-humble-teleop_twist_keyboard = 2.3.2-1
-Obsoletes: ros2-humble-teleop_twist_keyboard < 2.3.2-1
+Provides:  ros2-iron-teleop_twist_keyboard = 2.3.2-1
+Obsoletes: ros2-iron-teleop_twist_keyboard < 2.3.2-1
 
 
 
@@ -58,15 +58,15 @@ Twist messages.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-rclpy-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-rclpy-devel
 
-Provides: ros2-humble-teleop_twist_keyboard-devel = 2.3.2-1
-Obsoletes: ros2-humble-teleop_twist_keyboard-devel < 2.3.2-1
+Provides: ros2-iron-teleop_twist_keyboard-devel = 2.3.2-1
+Obsoletes: ros2-iron-teleop_twist_keyboard-devel < 2.3.2-1
 
 
 %description devel

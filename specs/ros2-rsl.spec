@@ -48,9 +48,9 @@ BuildRequires:  ros2-humble-rclcpp-devel
 BuildRequires:  ros2-humble-tcb_span-devel
 BuildRequires:  ros2-humble-tl_expected-devel
 
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-tcb_span
-Requires:       ros2-humble-tl_expected
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-tcb_span
+Requires:       ros2-iron-tl_expected
 
 Provides:  ros2-humble-rsl = 1.0.0-1
 Obsoletes: ros2-humble-rsl < 1.0.0-1
@@ -69,10 +69,10 @@ Requires:       eigen3-devel
 Requires:       fmt-devel
 Requires:       git
 Requires:       range-v3-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-tcb_span-devel
-Requires:       ros2-humble-tl_expected-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-tcb_span-devel
+Requires:       ros2-iron-tl_expected-devel
 
 Provides: ros2-humble-rsl-devel = 1.0.0-1
 Obsoletes: ros2-humble-rsl-devel < 1.0.0-1

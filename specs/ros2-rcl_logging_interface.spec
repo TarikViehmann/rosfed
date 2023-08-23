@@ -6,7 +6,7 @@ Summary:        ROS package rcl_logging_interface
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rcl_logging-release/archive/release/humble/rcl_logging_interface/2.3.1-1.tar.gz#/ros2-humble-rcl_logging_interface-2.3.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rcl_logging-release/archive/release/iron/rcl_logging_interface/2.5.1-2.tar.gz#/ros2-iron-rcl_logging_interface-2.5.1-source0.tar.gz
 
 
 
@@ -37,17 +37,17 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
 
-Requires:       ros2-humble-rcutils
+Requires:       ros2-iron-rcutils
 
-Provides:  ros2-humble-rcl_logging_interface = 2.3.1-1
-Obsoletes: ros2-humble-rcl_logging_interface < 2.3.1-1
+Provides:  ros2-iron-rcl_logging_interface = 2.5.1-1
+Obsoletes: ros2-iron-rcl_logging_interface < 2.5.1-1
 
 
 
@@ -57,15 +57,15 @@ Interface that rcl_logging backends needs to implement.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
 
-Provides: ros2-humble-rcl_logging_interface-devel = 2.3.1-1
-Obsoletes: ros2-humble-rcl_logging_interface-devel < 2.3.1-1
+Provides: ros2-iron-rcl_logging_interface-devel = 2.5.1-1
+Obsoletes: ros2-iron-rcl_logging_interface-devel < 2.5.1-1
 
 
 %description devel

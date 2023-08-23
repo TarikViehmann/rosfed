@@ -6,7 +6,7 @@ Summary:        ROS package google_benchmark_vendor
 License:        Apache License 2.0
 URL:            https://github.com/google/benchmark
 
-Source0:        https://github.com/ros2-gbp/google_benchmark_vendor-release/archive/release/humble/google_benchmark_vendor/0.1.2-1.tar.gz#/ros2-humble-google_benchmark_vendor-0.1.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/google_benchmark_vendor-release/archive/release/iron/google_benchmark_vendor/0.3.0-4.tar.gz#/ros2-iron-google_benchmark_vendor-0.3.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -41,11 +41,11 @@ BuildRequires: python3-vcstool
 BuildRequires:  cmake
 BuildRequires:  git
 BuildRequires:  google-benchmark-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-google_benchmark_vendor = 0.1.2-1
-Obsoletes: ros2-humble-google_benchmark_vendor < 0.1.2-1
+Provides:  ros2-iron-google_benchmark_vendor = 0.3.0-1
+Obsoletes: ros2-iron-google_benchmark_vendor < 0.3.0-1
 
 
 
@@ -58,10 +58,10 @@ Requires:       %{name} = %{version}-%{release}
 Requires:       cmake
 Requires:       git
 Requires:       google-benchmark-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-google_benchmark_vendor-devel = 0.1.2-1
-Obsoletes: ros2-humble-google_benchmark_vendor-devel < 0.1.2-1
+Provides: ros2-iron-google_benchmark_vendor-devel = 0.3.0-1
+Obsoletes: ros2-iron-google_benchmark_vendor-devel < 0.3.0-1
 
 
 %description devel

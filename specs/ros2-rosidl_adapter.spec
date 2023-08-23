@@ -6,7 +6,7 @@ Summary:        ROS package rosidl_adapter
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rosidl-release/archive/release/humble/rosidl_adapter/3.1.5-2.tar.gz#/ros2-humble-rosidl_adapter-3.1.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rosidl-release/archive/release/iron/rosidl_adapter/4.0.1-1.tar.gz#/ros2-iron-rosidl_adapter-4.0.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,18 +39,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       python3-empy
-Requires:       ros2-humble-rosidl_cli
+Requires:       ros2-iron-rosidl_cli
 
-Provides:  ros2-humble-rosidl_adapter = 3.1.5-1
-Obsoletes: ros2-humble-rosidl_adapter < 3.1.5-1
+Provides:  ros2-iron-rosidl_adapter = 4.0.1-1
+Obsoletes: ros2-iron-rosidl_adapter < 4.0.1-1
 
 
 
@@ -62,16 +62,16 @@ API and scripts to parse .msg/.srv/.action files and convert them to
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-devel
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rosidl_cli-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rosidl_cli-devel
 
-Provides: ros2-humble-rosidl_adapter-devel = 3.1.5-1
-Obsoletes: ros2-humble-rosidl_adapter-devel < 3.1.5-1
+Provides: ros2-iron-rosidl_adapter-devel = 4.0.1-1
+Obsoletes: ros2-iron-rosidl_adapter-devel < 4.0.1-1
 
 
 %description devel

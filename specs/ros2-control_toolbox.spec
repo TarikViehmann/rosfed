@@ -6,7 +6,7 @@ Summary:        ROS package control_toolbox
 License:        BSD-3-Clause
 URL:            http://ros.org/wiki/control_toolbox
 
-Source0:        https://github.com/ros2-gbp/control_toolbox-release/archive/release/humble/control_toolbox/3.1.0-1.tar.gz#/ros2-humble-control_toolbox-3.1.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/control_toolbox-release/archive/release/iron/control_toolbox/3.0.0-2.tar.gz#/ros2-iron-control_toolbox-3.0.0-source0.tar.gz
 
 
 
@@ -37,23 +37,23 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-control_msgs-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-realtime_tools-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-control_msgs-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-realtime_tools-devel
 
-Requires:       ros2-humble-control_msgs
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-realtime_tools
+Requires:       ros2-iron-control_msgs
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-realtime_tools
 
-Provides:  ros2-humble-control_toolbox = 3.1.0-1
-Obsoletes: ros2-humble-control_toolbox < 3.1.0-1
+Provides:  ros2-iron-control_toolbox = 3.0.0-1
+Obsoletes: ros2-iron-control_toolbox < 3.0.0-1
 
 
 
@@ -64,18 +64,18 @@ controllers.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-control_msgs-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-realtime_tools-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-control_msgs-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-realtime_tools-devel
 
-Provides: ros2-humble-control_toolbox-devel = 3.1.0-1
-Obsoletes: ros2-humble-control_toolbox-devel < 3.1.0-1
+Provides: ros2-iron-control_toolbox-devel = 3.0.0-1
+Obsoletes: ros2-iron-control_toolbox-devel < 3.0.0-1
 
 
 %description devel

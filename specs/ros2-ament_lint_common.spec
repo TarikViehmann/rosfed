@@ -38,18 +38,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_cmake_export_dependencies-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_cmake_export_dependencies-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-ament_cmake_copyright
-Requires:       ros2-humble-ament_cmake_cppcheck
-Requires:       ros2-humble-ament_cmake_cpplint
-Requires:       ros2-humble-ament_cmake_flake8
-Requires:       ros2-humble-ament_cmake_lint_cmake
-Requires:       ros2-humble-ament_cmake_pep257
-Requires:       ros2-humble-ament_cmake_uncrustify
-Requires:       ros2-humble-ament_cmake_xmllint
+Requires:       ros2-iron-ament_cmake_copyright
+Requires:       ros2-iron-ament_cmake_cppcheck
+Requires:       ros2-iron-ament_cmake_cpplint
+Requires:       ros2-iron-ament_cmake_flake8
+Requires:       ros2-iron-ament_cmake_lint_cmake
+Requires:       ros2-iron-ament_cmake_pep257
+Requires:       ros2-iron-ament_cmake_uncrustify
+Requires:       ros2-iron-ament_cmake_xmllint
 
 Provides:  ros2-humble-ament_lint_common = 0.12.9-1
 Obsoletes: ros2-humble-ament_lint_common < 0.12.9-1
@@ -62,17 +62,17 @@ The list of commonly used linters in the ament build system in CMake.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_cmake_export_dependencies-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_cmake_copyright-devel
-Requires:       ros2-humble-ament_cmake_cppcheck-devel
-Requires:       ros2-humble-ament_cmake_cpplint-devel
-Requires:       ros2-humble-ament_cmake_flake8-devel
-Requires:       ros2-humble-ament_cmake_lint_cmake-devel
-Requires:       ros2-humble-ament_cmake_pep257-devel
-Requires:       ros2-humble-ament_cmake_uncrustify-devel
-Requires:       ros2-humble-ament_cmake_xmllint-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_cmake_export_dependencies-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_cmake_copyright-devel
+Requires:       ros2-iron-ament_cmake_cppcheck-devel
+Requires:       ros2-iron-ament_cmake_cpplint-devel
+Requires:       ros2-iron-ament_cmake_flake8-devel
+Requires:       ros2-iron-ament_cmake_lint_cmake-devel
+Requires:       ros2-iron-ament_cmake_pep257-devel
+Requires:       ros2-iron-ament_cmake_uncrustify-devel
+Requires:       ros2-iron-ament_cmake_xmllint-devel
 
 Provides: ros2-humble-ament_lint_common-devel = 0.12.9-1
 Obsoletes: ros2-humble-ament_lint_common-devel < 0.12.9-1

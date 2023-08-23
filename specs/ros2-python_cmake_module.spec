@@ -6,7 +6,7 @@ Summary:        ROS package python_cmake_module
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/python_cmake_module-release/archive/release/humble/python_cmake_module/0.10.0-2.tar.gz#/ros2-humble-python_cmake_module-0.10.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/python_cmake_module-release/archive/release/iron/python_cmake_module/0.10.2-3.tar.gz#/ros2-iron-python_cmake_module-0.10.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,14 +39,14 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-python_cmake_module = 0.10.0-1
-Obsoletes: ros2-humble-python_cmake_module < 0.10.0-1
+Provides:  ros2-iron-python_cmake_module = 0.10.2-1
+Obsoletes: ros2-iron-python_cmake_module < 0.10.2-1
 
 
 
@@ -57,13 +57,13 @@ Provide CMake module with extra functionality for Python.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-devel
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-python_cmake_module-devel = 0.10.0-1
-Obsoletes: ros2-humble-python_cmake_module-devel < 0.10.0-1
+Provides: ros2-iron-python_cmake_module-devel = 0.10.2-1
+Obsoletes: ros2-iron-python_cmake_module-devel < 0.10.2-1
 
 
 %description devel

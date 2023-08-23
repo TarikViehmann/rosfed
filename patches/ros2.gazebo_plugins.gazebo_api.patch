@@ -1,0 +1,39 @@
+diff -ur gazebo_ros_pkgs-release-release-iron-gazebo_plugins-3.7.0-3/src/gazebo_ros_wheel_slip.cpp gazebo_ros_pkgs-release-release-iron-gazebo_plugins-3.7.0-3-new/src/gazebo_ros_wheel_slip.cpp
+--- gazebo_ros_pkgs-release-release-iron-gazebo_plugins-3.7.0-3/src/gazebo_ros_wheel_slip.cpp	2023-04-21 00:47:11.000000000 +0200
++++ gazebo_ros_pkgs-release-release-iron-gazebo_plugins-3.7.0-3-new/src/gazebo_ros_wheel_slip.cpp	2023-08-23 13:04:57.301351206 +0200
+@@ -149,7 +149,7 @@
+       "slip_compliance_unitless_lateral/" + wheel_parameter.first,
+       wheel_parameter.second
+     );
+-    this->SetSlipComplianceLateral(wheel_parameter.first, value);
++    this->SetSlipComplianceLateral(value);
+   }
+ 
+   for (auto & wheel_parameter : impl_->map_slip_longitudinal_default_) {
+@@ -157,7 +157,7 @@
+       "slip_compliance_unitless_longitudinal/" + wheel_parameter.first,
+       wheel_parameter.second
+     );
+-    this->SetSlipComplianceLongitudinal(wheel_parameter.first, value);
++    this->SetSlipComplianceLongitudinal(value);
+   }
+ 
+   auto param_validation_callback =
+@@ -262,7 +262,7 @@
+               RCLCPP_INFO(
+                 this->impl_->ros_node_->get_logger(),
+                 "New lateral slip compliance for %s: %.3e", wheel_name.c_str(), slip);
+-              this->SetSlipComplianceLateral(wheel_name, slip);
++              this->SetSlipComplianceLateral(slip);
+             }
+           }
+ 
+@@ -276,7 +276,7 @@
+               RCLCPP_INFO(
+                 this->impl_->ros_node_->get_logger(),
+                 "New longitudinal slip compliance for %s: %.3e", wheel_name.c_str(), slip);
+-              this->SetSlipComplianceLongitudinal(wheel_name, slip);
++              this->SetSlipComplianceLongitudinal(slip);
+             }
+           }
+ 

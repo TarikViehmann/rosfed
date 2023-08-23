@@ -6,7 +6,7 @@ Summary:        ROS package generate_parameter_library_py
 License:        BSD-3-Clause
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/generate_parameter_library-release/archive/release/humble/generate_parameter_library_py/0.3.6-1.tar.gz#/ros2-humble-generate_parameter_library_py-0.3.6-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/generate_parameter_library-release/archive/release/iron/generate_parameter_library_py/0.3.6-1.tar.gz#/ros2-iron-generate_parameter_library_py-0.3.6-source0.tar.gz
 
 
 BuildArch: noarch
@@ -43,15 +43,15 @@ BuildRequires:  python3-jinja2
 BuildRequires:  python3-pytest
 BuildRequires:  python3-pyyaml
 BuildRequires:  python3-typeguard
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       python3-jinja2
 Requires:       python3-pyyaml
 Requires:       python3-typeguard
 
-Provides:  ros2-humble-generate_parameter_library_py = 0.3.6-1
-Obsoletes: ros2-humble-generate_parameter_library_py < 0.3.6-1
+Provides:  ros2-iron-generate_parameter_library_py = 0.3.6-1
+Obsoletes: ros2-iron-generate_parameter_library_py < 0.3.6-1
 
 
 
@@ -66,11 +66,11 @@ Requires:       python3-jinja2
 Requires:       python3-pytest
 Requires:       python3-pyyaml
 Requires:       python3-typeguard
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-generate_parameter_library_py-devel = 0.3.6-1
-Obsoletes: ros2-humble-generate_parameter_library_py-devel < 0.3.6-1
+Provides: ros2-iron-generate_parameter_library_py-devel = 0.3.6-1
+Obsoletes: ros2-iron-generate_parameter_library_py-devel < 0.3.6-1
 
 
 %description devel

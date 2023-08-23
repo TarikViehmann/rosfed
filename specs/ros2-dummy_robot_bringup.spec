@@ -6,7 +6,7 @@ Summary:        ROS package dummy_robot_bringup
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/demos-release/archive/release/humble/dummy_robot_bringup/0.20.3-1.tar.gz#/ros2-humble-dummy_robot_bringup-0.20.3-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/demos-release/archive/release/iron/dummy_robot_bringup/0.27.1-1.tar.gz#/ros2-iron-dummy_robot_bringup-0.27.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,21 +38,21 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-dummy_map_server
-Requires:       ros2-humble-dummy_sensors
-Requires:       ros2-humble-launch
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-robot_state_publisher
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-dummy_map_server
+Requires:       ros2-iron-dummy_sensors
+Requires:       ros2-iron-launch
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-robot_state_publisher
 
-Provides:  ros2-humble-dummy_robot_bringup = 0.20.3-1
-Obsoletes: ros2-humble-dummy_robot_bringup < 0.20.3-1
+Provides:  ros2-iron-dummy_robot_bringup = 0.27.1-1
+Obsoletes: ros2-iron-dummy_robot_bringup < 0.27.1-1
 
 
 
@@ -62,20 +62,20 @@ dummy robot bringup
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-dummy_map_server-devel
-Requires:       ros2-humble-dummy_sensors-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-robot_state_publisher-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-dummy_map_server-devel
+Requires:       ros2-iron-dummy_sensors-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-robot_state_publisher-devel
 
-Provides: ros2-humble-dummy_robot_bringup-devel = 0.20.3-1
-Obsoletes: ros2-humble-dummy_robot_bringup-devel < 0.20.3-1
+Provides: ros2-iron-dummy_robot_bringup-devel = 0.27.1-1
+Obsoletes: ros2-iron-dummy_robot_bringup-devel < 0.27.1-1
 
 
 %description devel

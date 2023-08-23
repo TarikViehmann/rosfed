@@ -6,7 +6,7 @@ Summary:        ROS package ignition_cmake2_vendor
 License:        Apache License 2.0
 URL:            https://github.com/ignitionrobotics/ign-cmake
 
-Source0:        https://github.com/ros2-gbp/ignition_cmake2_vendor-release/archive/release/humble/ignition_cmake2_vendor/0.0.2-2.tar.gz#/ros2-humble-ignition_cmake2_vendor-0.0.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/gz_cmake2_vendor-release/archive/release/iron/ignition_cmake2_vendor/0.1.0-2.tar.gz#/ros2-iron-ignition_cmake2_vendor-0.1.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -42,15 +42,15 @@ BuildRequires:  cmake
 BuildRequires:  doxygen
 BuildRequires:  git
 BuildRequires:  ignition-cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_copyright-devel
-BuildRequires:  ros2-humble-ament_cmake_lint_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_test-devel
-BuildRequires:  ros2-humble-ament_cmake_xmllint-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake_copyright-devel
+BuildRequires:  ros2-iron-ament_cmake_lint_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_test-devel
+BuildRequires:  ros2-iron-ament_cmake_xmllint-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-ignition_cmake2_vendor = 0.0.2-1
-Obsoletes: ros2-humble-ignition_cmake2_vendor < 0.0.2-1
+Provides:  ros2-iron-ignition_cmake2_vendor = 0.1.0-1
+Obsoletes: ros2-iron-ignition_cmake2_vendor < 0.1.0-1
 
 
 
@@ -63,15 +63,15 @@ Requires:       %{name} = %{version}-%{release}
 Requires:       cmake
 Requires:       doxygen
 Requires:       git
-Requires:       ros2-humble-ament_cmake_test-devel
+Requires:       ros2-iron-ament_cmake_test-devel
 Requires:       ignition-cmake-devel
-Requires:       ros2-humble-ament_cmake_copyright-devel
-Requires:       ros2-humble-ament_cmake_lint_cmake-devel
-Requires:       ros2-humble-ament_cmake_xmllint-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_copyright-devel
+Requires:       ros2-iron-ament_cmake_lint_cmake-devel
+Requires:       ros2-iron-ament_cmake_xmllint-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-ignition_cmake2_vendor-devel = 0.0.2-1
-Obsoletes: ros2-humble-ignition_cmake2_vendor-devel < 0.0.2-1
+Provides: ros2-iron-ignition_cmake2_vendor-devel = 0.1.0-1
+Obsoletes: ros2-iron-ignition_cmake2_vendor-devel < 0.1.0-1
 
 
 %description devel

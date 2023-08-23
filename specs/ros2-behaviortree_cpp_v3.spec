@@ -40,15 +40,15 @@ BuildRequires: python3-vcstool
 BuildRequires:  boost-devel
 BuildRequires:  cppzmq-devel
 BuildRequires:  ncurses-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_index_cpp-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-ros_environment-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_index_cpp-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-ros_environment-devel
 
-Requires:       ros2-humble-ament_index_cpp
-Requires:       ros2-humble-rclcpp
+Requires:       ros2-iron-ament_index_cpp
+Requires:       ros2-iron-rclcpp
 
 Provides:  ros2-humble-behaviortree_cpp_v3 = 3.8.5-1
 Obsoletes: ros2-humble-behaviortree_cpp_v3 < 3.8.5-1
@@ -61,15 +61,15 @@ This package provides the Behavior Trees core library.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       boost-devel
 Requires:       cppzmq-devel
 Requires:       ncurses-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_index_cpp-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-ros_environment-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_index_cpp-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-ros_environment-devel
 
 Provides: ros2-humble-behaviortree_cpp_v3-devel = 3.8.5-1
 Obsoletes: ros2-humble-behaviortree_cpp_v3-devel < 3.8.5-1

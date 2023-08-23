@@ -1,3 +1,2 @@
 patches:
-  - ros-nav2_behaviors.init_variables.patch
   - ros2-nav2_behaviors.disable-warnings.patch

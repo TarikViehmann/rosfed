@@ -38,45 +38,47 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  qt5-qtbase-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-nav2_lifecycle_manager-devel
-BuildRequires:  ros2-humble-nav2_msgs-devel
-BuildRequires:  ros2-humble-nav2_util-devel
-BuildRequires:  ros2-humble-nav_msgs-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-resource_retriever-devel
-BuildRequires:  ros2-humble-rviz_common-devel
-BuildRequires:  ros2-humble-rviz_default_plugins-devel
-BuildRequires:  ros2-humble-rviz_ogre_vendor-devel
-BuildRequires:  ros2-humble-rviz_rendering-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-tf2_geometry_msgs-devel
-BuildRequires:  ros2-humble-visualization_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-nav2_lifecycle_manager-devel
+BuildRequires:  ros2-iron-nav2_msgs-devel
+BuildRequires:  ros2-iron-nav2_util-devel
+BuildRequires:  ros2-iron-nav_msgs-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-resource_retriever-devel
+BuildRequires:  ros2-iron-rviz_common-devel
+BuildRequires:  ros2-iron-rviz_default_plugins-devel
+BuildRequires:  ros2-iron-rviz_ogre_vendor-devel
+BuildRequires:  ros2-iron-rviz_rendering-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-tf2_geometry_msgs-devel
+BuildRequires:  ros2-iron-visualization_msgs-devel
+BuildRequires:  ros2-iron-yaml_cpp_vendor-devel
 
 Requires:       qt5-qtbase
 Requires:       qt5-qtbase-gui
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-nav2_lifecycle_manager
-Requires:       ros2-humble-nav2_msgs
-Requires:       ros2-humble-nav2_util
-Requires:       ros2-humble-nav_msgs
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-resource_retriever
-Requires:       ros2-humble-rviz_common
-Requires:       ros2-humble-rviz_default_plugins
-Requires:       ros2-humble-rviz_ogre_vendor
-Requires:       ros2-humble-rviz_rendering
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-tf2_geometry_msgs
-Requires:       ros2-humble-visualization_msgs
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-nav2_lifecycle_manager
+Requires:       ros2-iron-nav2_msgs
+Requires:       ros2-iron-nav2_util
+Requires:       ros2-iron-nav_msgs
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-resource_retriever
+Requires:       ros2-iron-rviz_common
+Requires:       ros2-iron-rviz_default_plugins
+Requires:       ros2-iron-rviz_ogre_vendor
+Requires:       ros2-iron-rviz_rendering
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-tf2_geometry_msgs
+Requires:       ros2-iron-visualization_msgs
+Requires:       ros2-iron-yaml_cpp_vendor
 
 Provides:  ros2-humble-nav2_rviz_plugins = 1.1.12-1
 Obsoletes: ros2-humble-nav2_rviz_plugins < 1.1.12-1
@@ -89,27 +91,28 @@ Navigation 2 plugins for rviz
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       qt5-qtbase-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-nav2_lifecycle_manager-devel
-Requires:       ros2-humble-nav2_msgs-devel
-Requires:       ros2-humble-nav2_util-devel
-Requires:       ros2-humble-nav_msgs-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-resource_retriever-devel
-Requires:       ros2-humble-rviz_common-devel
-Requires:       ros2-humble-rviz_default_plugins-devel
-Requires:       ros2-humble-rviz_ogre_vendor-devel
-Requires:       ros2-humble-rviz_rendering-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-tf2_geometry_msgs-devel
-Requires:       ros2-humble-visualization_msgs-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-nav2_lifecycle_manager-devel
+Requires:       ros2-iron-nav2_msgs-devel
+Requires:       ros2-iron-nav2_util-devel
+Requires:       ros2-iron-nav_msgs-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-resource_retriever-devel
+Requires:       ros2-iron-rviz_common-devel
+Requires:       ros2-iron-rviz_default_plugins-devel
+Requires:       ros2-iron-rviz_ogre_vendor-devel
+Requires:       ros2-iron-rviz_rendering-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-tf2_geometry_msgs-devel
+Requires:       ros2-iron-visualization_msgs-devel
+Requires:       ros2-iron-yaml_cpp_vendor-devel
 
 Provides: ros2-humble-nav2_rviz_plugins-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_rviz_plugins-devel < 1.1.12-1

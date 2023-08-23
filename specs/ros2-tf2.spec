@@ -40,25 +40,26 @@ BuildRequires: python3-vcstool
 BuildRequires:  boost-devel
 BuildRequires:  console-bridge-devel
 BuildRequires:  gtest-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_copyright-devel
-BuildRequires:  ros2-humble-ament_cmake_cppcheck-devel
-BuildRequires:  ros2-humble-ament_cmake_cpplint-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_lint_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_uncrustify-devel
-BuildRequires:  ros2-humble-ament_cmake_xmllint-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-builtin_interfaces-devel
-BuildRequires:  ros2-humble-console_bridge_vendor-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rosidl_runtime_cpp-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_copyright-devel
+BuildRequires:  ros2-iron-ament_cmake_cppcheck-devel
+BuildRequires:  ros2-iron-ament_cmake_cpplint-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_lint_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_cmake_uncrustify-devel
+BuildRequires:  ros2-iron-ament_cmake_xmllint-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-console_bridge_vendor-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rosidl_runtime_cpp-devel
 
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-console_bridge_vendor
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-rcutils
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-console_bridge_vendor
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-rcutils
 
 Provides:  ros2-humble-tf2 = 0.25.5-1
 Obsoletes: ros2-humble-tf2 < 0.25.5-1
@@ -75,23 +76,24 @@ between any two coordinate frames at any desired point in time.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-rosidl_runtime_cpp-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-rosidl_runtime_cpp-devel
 Requires:       boost-devel
 Requires:       console-bridge-devel
 Requires:       gtest-devel
-Requires:       ros2-humble-ament_cmake_copyright-devel
-Requires:       ros2-humble-ament_cmake_cppcheck-devel
-Requires:       ros2-humble-ament_cmake_cpplint-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_lint_cmake-devel
-Requires:       ros2-humble-ament_cmake_uncrustify-devel
-Requires:       ros2-humble-ament_cmake_xmllint-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-console_bridge_vendor-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-rcutils-devel
+Requires:       ros2-iron-ament_cmake_copyright-devel
+Requires:       ros2-iron-ament_cmake_cppcheck-devel
+Requires:       ros2-iron-ament_cmake_cpplint-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_lint_cmake-devel
+Requires:       ros2-iron-ament_cmake_uncrustify-devel
+Requires:       ros2-iron-ament_cmake_xmllint-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-console_bridge_vendor-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-rcutils-devel
 
 Provides: ros2-humble-tf2-devel = 0.25.5-1
 Obsoletes: ros2-humble-tf2-devel < 0.25.5-1

@@ -6,7 +6,7 @@ Summary:        ROS package rmw_connextdds_common
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rmw_connextdds-release/archive/release/humble/rmw_connextdds_common/0.11.2-1.tar.gz#/ros2-humble-rmw_connextdds_common-0.11.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rmw_connextdds-release/archive/release/iron/rmw_connextdds_common/0.14.1-1.tar.gz#/ros2-iron-rmw_connextdds_common-0.14.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,39 +38,39 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-fastcdr-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rmw-devel
-BuildRequires:  ros2-humble-rmw_dds_common-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
-BuildRequires:  ros2-humble-rosidl_runtime_cpp-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_fastrtps_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_fastrtps_cpp-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_introspection_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_introspection_cpp-devel
-BuildRequires:  ros2-humble-rti_connext_dds_cmake_module-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-fastcdr-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rmw-devel
+BuildRequires:  ros2-iron-rmw_dds_common-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-rosidl_runtime_cpp-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_fastrtps_c-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_fastrtps_cpp-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_introspection_c-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_introspection_cpp-devel
+BuildRequires:  ros2-iron-rti_connext_dds_cmake_module-devel
 
-Requires:       ros2-humble-fastcdr
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rmw
-Requires:       ros2-humble-rmw_dds_common
-Requires:       ros2-humble-rosidl_runtime_c
-Requires:       ros2-humble-rosidl_runtime_cpp
-Requires:       ros2-humble-rosidl_typesupport_fastrtps_c
-Requires:       ros2-humble-rosidl_typesupport_fastrtps_cpp
-Requires:       ros2-humble-rosidl_typesupport_introspection_c
-Requires:       ros2-humble-rosidl_typesupport_introspection_cpp
-Requires:       ros2-humble-rti_connext_dds_cmake_module
+Requires:       ros2-iron-fastcdr
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rmw
+Requires:       ros2-iron-rmw_dds_common
+Requires:       ros2-iron-rosidl_runtime_c
+Requires:       ros2-iron-rosidl_runtime_cpp
+Requires:       ros2-iron-rosidl_typesupport_fastrtps_c
+Requires:       ros2-iron-rosidl_typesupport_fastrtps_cpp
+Requires:       ros2-iron-rosidl_typesupport_introspection_c
+Requires:       ros2-iron-rosidl_typesupport_introspection_cpp
+Requires:       ros2-iron-rti_connext_dds_cmake_module
 
-Provides:  ros2-humble-rmw_connextdds_common = 0.11.2-1
-Obsoletes: ros2-humble-rmw_connextdds_common < 0.11.2-1
+Provides:  ros2-iron-rmw_connextdds_common = 0.14.1-1
+Obsoletes: ros2-iron-rmw_connextdds_common < 0.14.1-1
 
 
 
@@ -81,26 +81,26 @@ Professional and RTI Connext DDS Micro.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-fastcdr-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rmw-devel
-Requires:       ros2-humble-rmw_dds_common-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-rosidl_runtime_cpp-devel
-Requires:       ros2-humble-rosidl_typesupport_fastrtps_c-devel
-Requires:       ros2-humble-rosidl_typesupport_fastrtps_cpp-devel
-Requires:       ros2-humble-rosidl_typesupport_introspection_c-devel
-Requires:       ros2-humble-rosidl_typesupport_introspection_cpp-devel
-Requires:       ros2-humble-rti_connext_dds_cmake_module-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-fastcdr-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rmw-devel
+Requires:       ros2-iron-rmw_dds_common-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-rosidl_runtime_cpp-devel
+Requires:       ros2-iron-rosidl_typesupport_fastrtps_c-devel
+Requires:       ros2-iron-rosidl_typesupport_fastrtps_cpp-devel
+Requires:       ros2-iron-rosidl_typesupport_introspection_c-devel
+Requires:       ros2-iron-rosidl_typesupport_introspection_cpp-devel
+Requires:       ros2-iron-rti_connext_dds_cmake_module-devel
 
-Provides: ros2-humble-rmw_connextdds_common-devel = 0.11.2-1
-Obsoletes: ros2-humble-rmw_connextdds_common-devel < 0.11.2-1
+Provides: ros2-iron-rmw_connextdds_common-devel = 0.14.1-1
+Obsoletes: ros2-iron-rmw_connextdds_common-devel < 0.14.1-1
 
 
 %description devel

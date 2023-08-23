@@ -6,7 +6,7 @@ Summary:        ROS package uncrustify_vendor
 License:        Apache License 2.0
 URL:            https://github.com/uncrustify/uncrustify
 
-Source0:        https://github.com/ros2-gbp/uncrustify_vendor-release/archive/release/humble/uncrustify_vendor/2.0.2-2.tar.gz#/ros2-humble-uncrustify_vendor-2.0.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/uncrustify_vendor-release/archive/release/iron/uncrustify_vendor/2.1.2-3.tar.gz#/ros2-iron-uncrustify_vendor-2.1.2-source0.tar.gz
 
 
 
@@ -39,13 +39,13 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  git
 BuildRequires:  uncrustify
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       uncrustify
 
-Provides:  ros2-humble-uncrustify_vendor = 2.0.2-1
-Obsoletes: ros2-humble-uncrustify_vendor < 2.0.2-1
+Provides:  ros2-iron-uncrustify_vendor = 2.1.2-1
+Obsoletes: ros2-iron-uncrustify_vendor < 2.1.2-1
 
 
 
@@ -58,12 +58,12 @@ build of uncrustify.
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       git
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       uncrustify
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-uncrustify_vendor-devel = 2.0.2-1
-Obsoletes: ros2-humble-uncrustify_vendor-devel < 2.0.2-1
+Provides: ros2-iron-uncrustify_vendor-devel = 2.1.2-1
+Obsoletes: ros2-iron-uncrustify_vendor-devel < 2.1.2-1
 
 
 %description devel

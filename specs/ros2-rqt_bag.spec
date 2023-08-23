@@ -6,7 +6,7 @@ Summary:        ROS package rqt_bag
 License:        BSD
 URL:            http://wiki.ros.org/rqt_bag
 
-Source0:        https://github.com/ros2-gbp/rqt_bag-release/archive/release/humble/rqt_bag/1.1.4-1.tar.gz#/ros2-humble-rqt_bag-1.1.4-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt_bag-release/archive/release/iron/rqt_bag/1.3.3-1.tar.gz#/ros2-iron-rqt_bag-1.3.3-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,16 +38,16 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-python_qt_binding
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-rosbag2_py
-Requires:       ros2-humble-rqt_gui
-Requires:       ros2-humble-rqt_gui_py
+Requires:       ros2-iron-python_qt_binding
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-rosbag2_py
+Requires:       ros2-iron-rqt_gui
+Requires:       ros2-iron-rqt_gui_py
 
-Provides:  ros2-humble-rqt_bag = 1.1.4-1
-Obsoletes: ros2-humble-rqt_bag < 1.1.4-1
+Provides:  ros2-iron-rqt_bag = 1.3.3-1
+Obsoletes: ros2-iron-rqt_bag < 1.3.3-1
 
 
 
@@ -58,15 +58,15 @@ files.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-python_qt_binding-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-rosbag2_py-devel
-Requires:       ros2-humble-rqt_gui-devel
-Requires:       ros2-humble-rqt_gui_py-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-python_qt_binding-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-rosbag2_py-devel
+Requires:       ros2-iron-rqt_gui-devel
+Requires:       ros2-iron-rqt_gui_py-devel
 
-Provides: ros2-humble-rqt_bag-devel = 1.1.4-1
-Obsoletes: ros2-humble-rqt_bag-devel < 1.1.4-1
+Provides: ros2-iron-rqt_bag-devel = 1.3.3-1
+Obsoletes: ros2-iron-rqt_bag-devel < 1.3.3-1
 
 
 %description devel

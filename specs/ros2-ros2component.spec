@@ -6,7 +6,7 @@ Summary:        ROS package ros2component
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ros2cli-release/archive/release/humble/ros2component/0.18.7-1.tar.gz#/ros2-humble-ros2component-0.18.7-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros2cli-release/archive/release/iron/ros2component/0.25.2-1.tar.gz#/ros2-iron-ros2component-0.25.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -40,24 +40,24 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  python3-pytest
 BuildRequires:  python3-pytest-timeout
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-ament_xmllint-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-ament_xmllint-devel
 
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-composition_interfaces
-Requires:       ros2-humble-rcl_interfaces
-Requires:       ros2-humble-rclcpp_components
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-ros2cli
-Requires:       ros2-humble-ros2node
-Requires:       ros2-humble-ros2param
-Requires:       ros2-humble-ros2pkg
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-composition_interfaces
+Requires:       ros2-iron-rcl_interfaces
+Requires:       ros2-iron-rclcpp_components
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-ros2cli
+Requires:       ros2-iron-ros2node
+Requires:       ros2-iron-ros2param
+Requires:       ros2-iron-ros2pkg
 
-Provides:  ros2-humble-ros2component = 0.18.7-1
-Obsoletes: ros2-humble-ros2component < 0.18.7-1
+Provides:  ros2-iron-ros2component = 0.25.2-1
+Obsoletes: ros2-iron-ros2component < 0.25.2-1
 
 
 
@@ -69,23 +69,23 @@ Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
 Requires:       python3-pytest-timeout
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-ament_xmllint-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-composition_interfaces-devel
-Requires:       ros2-humble-rcl_interfaces-devel
-Requires:       ros2-humble-rclcpp_components-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-ros2cli-devel
-Requires:       ros2-humble-ros2node-devel
-Requires:       ros2-humble-ros2param-devel
-Requires:       ros2-humble-ros2pkg-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-ament_xmllint-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-composition_interfaces-devel
+Requires:       ros2-iron-rcl_interfaces-devel
+Requires:       ros2-iron-rclcpp_components-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-ros2cli-devel
+Requires:       ros2-iron-ros2node-devel
+Requires:       ros2-iron-ros2param-devel
+Requires:       ros2-iron-ros2pkg-devel
 
-Provides: ros2-humble-ros2component-devel = 0.18.7-1
-Obsoletes: ros2-humble-ros2component-devel < 0.18.7-1
+Provides: ros2-iron-ros2component-devel = 0.25.2-1
+Obsoletes: ros2-iron-ros2component-devel < 0.25.2-1
 
 
 %description devel

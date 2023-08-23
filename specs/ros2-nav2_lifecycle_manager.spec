@@ -37,36 +37,36 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-bondcpp-devel
-BuildRequires:  ros2-humble-diagnostic_updater-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-lifecycle_msgs-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-nav2_msgs-devel
-BuildRequires:  ros2-humble-nav2_util-devel
-BuildRequires:  ros2-humble-rclcpp_action-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-std_srvs-devel
-BuildRequires:  ros2-humble-tf2_geometry_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-bondcpp-devel
+BuildRequires:  ros2-iron-diagnostic_updater-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-lifecycle_msgs-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-nav2_msgs-devel
+BuildRequires:  ros2-iron-nav2_util-devel
+BuildRequires:  ros2-iron-rclcpp_action-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-std_srvs-devel
+BuildRequires:  ros2-iron-tf2_geometry_msgs-devel
 
-Requires:       ros2-humble-bondcpp
-Requires:       ros2-humble-diagnostic_updater
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-lifecycle_msgs
-Requires:       ros2-humble-nav2_msgs
-Requires:       ros2-humble-nav2_util
-Requires:       ros2-humble-rclcpp_action
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-std_srvs
-Requires:       ros2-humble-tf2_geometry_msgs
+Requires:       ros2-iron-bondcpp
+Requires:       ros2-iron-diagnostic_updater
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-lifecycle_msgs
+Requires:       ros2-iron-nav2_msgs
+Requires:       ros2-iron-nav2_util
+Requires:       ros2-iron-rclcpp_action
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-std_srvs
+Requires:       ros2-iron-tf2_geometry_msgs
 
 Provides:  ros2-humble-nav2_lifecycle_manager = 1.1.12-1
 Obsoletes: ros2-humble-nav2_lifecycle_manager < 1.1.12-1
@@ -80,24 +80,24 @@ system
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-bondcpp-devel
-Requires:       ros2-humble-diagnostic_updater-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-lifecycle_msgs-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-nav2_msgs-devel
-Requires:       ros2-humble-nav2_util-devel
-Requires:       ros2-humble-rclcpp_action-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-std_srvs-devel
-Requires:       ros2-humble-tf2_geometry_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-bondcpp-devel
+Requires:       ros2-iron-diagnostic_updater-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-lifecycle_msgs-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-nav2_msgs-devel
+Requires:       ros2-iron-nav2_util-devel
+Requires:       ros2-iron-rclcpp_action-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-std_srvs-devel
+Requires:       ros2-iron-tf2_geometry_msgs-devel
 
 Provides: ros2-humble-nav2_lifecycle_manager-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_lifecycle_manager-devel < 1.1.12-1

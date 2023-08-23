@@ -6,7 +6,7 @@ Summary:        ROS package diagnostic_updater
 License:        BSD-3-Clause
 URL:            http://www.ros.org/wiki/diagnostic_updater
 
-Source0:        https://github.com/ros2-gbp/diagnostics-release/archive/release/humble/diagnostic_updater/3.1.2-1.tar.gz#/ros2-humble-diagnostic_updater-3.1.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/diagnostics-release/archive/release/iron/diagnostic_updater/3.1.2-3.tar.gz#/ros2-iron-diagnostic_updater-3.1.2-source0.tar.gz
 
 
 
@@ -37,26 +37,26 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-diagnostic_msgs-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-rclpy-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-diagnostic_msgs-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-rclpy-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-diagnostic_msgs
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-diagnostic_msgs
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-std_msgs
 
-Provides:  ros2-humble-diagnostic_updater = 3.1.2-1
-Obsoletes: ros2-humble-diagnostic_updater < 3.1.2-1
+Provides:  ros2-iron-diagnostic_updater = 3.1.2-1
+Obsoletes: ros2-iron-diagnostic_updater < 3.1.2-1
 
 
 
@@ -68,21 +68,21 @@ output topics, device status, etc.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-diagnostic_msgs-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-std_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-diagnostic_msgs-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-std_msgs-devel
 
-Provides: ros2-humble-diagnostic_updater-devel = 3.1.2-1
-Obsoletes: ros2-humble-diagnostic_updater-devel < 3.1.2-1
+Provides: ros2-iron-diagnostic_updater-devel = 3.1.2-1
+Obsoletes: ros2-iron-diagnostic_updater-devel < 3.1.2-1
 
 
 %description devel

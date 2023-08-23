@@ -5,5 +5,3 @@ dependencies:
       - log4cxx-devel
       - console-bridge-devel
       - boost-python3-devel
-patches:
-  - ros-camera_calibration_parsers.boost-python3.patch

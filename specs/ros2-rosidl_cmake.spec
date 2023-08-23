@@ -6,7 +6,7 @@ Summary:        ROS package rosidl_cmake
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rosidl-release/archive/release/humble/rosidl_cmake/3.1.5-2.tar.gz#/ros2-humble-rosidl_cmake-3.1.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rosidl-release/archive/release/iron/rosidl_cmake/4.0.1-1.tar.gz#/ros2-iron-rosidl_cmake-4.0.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,17 +39,16 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-empy
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-rosidl_adapter
-Requires:       ros2-humble-rosidl_parser
+Requires:       ros2-iron-rosidl_pycommon
 
-Provides:  ros2-humble-rosidl_cmake = 3.1.5-1
-Obsoletes: ros2-humble-rosidl_cmake < 3.1.5-1
+Provides:  ros2-iron-rosidl_cmake = 4.0.1-1
+Obsoletes: ros2-iron-rosidl_cmake < 4.0.1-1
 
 
 
@@ -61,16 +60,15 @@ files.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-empy
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rosidl_adapter-devel
-Requires:       ros2-humble-rosidl_parser-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rosidl_pycommon-devel
 
-Provides: ros2-humble-rosidl_cmake-devel = 3.1.5-1
-Obsoletes: ros2-humble-rosidl_cmake-devel < 3.1.5-1
+Provides: ros2-iron-rosidl_cmake-devel = 4.0.1-1
+Obsoletes: ros2-iron-rosidl_cmake-devel < 4.0.1-1
 
 
 %description devel

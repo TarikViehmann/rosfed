@@ -6,7 +6,7 @@ Summary:        ROS package webots_ros2_msgs
 License:        Apache License 2.0
 URL:            http://wiki.ros.org/webots_ros2
 
-Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/humble/webots_ros2_msgs/2023.1.1-2.tar.gz#/ros2-humble-webots_ros2_msgs-2023.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/iron/webots_ros2_msgs/2023.1.1-2.tar.gz#/ros2-iron-webots_ros2_msgs-2023.1.1-source0.tar.gz
 
 
 
@@ -37,24 +37,24 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-builtin_interfaces-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-vision_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-vision_msgs-devel
 
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-rosidl_default_runtime
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-vision_msgs
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-rosidl_default_runtime
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-vision_msgs
 
-Provides:  ros2-humble-webots_ros2_msgs = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_msgs < 2023.1.1-1
+Provides:  ros2-iron-webots_ros2_msgs = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_msgs < 2023.1.1-1
 
 
 
@@ -64,19 +64,19 @@ Services and Messages of the webots_ros2 packages.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-vision_msgs-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-vision_msgs-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
 
-Provides: ros2-humble-webots_ros2_msgs-devel = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_msgs-devel < 2023.1.1-1
+Provides: ros2-iron-webots_ros2_msgs-devel = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_msgs-devel < 2023.1.1-1
 
 
 %description devel

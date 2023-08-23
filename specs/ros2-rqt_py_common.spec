@@ -6,7 +6,7 @@ Summary:        ROS package rqt_py_common
 License:        BSD
 URL:            http://ros.org/wiki/rqt_py_common
 
-Source0:        https://github.com/ros2-gbp/rqt-release/archive/release/humble/rqt_py_common/1.1.5-2.tar.gz#/ros2-humble-rqt_py_common-1.1.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt-release/archive/release/iron/rqt_py_common/1.3.3-1.tar.gz#/ros2-iron-rqt_py_common-1.3.3-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,20 +39,20 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  qt5-qtbase-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-python_cmake_module-devel
-BuildRequires:  ros2-humble-rclpy-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
-BuildRequires:  ros2-humble-rosidl_default_runtime-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-python_cmake_module-devel
+BuildRequires:  ros2-iron-rclpy-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-rosidl_default_runtime-devel
 
-Requires:       ros2-humble-python_qt_binding
-Requires:       ros2-humble-qt_gui
-Requires:       ros2-humble-rclpy
+Requires:       ros2-iron-python_qt_binding
+Requires:       ros2-iron-qt_gui
+Requires:       ros2-iron-rclpy
 
-Provides:  ros2-humble-rqt_py_common = 1.1.5-1
-Obsoletes: ros2-humble-rqt_py_common < 1.1.5-1
+Provides:  ros2-iron-rqt_py_common = 1.3.3-1
+Obsoletes: ros2-iron-rqt_py_common < 1.3.3-1
 
 
 
@@ -68,19 +68,19 @@ ROS concepts and should not introduce any special dependencies beside
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       qt5-qtbase-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-python_cmake_module-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
-Requires:       ros2-humble-python_qt_binding-devel
-Requires:       ros2-humble-qt_gui-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-python_cmake_module-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
+Requires:       ros2-iron-python_qt_binding-devel
+Requires:       ros2-iron-qt_gui-devel
 
-Provides: ros2-humble-rqt_py_common-devel = 1.1.5-1
-Obsoletes: ros2-humble-rqt_py_common-devel < 1.1.5-1
+Provides: ros2-iron-rqt_py_common-devel = 1.3.3-1
+Obsoletes: ros2-iron-rqt_py_common-devel < 1.3.3-1
 
 
 %description devel

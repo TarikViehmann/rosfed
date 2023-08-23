@@ -6,7 +6,7 @@ Summary:        ROS package cv_bridge
 License:        Apache License 2.0
 URL:            http://www.ros.org/wiki/cv_bridge
 
-Source0:        https://github.com/ros2-gbp/vision_opencv-release/archive/release/humble/cv_bridge/3.2.1-1.tar.gz#/ros2-humble-cv_bridge-3.2.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/vision_opencv-release/archive/release/iron/cv_bridge/3.4.0-3.tar.gz#/ros2-iron-cv_bridge-3.4.0-source0.tar.gz
 
 
 
@@ -42,25 +42,27 @@ BuildRequires:  boost-python3-devel
 BuildRequires:  opencv-devel
 BuildRequires:  python3-numpy
 BuildRequires:  python3-opencv
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-python_cmake_module-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-python_cmake_module-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
 
 Requires:       boost-python3
 Requires:       python3-numpy
 Requires:       python3-opencv
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-sensor_msgs
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-sensor_msgs
 
-Provides:  ros2-humble-cv_bridge = 3.2.1-1
-Obsoletes: ros2-humble-cv_bridge < 3.2.1-1
+Provides:  ros2-iron-cv_bridge = 3.4.0-1
+Obsoletes: ros2-iron-cv_bridge < 3.4.0-1
 
 
 
@@ -71,24 +73,25 @@ OpenCV images.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-python_cmake_module-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-python_cmake_module-devel
 Requires:       boost-devel
 Requires:       boost-python3-devel
 Requires:       opencv-devel
 Requires:       python3-numpy
 Requires:       python3-opencv
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-ament_index_python-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-ament_index_python-devel
 
-Provides: ros2-humble-cv_bridge-devel = 3.2.1-1
-Obsoletes: ros2-humble-cv_bridge-devel < 3.2.1-1
+Provides: ros2-iron-cv_bridge-devel = 3.4.0-1
+Obsoletes: ros2-iron-cv_bridge-devel < 3.4.0-1
 
 
 %description devel

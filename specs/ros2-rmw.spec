@@ -6,7 +6,7 @@ Summary:        ROS package rmw
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rmw-release/archive/release/humble/rmw/6.1.1-1.tar.gz#/ros2-humble-rmw-6.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rmw-release/archive/release/iron/rmw/7.1.0-2.tar.gz#/ros2-iron-rmw-7.1.0-source0.tar.gz
 
 
 
@@ -37,19 +37,20 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_cmake_version-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-osrf_testing_tools_cpp-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_cmake_version-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-osrf_testing_tools_cpp-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rosidl_dynamic_typesupport-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
 
 
-Provides:  ros2-humble-rmw = 6.1.1-1
-Obsoletes: ros2-humble-rmw < 6.1.1-1
+Provides:  ros2-iron-rmw = 7.1.0-1
+Obsoletes: ros2-iron-rmw < 7.1.0-1
 
 
 
@@ -59,18 +60,19 @@ Contains the ROS middleware API.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-ament_cmake_version-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-osrf_testing_tools_cpp-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_cmake_version-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rosidl_dynamic_typesupport-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-osrf_testing_tools_cpp-devel
 
-Provides: ros2-humble-rmw-devel = 6.1.1-1
-Obsoletes: ros2-humble-rmw-devel < 6.1.1-1
+Provides: ros2-iron-rmw-devel = 7.1.0-1
+Obsoletes: ros2-iron-rmw-devel < 7.1.0-1
 
 
 %description devel

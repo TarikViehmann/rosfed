@@ -8,7 +8,6 @@ URL:            http://www.ros.org/
 
 Source0:        https://github.com/ros2-gbp/rosbag2-release/archive/release/humble/rosbag2_compression_zstd/0.15.8-1.tar.gz#/ros2-humble-rosbag2_compression_zstd-0.15.8-source0.tar.gz
 
-Patch0: ros-rosbag2_compression_zstd.system-libzstd.patch
 
 
 # common BRs
@@ -38,24 +37,24 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  libzstd-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rosbag2_compression-devel
-BuildRequires:  ros2-humble-rosbag2_test_common-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rosbag2_compression-devel
+BuildRequires:  ros2-iron-rosbag2_test_common-devel
+BuildRequires:  ros2-iron-zstd_vendor-devel
 
-Requires:       libzstd-devel
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rosbag2_compression
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rosbag2_compression
+Requires:       ros2-iron-zstd_vendor
 
 Provides:  ros2-humble-rosbag2_compression_zstd = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2_compression_zstd < 0.15.8-1
@@ -68,18 +67,18 @@ Zstandard compression library implementation of rosbag2_compression
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       libzstd-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rosbag2_compression-devel
-Requires:       ros2-humble-rosbag2_test_common-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rosbag2_compression-devel
+Requires:       ros2-iron-rosbag2_test_common-devel
+Requires:       ros2-iron-zstd_vendor-devel
 
 Provides: ros2-humble-rosbag2_compression_zstd-devel = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2_compression_zstd-devel < 0.15.8-1
@@ -95,7 +94,6 @@ applications that use %{name}.
 
 %setup -c -T
 tar --strip-components=1 -xf %{SOURCE0}
-%patch 0 -p1
 
 %build
 # nothing to do here

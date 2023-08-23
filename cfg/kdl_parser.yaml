@@ -5,6 +5,7 @@ dependencies:
       - urdfdom-headers-devel
       - urdfdom-devel
       - eigen3-devel
+    ros:
+      - orocos_kdl_vendor
 patches:
-  - ros-kdl_parser.system-orocos-kdl.patch
   - ros-kdl_parser.link-eigen3.patch

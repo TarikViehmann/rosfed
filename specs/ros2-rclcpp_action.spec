@@ -37,26 +37,26 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-action_msgs-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-mimick_vendor-devel
-BuildRequires:  ros2-humble-performance_test_fixture-devel
-BuildRequires:  ros2-humble-rcl_action-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
-BuildRequires:  ros2-humble-test_msgs-devel
+BuildRequires:  ros2-iron-action_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-mimick_vendor-devel
+BuildRequires:  ros2-iron-performance_test_fixture-devel
+BuildRequires:  ros2-iron-rcl_action-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-test_msgs-devel
 
-Requires:       ros2-humble-action_msgs
-Requires:       ros2-humble-ament_cmake
-Requires:       ros2-humble-rcl_action
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rcpputils
+Requires:       ros2-iron-action_msgs
+Requires:       ros2-iron-ament_cmake
+Requires:       ros2-iron-rcl_action
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rcpputils
 
 Provides:  ros2-humble-rclcpp_action = 16.0.7-1
 Obsoletes: ros2-humble-rclcpp_action < 16.0.7-1
@@ -69,20 +69,20 @@ Adds action APIs for C++.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-action_msgs-devel
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-mimick_vendor-devel
-Requires:       ros2-humble-performance_test_fixture-devel
-Requires:       ros2-humble-rcl_action-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-test_msgs-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-action_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-mimick_vendor-devel
+Requires:       ros2-iron-performance_test_fixture-devel
+Requires:       ros2-iron-rcl_action-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-test_msgs-devel
 
 Provides: ros2-humble-rclcpp_action-devel = 16.0.7-1
 Obsoletes: ros2-humble-rclcpp_action-devel < 16.0.7-1

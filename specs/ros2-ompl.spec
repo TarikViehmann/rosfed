@@ -6,7 +6,7 @@ Summary:        ROS package ompl
 License:        BSD
 URL:            https://ompl.kavrakilab.org
 
-Source0:        https://github.com/ros2-gbp/ompl-release/archive/release/humble/ompl/1.6.0-1.tar.gz#/ros2-humble-ompl-1.6.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ompl-release/archive/release/iron/ompl/1.5.2-4.tar.gz#/ros2-iron-ompl-1.5.2-source0.tar.gz
 
 Patch0: ros-ompl.fix-broken-copy.patch
 
@@ -42,13 +42,12 @@ BuildRequires:  boost-devel
 BuildRequires:  cmake
 BuildRequires:  eigen3-devel
 BuildRequires:  flann-devel
-BuildRequires:  ode-devel
 BuildRequires:  pkgconfig
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-ompl = 1.6.0-1
-Obsoletes: ros2-humble-ompl < 1.6.0-1
+Provides:  ros2-iron-ompl = 1.5.2-1
+Obsoletes: ros2-iron-ompl < 1.5.2-1
 
 
 
@@ -62,12 +61,11 @@ Requires:       cmake
 Requires:       boost-devel
 Requires:       eigen3-devel
 Requires:       flann-devel
-Requires:       ode-devel
 Requires:       pkgconfig
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-ompl-devel = 1.6.0-1
-Obsoletes: ros2-humble-ompl-devel < 1.6.0-1
+Provides: ros2-iron-ompl-devel = 1.5.2-1
+Obsoletes: ros2-iron-ompl-devel < 1.5.2-1
 
 
 %description devel

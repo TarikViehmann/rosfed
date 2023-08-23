@@ -6,7 +6,7 @@ Summary:        ROS package laser_geometry
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/laser_geometry-release/archive/release/humble/laser_geometry/2.4.0-2.tar.gz#/ros2-humble-laser_geometry-2.4.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/laser_geometry-release/archive/release/iron/laser_geometry/2.5.0-3.tar.gz#/ros2-iron-laser_geometry-2.5.0-source0.tar.gz
 
 
 
@@ -38,29 +38,29 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  eigen3-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_cppcheck-devel
-BuildRequires:  ros2-humble-ament_cmake_cpplint-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_lint_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_cmake_uncrustify-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-eigen3_cmake_module-devel
-BuildRequires:  ros2-humble-python_cmake_module-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
-BuildRequires:  ros2-humble-tf2-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_cppcheck-devel
+BuildRequires:  ros2-iron-ament_cmake_cpplint-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_lint_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_cmake_uncrustify-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-eigen3_cmake_module-devel
+BuildRequires:  ros2-iron-python_cmake_module-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-tf2-devel
 
 Requires:       python3-numpy
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-sensor_msgs_py
-Requires:       ros2-humble-tf2
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-sensor_msgs_py
+Requires:       ros2-iron-tf2
 
-Provides:  ros2-humble-laser_geometry = 2.4.0-1
-Obsoletes: ros2-humble-laser_geometry < 2.4.0-1
+Provides:  ros2-iron-laser_geometry = 2.5.0-1
+Obsoletes: ros2-iron-laser_geometry < 2.5.0-1
 
 
 
@@ -75,24 +75,24 @@ robots or tilting laser scanners.
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       eigen3-devel
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-eigen3_cmake_module-devel
-Requires:       ros2-humble-ament_cmake_cppcheck-devel
-Requires:       ros2-humble-ament_cmake_cpplint-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_lint_cmake-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_cmake_uncrustify-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-python_cmake_module-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-tf2-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-sensor_msgs_py-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-eigen3_cmake_module-devel
+Requires:       ros2-iron-ament_cmake_cppcheck-devel
+Requires:       ros2-iron-ament_cmake_cpplint-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_lint_cmake-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_cmake_uncrustify-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-python_cmake_module-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-sensor_msgs_py-devel
 
-Provides: ros2-humble-laser_geometry-devel = 2.4.0-1
-Obsoletes: ros2-humble-laser_geometry-devel < 2.4.0-1
+Provides: ros2-iron-laser_geometry-devel = 2.5.0-1
+Obsoletes: ros2-iron-laser_geometry-devel < 2.5.0-1
 
 
 %description devel

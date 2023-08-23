@@ -6,7 +6,7 @@ Summary:        ROS package launch
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/launch-release/archive/release/humble/launch/1.0.4-1.tar.gz#/ros2-humble-launch-1.0.4-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/launch-release/archive/release/iron/launch/2.0.2-1.tar.gz#/ros2-iron-launch-2.0.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,20 +39,21 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-osrf_pycommon-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_mypy-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-osrf_pycommon-devel
 
 Requires:       python3
 Requires:       python3-lark-parser
 Requires:       python3-pyyaml
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-osrf_pycommon
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-osrf_pycommon
 
-Provides:  ros2-humble-launch = 1.0.4-1
-Obsoletes: ros2-humble-launch < 1.0.4-1
+Provides:  ros2-iron-launch = 2.0.2-1
+Obsoletes: ros2-iron-launch < 2.0.2-1
 
 
 
@@ -63,15 +64,16 @@ The ROS launch tool.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-osrf_pycommon-devel
-Requires:       ros2-humble-ament_index_python-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_mypy-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-osrf_pycommon-devel
+Requires:       ros2-iron-ament_index_python-devel
 
-Provides: ros2-humble-launch-devel = 1.0.4-1
-Obsoletes: ros2-humble-launch-devel < 1.0.4-1
+Provides: ros2-iron-launch-devel = 2.0.2-1
+Obsoletes: ros2-iron-launch-devel < 2.0.2-1
 
 
 %description devel

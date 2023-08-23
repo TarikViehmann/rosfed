@@ -38,37 +38,37 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-cv_bridge-devel
-BuildRequires:  ros2-humble-image_transport-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-nav2_core-devel
-BuildRequires:  ros2-humble-nav2_msgs-devel
-BuildRequires:  ros2-humble-nav2_util-devel
-BuildRequires:  ros2-humble-nav_msgs-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_action-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-tf2_ros-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-cv_bridge-devel
+BuildRequires:  ros2-iron-image_transport-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-nav2_core-devel
+BuildRequires:  ros2-iron-nav2_msgs-devel
+BuildRequires:  ros2-iron-nav2_util-devel
+BuildRequires:  ros2-iron-nav_msgs-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_action-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
 
-Requires:       ros2-humble-cv_bridge
-Requires:       ros2-humble-image_transport
-Requires:       ros2-humble-nav2_common
-Requires:       ros2-humble-nav2_core
-Requires:       ros2-humble-nav2_msgs
-Requires:       ros2-humble-nav2_util
-Requires:       ros2-humble-nav_msgs
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_action
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-tf2_ros
+Requires:       ros2-iron-cv_bridge
+Requires:       ros2-iron-image_transport
+Requires:       ros2-iron-nav2_common
+Requires:       ros2-iron-nav2_core
+Requires:       ros2-iron-nav2_msgs
+Requires:       ros2-iron-nav2_util
+Requires:       ros2-iron-nav_msgs
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_action
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-tf2_ros
 
 Provides:  ros2-humble-nav2_waypoint_follower = 1.1.12-1
 Obsoletes: ros2-humble-nav2_waypoint_follower < 1.1.12-1
@@ -81,24 +81,24 @@ A waypoint follower navigation server
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-cv_bridge-devel
-Requires:       ros2-humble-image_transport-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-nav2_core-devel
-Requires:       ros2-humble-nav2_msgs-devel
-Requires:       ros2-humble-nav2_util-devel
-Requires:       ros2-humble-nav_msgs-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_action-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-tf2_ros-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-cv_bridge-devel
+Requires:       ros2-iron-image_transport-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-nav2_core-devel
+Requires:       ros2-iron-nav2_msgs-devel
+Requires:       ros2-iron-nav2_util-devel
+Requires:       ros2-iron-nav_msgs-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_action-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-tf2_ros-devel
 
 Provides: ros2-humble-nav2_waypoint_follower-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_waypoint_follower-devel < 1.1.12-1

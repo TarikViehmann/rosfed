@@ -44,10 +44,10 @@ BuildRequires:  libXaw-devel
 BuildRequires:  libXrandr-devel
 BuildRequires:  mesa-libGL-devel mesa-libGLU-devel
 BuildRequires:  pkgconfig
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_xmllint-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_xmllint-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
 Provides:  ros2-humble-rviz_ogre_vendor = 11.2.9-1
@@ -63,16 +63,16 @@ ExternalProject build of ogre.
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       freetype-devel
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       git
 Requires:       libX11-devel
 Requires:       libXaw-devel
 Requires:       libXrandr-devel
 Requires:       mesa-libGL-devel mesa-libGLU-devel
 Requires:       pkgconfig
-Requires:       ros2-humble-ament_cmake_xmllint-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_xmllint-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-rviz_ogre_vendor-devel = 11.2.9-1
 Obsoletes: ros2-humble-rviz_ogre_vendor-devel < 11.2.9-1

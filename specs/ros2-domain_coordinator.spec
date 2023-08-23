@@ -6,7 +6,7 @@ Summary:        ROS package domain_coordinator
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ament_cmake_ros-release/archive/release/humble/domain_coordinator/0.10.0-3.tar.gz#/ros2-humble-domain_coordinator-0.10.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ament_cmake_ros-release/archive/release/iron/domain_coordinator/0.11.2-4.tar.gz#/ros2-iron-domain_coordinator-0.11.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,14 +39,14 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
 
 
-Provides:  ros2-humble-domain_coordinator = 0.10.0-1
-Obsoletes: ros2-humble-domain_coordinator < 0.10.0-1
+Provides:  ros2-iron-domain_coordinator = 0.11.2-1
+Obsoletes: ros2-iron-domain_coordinator < 0.11.2-1
 
 
 
@@ -57,13 +57,13 @@ A tool to coordinate unique ROS_DOMAIN_IDs across multiple processes
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
 
-Provides: ros2-humble-domain_coordinator-devel = 0.10.0-1
-Obsoletes: ros2-humble-domain_coordinator-devel < 0.10.0-1
+Provides: ros2-iron-domain_coordinator-devel = 0.11.2-1
+Obsoletes: ros2-iron-domain_coordinator-devel < 0.11.2-1
 
 
 %description devel

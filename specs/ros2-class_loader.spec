@@ -6,7 +6,7 @@ Summary:        ROS package class_loader
 License:        BSD
 URL:            http://ros.org/wiki/class_loader
 
-Source0:        https://github.com/ros2-gbp/class_loader-release/archive/release/humble/class_loader/2.2.0-3.tar.gz#/ros2-humble-class_loader-2.2.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/class_loader-release/archive/release/iron/class_loader/2.5.0-4.tar.gz#/ros2-iron-class_loader-2.5.0-source0.tar.gz
 
 
 
@@ -38,20 +38,20 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  console-bridge-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-console_bridge_vendor-devel
-BuildRequires:  ros2-humble-rcpputils-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-console_bridge_vendor-devel
+BuildRequires:  ros2-iron-rcpputils-devel
 
-Requires:       ros2-humble-console_bridge_vendor
-Requires:       ros2-humble-rcpputils
+Requires:       ros2-iron-console_bridge_vendor
+Requires:       ros2-iron-rcpputils
 
-Provides:  ros2-humble-class_loader = 2.2.0-1
-Obsoletes: ros2-humble-class_loader < 2.2.0-1
+Provides:  ros2-iron-class_loader = 2.5.0-1
+Obsoletes: ros2-iron-class_loader < 2.5.0-1
 
 
 
@@ -67,18 +67,18 @@ declaration (i.e. header file) for those classes.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
 Requires:       console-bridge-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-console_bridge_vendor-devel
-Requires:       ros2-humble-rcpputils-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-console_bridge_vendor-devel
+Requires:       ros2-iron-rcpputils-devel
 
-Provides: ros2-humble-class_loader-devel = 2.2.0-1
-Obsoletes: ros2-humble-class_loader-devel < 2.2.0-1
+Provides: ros2-iron-class_loader-devel = 2.5.0-1
+Obsoletes: ros2-iron-class_loader-devel < 2.5.0-1
 
 
 %description devel

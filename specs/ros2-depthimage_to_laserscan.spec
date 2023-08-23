@@ -6,7 +6,7 @@ Summary:        ROS package depthimage_to_laserscan
 License:        BSD
 URL:            http://ros.org/wiki/depthimage_to_laserscan
 
-Source0:        https://github.com/ros2-gbp/depthimage_to_laserscan-release/archive/release/humble/depthimage_to_laserscan/2.5.1-1.tar.gz#/ros2-humble-depthimage_to_laserscan-2.5.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/depthimage_to_laserscan-release/archive/release/iron/depthimage_to_laserscan/2.5.1-1.tar.gz#/ros2-iron-depthimage_to_laserscan-2.5.1-source0.tar.gz
 
 
 
@@ -38,23 +38,23 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  opencv-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-image_geometry-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_components-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-image_geometry-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_components-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
 
-Requires:       ros2-humble-image_geometry
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_components
-Requires:       ros2-humble-sensor_msgs
+Requires:       ros2-iron-image_geometry
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_components
+Requires:       ros2-iron-sensor_msgs
 
-Provides:  ros2-humble-depthimage_to_laserscan = 2.5.1-1
-Obsoletes: ros2-humble-depthimage_to_laserscan < 2.5.1-1
+Provides:  ros2-iron-depthimage_to_laserscan = 2.5.1-1
+Obsoletes: ros2-iron-depthimage_to_laserscan < 2.5.1-1
 
 
 
@@ -64,19 +64,19 @@ depthimage_to_laserscan
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
 Requires:       opencv-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-image_geometry-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_components-devel
-Requires:       ros2-humble-sensor_msgs-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-image_geometry-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_components-devel
+Requires:       ros2-iron-sensor_msgs-devel
 
-Provides: ros2-humble-depthimage_to_laserscan-devel = 2.5.1-1
-Obsoletes: ros2-humble-depthimage_to_laserscan-devel < 2.5.1-1
+Provides: ros2-iron-depthimage_to_laserscan-devel = 2.5.1-1
+Obsoletes: ros2-iron-depthimage_to_laserscan-devel < 2.5.1-1
 
 
 %description devel

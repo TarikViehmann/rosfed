@@ -38,35 +38,35 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  GraphicsMagick-c++-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_ros-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-nav2_msgs-devel
-BuildRequires:  ros2-humble-nav2_util-devel
-BuildRequires:  ros2-humble-nav_msgs-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-tf2-devel
-BuildRequires:  ros2-humble-yaml_cpp_vendor-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_ros-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-nav2_msgs-devel
+BuildRequires:  ros2-iron-nav2_util-devel
+BuildRequires:  ros2-iron-nav_msgs-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-tf2-devel
+BuildRequires:  ros2-iron-yaml_cpp_vendor-devel
 
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-launch_testing
-Requires:       ros2-humble-nav2_msgs
-Requires:       ros2-humble-nav2_util
-Requires:       ros2-humble-nav_msgs
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-tf2
-Requires:       ros2-humble-yaml_cpp_vendor
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-launch_testing
+Requires:       ros2-iron-nav2_msgs
+Requires:       ros2-iron-nav2_util
+Requires:       ros2-iron-nav_msgs
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-tf2
+Requires:       ros2-iron-yaml_cpp_vendor
 
 Provides:  ros2-humble-nav2_map_server = 1.1.12-1
 Obsoletes: ros2-humble-nav2_map_server < 1.1.12-1
@@ -79,25 +79,25 @@ Refactored map server for ROS2 Navigation
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       GraphicsMagick-c++-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-nav2_msgs-devel
-Requires:       ros2-humble-nav2_util-devel
-Requires:       ros2-humble-nav_msgs-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-tf2-devel
-Requires:       ros2-humble-yaml_cpp_vendor-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-nav2_msgs-devel
+Requires:       ros2-iron-nav2_util-devel
+Requires:       ros2-iron-nav_msgs-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-yaml_cpp_vendor-devel
 
 Provides: ros2-humble-nav2_map_server-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_map_server-devel < 1.1.12-1

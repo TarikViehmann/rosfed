@@ -6,7 +6,7 @@ Summary:        ROS package rmw_cyclonedds_cpp
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rmw_cyclonedds-release/archive/release/humble/rmw_cyclonedds_cpp/1.3.4-1.tar.gz#/ros2-humble-rmw_cyclonedds_cpp-1.3.4-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rmw_cyclonedds-release/archive/release/iron/rmw_cyclonedds_cpp/1.6.0-2.tar.gz#/ros2-iron-rmw_cyclonedds_cpp-1.6.0-source0.tar.gz
 
 
 
@@ -37,34 +37,34 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-cyclonedds-devel
-BuildRequires:  ros2-humble-iceoryx_binding_c-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rmw-devel
-BuildRequires:  ros2-humble-rmw_dds_common-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_introspection_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_introspection_cpp-devel
-BuildRequires:  ros2-humble-tracetools-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-cyclonedds-devel
+BuildRequires:  ros2-iron-iceoryx_binding_c-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rmw-devel
+BuildRequires:  ros2-iron-rmw_dds_common-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_introspection_c-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_introspection_cpp-devel
+BuildRequires:  ros2-iron-tracetools-devel
 
-Requires:       ros2-humble-cyclonedds
-Requires:       ros2-humble-iceoryx_binding_c
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rmw
-Requires:       ros2-humble-rmw_dds_common
-Requires:       ros2-humble-rosidl_runtime_c
-Requires:       ros2-humble-rosidl_typesupport_introspection_c
-Requires:       ros2-humble-rosidl_typesupport_introspection_cpp
-Requires:       ros2-humble-tracetools
+Requires:       ros2-iron-cyclonedds
+Requires:       ros2-iron-iceoryx_binding_c
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rmw
+Requires:       ros2-iron-rmw_dds_common
+Requires:       ros2-iron-rosidl_runtime_c
+Requires:       ros2-iron-rosidl_typesupport_introspection_c
+Requires:       ros2-iron-rosidl_typesupport_introspection_cpp
+Requires:       ros2-iron-tracetools
 
-Provides:  ros2-humble-rmw_cyclonedds_cpp = 1.3.4-1
-Obsoletes: ros2-humble-rmw_cyclonedds_cpp < 1.3.4-1
+Provides:  ros2-iron-rmw_cyclonedds_cpp = 1.6.0-1
+Obsoletes: ros2-iron-rmw_cyclonedds_cpp < 1.6.0-1
 
 
 
@@ -75,23 +75,23 @@ C++.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-cyclonedds-devel
-Requires:       ros2-humble-iceoryx_binding_c-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rmw-devel
-Requires:       ros2-humble-rmw_dds_common-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-rosidl_typesupport_introspection_c-devel
-Requires:       ros2-humble-rosidl_typesupport_introspection_cpp-devel
-Requires:       ros2-humble-tracetools-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-cyclonedds-devel
+Requires:       ros2-iron-iceoryx_binding_c-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rmw-devel
+Requires:       ros2-iron-rmw_dds_common-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-rosidl_typesupport_introspection_c-devel
+Requires:       ros2-iron-rosidl_typesupport_introspection_cpp-devel
+Requires:       ros2-iron-tracetools-devel
 
-Provides: ros2-humble-rmw_cyclonedds_cpp-devel = 1.3.4-1
-Obsoletes: ros2-humble-rmw_cyclonedds_cpp-devel < 1.3.4-1
+Provides: ros2-iron-rmw_cyclonedds_cpp-devel = 1.6.0-1
+Obsoletes: ros2-iron-rmw_cyclonedds_cpp-devel < 1.6.0-1
 
 
 %description devel

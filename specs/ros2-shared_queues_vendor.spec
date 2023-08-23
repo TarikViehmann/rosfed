@@ -38,8 +38,8 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
 Provides:  ros2-humble-shared_queues_vendor = 0.15.8-1
@@ -53,8 +53,8 @@ Vendor package for concurrent queues from moodycamel
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-shared_queues_vendor-devel = 0.15.8-1
 Obsoletes: ros2-humble-shared_queues_vendor-devel < 0.15.8-1

@@ -6,10 +6,9 @@ Summary:        ROS package kdl_parser
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/kdl_parser-release/archive/release/humble/kdl_parser/2.6.4-1.tar.gz#/ros2-humble-kdl_parser-2.6.4-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/kdl_parser-release/archive/release/iron/kdl_parser/2.9.0-3.tar.gz#/ros2-iron-kdl_parser-2.9.0-source0.tar.gz
 
-Patch0: ros-kdl_parser.system-orocos-kdl.patch
-Patch1: ros-kdl_parser.link-eigen3.patch
+Patch0: ros-kdl_parser.link-eigen3.patch
 
 
 # common BRs
@@ -40,24 +39,25 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  eigen3-devel
-BuildRequires:  orocos-kdl-devel
 BuildRequires:  tinyxml-devel
 BuildRequires:  urdfdom-devel
 BuildRequires:  urdfdom-headers-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-urdf-devel
-BuildRequires:  ros2-humble-urdfdom_headers-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-orocos_kdl_vendor-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-urdf-devel
+BuildRequires:  ros2-iron-urdfdom_headers-devel
 
-Requires:       ros2-humble-orocos_kdl_vendor
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-urdf
+Requires:       ros2-iron-orocos_kdl_vendor
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-urdf
 
-Provides:  ros2-humble-kdl_parser = 2.6.4-1
-Obsoletes: ros2-humble-kdl_parser < 2.6.4-1
+Provides:  ros2-iron-kdl_parser = 2.9.0-1
+Obsoletes: ros2-iron-kdl_parser < 2.9.0-1
 
 
 
@@ -68,22 +68,22 @@ represent the kinematic and dynamic parameters of a robot mechanism.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-urdfdom_headers-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-urdfdom_headers-devel
 Requires:       eigen3-devel
-Requires:       orocos-kdl-devel
 Requires:       tinyxml-devel
 Requires:       urdfdom-devel
 Requires:       urdfdom-headers-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-urdf-devel
-Requires:       ros2-humble-orocos_kdl_vendor-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-orocos_kdl_vendor-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-urdf-devel
 
-Provides: ros2-humble-kdl_parser-devel = 2.6.4-1
-Obsoletes: ros2-humble-kdl_parser-devel < 2.6.4-1
+Provides: ros2-iron-kdl_parser-devel = 2.9.0-1
+Obsoletes: ros2-iron-kdl_parser-devel < 2.9.0-1
 
 
 %description devel
@@ -97,7 +97,6 @@ applications that use %{name}.
 %setup -c -T
 tar --strip-components=1 -xf %{SOURCE0}
 %patch 0 -p1
-%patch 1 -p1
 
 %build
 # nothing to do here

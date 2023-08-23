@@ -6,7 +6,7 @@ Summary:        ROS package qt_gui_cpp
 License:        BSD
 URL:            http://ros.org/wiki/qt_gui_cpp
 
-Source0:        https://github.com/ros2-gbp/qt_gui_core-release/archive/release/humble/qt_gui_cpp/2.2.2-1.tar.gz#/ros2-humble-qt_gui_cpp-2.2.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/qt_gui_core-release/archive/release/iron/qt_gui_cpp/2.4.2-1.tar.gz#/ros2-iron-qt_gui_cpp-2.4.2-source0.tar.gz
 
 
 
@@ -47,21 +47,21 @@ BuildRequires:  python3-sip-devel
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  qtermwidget-qt5-devel
 BuildRequires:  tinyxml2-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-python_qt_binding-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-tinyxml2_vendor-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-python_qt_binding-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-tinyxml2_vendor-devel
 
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-qt_gui
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-tinyxml2_vendor
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-qt_gui
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-tinyxml2_vendor
 
-Provides:  ros2-humble-qt_gui_cpp = 2.2.2-1
-Obsoletes: ros2-humble-qt_gui_cpp < 2.2.2-1
+Provides:  ros2-iron-qt_gui_cpp = 2.4.2-1
+Obsoletes: ros2-iron-qt_gui_cpp < 2.4.2-1
 
 
 
@@ -73,7 +73,7 @@ binding must be available in order to use C++-plugins.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       boost-devel
 Requires:       console-bridge-devel
 Requires:       libXext-devel
@@ -84,16 +84,16 @@ Requires:       python3-sip-devel
 Requires:       qt5-qtbase-devel
 Requires:       qtermwidget-qt5-devel
 Requires:       tinyxml2-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-python_qt_binding-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-tinyxml2_vendor-devel
-Requires:       ros2-humble-qt_gui-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-python_qt_binding-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-tinyxml2_vendor-devel
+Requires:       ros2-iron-qt_gui-devel
 
-Provides: ros2-humble-qt_gui_cpp-devel = 2.2.2-1
-Obsoletes: ros2-humble-qt_gui_cpp-devel < 2.2.2-1
+Provides: ros2-iron-qt_gui_cpp-devel = 2.4.2-1
+Obsoletes: ros2-iron-qt_gui_cpp-devel < 2.4.2-1
 
 
 %description devel

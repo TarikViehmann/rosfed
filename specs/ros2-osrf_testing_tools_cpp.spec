@@ -6,7 +6,7 @@ Summary:        ROS package osrf_testing_tools_cpp
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/osrf_testing_tools_cpp-release/archive/release/humble/osrf_testing_tools_cpp/1.5.2-1.tar.gz#/ros2-humble-osrf_testing_tools_cpp-1.5.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/osrf_testing_tools_cpp-release/archive/release/iron/osrf_testing_tools_cpp/1.6.0-1.tar.gz#/ros2-iron-osrf_testing_tools_cpp-1.6.0-source0.tar.gz
 
 
 
@@ -38,11 +38,11 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  cmake
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-osrf_testing_tools_cpp = 1.5.2-1
-Obsoletes: ros2-humble-osrf_testing_tools_cpp < 1.5.2-1
+Provides:  ros2-iron-osrf_testing_tools_cpp = 1.6.0-1
+Obsoletes: ros2-iron-osrf_testing_tools_cpp < 1.6.0-1
 
 
 
@@ -53,10 +53,10 @@ Testing tools for C++, and is used in various OSRF projects.
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       cmake
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-osrf_testing_tools_cpp-devel = 1.5.2-1
-Obsoletes: ros2-humble-osrf_testing_tools_cpp-devel < 1.5.2-1
+Provides: ros2-iron-osrf_testing_tools_cpp-devel = 1.6.0-1
+Obsoletes: ros2-iron-osrf_testing_tools_cpp-devel < 1.6.0-1
 
 
 %description devel

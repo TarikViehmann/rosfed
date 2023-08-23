@@ -37,25 +37,25 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-action_msgs-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-osrf_testing_tools_cpp-devel
-BuildRequires:  ros2-humble-rcl-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rmw-devel
-BuildRequires:  ros2-humble-rmw_implementation_cmake-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
-BuildRequires:  ros2-humble-test_msgs-devel
+BuildRequires:  ros2-iron-action_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-osrf_testing_tools_cpp-devel
+BuildRequires:  ros2-iron-rcl-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rmw-devel
+BuildRequires:  ros2-iron-rmw_implementation_cmake-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-test_msgs-devel
 
-Requires:       ros2-humble-action_msgs
-Requires:       ros2-humble-rcl
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rmw
-Requires:       ros2-humble-rosidl_runtime_c
+Requires:       ros2-iron-action_msgs
+Requires:       ros2-iron-rcl
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rmw
+Requires:       ros2-iron-rosidl_runtime_c
 
 Provides:  ros2-humble-rcl_action = 5.3.6-1
 Obsoletes: ros2-humble-rcl_action < 5.3.6-1
@@ -68,19 +68,19 @@ Package containing a C-based ROS action implementation
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-action_msgs-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-osrf_testing_tools_cpp-devel
-Requires:       ros2-humble-rcl-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rmw-devel
-Requires:       ros2-humble-rmw_implementation_cmake-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-test_msgs-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-action_msgs-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-osrf_testing_tools_cpp-devel
+Requires:       ros2-iron-rcl-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rmw-devel
+Requires:       ros2-iron-rmw_implementation_cmake-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-test_msgs-devel
 
 Provides: ros2-humble-rcl_action-devel = 5.3.6-1
 Obsoletes: ros2-humble-rcl_action-devel < 5.3.6-1

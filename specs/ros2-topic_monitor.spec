@@ -6,7 +6,7 @@ Summary:        ROS package topic_monitor
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/demos-release/archive/release/humble/topic_monitor/0.20.3-1.tar.gz#/ros2-humble-topic_monitor-0.20.3-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/demos-release/archive/release/iron/topic_monitor/0.27.1-1.tar.gz#/ros2-iron-topic_monitor-0.27.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,18 +39,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-rclpy-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-rclpy-devel
 
-Requires:       ros2-humble-launch
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-launch
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-std_msgs
 
-Provides:  ros2-humble-topic_monitor = 0.20.3-1
-Obsoletes: ros2-humble-topic_monitor < 0.20.3-1
+Provides:  ros2-iron-topic_monitor = 0.27.1-1
+Obsoletes: ros2-iron-topic_monitor < 0.27.1-1
 
 
 
@@ -61,16 +61,16 @@ Package containing tools for monitoring ROS 2 topics.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-std_msgs-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-std_msgs-devel
 
-Provides: ros2-humble-topic_monitor-devel = 0.20.3-1
-Obsoletes: ros2-humble-topic_monitor-devel < 0.20.3-1
+Provides: ros2-iron-topic_monitor-devel = 0.27.1-1
+Obsoletes: ros2-iron-topic_monitor-devel < 0.27.1-1
 
 
 %description devel

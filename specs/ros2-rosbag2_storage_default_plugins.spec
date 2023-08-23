@@ -9,6 +9,7 @@ URL:            http://www.ros.org/
 Source0:        https://github.com/ros2-gbp/rosbag2-release/archive/release/humble/rosbag2_storage_default_plugins/0.15.8-1.tar.gz#/ros2-humble-rosbag2_storage_default_plugins-0.15.8-source0.tar.gz
 
 
+BuildArch: noarch
 
 # common BRs
 BuildRequires: patchelf
@@ -37,25 +38,11 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rosbag2_storage-devel
-BuildRequires:  ros2-humble-rosbag2_test_common-devel
-BuildRequires:  ros2-humble-sqlite3_vendor-devel
-BuildRequires:  ros2-humble-yaml_cpp_vendor-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rosbag2_storage
-Requires:       ros2-humble-sqlite3_vendor
-Requires:       ros2-humble-yaml_cpp_vendor
+Requires:       ros2-iron-rosbag2_storage_mcap
+Requires:       ros2-iron-rosbag2_storage_sqlite3
 
 Provides:  ros2-humble-rosbag2_storage_default_plugins = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2_storage_default_plugins < 0.15.8-1
@@ -63,23 +50,16 @@ Obsoletes: ros2-humble-rosbag2_storage_default_plugins < 0.15.8-1
 
 
 %description
-ROSBag2 SQLite3 storage plugin
+Intermediate metapackage to point at default storage plugin(s) for
+rosbag2
 
 %package        devel
 Summary:        Development files for %{name}
-Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rosbag2_storage-devel
-Requires:       ros2-humble-rosbag2_test_common-devel
-Requires:       ros2-humble-sqlite3_vendor-devel
-Requires:       ros2-humble-yaml_cpp_vendor-devel
+Requires:       %{name} = %{version}-%{release}
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rosbag2_storage_mcap-devel
+Requires:       ros2-iron-rosbag2_storage_sqlite3-devel
 
 Provides: ros2-humble-rosbag2_storage_default_plugins-devel = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2_storage_default_plugins-devel < 0.15.8-1

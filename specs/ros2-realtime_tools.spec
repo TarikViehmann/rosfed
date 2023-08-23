@@ -6,7 +6,7 @@ Summary:        ROS package realtime_tools
 License:        3-Clause BSD
 URL:            http://ros.org/wiki/realtime_tools
 
-Source0:        https://github.com/ros2-gbp/realtime_tools-release/archive/release/humble/realtime_tools/2.5.0-1.tar.gz#/ros2-humble-realtime_tools-2.5.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/realtime_tools-release/archive/release/iron/realtime_tools/2.5.0-3.tar.gz#/ros2-iron-realtime_tools-2.5.0-source0.tar.gz
 
 
 
@@ -37,18 +37,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_action-devel
-BuildRequires:  ros2-humble-test_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_action-devel
+BuildRequires:  ros2-iron-test_msgs-devel
 
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_action
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_action
 
-Provides:  ros2-humble-realtime_tools = 2.5.0-1
-Obsoletes: ros2-humble-realtime_tools < 2.5.0-1
+Provides:  ros2-iron-realtime_tools = 2.5.0-1
+Obsoletes: ros2-iron-realtime_tools < 2.5.0-1
 
 
 
@@ -59,15 +59,15 @@ without breaking the realtime behavior.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_action-devel
-Requires:       ros2-humble-test_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_action-devel
+Requires:       ros2-iron-test_msgs-devel
 
-Provides: ros2-humble-realtime_tools-devel = 2.5.0-1
-Obsoletes: ros2-humble-realtime_tools-devel < 2.5.0-1
+Provides: ros2-iron-realtime_tools-devel = 2.5.0-1
+Obsoletes: ros2-iron-realtime_tools-devel < 2.5.0-1
 
 
 %description devel

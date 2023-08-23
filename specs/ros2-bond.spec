@@ -6,7 +6,7 @@ Summary:        ROS package bond
 License:        BSD
 URL:            http://www.ros.org/wiki/bond
 
-Source0:        https://github.com/ros2-gbp/bond_core-release/archive/release/humble/bond/3.0.2-3.tar.gz#/ros2-humble-bond-3.0.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/bond_core-release/archive/release/iron/bond/4.0.0-4.tar.gz#/ros2-iron-bond-4.0.0-source0.tar.gz
 
 
 
@@ -37,20 +37,20 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-builtin_interfaces-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-rosidl_default_runtime
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-rosidl_default_runtime
+Requires:       ros2-iron-std_msgs
 
-Provides:  ros2-humble-bond = 3.0.2-1
-Obsoletes: ros2-humble-bond < 3.0.2-1
+Provides:  ros2-iron-bond = 4.0.0-1
+Obsoletes: ros2-iron-bond < 4.0.0-1
 
 
 
@@ -62,17 +62,17 @@ until it is either broken explicitly or until a heartbeat times out.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
 
-Provides: ros2-humble-bond-devel = 3.0.2-1
-Obsoletes: ros2-humble-bond-devel < 3.0.2-1
+Provides: ros2-iron-bond-devel = 4.0.0-1
+Obsoletes: ros2-iron-bond-devel < 4.0.0-1
 
 
 %description devel

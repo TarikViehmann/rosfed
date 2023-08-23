@@ -39,19 +39,19 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pyyaml
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_ros-devel
-BuildRequires:  ros2-humble-osrf_pycommon-devel
-BuildRequires:  ros2-humble-rclpy-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_ros-devel
+BuildRequires:  ros2-iron-osrf_pycommon-devel
+BuildRequires:  ros2-iron-rclpy-devel
 
 Requires:       python3-pyyaml
-Requires:       ros2-humble-launch
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-osrf_pycommon
-Requires:       ros2-humble-rclpy
+Requires:       ros2-iron-launch
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-osrf_pycommon
+Requires:       ros2-iron-rclpy
 
 Provides:  ros2-humble-nav2_common = 1.1.12-1
 Obsoletes: ros2-humble-nav2_common < 1.1.12-1
@@ -64,14 +64,14 @@ Common support functionality used throughout the navigation 2 stack
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_core-devel
+Requires:       ros2-iron-ament_cmake_core-devel
 Requires:       python3-pyyaml
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-osrf_pycommon-devel
-Requires:       ros2-humble-rclpy-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-osrf_pycommon-devel
+Requires:       ros2-iron-rclpy-devel
 
 Provides: ros2-humble-nav2_common-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_common-devel < 1.1.12-1

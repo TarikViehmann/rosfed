@@ -6,7 +6,7 @@ Summary:        ROS package rosidl_default_generators
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rosidl_defaults-release/archive/release/humble/rosidl_default_generators/1.2.0-2.tar.gz#/ros2-humble-rosidl_default_generators-1.2.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rosidl_defaults-release/archive/release/iron/rosidl_default_generators/1.5.0-3.tar.gz#/ros2-iron-rosidl_default_generators-1.5.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,25 +38,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rosidl_cmake-devel
-BuildRequires:  ros2-humble-rosidl_generator_c-devel
-BuildRequires:  ros2-humble-rosidl_generator_cpp-devel
-BuildRequires:  ros2-humble-rosidl_generator_py-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_cpp-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_fastrtps_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_fastrtps_cpp-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_introspection_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_introspection_cpp-devel
+BuildRequires:  ros2-iron-action_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-rosidl_core_generators-devel
+BuildRequires:  ros2-iron-service_msgs-devel
 
 
-Provides:  ros2-humble-rosidl_default_generators = 1.2.0-1
-Obsoletes: ros2-humble-rosidl_default_generators < 1.2.0-1
+Provides:  ros2-iron-rosidl_default_generators = 1.5.0-1
+Obsoletes: ros2-iron-rosidl_default_generators < 1.5.0-1
 
 
 
@@ -66,24 +59,17 @@ A configuration package defining the default ROS interface generators.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-rosidl_cmake-devel
-Requires:       ros2-humble-rosidl_generator_c-devel
-Requires:       ros2-humble-rosidl_generator_cpp-devel
-Requires:       ros2-humble-rosidl_generator_py-devel
-Requires:       ros2-humble-rosidl_typesupport_c-devel
-Requires:       ros2-humble-rosidl_typesupport_cpp-devel
-Requires:       ros2-humble-rosidl_typesupport_fastrtps_c-devel
-Requires:       ros2-humble-rosidl_typesupport_fastrtps_cpp-devel
-Requires:       ros2-humble-rosidl_typesupport_introspection_c-devel
-Requires:       ros2-humble-rosidl_typesupport_introspection_cpp-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-action_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-rosidl_core_generators-devel
+Requires:       ros2-iron-service_msgs-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-rosidl_default_generators-devel = 1.2.0-1
-Obsoletes: ros2-humble-rosidl_default_generators-devel < 1.2.0-1
+Provides: ros2-iron-rosidl_default_generators-devel = 1.5.0-1
+Obsoletes: ros2-iron-rosidl_default_generators-devel < 1.5.0-1
 
 
 %description devel

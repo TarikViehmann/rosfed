@@ -6,7 +6,7 @@ Summary:        ROS package webots_ros2_driver
 License:        Apache License 2.0
 URL:            http://wiki.ros.org/webots_ros2
 
-Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/humble/webots_ros2_driver/2023.1.1-2.tar.gz#/ros2-humble-webots_ros2_driver-2023.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/iron/webots_ros2_driver/2023.1.1-2.tar.gz#/ros2-iron-webots_ros2_driver-2023.1.1-source0.tar.gz
 
 Patch0: ros2-webots_ros2_driver.python-version.patch
 
@@ -39,41 +39,41 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  yaml-cpp-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-python_cmake_module-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclpy-devel
-BuildRequires:  ros2-humble-ros_environment-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-tf2_geometry_msgs-devel
-BuildRequires:  ros2-humble-tf2_ros-devel
-BuildRequires:  ros2-humble-tinyxml2_vendor-devel
-BuildRequires:  ros2-humble-vision_msgs-devel
-BuildRequires:  ros2-humble-webots_ros2_importer-devel
-BuildRequires:  ros2-humble-webots_ros2_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-python_cmake_module-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclpy-devel
+BuildRequires:  ros2-iron-ros_environment-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-tf2_geometry_msgs-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
+BuildRequires:  ros2-iron-tinyxml2_vendor-devel
+BuildRequires:  ros2-iron-vision_msgs-devel
+BuildRequires:  ros2-iron-webots_ros2_importer-devel
+BuildRequires:  ros2-iron-webots_ros2_msgs-devel
 
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-tf2_geometry_msgs
-Requires:       ros2-humble-tf2_ros
-Requires:       ros2-humble-tinyxml2_vendor
-Requires:       ros2-humble-vision_msgs
-Requires:       ros2-humble-webots_ros2_importer
-Requires:       ros2-humble-webots_ros2_msgs
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-tf2_geometry_msgs
+Requires:       ros2-iron-tf2_ros
+Requires:       ros2-iron-tinyxml2_vendor
+Requires:       ros2-iron-vision_msgs
+Requires:       ros2-iron-webots_ros2_importer
+Requires:       ros2-iron-webots_ros2_msgs
 
-Provides:  ros2-humble-webots_ros2_driver = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_driver < 2023.1.1-1
+Provides:  ros2-iron-webots_ros2_driver = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_driver < 2023.1.1-1
 
 
 
@@ -83,29 +83,29 @@ Implementation of the Webots - ROS 2 interface
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-python_cmake_module-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-python_cmake_module-devel
 Requires:       yaml-cpp-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-ros_environment-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-tf2_geometry_msgs-devel
-Requires:       ros2-humble-tf2_ros-devel
-Requires:       ros2-humble-tinyxml2_vendor-devel
-Requires:       ros2-humble-vision_msgs-devel
-Requires:       ros2-humble-webots_ros2_importer-devel
-Requires:       ros2-humble-webots_ros2_msgs-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-ros_environment-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-tf2_geometry_msgs-devel
+Requires:       ros2-iron-tf2_ros-devel
+Requires:       ros2-iron-tinyxml2_vendor-devel
+Requires:       ros2-iron-vision_msgs-devel
+Requires:       ros2-iron-webots_ros2_importer-devel
+Requires:       ros2-iron-webots_ros2_msgs-devel
 
-Provides: ros2-humble-webots_ros2_driver-devel = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_driver-devel < 2023.1.1-1
+Provides: ros2-iron-webots_ros2_driver-devel = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_driver-devel < 2023.1.1-1
 
 
 %description devel

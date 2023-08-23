@@ -38,18 +38,16 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  boost-devel
-BuildRequires:  ros2-humble-action_msgs-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-builtin_interfaces-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
 
-Requires:       ros2-humble-action_msgs
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-rosidl_default_runtime
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-rosidl_default_runtime
 
 Provides:  ros2-humble-tf2_msgs = 0.25.5-1
 Obsoletes: ros2-humble-tf2_msgs < 0.25.5-1
@@ -62,15 +60,14 @@ tf2_msgs
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
 Requires:       boost-devel
-Requires:       ros2-humble-action_msgs-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
 
 Provides: ros2-humble-tf2_msgs-devel = 0.25.5-1
 Obsoletes: ros2-humble-tf2_msgs-devel < 0.25.5-1

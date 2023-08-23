@@ -37,41 +37,42 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_index_cpp-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rmw-devel
-BuildRequires:  ros2-humble-rmw_implementation-devel
-BuildRequires:  ros2-humble-rosbag2_storage-devel
-BuildRequires:  ros2-humble-rosbag2_test_common-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
-BuildRequires:  ros2-humble-rosidl_runtime_cpp-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_cpp-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_introspection_cpp-devel
-BuildRequires:  ros2-humble-shared_queues_vendor-devel
-BuildRequires:  ros2-humble-test_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_index_cpp-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rmw-devel
+BuildRequires:  ros2-iron-rmw_implementation-devel
+BuildRequires:  ros2-iron-rosbag2_storage-devel
+BuildRequires:  ros2-iron-rosbag2_storage_default_plugins-devel
+BuildRequires:  ros2-iron-rosbag2_test_common-devel
+BuildRequires:  ros2-iron-rosbag2_test_msgdefs-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-rosidl_runtime_cpp-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_cpp-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_introspection_cpp-devel
+BuildRequires:  ros2-iron-shared_queues_vendor-devel
+BuildRequires:  ros2-iron-test_msgs-devel
 
-Requires:       ros2-humble-ament_index_cpp
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rmw
-Requires:       ros2-humble-rmw_implementation
-Requires:       ros2-humble-rosbag2_storage
-Requires:       ros2-humble-rosbag2_storage_default_plugins
-Requires:       ros2-humble-rosidl_runtime_c
-Requires:       ros2-humble-rosidl_runtime_cpp
-Requires:       ros2-humble-rosidl_typesupport_cpp
-Requires:       ros2-humble-rosidl_typesupport_introspection_cpp
-Requires:       ros2-humble-shared_queues_vendor
+Requires:       ros2-iron-ament_index_cpp
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rmw
+Requires:       ros2-iron-rmw_implementation
+Requires:       ros2-iron-rosbag2_storage
+Requires:       ros2-iron-rosidl_runtime_c
+Requires:       ros2-iron-rosidl_runtime_cpp
+Requires:       ros2-iron-rosidl_typesupport_cpp
+Requires:       ros2-iron-rosidl_typesupport_introspection_cpp
+Requires:       ros2-iron-shared_queues_vendor
 
 Provides:  ros2-humble-rosbag2_cpp = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2_cpp < 0.15.8-1
@@ -84,27 +85,28 @@ C++ ROSBag2 client library
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_index_cpp-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rmw-devel
-Requires:       ros2-humble-rmw_implementation-devel
-Requires:       ros2-humble-rosbag2_storage-devel
-Requires:       ros2-humble-rosbag2_test_common-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-rosidl_runtime_cpp-devel
-Requires:       ros2-humble-rosidl_typesupport_cpp-devel
-Requires:       ros2-humble-rosidl_typesupport_introspection_cpp-devel
-Requires:       ros2-humble-shared_queues_vendor-devel
-Requires:       ros2-humble-test_msgs-devel
-Requires:       ros2-humble-rosbag2_storage_default_plugins-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_index_cpp-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rmw-devel
+Requires:       ros2-iron-rmw_implementation-devel
+Requires:       ros2-iron-rosbag2_storage-devel
+Requires:       ros2-iron-rosbag2_storage_default_plugins-devel
+Requires:       ros2-iron-rosbag2_test_common-devel
+Requires:       ros2-iron-rosbag2_test_msgdefs-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-rosidl_runtime_cpp-devel
+Requires:       ros2-iron-rosidl_typesupport_cpp-devel
+Requires:       ros2-iron-rosidl_typesupport_introspection_cpp-devel
+Requires:       ros2-iron-shared_queues_vendor-devel
+Requires:       ros2-iron-test_msgs-devel
 
 Provides: ros2-humble-rosbag2_cpp-devel = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2_cpp-devel < 0.15.8-1

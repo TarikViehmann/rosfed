@@ -8,8 +8,7 @@ URL:            http://www.ros.org/
 
 Source0:        https://github.com/SteveMacenski/navigation2-release/archive/release/humble/nav2_behaviors/1.1.12-1.tar.gz#/ros2-humble-nav2_behaviors-1.1.12-source0.tar.gz
 
-Patch0: ros-nav2_behaviors.init_variables.patch
-Patch1: ros2-nav2_behaviors.disable-warnings.patch
+Patch0: ros2-nav2_behaviors.disable-warnings.patch
 
 
 # common BRs
@@ -39,37 +38,37 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-nav2_behavior_tree-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-nav2_core-devel
-BuildRequires:  ros2-humble-nav2_costmap_2d-devel
-BuildRequires:  ros2-humble-nav2_msgs-devel
-BuildRequires:  ros2-humble-nav2_util-devel
-BuildRequires:  ros2-humble-nav_msgs-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_action-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-tf2-devel
-BuildRequires:  ros2-humble-tf2_geometry_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-nav2_behavior_tree-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-nav2_core-devel
+BuildRequires:  ros2-iron-nav2_costmap_2d-devel
+BuildRequires:  ros2-iron-nav2_msgs-devel
+BuildRequires:  ros2-iron-nav2_util-devel
+BuildRequires:  ros2-iron-nav_msgs-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_action-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-tf2-devel
+BuildRequires:  ros2-iron-tf2_geometry_msgs-devel
 
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-nav2_behavior_tree
-Requires:       ros2-humble-nav2_core
-Requires:       ros2-humble-nav2_costmap_2d
-Requires:       ros2-humble-nav2_msgs
-Requires:       ros2-humble-nav2_util
-Requires:       ros2-humble-nav_msgs
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_action
-Requires:       ros2-humble-rclcpp_lifecycle
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-nav2_behavior_tree
+Requires:       ros2-iron-nav2_core
+Requires:       ros2-iron-nav2_costmap_2d
+Requires:       ros2-iron-nav2_msgs
+Requires:       ros2-iron-nav2_util
+Requires:       ros2-iron-nav_msgs
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_action
+Requires:       ros2-iron-rclcpp_lifecycle
 
 Provides:  ros2-humble-nav2_behaviors = 1.1.12-1
 Obsoletes: ros2-humble-nav2_behaviors < 1.1.12-1
@@ -82,25 +81,25 @@ TODO
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-nav2_behavior_tree-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-nav2_core-devel
-Requires:       ros2-humble-nav2_costmap_2d-devel
-Requires:       ros2-humble-nav2_msgs-devel
-Requires:       ros2-humble-nav2_util-devel
-Requires:       ros2-humble-nav_msgs-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_action-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-tf2-devel
-Requires:       ros2-humble-tf2_geometry_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-nav2_behavior_tree-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-nav2_core-devel
+Requires:       ros2-iron-nav2_costmap_2d-devel
+Requires:       ros2-iron-nav2_msgs-devel
+Requires:       ros2-iron-nav2_util-devel
+Requires:       ros2-iron-nav_msgs-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_action-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-tf2_geometry_msgs-devel
 
 Provides: ros2-humble-nav2_behaviors-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_behaviors-devel < 1.1.12-1
@@ -117,7 +116,6 @@ applications that use %{name}.
 %setup -c -T
 tar --strip-components=1 -xf %{SOURCE0}
 %patch 0 -p1
-%patch 1 -p1
 
 %build
 # nothing to do here

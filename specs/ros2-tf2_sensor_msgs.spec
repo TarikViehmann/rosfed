@@ -39,21 +39,28 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  eigen3-devel
-BuildRequires:  ros2-humble-ament_cmake_auto-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-eigen3_cmake_module-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
-BuildRequires:  ros2-humble-tf2-devel
-BuildRequires:  ros2-humble-tf2_ros-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-eigen3_cmake_module-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-python_cmake_module-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-tf2-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
 
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-tf2
-Requires:       ros2-humble-tf2_ros
-Requires:       ros2-humble-tf2_ros_py
+Requires:       python3-numpy
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-sensor_msgs_py
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-tf2
+Requires:       ros2-iron-tf2_ros
+Requires:       ros2-iron-tf2_ros_py
 
 Provides:  ros2-humble-tf2_sensor_msgs = 0.25.5-1
 Obsoletes: ros2-humble-tf2_sensor_msgs < 0.25.5-1
@@ -67,17 +74,22 @@ Small lib to transform sensor_msgs with tf. Most notably, PointCloud2
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       eigen3-devel
-Requires:       ros2-humble-ament_cmake_auto-devel
-Requires:       ros2-humble-eigen3_cmake_module-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-tf2-devel
-Requires:       ros2-humble-tf2_ros-devel
-Requires:       ros2-humble-tf2_ros_py-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-eigen3_cmake_module-devel
+Requires:       ros2-iron-python_cmake_module-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-tf2_ros-devel
+Requires:       ros2-iron-sensor_msgs_py-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-tf2_ros_py-devel
 
 Provides: ros2-humble-tf2_sensor_msgs-devel = 0.25.5-1
 Obsoletes: ros2-humble-tf2_sensor_msgs-devel < 0.25.5-1

@@ -6,7 +6,7 @@ Summary:        ROS package qt_gui
 License:        BSD
 URL:            http://ros.org/wiki/qt_gui
 
-Source0:        https://github.com/ros2-gbp/qt_gui_core-release/archive/release/humble/qt_gui/2.2.2-1.tar.gz#/ros2-humble-qt_gui-2.2.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/qt_gui_core-release/archive/release/iron/qt_gui/2.4.2-1.tar.gz#/ros2-iron-qt_gui-2.4.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -40,18 +40,18 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  python3-qt5
 BuildRequires:  qt5-qtbase-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       python3-catkin_pkg
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-python_qt_binding
-Requires:       ros2-humble-tango_icons_vendor
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-python_qt_binding
+Requires:       ros2-iron-tango_icons_vendor
 
-Provides:  ros2-humble-qt_gui = 2.2.2-1
-Obsoletes: ros2-humble-qt_gui < 2.2.2-1
+Provides:  ros2-iron-qt_gui = 2.4.2-1
+Obsoletes: ros2-iron-qt_gui < 2.4.2-1
 
 
 
@@ -67,15 +67,15 @@ Requires:       %{name} = %{version}-%{release}
 Requires:       ros2-humble-ament_cmake-devel
 Requires:       python3-qt5
 Requires:       qt5-qtbase-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-python_qt_binding-devel
-Requires:       ros2-humble-tango_icons_vendor-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-python_qt_binding-devel
+Requires:       ros2-iron-tango_icons_vendor-devel
 
-Provides: ros2-humble-qt_gui-devel = 2.2.2-1
-Obsoletes: ros2-humble-qt_gui-devel < 2.2.2-1
+Provides: ros2-iron-qt_gui-devel = 2.4.2-1
+Obsoletes: ros2-iron-qt_gui-devel < 2.4.2-1
 
 
 %description devel

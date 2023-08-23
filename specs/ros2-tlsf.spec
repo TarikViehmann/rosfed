@@ -6,7 +6,7 @@ Summary:        ROS package tlsf
 License:        GNU Lesser Public License 2.1
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/tlsf-release/archive/release/humble/tlsf/0.7.0-2.tar.gz#/ros2-humble-tlsf-0.7.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/tlsf-release/archive/release/iron/tlsf/0.8.2-3.tar.gz#/ros2-iron-tlsf-0.8.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,15 +38,15 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-ament_cmake
+Requires:       ros2-iron-ament_cmake
 
-Provides:  ros2-humble-tlsf = 0.7.0-1
-Obsoletes: ros2-humble-tlsf < 0.7.0-1
+Provides:  ros2-iron-tlsf = 0.8.2-1
+Obsoletes: ros2-iron-tlsf < 0.8.2-1
 
 
 
@@ -56,13 +56,13 @@ TLSF allocator version 2.4.6
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-tlsf-devel = 0.7.0-1
-Obsoletes: ros2-humble-tlsf-devel < 0.7.0-1
+Provides: ros2-iron-tlsf-devel = 0.8.2-1
+Obsoletes: ros2-iron-tlsf-devel < 0.8.2-1
 
 
 %description devel

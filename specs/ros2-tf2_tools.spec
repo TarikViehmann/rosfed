@@ -38,14 +38,14 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       graphviz
 Requires:       python3-pyyaml
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-tf2_msgs
-Requires:       ros2-humble-tf2_py
-Requires:       ros2-humble-tf2_ros_py
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-tf2_msgs
+Requires:       ros2-iron-tf2_py
+Requires:       ros2-iron-tf2_ros_py
 
 Provides:  ros2-humble-tf2_tools = 0.25.5-1
 Obsoletes: ros2-humble-tf2_tools < 0.25.5-1
@@ -58,11 +58,11 @@ tf2_tools
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-tf2_msgs-devel
-Requires:       ros2-humble-tf2_py-devel
-Requires:       ros2-humble-tf2_ros_py-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-tf2_msgs-devel
+Requires:       ros2-iron-tf2_py-devel
+Requires:       ros2-iron-tf2_ros_py-devel
 
 Provides: ros2-humble-tf2_tools-devel = 0.25.5-1
 Obsoletes: ros2-humble-tf2_tools-devel < 0.25.5-1

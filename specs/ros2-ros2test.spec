@@ -6,7 +6,7 @@ Summary:        ROS package ros2test
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ros_testing-release/archive/release/humble/ros2test/0.4.0-3.tar.gz#/ros2-humble-ros2test-0.4.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros_testing-release/archive/release/iron/ros2test/0.5.2-3.tar.gz#/ros2-iron-ros2test-0.5.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,25 +39,25 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_ros-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-launch_testing_ros-devel
-BuildRequires:  ros2-humble-ros2cli-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_ros-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-launch_testing_ros-devel
+BuildRequires:  ros2-iron-ros2cli-devel
 
-Requires:       ros2-humble-domain_coordinator
-Requires:       ros2-humble-launch
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-launch_testing
-Requires:       ros2-humble-launch_testing_ros
-Requires:       ros2-humble-ros2cli
+Requires:       ros2-iron-domain_coordinator
+Requires:       ros2-iron-launch
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-launch_testing
+Requires:       ros2-iron-launch_testing_ros
+Requires:       ros2-iron-ros2cli
 
-Provides:  ros2-humble-ros2test = 0.4.0-1
-Obsoletes: ros2-humble-ros2test < 0.4.0-1
+Provides:  ros2-iron-ros2test = 0.5.2-1
+Obsoletes: ros2-iron-ros2test < 0.5.2-1
 
 
 
@@ -68,19 +68,19 @@ The test command for ROS 2 launch tests.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-launch_testing_ros-devel
-Requires:       ros2-humble-ros2cli-devel
-Requires:       ros2-humble-domain_coordinator-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-launch_testing_ros-devel
+Requires:       ros2-iron-ros2cli-devel
+Requires:       ros2-iron-domain_coordinator-devel
 
-Provides: ros2-humble-ros2test-devel = 0.4.0-1
-Obsoletes: ros2-humble-ros2test-devel < 0.4.0-1
+Provides: ros2-iron-ros2test-devel = 0.5.2-1
+Obsoletes: ros2-iron-ros2test-devel < 0.5.2-1
 
 
 %description devel

@@ -6,7 +6,7 @@ Summary:        ROS package urdf
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/urdf-release/archive/release/humble/urdf/2.6.0-2.tar.gz#/ros2-humble-urdf-2.6.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/urdf-release/archive/release/iron/urdf/2.8.2-3.tar.gz#/ros2-iron-urdf-2.8.2-source0.tar.gz
 
 
 
@@ -39,24 +39,25 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  poco-devel
 BuildRequires:  tinyxml2-devel
-BuildRequires:  ros2-humble-ament_cmake_google_benchmark-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-tinyxml2_vendor-devel
-BuildRequires:  ros2-humble-urdf_parser_plugin-devel
-BuildRequires:  ros2-humble-urdfdom-devel
-BuildRequires:  ros2-humble-urdfdom_headers-devel
+BuildRequires:  ros2-iron-ament_cmake_google_benchmark-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-tinyxml2_vendor-devel
+BuildRequires:  ros2-iron-urdf_parser_plugin-devel
+BuildRequires:  ros2-iron-urdfdom-devel
+BuildRequires:  ros2-iron-urdfdom_headers-devel
 
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-tinyxml2_vendor
-Requires:       ros2-humble-urdfdom
-Requires:       ros2-humble-urdfdom_headers
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-tinyxml2_vendor
+Requires:       ros2-iron-urdf_parser_plugin
+Requires:       ros2-iron-urdfdom
+Requires:       ros2-iron-urdfdom_headers
 
-Provides:  ros2-humble-urdf = 2.6.0-1
-Obsoletes: ros2-humble-urdf < 2.6.0-1
+Provides:  ros2-iron-urdf = 2.8.2-1
+Obsoletes: ros2-iron-urdf < 2.8.2-1
 
 
 
@@ -69,21 +70,21 @@ will remain backwards compatible in future releases.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-urdf_parser_plugin-devel
-Requires:       ros2-humble-urdfdom-devel
-Requires:       ros2-humble-urdfdom_headers-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-urdf_parser_plugin-devel
+Requires:       ros2-iron-urdfdom-devel
+Requires:       ros2-iron-urdfdom_headers-devel
 Requires:       poco-devel
 Requires:       tinyxml2-devel
-Requires:       ros2-humble-ament_cmake_google_benchmark-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-tinyxml2_vendor-devel
+Requires:       ros2-iron-ament_cmake_google_benchmark-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-tinyxml2_vendor-devel
 
-Provides: ros2-humble-urdf-devel = 2.6.0-1
-Obsoletes: ros2-humble-urdf-devel < 2.6.0-1
+Provides: ros2-iron-urdf-devel = 2.8.2-1
+Obsoletes: ros2-iron-urdf-devel < 2.8.2-1
 
 
 %description devel

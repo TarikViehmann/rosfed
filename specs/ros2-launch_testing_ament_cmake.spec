@@ -6,7 +6,7 @@ Summary:        ROS package launch_testing_ament_cmake
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/launch-release/archive/release/humble/launch_testing_ament_cmake/1.0.4-1.tar.gz#/ros2-humble-launch_testing_ament_cmake-1.0.4-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/launch-release/archive/release/iron/launch_testing_ament_cmake/2.0.2-1.tar.gz#/ros2-iron-launch_testing_ament_cmake-2.0.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,16 +38,16 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_copyright-devel
-BuildRequires:  ros2-humble-ament_cmake_test-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-python_cmake_module-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_copyright-devel
+BuildRequires:  ros2-iron-ament_cmake_test-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-python_cmake_module-devel
 
 
-Provides:  ros2-humble-launch_testing_ament_cmake = 1.0.4-1
-Obsoletes: ros2-humble-launch_testing_ament_cmake < 1.0.4-1
+Provides:  ros2-iron-launch_testing_ament_cmake = 2.0.2-1
+Obsoletes: ros2-iron-launch_testing_ament_cmake < 2.0.2-1
 
 
 
@@ -58,15 +58,15 @@ build.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_test-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-python_cmake_module-devel
-Requires:       ros2-humble-ament_cmake_copyright-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_test-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-python_cmake_module-devel
+Requires:       ros2-iron-ament_cmake_copyright-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-launch_testing_ament_cmake-devel = 1.0.4-1
-Obsoletes: ros2-humble-launch_testing_ament_cmake-devel < 1.0.4-1
+Provides: ros2-iron-launch_testing_ament_cmake-devel = 2.0.2-1
+Obsoletes: ros2-iron-launch_testing_ament_cmake-devel < 2.0.2-1
 
 
 %description devel

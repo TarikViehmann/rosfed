@@ -6,7 +6,7 @@ Summary:        ROS package image_geometry
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/vision_opencv-release/archive/release/humble/image_geometry/3.2.1-1.tar.gz#/ros2-humble-image_geometry-3.2.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/vision_opencv-release/archive/release/iron/image_geometry/3.4.0-3.tar.gz#/ros2-iron-image_geometry-3.4.0-source0.tar.gz
 
 
 
@@ -40,17 +40,17 @@ BuildRequires: python3-vcstool
 BuildRequires:  boost-devel
 BuildRequires:  gtest-devel
 BuildRequires:  opencv-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
 
-Requires:       ros2-humble-sensor_msgs
+Requires:       ros2-iron-sensor_msgs
 
-Provides:  ros2-humble-image_geometry = 3.2.1-1
-Obsoletes: ros2-humble-image_geometry < 3.2.1-1
+Provides:  ros2-iron-image_geometry = 3.4.0-1
+Obsoletes: ros2-iron-image_geometry < 3.4.0-1
 
 
 
@@ -64,18 +64,18 @@ OpenCV data types.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
 Requires:       boost-devel
 Requires:       gtest-devel
 Requires:       opencv-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-sensor_msgs-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-sensor_msgs-devel
 
-Provides: ros2-humble-image_geometry-devel = 3.2.1-1
-Obsoletes: ros2-humble-image_geometry-devel < 3.2.1-1
+Provides: ros2-iron-image_geometry-devel = 3.4.0-1
+Obsoletes: ros2-iron-image_geometry-devel < 3.4.0-1
 
 
 %description devel

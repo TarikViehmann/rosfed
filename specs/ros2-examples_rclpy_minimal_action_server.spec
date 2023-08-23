@@ -6,7 +6,7 @@ Summary:        ROS package examples_rclpy_minimal_action_server
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/examples-release/archive/release/humble/examples_rclpy_minimal_action_server/0.15.1-1.tar.gz#/ros2-humble-examples_rclpy_minimal_action_server-0.15.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/examples-release/archive/release/iron/examples_rclpy_minimal_action_server/0.18.0-2.tar.gz#/ros2-iron-examples_rclpy_minimal_action_server-0.18.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,16 +39,16 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
 
-Requires:       ros2-humble-example_interfaces
-Requires:       ros2-humble-rclpy
+Requires:       ros2-iron-example_interfaces
+Requires:       ros2-iron-rclpy
 
-Provides:  ros2-humble-examples_rclpy_minimal_action_server = 0.15.1-1
-Obsoletes: ros2-humble-examples_rclpy_minimal_action_server < 0.15.1-1
+Provides:  ros2-iron-examples_rclpy_minimal_action_server = 0.18.0-1
+Obsoletes: ros2-iron-examples_rclpy_minimal_action_server < 0.18.0-1
 
 
 
@@ -59,15 +59,15 @@ Examples of minimal action servers using rclpy.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-example_interfaces-devel
-Requires:       ros2-humble-rclpy-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-example_interfaces-devel
+Requires:       ros2-iron-rclpy-devel
 
-Provides: ros2-humble-examples_rclpy_minimal_action_server-devel = 0.15.1-1
-Obsoletes: ros2-humble-examples_rclpy_minimal_action_server-devel < 0.15.1-1
+Provides: ros2-iron-examples_rclpy_minimal_action_server-devel = 0.18.0-1
+Obsoletes: ros2-iron-examples_rclpy_minimal_action_server-devel < 0.18.0-1
 
 
 %description devel

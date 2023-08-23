@@ -37,27 +37,32 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-lifecycle_msgs-devel
-BuildRequires:  ros2-humble-mimick_vendor-devel
-BuildRequires:  ros2-humble-performance_test_fixture-devel
-BuildRequires:  ros2-humble-rcl_lifecycle-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rmw-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_cpp-devel
-BuildRequires:  ros2-humble-test_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-lifecycle_msgs-devel
+BuildRequires:  ros2-iron-mimick_vendor-devel
+BuildRequires:  ros2-iron-performance_test_fixture-devel
+BuildRequires:  ros2-iron-rcl-devel
+BuildRequires:  ros2-iron-rcl_interfaces-devel
+BuildRequires:  ros2-iron-rcl_lifecycle-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rmw-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_cpp-devel
+BuildRequires:  ros2-iron-test_msgs-devel
 
-Requires:       ros2-humble-lifecycle_msgs
-Requires:       ros2-humble-rcl_lifecycle
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rmw
-Requires:       ros2-humble-rosidl_typesupport_cpp
+Requires:       ros2-iron-lifecycle_msgs
+Requires:       ros2-iron-rcl
+Requires:       ros2-iron-rcl_interfaces
+Requires:       ros2-iron-rcl_lifecycle
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rmw
+Requires:       ros2-iron-rosidl_typesupport_cpp
 
 Provides:  ros2-humble-rclcpp_lifecycle = 16.0.7-1
 Obsoletes: ros2-humble-rclcpp_lifecycle < 16.0.7-1
@@ -70,21 +75,23 @@ Package containing a prototype for lifecycle implementation
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-lifecycle_msgs-devel
-Requires:       ros2-humble-mimick_vendor-devel
-Requires:       ros2-humble-performance_test_fixture-devel
-Requires:       ros2-humble-rcl_lifecycle-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rmw-devel
-Requires:       ros2-humble-rosidl_typesupport_cpp-devel
-Requires:       ros2-humble-test_msgs-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-lifecycle_msgs-devel
+Requires:       ros2-iron-mimick_vendor-devel
+Requires:       ros2-iron-performance_test_fixture-devel
+Requires:       ros2-iron-rcl-devel
+Requires:       ros2-iron-rcl_interfaces-devel
+Requires:       ros2-iron-rcl_lifecycle-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rmw-devel
+Requires:       ros2-iron-rosidl_typesupport_cpp-devel
+Requires:       ros2-iron-test_msgs-devel
 
 Provides: ros2-humble-rclcpp_lifecycle-devel = 16.0.7-1
 Obsoletes: ros2-humble-rclcpp_lifecycle-devel < 16.0.7-1

@@ -6,7 +6,7 @@ Summary:        ROS package common_interfaces
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/common_interfaces-release/archive/release/humble/common_interfaces/4.2.3-1.tar.gz#/ros2-humble-common_interfaces-4.2.3-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/common_interfaces-release/archive/release/iron/common_interfaces/5.0.0-2.tar.gz#/ros2-iron-common_interfaces-5.0.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,26 +38,26 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-actionlib_msgs
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-diagnostic_msgs
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-nav_msgs
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-shape_msgs
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-std_srvs
-Requires:       ros2-humble-stereo_msgs
-Requires:       ros2-humble-trajectory_msgs
-Requires:       ros2-humble-visualization_msgs
+Requires:       ros2-iron-actionlib_msgs
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-diagnostic_msgs
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-nav_msgs
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-shape_msgs
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-std_srvs
+Requires:       ros2-iron-stereo_msgs
+Requires:       ros2-iron-trajectory_msgs
+Requires:       ros2-iron-visualization_msgs
 
-Provides:  ros2-humble-common_interfaces = 4.2.3-1
-Obsoletes: ros2-humble-common_interfaces < 4.2.3-1
+Provides:  ros2-iron-common_interfaces = 5.0.0-1
+Obsoletes: ros2-iron-common_interfaces < 5.0.0-1
 
 
 
@@ -68,25 +68,25 @@ by other ROS packages.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-actionlib_msgs-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-diagnostic_msgs-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-nav_msgs-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-shape_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-std_srvs-devel
-Requires:       ros2-humble-stereo_msgs-devel
-Requires:       ros2-humble-trajectory_msgs-devel
-Requires:       ros2-humble-visualization_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-actionlib_msgs-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-diagnostic_msgs-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-nav_msgs-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-shape_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-std_srvs-devel
+Requires:       ros2-iron-stereo_msgs-devel
+Requires:       ros2-iron-trajectory_msgs-devel
+Requires:       ros2-iron-visualization_msgs-devel
 
-Provides: ros2-humble-common_interfaces-devel = 4.2.3-1
-Obsoletes: ros2-humble-common_interfaces-devel < 4.2.3-1
+Provides: ros2-iron-common_interfaces-devel = 5.0.0-1
+Obsoletes: ros2-iron-common_interfaces-devel < 5.0.0-1
 
 
 %description devel

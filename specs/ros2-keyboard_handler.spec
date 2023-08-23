@@ -6,7 +6,7 @@ Summary:        ROS package keyboard_handler
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/keyboard_handler-release/archive/release/humble/keyboard_handler/0.0.5-1.tar.gz#/ros2-humble-keyboard_handler-0.0.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/keyboard_handler-release/archive/release/iron/keyboard_handler/0.1.0-3.tar.gz#/ros2-iron-keyboard_handler-0.1.0-source0.tar.gz
 
 
 
@@ -37,15 +37,15 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-keyboard_handler = 0.0.5-1
-Obsoletes: ros2-humble-keyboard_handler < 0.0.5-1
+Provides:  ros2-iron-keyboard_handler = 0.1.0-1
+Obsoletes: ros2-iron-keyboard_handler < 0.1.0-1
 
 
 
@@ -55,14 +55,14 @@ Handler for input from keyboard
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-keyboard_handler-devel = 0.0.5-1
-Obsoletes: ros2-humble-keyboard_handler-devel < 0.0.5-1
+Provides: ros2-iron-keyboard_handler-devel = 0.1.0-1
+Obsoletes: ros2-iron-keyboard_handler-devel < 0.1.0-1
 
 
 %description devel

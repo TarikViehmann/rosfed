@@ -6,7 +6,7 @@ Summary:        ROS package urdfdom
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/urdfdom-release/archive/release/humble/urdfdom/3.0.2-2.tar.gz#/ros2-humble-urdfdom-3.0.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/urdfdom-release/archive/release/iron/urdfdom/3.1.1-2.tar.gz#/ros2-iron-urdfdom-3.1.1-source0.tar.gz
 
 
 
@@ -39,17 +39,19 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  cmake
 BuildRequires:  console-bridge-devel
+BuildRequires:  python3-devel
 BuildRequires:  tinyxml-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-console_bridge_vendor-devel
-BuildRequires:  ros2-humble-urdfdom_headers-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-console_bridge_vendor-devel
+BuildRequires:  ros2-iron-tinyxml_vendor-devel
+BuildRequires:  ros2-iron-urdfdom_headers-devel
 
-Requires:       tinyxml-devel
-Requires:       ros2-humble-console_bridge_vendor
-Requires:       ros2-humble-urdfdom_headers
+Requires:       ros2-iron-console_bridge_vendor
+Requires:       ros2-iron-tinyxml_vendor
+Requires:       ros2-iron-urdfdom_headers
 
-Provides:  ros2-humble-urdfdom = 3.0.2-1
-Obsoletes: ros2-humble-urdfdom < 3.0.2-1
+Provides:  ros2-iron-urdfdom = 3.1.1-1
+Obsoletes: ros2-iron-urdfdom < 3.1.1-1
 
 
 
@@ -61,13 +63,15 @@ Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       cmake
 Requires:       console-bridge-devel
+Requires:       python3-devel
 Requires:       tinyxml-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-console_bridge_vendor-devel
-Requires:       ros2-humble-urdfdom_headers-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-console_bridge_vendor-devel
+Requires:       ros2-iron-tinyxml_vendor-devel
+Requires:       ros2-iron-urdfdom_headers-devel
 
-Provides: ros2-humble-urdfdom-devel = 3.0.2-1
-Obsoletes: ros2-humble-urdfdom-devel < 3.0.2-1
+Provides: ros2-iron-urdfdom-devel = 3.1.1-1
+Obsoletes: ros2-iron-urdfdom-devel < 3.1.1-1
 
 
 %description devel

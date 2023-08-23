@@ -6,8 +6,8 @@ dependencies:
       - libuuid-devel
       - opencv-devel
       - urdfdom-devel
-      - tinyxml2-devel
-      - tinyxml-devel
       - poco-devel
+      - ogre-devel
 patches:
-  - ros-gazebo_plugins.build-with-cpp17.patch
+  - ros2.gazebo_plugins.link-ogre.patch
+  - ros2.gazebo_plugins.gazebo_api.patch

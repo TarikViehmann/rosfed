@@ -40,7 +40,7 @@ BuildRequires: python3-vcstool
 BuildRequires:  acl libacl-devel
 BuildRequires:  cmake
 BuildRequires:  libatomic
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       libatomic
 
@@ -59,7 +59,7 @@ Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       cmake
 Requires:       acl libacl-devel
 Requires:       libatomic
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-iceoryx_hoofs-devel = 2.0.5-1
 Obsoletes: ros2-humble-iceoryx_hoofs-devel < 2.0.5-1

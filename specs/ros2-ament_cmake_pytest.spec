@@ -39,9 +39,9 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_cmake_test-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_cmake_test-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
 Provides:  ros2-humble-ament_cmake_pytest = 1.3.6-1
@@ -57,9 +57,9 @@ in CMake.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_cmake_test-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_cmake_test-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-ament_cmake_pytest-devel = 1.3.6-1
 Obsoletes: ros2-humble-ament_cmake_pytest-devel < 1.3.6-1

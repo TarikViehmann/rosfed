@@ -6,7 +6,7 @@ Summary:        ROS package ament_index_cpp
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ament_index-release/archive/release/humble/ament_index_cpp/1.4.0-2.tar.gz#/ros2-humble-ament_index_cpp-1.4.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ament_index-release/archive/release/iron/ament_index_cpp/1.5.2-4.tar.gz#/ros2-iron-ament_index_cpp-1.5.2-source0.tar.gz
 
 
 
@@ -37,15 +37,15 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-ament_index_cpp = 1.4.0-1
-Obsoletes: ros2-humble-ament_index_cpp < 1.4.0-1
+Provides:  ros2-iron-ament_index_cpp = 1.5.2-1
+Obsoletes: ros2-iron-ament_index_cpp < 1.5.2-1
 
 
 
@@ -55,14 +55,14 @@ C++ API to access the ament resource index.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-ament_index_cpp-devel = 1.4.0-1
-Obsoletes: ros2-humble-ament_index_cpp-devel < 1.4.0-1
+Provides: ros2-iron-ament_index_cpp-devel = 1.5.2-1
+Obsoletes: ros2-iron-ament_index_cpp-devel < 1.5.2-1
 
 
 %description devel

@@ -39,19 +39,19 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  libatomic
 BuildRequires:  python3-empy
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-launch_testing_ament_cmake-devel
-BuildRequires:  ros2-humble-mimick_vendor-devel
-BuildRequires:  ros2-humble-osrf_testing_tools_cpp-devel
-BuildRequires:  ros2-humble-performance_test_fixture-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-launch_testing_ament_cmake-devel
+BuildRequires:  ros2-iron-mimick_vendor-devel
+BuildRequires:  ros2-iron-osrf_testing_tools_cpp-devel
+BuildRequires:  ros2-iron-performance_test_fixture-devel
 
 Requires:       libatomic
 
@@ -67,20 +67,20 @@ Package containing various utility types and functions for C
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       python3-empy
-Requires:       ros2-humble-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
 Requires:       libatomic
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-launch_testing_ament_cmake-devel
-Requires:       ros2-humble-mimick_vendor-devel
-Requires:       ros2-humble-osrf_testing_tools_cpp-devel
-Requires:       ros2-humble-performance_test_fixture-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-launch_testing_ament_cmake-devel
+Requires:       ros2-iron-mimick_vendor-devel
+Requires:       ros2-iron-osrf_testing_tools_cpp-devel
+Requires:       ros2-iron-performance_test_fixture-devel
 
 Provides: ros2-humble-rcutils-devel = 5.1.4-1
 Obsoletes: ros2-humble-rcutils-devel < 5.1.4-1

@@ -41,25 +41,25 @@ BuildRequires: python3-vcstool
 BuildRequires:  python3
 BuildRequires:  python3-pytest
 BuildRequires:  python3-pyyaml
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_index_python-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-composition_interfaces-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-lifecycle_msgs-devel
-BuildRequires:  ros2-humble-osrf_pycommon-devel
-BuildRequires:  ros2-humble-rclpy-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_index_python-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-composition_interfaces-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-lifecycle_msgs-devel
+BuildRequires:  ros2-iron-osrf_pycommon-devel
+BuildRequires:  ros2-iron-rclpy-devel
 
 Requires:       python3
 Requires:       python3-pyyaml
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-composition_interfaces
-Requires:       ros2-humble-launch
-Requires:       ros2-humble-lifecycle_msgs
-Requires:       ros2-humble-osrf_pycommon
-Requires:       ros2-humble-rclpy
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-composition_interfaces
+Requires:       ros2-iron-launch
+Requires:       ros2-iron-lifecycle_msgs
+Requires:       ros2-iron-osrf_pycommon
+Requires:       ros2-iron-rclpy
 
 Provides:  ros2-humble-launch_ros = 0.19.6-1
 Obsoletes: ros2-humble-launch_ros < 0.19.6-1
@@ -75,16 +75,16 @@ Requires:       %{name} = %{version}-%{release}
 Requires:       python3
 Requires:       python3-pytest
 Requires:       python3-pyyaml
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-composition_interfaces-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-lifecycle_msgs-devel
-Requires:       ros2-humble-osrf_pycommon-devel
-Requires:       ros2-humble-rclpy-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-composition_interfaces-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-lifecycle_msgs-devel
+Requires:       ros2-iron-osrf_pycommon-devel
+Requires:       ros2-iron-rclpy-devel
 
 Provides: ros2-humble-launch_ros-devel = 0.19.6-1
 Obsoletes: ros2-humble-launch_ros-devel < 0.19.6-1

@@ -6,7 +6,7 @@ Summary:        ROS package rcpputils
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rcpputils-release/archive/release/humble/rcpputils/2.4.1-1.tar.gz#/ros2-humble-rcpputils-2.4.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rcpputils-release/archive/release/iron/rcpputils/2.6.1-3.tar.gz#/ros2-iron-rcpputils-2.6.1-source0.tar.gz
 
 Patch0: ros2-rcpputils.include-stdint.patch
 
@@ -38,18 +38,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rcutils-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-rcutils-devel
 
-Requires:       ros2-humble-rcutils
+Requires:       ros2-iron-rcutils
 
-Provides:  ros2-humble-rcpputils = 2.4.1-1
-Obsoletes: ros2-humble-rcpputils < 2.4.1-1
+Provides:  ros2-iron-rcpputils = 2.6.1-1
+Obsoletes: ros2-iron-rcpputils < 2.6.1-1
 
 
 
@@ -59,16 +59,16 @@ Package containing utility code for C++.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rcutils-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rcutils-devel
 
-Provides: ros2-humble-rcpputils-devel = 2.4.1-1
-Obsoletes: ros2-humble-rcpputils-devel < 2.4.1-1
+Provides: ros2-iron-rcpputils-devel = 2.6.1-1
+Obsoletes: ros2-iron-rcpputils-devel < 2.6.1-1
 
 
 %description devel

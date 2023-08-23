@@ -6,7 +6,7 @@ Summary:        ROS package ament_cmake_ros
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ament_cmake_ros-release/archive/release/humble/ament_cmake_ros/0.10.0-3.tar.gz#/ros2-humble-ament_cmake_ros-0.10.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ament_cmake_ros-release/archive/release/iron/ament_cmake_ros/0.11.2-4.tar.gz#/ros2-iron-ament_cmake_ros-0.11.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,19 +38,19 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-domain_coordinator-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-domain_coordinator-devel
 
-Requires:       ros2-humble-domain_coordinator
+Requires:       ros2-iron-domain_coordinator
 
-Provides:  ros2-humble-ament_cmake_ros = 0.10.0-1
-Obsoletes: ros2-humble-ament_cmake_ros < 0.10.0-1
+Provides:  ros2-iron-ament_cmake_ros = 0.11.2-1
+Obsoletes: ros2-iron-ament_cmake_ros < 0.11.2-1
 
 
 
@@ -60,17 +60,17 @@ The ROS specific CMake bits in the ament buildsystem.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-domain_coordinator-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-domain_coordinator-devel
 
-Provides: ros2-humble-ament_cmake_ros-devel = 0.10.0-1
-Obsoletes: ros2-humble-ament_cmake_ros-devel < 0.10.0-1
+Provides: ros2-iron-ament_cmake_ros-devel = 0.11.2-1
+Obsoletes: ros2-iron-ament_cmake_ros-devel < 0.11.2-1
 
 
 %description devel

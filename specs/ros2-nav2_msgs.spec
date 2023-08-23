@@ -37,24 +37,24 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-action_msgs-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-builtin_interfaces-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-nav_msgs-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-action_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-nav_msgs-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-action_msgs
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-nav_msgs
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rosidl_default_generators
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-action_msgs
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-nav_msgs
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rosidl_default_generators
+Requires:       ros2-iron-std_msgs
 
 Provides:  ros2-humble-nav2_msgs = 1.1.12-1
 Obsoletes: ros2-humble-nav2_msgs < 1.1.12-1
@@ -67,16 +67,16 @@ Messages and service files for the Nav2 stack
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-action_msgs-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-nav_msgs-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-std_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-action_msgs-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-nav_msgs-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-std_msgs-devel
 
 Provides: ros2-humble-nav2_msgs-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_msgs-devel < 1.1.12-1

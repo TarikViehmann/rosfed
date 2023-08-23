@@ -6,7 +6,7 @@ Summary:        ROS package tcb_span
 License:        Boost Software License
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/cpp_polyfills-release/archive/release/humble/tcb_span/1.0.2-2.tar.gz#/ros2-humble-tcb_span-1.0.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/cpp_polyfills-release/archive/release/iron/tcb_span/1.0.2-4.tar.gz#/ros2-iron-tcb_span-1.0.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,13 +38,13 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-tcb_span = 1.0.2-1
-Obsoletes: ros2-humble-tcb_span < 1.0.2-1
+Provides:  ros2-iron-tcb_span = 1.0.2-1
+Obsoletes: ros2-iron-tcb_span < 1.0.2-1
 
 
 
@@ -54,12 +54,12 @@ Implementation of C++20's std::span
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-tcb_span-devel = 1.0.2-1
-Obsoletes: ros2-humble-tcb_span-devel < 1.0.2-1
+Provides: ros2-iron-tcb_span-devel = 1.0.2-1
+Obsoletes: ros2-iron-tcb_span-devel < 1.0.2-1
 
 
 %description devel

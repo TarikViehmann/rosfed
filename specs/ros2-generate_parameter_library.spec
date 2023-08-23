@@ -6,7 +6,7 @@ Summary:        ROS package generate_parameter_library
 License:        BSD-3-Clause
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/generate_parameter_library-release/archive/release/humble/generate_parameter_library/0.3.6-1.tar.gz#/ros2-humble-generate_parameter_library-0.3.6-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/generate_parameter_library-release/archive/release/iron/generate_parameter_library/0.3.6-1.tar.gz#/ros2-iron-generate_parameter_library-0.3.6-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,30 +39,30 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  fmt-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-generate_parameter_library_py-devel
-BuildRequires:  ros2-humble-parameter_traits-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-rclpy-devel
-BuildRequires:  ros2-humble-rsl-devel
-BuildRequires:  ros2-humble-tcb_span-devel
-BuildRequires:  ros2-humble-tl_expected-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-generate_parameter_library_py-devel
+BuildRequires:  ros2-iron-parameter_traits-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-rclpy-devel
+BuildRequires:  ros2-iron-rsl-devel
+BuildRequires:  ros2-iron-tcb_span-devel
+BuildRequires:  ros2-iron-tl_expected-devel
 
-Requires:       ros2-humble-parameter_traits
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-rsl
-Requires:       ros2-humble-tcb_span
-Requires:       ros2-humble-tl_expected
+Requires:       ros2-iron-parameter_traits
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-rsl
+Requires:       ros2-iron-tcb_span
+Requires:       ros2-iron-tl_expected
 
-Provides:  ros2-humble-generate_parameter_library = 0.3.6-1
-Obsoletes: ros2-humble-generate_parameter_library < 0.3.6-1
+Provides:  ros2-iron-generate_parameter_library = 0.3.6-1
+Obsoletes: ros2-iron-generate_parameter_library < 0.3.6-1
 
 
 
@@ -72,23 +72,23 @@ CMake to generate ROS parameter library.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-generate_parameter_library_py-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-generate_parameter_library_py-devel
 Requires:       fmt-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-parameter_traits-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-rsl-devel
-Requires:       ros2-humble-tcb_span-devel
-Requires:       ros2-humble-tl_expected-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-parameter_traits-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-rsl-devel
+Requires:       ros2-iron-tcb_span-devel
+Requires:       ros2-iron-tl_expected-devel
 
-Provides: ros2-humble-generate_parameter_library-devel = 0.3.6-1
-Obsoletes: ros2-humble-generate_parameter_library-devel < 0.3.6-1
+Provides: ros2-iron-generate_parameter_library-devel = 0.3.6-1
+Obsoletes: ros2-iron-generate_parameter_library-devel < 0.3.6-1
 
 
 %description devel

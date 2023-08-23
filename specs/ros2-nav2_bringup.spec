@@ -38,22 +38,23 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_ros-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-navigation2-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_ros-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-navigation2-devel
 
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-nav2_common
-Requires:       ros2-humble-navigation2
-Requires:       ros2-humble-slam_toolbox
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-nav2_common
+Requires:       ros2-iron-navigation2
+Requires:       ros2-iron-slam_toolbox
+Requires:       ros2-iron-turtlebot3_gazebo
 
 Provides:  ros2-humble-nav2_bringup = 1.1.12-1
 Obsoletes: ros2-humble-nav2_bringup < 1.1.12-1
@@ -66,18 +67,19 @@ Bringup scripts and configurations for the Nav2 stack
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-navigation2-devel
-Requires:       ros2-humble-slam_toolbox-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-navigation2-devel
+Requires:       ros2-iron-slam_toolbox-devel
+Requires:       ros2-iron-turtlebot3_gazebo-devel
 
 Provides: ros2-humble-nav2_bringup-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_bringup-devel < 1.1.12-1

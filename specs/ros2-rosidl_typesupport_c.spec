@@ -6,7 +6,7 @@ Summary:        ROS package rosidl_typesupport_c
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rosidl_typesupport-release/archive/release/humble/rosidl_typesupport_c/2.0.1-1.tar.gz#/ros2-humble-rosidl_typesupport_c-2.0.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rosidl_typesupport-release/archive/release/iron/rosidl_typesupport_c/3.0.1-1.tar.gz#/ros2-iron-rosidl_typesupport_c-3.0.1-source0.tar.gz
 
 
 
@@ -38,26 +38,28 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-devel
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-mimick_vendor-devel
-BuildRequires:  ros2-humble-performance_test_fixture-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_introspection_c-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-mimick_vendor-devel
+BuildRequires:  ros2-iron-performance_test_fixture-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_introspection_c-devel
 
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rosidl_cli
-Requires:       ros2-humble-rosidl_typesupport_interface
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rosidl_cli
+Requires:       ros2-iron-rosidl_generator_c
+Requires:       ros2-iron-rosidl_pycommon
+Requires:       ros2-iron-rosidl_typesupport_interface
 
-Provides:  ros2-humble-rosidl_typesupport_c = 2.0.1-1
-Obsoletes: ros2-humble-rosidl_typesupport_c < 2.0.1-1
+Provides:  ros2-iron-rosidl_typesupport_c = 3.0.1-1
+Obsoletes: ros2-iron-rosidl_typesupport_c < 3.0.1-1
 
 
 
@@ -68,23 +70,25 @@ Generate the type support for C messages.
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       python3-devel
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-mimick_vendor-devel
-Requires:       ros2-humble-performance_test_fixture-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rosidl_typesupport_introspection_c-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-rosidl_cli-devel
-Requires:       ros2-humble-rosidl_typesupport_interface-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-mimick_vendor-devel
+Requires:       ros2-iron-performance_test_fixture-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rosidl_typesupport_introspection_c-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-rosidl_cli-devel
+Requires:       ros2-iron-rosidl_generator_c-devel
+Requires:       ros2-iron-rosidl_pycommon-devel
+Requires:       ros2-iron-rosidl_typesupport_interface-devel
 
-Provides: ros2-humble-rosidl_typesupport_c-devel = 2.0.1-1
-Obsoletes: ros2-humble-rosidl_typesupport_c-devel < 2.0.1-1
+Provides: ros2-iron-rosidl_typesupport_c-devel = 3.0.1-1
+Obsoletes: ros2-iron-rosidl_typesupport_c-devel < 3.0.1-1
 
 
 %description devel

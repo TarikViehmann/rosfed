@@ -38,13 +38,13 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_cmake_export_dependencies-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_cmake_export_dependencies-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-ament_cmake_test
-Requires:       ros2-humble-google_benchmark_vendor
+Requires:       ros2-iron-ament_cmake_test
+Requires:       ros2-iron-google_benchmark_vendor
 
 Provides:  ros2-humble-ament_cmake_google_benchmark = 1.3.6-1
 Obsoletes: ros2-humble-ament_cmake_google_benchmark < 1.3.6-1
@@ -58,12 +58,12 @@ CMake.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_cmake_export_dependencies-devel
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_cmake_test-devel
-Requires:       ros2-humble-google_benchmark_vendor-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_cmake_export_dependencies-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_cmake_test-devel
+Requires:       ros2-iron-google_benchmark_vendor-devel
 
 Provides: ros2-humble-ament_cmake_google_benchmark-devel = 1.3.6-1
 Obsoletes: ros2-humble-ament_cmake_google_benchmark-devel < 1.3.6-1

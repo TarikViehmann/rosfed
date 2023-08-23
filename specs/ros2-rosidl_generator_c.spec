@@ -6,7 +6,7 @@ Summary:        ROS package rosidl_generator_c
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rosidl-release/archive/release/humble/rosidl_generator_c/3.1.5-2.tar.gz#/ros2-humble-rosidl_generator_c-3.1.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rosidl-release/archive/release/iron/rosidl_generator_c/4.0.1-1.tar.gz#/ros2-iron-rosidl_generator_c-4.0.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,26 +39,25 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-devel
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rosidl_cmake-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_interface-devel
-BuildRequires:  ros2-humble-test_interface_files-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rosidl_generator_type_description-devel
+BuildRequires:  ros2-iron-rosidl_pycommon-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_interface-devel
 
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rosidl_cli
-Requires:       ros2-humble-rosidl_parser
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rosidl_cli
+Requires:       ros2-iron-rosidl_generator_type_description
+Requires:       ros2-iron-rosidl_parser
 
-Provides:  ros2-humble-rosidl_generator_c = 3.1.5-1
-Obsoletes: ros2-humble-rosidl_generator_c < 3.1.5-1
+Provides:  ros2-iron-rosidl_generator_c = 4.0.1-1
+Obsoletes: ros2-iron-rosidl_generator_c < 4.0.1-1
 
 
 
@@ -69,24 +68,22 @@ Generate the ROS interfaces in C.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-devel
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rosidl_cmake-devel
-Requires:       ros2-humble-rosidl_typesupport_interface-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-test_interface_files-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-rosidl_cli-devel
-Requires:       ros2-humble-rosidl_parser-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rosidl_generator_type_description-devel
+Requires:       ros2-iron-rosidl_pycommon-devel
+Requires:       ros2-iron-rosidl_typesupport_interface-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-rosidl_cli-devel
+Requires:       ros2-iron-rosidl_parser-devel
 
-Provides: ros2-humble-rosidl_generator_c-devel = 3.1.5-1
-Obsoletes: ros2-humble-rosidl_generator_c-devel < 3.1.5-1
+Provides: ros2-iron-rosidl_generator_c-devel = 4.0.1-1
+Obsoletes: ros2-iron-rosidl_generator_c-devel < 4.0.1-1
 
 
 %description devel

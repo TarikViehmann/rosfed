@@ -6,7 +6,7 @@ Summary:        ROS package sros2
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/sros2-release/archive/release/humble/sros2/0.10.4-2.tar.gz#/ros2-humble-sros2-0.10.4-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/sros2-release/archive/release/iron/sros2/0.11.3-1.tar.gz#/ros2-iron-sros2-0.11.3-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,25 +39,25 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_mypy-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-rclpy-devel
-BuildRequires:  ros2-humble-ros2cli-devel
-BuildRequires:  ros2-humble-ros_testing-devel
-BuildRequires:  ros2-humble-test_msgs-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_mypy-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-rclpy-devel
+BuildRequires:  ros2-iron-ros2cli-devel
+BuildRequires:  ros2-iron-ros_testing-devel
+BuildRequires:  ros2-iron-test_msgs-devel
 
 Requires:       python3
 Requires:       python3-cryptography
 Requires:       python3-lxml
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-ros2cli
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-ros2cli
 
-Provides:  ros2-humble-sros2 = 0.10.4-1
-Obsoletes: ros2-humble-sros2 < 0.10.4-1
+Provides:  ros2-iron-sros2 = 0.11.3-1
+Obsoletes: ros2-iron-sros2 < 0.11.3-1
 
 
 
@@ -68,19 +68,19 @@ Command line tools for managing SROS2 keys
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_mypy-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-ros2cli-devel
-Requires:       ros2-humble-ros_testing-devel
-Requires:       ros2-humble-test_msgs-devel
-Requires:       ros2-humble-ament_index_python-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_mypy-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-ros2cli-devel
+Requires:       ros2-iron-ros_testing-devel
+Requires:       ros2-iron-test_msgs-devel
+Requires:       ros2-iron-ament_index_python-devel
 
-Provides: ros2-humble-sros2-devel = 0.10.4-1
-Obsoletes: ros2-humble-sros2-devel < 0.10.4-1
+Provides: ros2-iron-sros2-devel = 0.11.3-1
+Obsoletes: ros2-iron-sros2-devel < 0.11.3-1
 
 
 %description devel

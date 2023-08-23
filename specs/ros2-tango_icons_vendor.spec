@@ -6,7 +6,7 @@ Summary:        ROS package tango_icons_vendor
 License:        Apache License 2.0
 URL:            http://ros.org/wiki/qt_gui_icons
 
-Source0:        https://github.com/ros2-gbp/tango_icons_vendor-release/archive/release/humble/tango_icons_vendor/0.1.1-3.tar.gz#/ros2-humble-tango_icons_vendor-0.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/tango_icons_vendor-release/archive/release/iron/tango_icons_vendor/0.2.2-3.tar.gz#/ros2-iron-tango_icons_vendor-0.2.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,15 +38,15 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       tango-icon-theme
 
-Provides:  ros2-humble-tango_icons_vendor = 0.1.1-1
-Obsoletes: ros2-humble-tango_icons_vendor < 0.1.1-1
+Provides:  ros2-iron-tango_icons_vendor = 0.2.2-1
+Obsoletes: ros2-iron-tango_icons_vendor < 0.2.2-1
 
 
 
@@ -57,13 +57,13 @@ linux systems (
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-tango_icons_vendor-devel = 0.1.1-1
-Obsoletes: ros2-humble-tango_icons_vendor-devel < 0.1.1-1
+Provides: ros2-iron-tango_icons_vendor-devel = 0.2.2-1
+Obsoletes: ros2-iron-tango_icons_vendor-devel < 0.2.2-1
 
 
 %description devel

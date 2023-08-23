@@ -6,7 +6,7 @@ Summary:        ROS package eigen3_cmake_module
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/eigen3_cmake_module-release/archive/release/humble/eigen3_cmake_module/0.1.1-4.tar.gz#/ros2-humble-eigen3_cmake_module-0.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/eigen3_cmake_module-release/archive/release/iron/eigen3_cmake_module/0.2.2-4.tar.gz#/ros2-iron-eigen3_cmake_module-0.2.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,14 +38,14 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_copyright-devel
-BuildRequires:  ros2-humble-ament_cmake_lint_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_copyright-devel
+BuildRequires:  ros2-iron-ament_cmake_lint_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-eigen3_cmake_module = 0.1.1-1
-Obsoletes: ros2-humble-eigen3_cmake_module < 0.1.1-1
+Provides:  ros2-iron-eigen3_cmake_module = 0.2.2-1
+Obsoletes: ros2-iron-eigen3_cmake_module < 0.2.2-1
 
 
 
@@ -55,13 +55,13 @@ Exports a custom CMake module to find Eigen3.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_copyright-devel
-Requires:       ros2-humble-ament_cmake_lint_cmake-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_copyright-devel
+Requires:       ros2-iron-ament_cmake_lint_cmake-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-eigen3_cmake_module-devel = 0.1.1-1
-Obsoletes: ros2-humble-eigen3_cmake_module-devel < 0.1.1-1
+Provides: ros2-iron-eigen3_cmake_module-devel = 0.2.2-1
+Obsoletes: ros2-iron-eigen3_cmake_module-devel < 0.2.2-1
 
 
 %description devel

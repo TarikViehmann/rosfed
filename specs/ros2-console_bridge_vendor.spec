@@ -6,7 +6,7 @@ Summary:        ROS package console_bridge_vendor
 License:        Apache License 2.0
 URL:            https://github.com/ros/console_bridge
 
-Source0:        https://github.com/ros2-gbp/console_bridge_vendor-release/archive/release/humble/console_bridge_vendor/1.4.1-1.tar.gz#/ros2-humble-console_bridge_vendor-1.4.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/console_bridge_vendor-release/archive/release/iron/console_bridge_vendor/1.6.0-4.tar.gz#/ros2-iron-console_bridge_vendor-1.6.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,15 +39,15 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  console-bridge-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-performance_test_fixture-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-performance_test_fixture-devel
 
 
-Provides:  ros2-humble-console_bridge_vendor = 1.4.1-1
-Obsoletes: ros2-humble-console_bridge_vendor < 1.4.1-1
+Provides:  ros2-iron-console_bridge_vendor = 1.6.0-1
+Obsoletes: ros2-iron-console_bridge_vendor < 1.6.0-1
 
 
 
@@ -59,15 +59,15 @@ ExternalProject build of console_bridge.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       console-bridge-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-performance_test_fixture-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-performance_test_fixture-devel
 
-Provides: ros2-humble-console_bridge_vendor-devel = 1.4.1-1
-Obsoletes: ros2-humble-console_bridge_vendor-devel < 1.4.1-1
+Provides: ros2-iron-console_bridge_vendor-devel = 1.6.0-1
+Obsoletes: ros2-iron-console_bridge_vendor-devel < 1.6.0-1
 
 
 %description devel

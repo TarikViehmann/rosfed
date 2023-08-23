@@ -6,7 +6,7 @@ Summary:        ROS package message_filters
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ros2_message_filters-release/archive/release/humble/message_filters/4.3.3-2.tar.gz#/ros2-humble-message_filters-4.3.3-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros2_message_filters-release/archive/release/iron/message_filters/4.7.0-3.tar.gz#/ros2-iron-message_filters-4.7.0-source0.tar.gz
 
 
 
@@ -37,24 +37,24 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-python_cmake_module-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-python_cmake_module-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-rclpy
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-rclpy
 
-Provides:  ros2-humble-message_filters = 4.3.3-1
-Obsoletes: ros2-humble-message_filters < 4.3.3-1
+Provides:  ros2-iron-message_filters = 4.7.0-1
+Obsoletes: ros2-iron-message_filters < 4.7.0-1
 
 
 
@@ -66,23 +66,23 @@ needs met.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-python_cmake_module-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-rclpy-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-python_cmake_module-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-rclpy-devel
 
-Provides: ros2-humble-message_filters-devel = 4.3.3-1
-Obsoletes: ros2-humble-message_filters-devel < 4.3.3-1
+Provides: ros2-iron-message_filters-devel = 4.7.0-1
+Obsoletes: ros2-iron-message_filters-devel < 4.7.0-1
 
 
 %description devel

@@ -38,9 +38,9 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_cmake_test-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_cmake_test-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
 Provides:  ros2-humble-ament_lint_auto = 0.12.9-1
@@ -55,9 +55,9 @@ CMake.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_cmake_test-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_cmake_test-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-ament_lint_auto-devel = 0.12.9-1
 Obsoletes: ros2-humble-ament_lint_auto-devel < 0.12.9-1

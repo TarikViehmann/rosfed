@@ -6,7 +6,7 @@ Summary:        ROS package ros_core
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/variants-release/archive/release/humble/ros_core/0.10.0-1.tar.gz#/ros2-humble-ros_core-0.10.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/variants-release/archive/release/iron/ros_core/0.10.0-3.tar.gz#/ros2-iron-ros_core-0.10.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,44 +38,44 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-ament_cmake
-Requires:       ros2-humble-ament_cmake_auto
-Requires:       ros2-humble-ament_cmake_gmock
-Requires:       ros2-humble-ament_cmake_gtest
-Requires:       ros2-humble-ament_cmake_pytest
-Requires:       ros2-humble-ament_cmake_ros
-Requires:       ros2-humble-ament_index_cpp
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-ament_lint_auto
-Requires:       ros2-humble-ament_lint_common
-Requires:       ros2-humble-class_loader
-Requires:       ros2-humble-common_interfaces
-Requires:       ros2-humble-launch
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-launch_testing
-Requires:       ros2-humble-launch_testing_ament_cmake
-Requires:       ros2-humble-launch_testing_ros
-Requires:       ros2-humble-launch_xml
-Requires:       ros2-humble-launch_yaml
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rcl_lifecycle
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_action
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-ros2cli_common_extensions
-Requires:       ros2-humble-ros2launch
-Requires:       ros2-humble-ros_environment
-Requires:       ros2-humble-rosidl_default_generators
-Requires:       ros2-humble-rosidl_default_runtime
-Requires:       ros2-humble-sros2
-Requires:       ros2-humble-sros2_cmake
+Requires:       ros2-iron-ament_cmake
+Requires:       ros2-iron-ament_cmake_auto
+Requires:       ros2-iron-ament_cmake_gmock
+Requires:       ros2-iron-ament_cmake_gtest
+Requires:       ros2-iron-ament_cmake_pytest
+Requires:       ros2-iron-ament_cmake_ros
+Requires:       ros2-iron-ament_index_cpp
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-ament_lint_auto
+Requires:       ros2-iron-ament_lint_common
+Requires:       ros2-iron-class_loader
+Requires:       ros2-iron-common_interfaces
+Requires:       ros2-iron-launch
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-launch_testing
+Requires:       ros2-iron-launch_testing_ament_cmake
+Requires:       ros2-iron-launch_testing_ros
+Requires:       ros2-iron-launch_xml
+Requires:       ros2-iron-launch_yaml
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rcl_lifecycle
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_action
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-ros2cli_common_extensions
+Requires:       ros2-iron-ros2launch
+Requires:       ros2-iron-ros_environment
+Requires:       ros2-iron-rosidl_default_generators
+Requires:       ros2-iron-rosidl_default_runtime
+Requires:       ros2-iron-sros2
+Requires:       ros2-iron-sros2_cmake
 
-Provides:  ros2-humble-ros_core = 0.10.0-1
-Obsoletes: ros2-humble-ros_core < 0.10.0-1
+Provides:  ros2-iron-ros_core = 0.10.0-1
+Obsoletes: ros2-iron-ros_core < 0.10.0-1
 
 
 
@@ -86,42 +86,42 @@ subscribe, services, generate messages and other core ROS concepts.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_cmake_auto-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-ament_index_cpp-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-class_loader-devel
-Requires:       ros2-humble-common_interfaces-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-launch_testing_ament_cmake-devel
-Requires:       ros2-humble-launch_testing_ros-devel
-Requires:       ros2-humble-launch_xml-devel
-Requires:       ros2-humble-launch_yaml-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rcl_lifecycle-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_action-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-ros2cli_common_extensions-devel
-Requires:       ros2-humble-ros2launch-devel
-Requires:       ros2-humble-ros_environment-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
-Requires:       ros2-humble-sros2-devel
-Requires:       ros2-humble-sros2_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_cmake_auto-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_index_cpp-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-class_loader-devel
+Requires:       ros2-iron-common_interfaces-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-launch_testing_ament_cmake-devel
+Requires:       ros2-iron-launch_testing_ros-devel
+Requires:       ros2-iron-launch_xml-devel
+Requires:       ros2-iron-launch_yaml-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rcl_lifecycle-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_action-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-ros2cli_common_extensions-devel
+Requires:       ros2-iron-ros2launch-devel
+Requires:       ros2-iron-ros_environment-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
+Requires:       ros2-iron-sros2-devel
+Requires:       ros2-iron-sros2_cmake-devel
 
-Provides: ros2-humble-ros_core-devel = 0.10.0-1
-Obsoletes: ros2-humble-ros_core-devel < 0.10.0-1
+Provides: ros2-iron-ros_core-devel = 0.10.0-1
+Obsoletes: ros2-iron-ros_core-devel < 0.10.0-1
 
 
 %description devel

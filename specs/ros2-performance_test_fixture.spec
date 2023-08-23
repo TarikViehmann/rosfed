@@ -6,7 +6,7 @@ Summary:        ROS package performance_test_fixture
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/performance_test_fixture-release/archive/release/humble/performance_test_fixture/0.0.9-1.tar.gz#/ros2-humble-performance_test_fixture-0.0.9-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/performance_test_fixture-release/archive/release/iron/performance_test_fixture/0.1.1-2.tar.gz#/ros2-iron-performance_test_fixture-0.1.1-source0.tar.gz
 
 
 
@@ -37,22 +37,22 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_cmake_export_dependencies-devel
-BuildRequires:  ros2-humble-ament_cmake_export_targets-devel
-BuildRequires:  ros2-humble-ament_cmake_google_benchmark-devel
-BuildRequires:  ros2-humble-ament_cmake_test-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-google_benchmark_vendor-devel
-BuildRequires:  ros2-humble-osrf_testing_tools_cpp-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_cmake_export_dependencies-devel
+BuildRequires:  ros2-iron-ament_cmake_export_targets-devel
+BuildRequires:  ros2-iron-ament_cmake_google_benchmark-devel
+BuildRequires:  ros2-iron-ament_cmake_test-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-google_benchmark_vendor-devel
+BuildRequires:  ros2-iron-osrf_testing_tools_cpp-devel
 
-Requires:       ros2-humble-google_benchmark_vendor
-Requires:       ros2-humble-osrf_testing_tools_cpp
+Requires:       ros2-iron-google_benchmark_vendor
+Requires:       ros2-iron-osrf_testing_tools_cpp
 
-Provides:  ros2-humble-performance_test_fixture = 0.0.9-1
-Obsoletes: ros2-humble-performance_test_fixture < 0.0.9-1
+Provides:  ros2-iron-performance_test_fixture = 0.1.1-1
+Obsoletes: ros2-iron-performance_test_fixture < 0.1.1-1
 
 
 
@@ -63,19 +63,19 @@ Google Benchmark
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_cmake_export_dependencies-devel
-Requires:       ros2-humble-ament_cmake_export_targets-devel
-Requires:       ros2-humble-ament_cmake_google_benchmark-devel
-Requires:       ros2-humble-ament_cmake_test-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-google_benchmark_vendor-devel
-Requires:       ros2-humble-osrf_testing_tools_cpp-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_cmake_export_dependencies-devel
+Requires:       ros2-iron-ament_cmake_export_targets-devel
+Requires:       ros2-iron-ament_cmake_google_benchmark-devel
+Requires:       ros2-iron-ament_cmake_test-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-google_benchmark_vendor-devel
+Requires:       ros2-iron-osrf_testing_tools_cpp-devel
 
-Provides: ros2-humble-performance_test_fixture-devel = 0.0.9-1
-Obsoletes: ros2-humble-performance_test_fixture-devel < 0.0.9-1
+Provides: ros2-iron-performance_test_fixture-devel = 0.1.1-1
+Obsoletes: ros2-iron-performance_test_fixture-devel < 0.1.1-1
 
 
 %description devel

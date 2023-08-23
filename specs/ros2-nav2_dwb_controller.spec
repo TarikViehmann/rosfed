@@ -38,23 +38,23 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-costmap_queue-devel
-BuildRequires:  ros2-humble-dwb_core-devel
-BuildRequires:  ros2-humble-dwb_critics-devel
-BuildRequires:  ros2-humble-dwb_msgs-devel
-BuildRequires:  ros2-humble-dwb_plugins-devel
-BuildRequires:  ros2-humble-nav_2d_msgs-devel
-BuildRequires:  ros2-humble-nav_2d_utils-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-costmap_queue-devel
+BuildRequires:  ros2-iron-dwb_core-devel
+BuildRequires:  ros2-iron-dwb_critics-devel
+BuildRequires:  ros2-iron-dwb_msgs-devel
+BuildRequires:  ros2-iron-dwb_plugins-devel
+BuildRequires:  ros2-iron-nav_2d_msgs-devel
+BuildRequires:  ros2-iron-nav_2d_utils-devel
 
-Requires:       ros2-humble-costmap_queue
-Requires:       ros2-humble-dwb_core
-Requires:       ros2-humble-dwb_critics
-Requires:       ros2-humble-dwb_msgs
-Requires:       ros2-humble-dwb_plugins
-Requires:       ros2-humble-nav_2d_msgs
-Requires:       ros2-humble-nav_2d_utils
+Requires:       ros2-iron-costmap_queue
+Requires:       ros2-iron-dwb_core
+Requires:       ros2-iron-dwb_critics
+Requires:       ros2-iron-dwb_msgs
+Requires:       ros2-iron-dwb_plugins
+Requires:       ros2-iron-nav_2d_msgs
+Requires:       ros2-iron-nav_2d_utils
 
 Provides:  ros2-humble-nav2_dwb_controller = 1.1.12-1
 Obsoletes: ros2-humble-nav2_dwb_controller < 1.1.12-1
@@ -67,15 +67,15 @@ ROS2 controller (DWB) metapackage
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-costmap_queue-devel
-Requires:       ros2-humble-dwb_core-devel
-Requires:       ros2-humble-dwb_critics-devel
-Requires:       ros2-humble-dwb_msgs-devel
-Requires:       ros2-humble-dwb_plugins-devel
-Requires:       ros2-humble-nav_2d_msgs-devel
-Requires:       ros2-humble-nav_2d_utils-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-costmap_queue-devel
+Requires:       ros2-iron-dwb_core-devel
+Requires:       ros2-iron-dwb_critics-devel
+Requires:       ros2-iron-dwb_msgs-devel
+Requires:       ros2-iron-dwb_plugins-devel
+Requires:       ros2-iron-nav_2d_msgs-devel
+Requires:       ros2-iron-nav_2d_utils-devel
 
 Provides: ros2-humble-nav2_dwb_controller-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_dwb_controller-devel < 1.1.12-1

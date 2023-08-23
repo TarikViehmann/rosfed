@@ -6,7 +6,7 @@ Summary:        ROS package rmw_dds_common
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rmw_dds_common-release/archive/release/humble/rmw_dds_common/1.6.0-2.tar.gz#/ros2-humble-rmw_dds_common-1.6.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rmw_dds_common-release/archive/release/iron/rmw_dds_common/2.0.1-2.tar.gz#/ros2-iron-rmw_dds_common-2.0.1-source0.tar.gz
 
 
 
@@ -37,27 +37,29 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-osrf_testing_tools_cpp-devel
-BuildRequires:  ros2-humble-performance_test_fixture-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rmw-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
-BuildRequires:  ros2-humble-rosidl_runtime_cpp-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-osrf_testing_tools_cpp-devel
+BuildRequires:  ros2-iron-performance_test_fixture-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rmw-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-rosidl_runtime_cpp-devel
 
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rmw
-Requires:       ros2-humble-rosidl_default_runtime
-Requires:       ros2-humble-rosidl_runtime_cpp
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rmw
+Requires:       ros2-iron-rosidl_default_runtime
+Requires:       ros2-iron-rosidl_runtime_c
+Requires:       ros2-iron-rosidl_runtime_cpp
 
-Provides:  ros2-humble-rmw_dds_common = 1.6.0-1
-Obsoletes: ros2-humble-rmw_dds_common < 1.6.0-1
+Provides:  ros2-iron-rmw_dds_common = 2.0.1-1
+Obsoletes: ros2-iron-rmw_dds_common < 2.0.1-1
 
 
 
@@ -68,22 +70,23 @@ middleware.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-osrf_testing_tools_cpp-devel
-Requires:       ros2-humble-performance_test_fixture-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rmw-devel
-Requires:       ros2-humble-rosidl_runtime_cpp-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-osrf_testing_tools_cpp-devel
+Requires:       ros2-iron-performance_test_fixture-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rmw-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-rosidl_runtime_cpp-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
 
-Provides: ros2-humble-rmw_dds_common-devel = 1.6.0-1
-Obsoletes: ros2-humble-rmw_dds_common-devel < 1.6.0-1
+Provides: ros2-iron-rmw_dds_common-devel = 2.0.1-1
+Obsoletes: ros2-iron-rmw_dds_common-devel < 2.0.1-1
 
 
 %description devel

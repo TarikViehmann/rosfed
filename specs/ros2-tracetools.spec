@@ -6,7 +6,7 @@ Summary:        ROS package tracetools
 License:        Apache 2.0
 URL:            https://index.ros.org/p/tracetools/
 
-Source0:        https://github.com/ros2-gbp/ros2_tracing-release/archive/release/humble/tracetools/4.1.1-1.tar.gz#/ros2-humble-tracetools-4.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros2_tracing-release/archive/release/iron/tracetools/6.3.1-1.tar.gz#/ros2-iron-tracetools-6.3.1-source0.tar.gz
 
 
 
@@ -37,16 +37,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
+BuildRequires:  lttng-ust-devel
 BuildRequires:  pkgconfig
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
+Requires:       lttng-tools
 
-Provides:  ros2-humble-tracetools = 4.1.1-1
-Obsoletes: ros2-humble-tracetools < 4.1.1-1
+Provides:  ros2-iron-tracetools = 6.3.1-1
+Obsoletes: ros2-iron-tracetools < 6.3.1-1
 
 
 
@@ -57,14 +59,15 @@ Tracing wrapper for ROS 2.
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       pkgconfig
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       lttng-ust-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-tracetools-devel = 4.1.1-1
-Obsoletes: ros2-humble-tracetools-devel < 4.1.1-1
+Provides: ros2-iron-tracetools-devel = 6.3.1-1
+Obsoletes: ros2-iron-tracetools-devel < 6.3.1-1
 
 
 %description devel

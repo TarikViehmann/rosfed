@@ -39,10 +39,10 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  cmake
 BuildRequires:  git
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-iceoryx_hoofs-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-iceoryx_hoofs-devel
 
-Requires:       ros2-humble-iceoryx_hoofs
+Requires:       ros2-iron-iceoryx_hoofs
 
 Provides:  ros2-humble-iceoryx_posh = 2.0.5-1
 Obsoletes: ros2-humble-iceoryx_posh < 2.0.5-1
@@ -58,8 +58,8 @@ Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       cmake
 Requires:       git
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-iceoryx_hoofs-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-iceoryx_hoofs-devel
 
 Provides: ros2-humble-iceoryx_posh-devel = 2.0.5-1
 Obsoletes: ros2-humble-iceoryx_posh-devel < 2.0.5-1

@@ -38,34 +38,36 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-nav2_costmap_2d-devel
-BuildRequires:  ros2-humble-nav2_util-devel
-BuildRequires:  ros2-humble-nav_msgs-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-tf2_ros-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-nav2_behavior_tree-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-nav2_costmap_2d-devel
+BuildRequires:  ros2-iron-nav2_util-devel
+BuildRequires:  ros2-iron-nav_msgs-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
 
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-nav2_costmap_2d
-Requires:       ros2-humble-nav2_util
-Requires:       ros2-humble-nav_msgs
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-tf2_ros
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-nav2_behavior_tree
+Requires:       ros2-iron-nav2_costmap_2d
+Requires:       ros2-iron-nav2_util
+Requires:       ros2-iron-nav_msgs
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-tf2_ros
 
 Provides:  ros2-humble-nav2_core = 1.1.12-1
 Obsoletes: ros2-humble-nav2_core < 1.1.12-1
@@ -78,24 +80,25 @@ A set of headers for plugins core to the Nav2 stack
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-nav2_costmap_2d-devel
-Requires:       ros2-humble-nav2_util-devel
-Requires:       ros2-humble-nav_msgs-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-tf2_ros-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-nav2_behavior_tree-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-nav2_costmap_2d-devel
+Requires:       ros2-iron-nav2_util-devel
+Requires:       ros2-iron-nav_msgs-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-tf2_ros-devel
 
 Provides: ros2-humble-nav2_core-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_core-devel < 1.1.12-1

@@ -6,7 +6,7 @@ Summary:        ROS package webots_ros2_mavic
 License:        Apache License 2.0
 URL:            http://wiki.ros.org/webots_ros2
 
-Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/humble/webots_ros2_mavic/2023.1.1-2.tar.gz#/ros2-humble-webots_ros2_mavic-2023.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/iron/webots_ros2_mavic/2023.1.1-2.tar.gz#/ros2-iron-webots_ros2_mavic-2023.1.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,15 +39,15 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-webots_ros2_driver
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-webots_ros2_driver
 
-Provides:  ros2-humble-webots_ros2_mavic = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_mavic < 2023.1.1-1
+Provides:  ros2-iron-webots_ros2_mavic = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_mavic < 2023.1.1-1
 
 
 
@@ -58,14 +58,14 @@ Mavic 2 Pro robot ROS2 interface for Webots.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-webots_ros2_driver-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-webots_ros2_driver-devel
 
-Provides: ros2-humble-webots_ros2_mavic-devel = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_mavic-devel < 2023.1.1-1
+Provides: ros2-iron-webots_ros2_mavic-devel = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_mavic-devel < 2023.1.1-1
 
 
 %description devel

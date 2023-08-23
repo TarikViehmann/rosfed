@@ -6,7 +6,7 @@ Summary:        ROS package ros2topic
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ros2cli-release/archive/release/humble/ros2topic/0.18.7-1.tar.gz#/ros2-humble-ros2topic-0.18.7-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros2cli-release/archive/release/iron/ros2topic/0.25.2-1.tar.gz#/ros2-iron-ros2topic-0.25.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -40,29 +40,28 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  python3-pytest
 BuildRequires:  python3-pytest-timeout
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-ament_xmllint-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_ros-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-launch_testing_ros-devel
-BuildRequires:  ros2-humble-ros2cli-devel
-BuildRequires:  ros2-humble-rosgraph_msgs-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-test_msgs-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-ament_xmllint-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_ros-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-launch_testing_ros-devel
+BuildRequires:  ros2-iron-rosgraph_msgs-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-test_msgs-devel
 
 Requires:       python3-numpy
 Requires:       python3-pyyaml
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-ros2cli
-Requires:       ros2-humble-rosidl_runtime_py
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-ros2cli
+Requires:       ros2-iron-rosidl_runtime_py
 
-Provides:  ros2-humble-ros2topic = 0.18.7-1
-Obsoletes: ros2-humble-ros2topic < 0.18.7-1
+Provides:  ros2-iron-ros2topic = 0.25.2-1
+Obsoletes: ros2-iron-ros2topic < 0.25.2-1
 
 
 
@@ -74,25 +73,25 @@ Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
 Requires:       python3-pytest-timeout
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-ament_xmllint-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-launch_testing_ros-devel
-Requires:       ros2-humble-ros2cli-devel
-Requires:       ros2-humble-rosgraph_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-test_msgs-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-rosidl_runtime_py-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-ament_xmllint-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-launch_testing_ros-devel
+Requires:       ros2-iron-rosgraph_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-test_msgs-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-ros2cli-devel
+Requires:       ros2-iron-rosidl_runtime_py-devel
 
-Provides: ros2-humble-ros2topic-devel = 0.18.7-1
-Obsoletes: ros2-humble-ros2topic-devel < 0.18.7-1
+Provides: ros2-iron-ros2topic-devel = 0.25.2-1
+Obsoletes: ros2-iron-ros2topic-devel < 0.25.2-1
 
 
 %description devel

@@ -6,7 +6,7 @@ Summary:        ROS package rqt_publisher
 License:        BSD
 URL:            http://wiki.ros.org/rqt_publisher
 
-Source0:        https://github.com/ros2-gbp/rqt_publisher-release/archive/release/humble/rqt_publisher/1.5.0-1.tar.gz#/ros2-humble-rqt_publisher-1.5.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt_publisher-release/archive/release/iron/rqt_publisher/1.6.3-2.tar.gz#/ros2-iron-rqt_publisher-1.6.3-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,17 +38,20 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       python3-catkin_pkg
-Requires:       ros2-humble-python_qt_binding
-Requires:       ros2-humble-qt_gui_py_common
-Requires:       ros2-humble-rqt_gui
-Requires:       ros2-humble-rqt_gui_py
-Requires:       ros2-humble-rqt_py_common
+Requires:       python3-numpy
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-python_qt_binding
+Requires:       ros2-iron-qt_gui_py_common
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-rosidl_runtime_py
+Requires:       ros2-iron-rqt_gui
+Requires:       ros2-iron-rqt_gui_py
+Requires:       ros2-iron-rqt_py_common
 
-Provides:  ros2-humble-rqt_publisher = 1.5.0-1
-Obsoletes: ros2-humble-rqt_publisher < 1.5.0-1
+Provides:  ros2-iron-rqt_publisher = 1.6.3-1
+Obsoletes: ros2-iron-rqt_publisher < 1.6.3-1
 
 
 
@@ -59,15 +62,18 @@ with fixed or computed field values.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-python_qt_binding-devel
-Requires:       ros2-humble-qt_gui_py_common-devel
-Requires:       ros2-humble-rqt_gui-devel
-Requires:       ros2-humble-rqt_gui_py-devel
-Requires:       ros2-humble-rqt_py_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-python_qt_binding-devel
+Requires:       ros2-iron-qt_gui_py_common-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-rosidl_runtime_py-devel
+Requires:       ros2-iron-rqt_gui-devel
+Requires:       ros2-iron-rqt_gui_py-devel
+Requires:       ros2-iron-rqt_py_common-devel
 
-Provides: ros2-humble-rqt_publisher-devel = 1.5.0-1
-Obsoletes: ros2-humble-rqt_publisher-devel < 1.5.0-1
+Provides: ros2-iron-rqt_publisher-devel = 1.6.3-1
+Obsoletes: ros2-iron-rqt_publisher-devel < 1.6.3-1
 
 
 %description devel

@@ -6,7 +6,7 @@ Summary:        ROS package fastrtps
 License:        Apache 2.0
 URL:            https://www.eprosima.com/
 
-Source0:        https://github.com/ros2-gbp/fastrtps-release/archive/release/humble/fastrtps/2.6.6-1.tar.gz#/ros2-humble-fastrtps-2.6.6-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/fastrtps-release/archive/release/iron/fastrtps/2.10.2-1.tar.gz#/ros2-iron-fastrtps-2.10.2-source0.tar.gz
 
 
 
@@ -42,15 +42,15 @@ BuildRequires:  cmake
 BuildRequires:  openssl-devel
 BuildRequires:  python3-devel
 BuildRequires:  tinyxml2-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-fastcdr-devel
-BuildRequires:  ros2-humble-foonathan_memory_vendor-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-fastcdr-devel
+BuildRequires:  ros2-iron-foonathan_memory_vendor-devel
 
-Requires:       ros2-humble-fastcdr
-Requires:       ros2-humble-foonathan_memory_vendor
+Requires:       ros2-iron-fastcdr
+Requires:       ros2-iron-foonathan_memory_vendor
 
-Provides:  ros2-humble-fastrtps = 2.6.6-1
-Obsoletes: ros2-humble-fastrtps < 2.6.6-1
+Provides:  ros2-iron-fastrtps = 2.10.2-1
+Obsoletes: ros2-iron-fastrtps < 2.10.2-1
 
 
 
@@ -74,12 +74,12 @@ Requires:       asio-devel
 Requires:       openssl-devel
 Requires:       python3-devel
 Requires:       tinyxml2-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-fastcdr-devel
-Requires:       ros2-humble-foonathan_memory_vendor-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-fastcdr-devel
+Requires:       ros2-iron-foonathan_memory_vendor-devel
 
-Provides: ros2-humble-fastrtps-devel = 2.6.6-1
-Obsoletes: ros2-humble-fastrtps-devel < 2.6.6-1
+Provides: ros2-iron-fastrtps-devel = 2.10.2-1
+Obsoletes: ros2-iron-fastrtps-devel < 2.10.2-1
 
 
 %description devel

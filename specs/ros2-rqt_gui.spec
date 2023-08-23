@@ -6,7 +6,7 @@ Summary:        ROS package rqt_gui
 License:        BSD
 URL:            http://ros.org/wiki/rqt_gui
 
-Source0:        https://github.com/ros2-gbp/rqt-release/archive/release/humble/rqt_gui/1.1.5-2.tar.gz#/ros2-humble-rqt_gui-1.1.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt-release/archive/release/iron/rqt_gui/1.3.3-1.tar.gz#/ros2-iron-rqt_gui-1.3.3-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,19 +38,19 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-qt_gui-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-qt_gui-devel
 
 Requires:       python3-catkin_pkg
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-python_qt_binding
-Requires:       ros2-humble-qt_gui
-Requires:       ros2-humble-rclpy
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-python_qt_binding
+Requires:       ros2-iron-qt_gui
+Requires:       ros2-iron-rclpy
 
-Provides:  ros2-humble-rqt_gui = 1.1.5-1
-Obsoletes: ros2-humble-rqt_gui < 1.1.5-1
+Provides:  ros2-iron-rqt_gui = 1.3.3-1
+Obsoletes: ros2-iron-rqt_gui < 1.3.3-1
 
 
 
@@ -61,16 +61,16 @@ graphical user interface provided by qt_gui.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-qt_gui-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-python_qt_binding-devel
-Requires:       ros2-humble-rclpy-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-qt_gui-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-python_qt_binding-devel
+Requires:       ros2-iron-rclpy-devel
 
-Provides: ros2-humble-rqt_gui-devel = 1.1.5-1
-Obsoletes: ros2-humble-rqt_gui-devel < 1.1.5-1
+Provides: ros2-iron-rqt_gui-devel = 1.3.3-1
+Obsoletes: ros2-iron-rqt_gui-devel < 1.3.3-1
 
 
 %description devel

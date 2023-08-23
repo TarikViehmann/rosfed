@@ -37,34 +37,34 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-angles-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-nav2_controller-devel
-BuildRequires:  ros2-humble-nav2_core-devel
-BuildRequires:  ros2-humble-nav2_costmap_2d-devel
-BuildRequires:  ros2-humble-nav2_msgs-devel
-BuildRequires:  ros2-humble-nav2_regulated_pure_pursuit_controller-devel
-BuildRequires:  ros2-humble-nav2_util-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-tf2-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-angles-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-nav2_controller-devel
+BuildRequires:  ros2-iron-nav2_core-devel
+BuildRequires:  ros2-iron-nav2_costmap_2d-devel
+BuildRequires:  ros2-iron-nav2_msgs-devel
+BuildRequires:  ros2-iron-nav2_regulated_pure_pursuit_controller-devel
+BuildRequires:  ros2-iron-nav2_util-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-tf2-devel
 
-Requires:       ros2-humble-angles
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-nav2_common
-Requires:       ros2-humble-nav2_core
-Requires:       ros2-humble-nav2_costmap_2d
-Requires:       ros2-humble-nav2_msgs
-Requires:       ros2-humble-nav2_util
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-tf2
+Requires:       ros2-iron-angles
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-nav2_common
+Requires:       ros2-iron-nav2_core
+Requires:       ros2-iron-nav2_costmap_2d
+Requires:       ros2-iron-nav2_msgs
+Requires:       ros2-iron-nav2_util
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-tf2
 
 Provides:  ros2-humble-nav2_rotation_shim_controller = 1.1.12-1
 Obsoletes: ros2-humble-nav2_rotation_shim_controller < 1.1.12-1
@@ -77,23 +77,23 @@ Rotation Shim Controller
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-angles-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-nav2_controller-devel
-Requires:       ros2-humble-nav2_core-devel
-Requires:       ros2-humble-nav2_costmap_2d-devel
-Requires:       ros2-humble-nav2_msgs-devel
-Requires:       ros2-humble-nav2_regulated_pure_pursuit_controller-devel
-Requires:       ros2-humble-nav2_util-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-tf2-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-angles-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-nav2_controller-devel
+Requires:       ros2-iron-nav2_core-devel
+Requires:       ros2-iron-nav2_costmap_2d-devel
+Requires:       ros2-iron-nav2_msgs-devel
+Requires:       ros2-iron-nav2_regulated_pure_pursuit_controller-devel
+Requires:       ros2-iron-nav2_util-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-tf2-devel
 
 Provides: ros2-humble-nav2_rotation_shim_controller-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_rotation_shim_controller-devel < 1.1.12-1

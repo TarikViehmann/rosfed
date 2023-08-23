@@ -39,8 +39,8 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  libsq3-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
 Provides:  ros2-humble-sqlite3_vendor = 0.15.8-1
@@ -54,9 +54,9 @@ SQLite 3 vendor package
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       libsq3-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-sqlite3_vendor-devel = 0.15.8-1
 Obsoletes: ros2-humble-sqlite3_vendor-devel < 0.15.8-1

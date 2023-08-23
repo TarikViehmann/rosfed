@@ -1,0 +1,2 @@
+patches:
+  - ros2.regulated_pure_pursuit_controller.disable_warnings.patch

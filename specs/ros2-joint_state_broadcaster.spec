@@ -37,34 +37,34 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-backward_ros-devel
-BuildRequires:  ros2-humble-builtin_interfaces-devel
-BuildRequires:  ros2-humble-control_msgs-devel
-BuildRequires:  ros2-humble-controller_interface-devel
-BuildRequires:  ros2-humble-controller_manager-devel
-BuildRequires:  ros2-humble-generate_parameter_library-devel
-BuildRequires:  ros2-humble-hardware_interface-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-realtime_tools-devel
-BuildRequires:  ros2-humble-ros2_control_test_assets-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-backward_ros-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-control_msgs-devel
+BuildRequires:  ros2-iron-controller_interface-devel
+BuildRequires:  ros2-iron-controller_manager-devel
+BuildRequires:  ros2-iron-generate_parameter_library-devel
+BuildRequires:  ros2-iron-hardware_interface-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-realtime_tools-devel
+BuildRequires:  ros2-iron-ros2_control_test_assets-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
 
-Requires:       ros2-humble-backward_ros
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-control_msgs
-Requires:       ros2-humble-controller_interface
-Requires:       ros2-humble-generate_parameter_library
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-realtime_tools
-Requires:       ros2-humble-sensor_msgs
+Requires:       ros2-iron-backward_ros
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-control_msgs
+Requires:       ros2-iron-controller_interface
+Requires:       ros2-iron-generate_parameter_library
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-realtime_tools
+Requires:       ros2-iron-sensor_msgs
 
 Provides:  ros2-humble-joint_state_broadcaster = 2.28.0-1
 Obsoletes: ros2-humble-joint_state_broadcaster < 2.28.0-1
@@ -77,23 +77,23 @@ Broadcaster to publish joint state
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-backward_ros-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-control_msgs-devel
-Requires:       ros2-humble-controller_interface-devel
-Requires:       ros2-humble-controller_manager-devel
-Requires:       ros2-humble-generate_parameter_library-devel
-Requires:       ros2-humble-hardware_interface-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-realtime_tools-devel
-Requires:       ros2-humble-ros2_control_test_assets-devel
-Requires:       ros2-humble-sensor_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-backward_ros-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-control_msgs-devel
+Requires:       ros2-iron-controller_interface-devel
+Requires:       ros2-iron-controller_manager-devel
+Requires:       ros2-iron-generate_parameter_library-devel
+Requires:       ros2-iron-hardware_interface-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-realtime_tools-devel
+Requires:       ros2-iron-ros2_control_test_assets-devel
+Requires:       ros2-iron-sensor_msgs-devel
 
 Provides: ros2-humble-joint_state_broadcaster-devel = 2.28.0-1
 Obsoletes: ros2-humble-joint_state_broadcaster-devel < 2.28.0-1

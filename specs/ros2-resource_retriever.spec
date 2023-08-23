@@ -6,7 +6,7 @@ Summary:        ROS package resource_retriever
 License:        BSD
 URL:            http://ros.org/wiki/resource_retriever
 
-Source0:        https://github.com/ros2-gbp/resource_retriever-release/archive/release/humble/resource_retriever/3.1.1-1.tar.gz#/ros2-humble-resource_retriever-3.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/resource_retriever-release/archive/release/iron/resource_retriever/3.2.2-3.tar.gz#/ros2-iron-resource_retriever-3.2.2-source0.tar.gz
 
 Patch0: ros-resource_retriever.system-libcurl.patch
 
@@ -45,22 +45,22 @@ BuildRequires:  libcurl-devel
 BuildRequires:  log4cxx-devel
 BuildRequires:  python3-pytest
 BuildRequires:  tinyxml-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_index_cpp-devel
-BuildRequires:  ros2-humble-ament_index_python-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-python_cmake_module-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_index_cpp-devel
+BuildRequires:  ros2-iron-ament_index_python-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-python_cmake_module-devel
 
 Requires:       libcurl-devel
-Requires:       ros2-humble-ament_index_cpp
-Requires:       ros2-humble-ament_index_python
+Requires:       ros2-iron-ament_index_cpp
+Requires:       ros2-iron-ament_index_python
 
-Provides:  ros2-humble-resource_retriever = 3.1.1-1
-Obsoletes: ros2-humble-resource_retriever < 3.1.1-1
+Provides:  ros2-iron-resource_retriever = 3.2.2-1
+Obsoletes: ros2-iron-resource_retriever < 3.2.2-1
 
 
 
@@ -75,7 +75,7 @@ retriever is based on the the libcurl library.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
 Requires:       boost-devel
 Requires:       console-bridge-devel
 Requires:       gtest-devel
@@ -83,17 +83,17 @@ Requires:       libcurl-devel
 Requires:       log4cxx-devel
 Requires:       python3-pytest
 Requires:       tinyxml-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_index_cpp-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-python_cmake_module-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_index_cpp-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-python_cmake_module-devel
 
-Provides: ros2-humble-resource_retriever-devel = 3.1.1-1
-Obsoletes: ros2-humble-resource_retriever-devel < 3.1.1-1
+Provides: ros2-iron-resource_retriever-devel = 3.2.2-1
+Obsoletes: ros2-iron-resource_retriever-devel < 3.2.2-1
 
 
 %description devel

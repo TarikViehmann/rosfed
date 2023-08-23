@@ -6,7 +6,7 @@ Summary:        ROS package fastcdr
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/fastcdr-release/archive/release/humble/fastcdr/1.0.24-2.tar.gz#/ros2-humble-fastcdr-1.0.24-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/fastcdr-release/archive/release/iron/fastcdr/1.0.27-3.tar.gz#/ros2-iron-fastcdr-1.0.27-source0.tar.gz
 
 
 
@@ -38,11 +38,11 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  cmake
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-fastcdr = 1.0.24-1
-Obsoletes: ros2-humble-fastcdr < 1.0.24-1
+Provides:  ros2-iron-fastcdr = 1.0.27-1
+Obsoletes: ros2-iron-fastcdr < 1.0.27-1
 
 
 
@@ -53,10 +53,10 @@ CDR serialization implementation.
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       cmake
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-fastcdr-devel = 1.0.24-1
-Obsoletes: ros2-humble-fastcdr-devel < 1.0.24-1
+Provides: ros2-iron-fastcdr-devel = 1.0.27-1
+Obsoletes: ros2-iron-fastcdr-devel < 1.0.27-1
 
 
 %description devel

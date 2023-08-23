@@ -6,7 +6,7 @@ Summary:        ROS package pcl_conversions
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/perception_pcl-release/archive/release/humble/pcl_conversions/2.4.0-4.tar.gz#/ros2-humble-pcl_conversions-2.4.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/perception_pcl-release/archive/release/iron/pcl_conversions/2.4.0-5.tar.gz#/ros2-iron-pcl_conversions-2.4.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -40,23 +40,23 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  eigen3-devel
 BuildRequires:  pcl-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-message_filters-devel
-BuildRequires:  ros2-humble-pcl_msgs-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-message_filters-devel
+BuildRequires:  ros2-iron-pcl_msgs-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-message_filters
-Requires:       ros2-humble-pcl_msgs
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-message_filters
+Requires:       ros2-iron-pcl_msgs
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-std_msgs
 
-Provides:  ros2-humble-pcl_conversions = 2.4.0-1
-Obsoletes: ros2-humble-pcl_conversions < 2.4.0-1
+Provides:  ros2-iron-pcl_conversions = 2.4.0-1
+Obsoletes: ros2-iron-pcl_conversions < 2.4.0-1
 
 
 
@@ -66,19 +66,19 @@ Provides conversions from PCL data types and ROS message types
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       eigen3-devel
 Requires:       pcl-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-message_filters-devel
-Requires:       ros2-humble-pcl_msgs-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-message_filters-devel
+Requires:       ros2-iron-pcl_msgs-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
 
-Provides: ros2-humble-pcl_conversions-devel = 2.4.0-1
-Obsoletes: ros2-humble-pcl_conversions-devel < 2.4.0-1
+Provides: ros2-iron-pcl_conversions-devel = 2.4.0-1
+Obsoletes: ros2-iron-pcl_conversions-devel < 2.4.0-1
 
 
 %description devel

@@ -6,7 +6,7 @@ Summary:        ROS package rosidl_generator_py
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rosidl_python-release/archive/release/humble/rosidl_generator_py/0.14.4-1.tar.gz#/ros2-humble-rosidl_generator_py-0.14.4-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rosidl_python-release/archive/release/iron/rosidl_generator_py/0.18.0-2.tar.gz#/ros2-iron-rosidl_generator_py-0.18.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -40,36 +40,37 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  python3-numpy
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_index_python-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-python_cmake_module-devel
-BuildRequires:  ros2-humble-rmw-devel
-BuildRequires:  ros2-humble-rosidl_cmake-devel
-BuildRequires:  ros2-humble-rosidl_generator_c-devel
-BuildRequires:  ros2-humble-rosidl_generator_cpp-devel
-BuildRequires:  ros2-humble-rosidl_parser-devel
-BuildRequires:  ros2-humble-rosidl_runtime_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_fastrtps_c-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_interface-devel
-BuildRequires:  ros2-humble-rosidl_typesupport_introspection_c-devel
-BuildRequires:  ros2-humble-rpyutils-devel
-BuildRequires:  ros2-humble-test_interface_files-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_index_python-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-python_cmake_module-devel
+BuildRequires:  ros2-iron-rmw-devel
+BuildRequires:  ros2-iron-rosidl_cmake-devel
+BuildRequires:  ros2-iron-rosidl_generator_c-devel
+BuildRequires:  ros2-iron-rosidl_generator_cpp-devel
+BuildRequires:  ros2-iron-rosidl_parser-devel
+BuildRequires:  ros2-iron-rosidl_pycommon-devel
+BuildRequires:  ros2-iron-rosidl_runtime_c-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_c-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_fastrtps_c-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_interface-devel
+BuildRequires:  ros2-iron-rosidl_typesupport_introspection_c-devel
+BuildRequires:  ros2-iron-rpyutils-devel
+BuildRequires:  ros2-iron-test_interface_files-devel
 
 Requires:       python3-numpy
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-rosidl_cli
-Requires:       ros2-humble-rosidl_generator_c
-Requires:       ros2-humble-rosidl_parser
-Requires:       ros2-humble-rosidl_runtime_c
-Requires:       ros2-humble-rpyutils
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-rosidl_cli
+Requires:       ros2-iron-rosidl_generator_c
+Requires:       ros2-iron-rosidl_parser
+Requires:       ros2-iron-rosidl_runtime_c
+Requires:       ros2-iron-rpyutils
 
-Provides:  ros2-humble-rosidl_generator_py = 0.14.4-1
-Obsoletes: ros2-humble-rosidl_generator_py < 0.14.4-1
+Provides:  ros2-iron-rosidl_generator_py = 0.18.0-1
+Obsoletes: ros2-iron-rosidl_generator_py < 0.18.0-1
 
 
 
@@ -79,31 +80,32 @@ Generate the ROS interfaces in Python.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-python_cmake_module-devel
-Requires:       ros2-humble-rmw-devel
-Requires:       ros2-humble-rosidl_cmake-devel
-Requires:       ros2-humble-rosidl_generator_c-devel
-Requires:       ros2-humble-rosidl_typesupport_c-devel
-Requires:       ros2-humble-rosidl_typesupport_interface-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-python_cmake_module-devel
+Requires:       ros2-iron-rmw-devel
+Requires:       ros2-iron-rosidl_generator_c-devel
+Requires:       ros2-iron-rosidl_pycommon-devel
+Requires:       ros2-iron-rosidl_typesupport_c-devel
+Requires:       ros2-iron-rosidl_typesupport_interface-devel
 Requires:       python3-numpy
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rosidl_generator_cpp-devel
-Requires:       ros2-humble-rosidl_parser-devel
-Requires:       ros2-humble-rosidl_runtime_c-devel
-Requires:       ros2-humble-rosidl_typesupport_fastrtps_c-devel
-Requires:       ros2-humble-rosidl_typesupport_introspection_c-devel
-Requires:       ros2-humble-rpyutils-devel
-Requires:       ros2-humble-test_interface_files-devel
-Requires:       ros2-humble-rosidl_cli-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rosidl_cmake-devel
+Requires:       ros2-iron-rosidl_generator_cpp-devel
+Requires:       ros2-iron-rosidl_parser-devel
+Requires:       ros2-iron-rosidl_runtime_c-devel
+Requires:       ros2-iron-rosidl_typesupport_fastrtps_c-devel
+Requires:       ros2-iron-rosidl_typesupport_introspection_c-devel
+Requires:       ros2-iron-rpyutils-devel
+Requires:       ros2-iron-test_interface_files-devel
+Requires:       ros2-iron-rosidl_cli-devel
 
-Provides: ros2-humble-rosidl_generator_py-devel = 0.14.4-1
-Obsoletes: ros2-humble-rosidl_generator_py-devel < 0.14.4-1
+Provides: ros2-iron-rosidl_generator_py-devel = 0.18.0-1
+Obsoletes: ros2-iron-rosidl_generator_py-devel < 0.18.0-1
 
 
 %description devel

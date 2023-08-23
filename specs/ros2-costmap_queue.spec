@@ -38,17 +38,17 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-nav2_costmap_2d-devel
-BuildRequires:  ros2-humble-rclcpp-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-nav2_costmap_2d-devel
+BuildRequires:  ros2-iron-rclcpp-devel
 
-Requires:       ros2-humble-nav2_costmap_2d
-Requires:       ros2-humble-rclcpp
+Requires:       ros2-iron-nav2_costmap_2d
+Requires:       ros2-iron-rclcpp
 
 Provides:  ros2-humble-costmap_queue = 1.1.12-1
 Obsoletes: ros2-humble-costmap_queue < 1.1.12-1
@@ -61,14 +61,14 @@ The costmap_queue package
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-nav2_costmap_2d-devel
-Requires:       ros2-humble-rclcpp-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-nav2_costmap_2d-devel
+Requires:       ros2-iron-rclcpp-devel
 
 Provides: ros2-humble-costmap_queue-devel = 1.1.12-1
 Obsoletes: ros2-humble-costmap_queue-devel < 1.1.12-1

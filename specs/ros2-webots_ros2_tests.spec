@@ -6,7 +6,7 @@ Summary:        ROS package webots_ros2_tests
 License:        Apache License 2.0
 URL:            http://wiki.ros.org/webots_ros2
 
-Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/humble/webots_ros2_tests/2023.1.1-2.tar.gz#/ros2-humble-webots_ros2_tests-2023.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/iron/webots_ros2_tests/2023.1.1-2.tar.gz#/ros2-iron-webots_ros2_tests-2023.1.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,31 +39,31 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-launch_testing_ament_cmake-devel
-BuildRequires:  ros2-humble-launch_testing_ros-devel
-BuildRequires:  ros2-humble-rclpy-devel
-BuildRequires:  ros2-humble-ros2bag-devel
-BuildRequires:  ros2-humble-rosbag2_storage_default_plugins-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-std_srvs-devel
-BuildRequires:  ros2-humble-tf2_ros-devel
-BuildRequires:  ros2-humble-webots_ros2_driver-devel
-BuildRequires:  ros2-humble-webots_ros2_epuck-devel
-BuildRequires:  ros2-humble-webots_ros2_mavic-devel
-BuildRequires:  ros2-humble-webots_ros2_tesla-devel
-BuildRequires:  ros2-humble-webots_ros2_tiago-devel
-BuildRequires:  ros2-humble-webots_ros2_turtlebot-devel
-BuildRequires:  ros2-humble-webots_ros2_universal_robot-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-launch_testing_ament_cmake-devel
+BuildRequires:  ros2-iron-launch_testing_ros-devel
+BuildRequires:  ros2-iron-rclpy-devel
+BuildRequires:  ros2-iron-ros2bag-devel
+BuildRequires:  ros2-iron-rosbag2_storage_default_plugins-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-std_srvs-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
+BuildRequires:  ros2-iron-webots_ros2_driver-devel
+BuildRequires:  ros2-iron-webots_ros2_epuck-devel
+BuildRequires:  ros2-iron-webots_ros2_mavic-devel
+BuildRequires:  ros2-iron-webots_ros2_tesla-devel
+BuildRequires:  ros2-iron-webots_ros2_tiago-devel
+BuildRequires:  ros2-iron-webots_ros2_turtlebot-devel
+BuildRequires:  ros2-iron-webots_ros2_universal_robot-devel
 
 
-Provides:  ros2-humble-webots_ros2_tests = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_tests < 2023.1.1-1
+Provides:  ros2-iron-webots_ros2_tests = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_tests < 2023.1.1-1
 
 
 
@@ -74,30 +74,30 @@ System tests for `webots_ros2` packages.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-launch_testing_ament_cmake-devel
-Requires:       ros2-humble-launch_testing_ros-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-ros2bag-devel
-Requires:       ros2-humble-rosbag2_storage_default_plugins-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-std_srvs-devel
-Requires:       ros2-humble-tf2_ros-devel
-Requires:       ros2-humble-webots_ros2_driver-devel
-Requires:       ros2-humble-webots_ros2_epuck-devel
-Requires:       ros2-humble-webots_ros2_mavic-devel
-Requires:       ros2-humble-webots_ros2_tesla-devel
-Requires:       ros2-humble-webots_ros2_tiago-devel
-Requires:       ros2-humble-webots_ros2_turtlebot-devel
-Requires:       ros2-humble-webots_ros2_universal_robot-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-launch_testing_ament_cmake-devel
+Requires:       ros2-iron-launch_testing_ros-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-ros2bag-devel
+Requires:       ros2-iron-rosbag2_storage_default_plugins-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-std_srvs-devel
+Requires:       ros2-iron-tf2_ros-devel
+Requires:       ros2-iron-webots_ros2_driver-devel
+Requires:       ros2-iron-webots_ros2_epuck-devel
+Requires:       ros2-iron-webots_ros2_mavic-devel
+Requires:       ros2-iron-webots_ros2_tesla-devel
+Requires:       ros2-iron-webots_ros2_tiago-devel
+Requires:       ros2-iron-webots_ros2_turtlebot-devel
+Requires:       ros2-iron-webots_ros2_universal_robot-devel
 
-Provides: ros2-humble-webots_ros2_tests-devel = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_tests-devel < 2023.1.1-1
+Provides: ros2-iron-webots_ros2_tests-devel = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_tests-devel < 2023.1.1-1
 
 
 %description devel

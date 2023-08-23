@@ -40,7 +40,7 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  cmake
 BuildRequires:  python3-catkin_pkg
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
 Provides:  ros2-humble-ament_cmake_core = 1.3.6-1
@@ -62,7 +62,7 @@ Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       cmake
 Requires:       python3-catkin_pkg
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-ament_cmake_core-devel = 1.3.6-1
 Obsoletes: ros2-humble-ament_cmake_core-devel < 1.3.6-1

@@ -6,7 +6,7 @@ Summary:        ROS package turtlesim
 License:        BSD
 URL:            http://www.ros.org/wiki/turtlesim
 
-Source0:        https://github.com/ros2-gbp/ros_tutorials-release/archive/release/humble/turtlesim/1.4.2-1.tar.gz#/ros2-humble-turtlesim-1.4.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros_tutorials-release/archive/release/iron/turtlesim/1.6.1-1.tar.gz#/ros2-iron-turtlesim-1.6.1-source0.tar.gz
 
 
 
@@ -42,28 +42,28 @@ BuildRequires:  console-bridge-devel
 BuildRequires:  log4cxx-devel
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  tinyxml-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_index_cpp-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_action-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-std_srvs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_index_cpp-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_action-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-std_srvs-devel
 
 Requires:       qt5-qtbase
 Requires:       qt5-qtbase-gui
-Requires:       ros2-humble-ament_index_cpp
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_action
-Requires:       ros2-humble-rosidl_default_runtime
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-std_srvs
+Requires:       ros2-iron-ament_index_cpp
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_action
+Requires:       ros2-iron-rosidl_default_runtime
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-std_srvs
 
-Provides:  ros2-humble-turtlesim = 1.4.2-1
-Obsoletes: ros2-humble-turtlesim < 1.4.2-1
+Provides:  ros2-iron-turtlesim = 1.6.1-1
+Obsoletes: ros2-iron-turtlesim < 1.6.1-1
 
 
 
@@ -73,24 +73,24 @@ turtlesim is a tool made for teaching ROS and ROS packages.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
 Requires:       boost-devel
 Requires:       console-bridge-devel
 Requires:       log4cxx-devel
 Requires:       qt5-qtbase-devel
 Requires:       tinyxml-devel
-Requires:       ros2-humble-ament_index_cpp-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_action-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-std_srvs-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
+Requires:       ros2-iron-ament_index_cpp-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_action-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-std_srvs-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
 
-Provides: ros2-humble-turtlesim-devel = 1.4.2-1
-Obsoletes: ros2-humble-turtlesim-devel < 1.4.2-1
+Provides: ros2-iron-turtlesim-devel = 1.6.1-1
+Obsoletes: ros2-iron-turtlesim-devel < 1.6.1-1
 
 
 %description devel

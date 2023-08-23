@@ -38,7 +38,7 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
 Provides:  ros2-humble-ament_lint = 0.12.9-1
@@ -52,7 +52,7 @@ Providing common API for ament linter packages.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-ament_lint-devel = 0.12.9-1
 Obsoletes: ros2-humble-ament_lint-devel < 0.12.9-1

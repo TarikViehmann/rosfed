@@ -6,7 +6,7 @@ Summary:        ROS package composition
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/demos-release/archive/release/humble/composition/0.20.3-1.tar.gz#/ros2-humble-composition-0.20.3-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/demos-release/archive/release/iron/composition/0.27.1-1.tar.gz#/ros2-iron-composition-0.27.1-source0.tar.gz
 
 
 
@@ -37,31 +37,31 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-example_interfaces-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-launch_testing_ament_cmake-devel
-BuildRequires:  ros2-humble-launch_testing_ros-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_components-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rmw_implementation_cmake-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-example_interfaces-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-launch_testing_ament_cmake-devel
+BuildRequires:  ros2-iron-launch_testing_ros-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_components-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rmw_implementation_cmake-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-example_interfaces
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_components
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-example_interfaces
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_components
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-std_msgs
 
-Provides:  ros2-humble-composition = 0.20.3-1
-Obsoletes: ros2-humble-composition < 0.20.3-1
+Provides:  ros2-iron-composition = 0.27.1-1
+Obsoletes: ros2-iron-composition < 0.27.1-1
 
 
 
@@ -71,25 +71,25 @@ Examples for composing multiple nodes in a single process.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-example_interfaces-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-launch_testing_ament_cmake-devel
-Requires:       ros2-humble-launch_testing_ros-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_components-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rmw_implementation_cmake-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-launch_ros-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-example_interfaces-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-launch_testing_ament_cmake-devel
+Requires:       ros2-iron-launch_testing_ros-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_components-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rmw_implementation_cmake-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-launch_ros-devel
 
-Provides: ros2-humble-composition-devel = 0.20.3-1
-Obsoletes: ros2-humble-composition-devel < 0.20.3-1
+Provides: ros2-iron-composition-devel = 0.27.1-1
+Obsoletes: ros2-iron-composition-devel < 0.27.1-1
 
 
 %description devel

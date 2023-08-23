@@ -39,23 +39,23 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_index_python-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_ros-devel
-BuildRequires:  ros2-humble-ros2cli-devel
-BuildRequires:  ros2-humble-ros2pkg-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_index_python-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_ros-devel
+BuildRequires:  ros2-iron-ros2cli-devel
+BuildRequires:  ros2-iron-ros2pkg-devel
 
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-launch
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-launch_xml
-Requires:       ros2-humble-launch_yaml
-Requires:       ros2-humble-ros2cli
-Requires:       ros2-humble-ros2pkg
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-launch
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-launch_xml
+Requires:       ros2-iron-launch_yaml
+Requires:       ros2-iron-ros2cli
+Requires:       ros2-iron-ros2pkg
 
 Provides:  ros2-humble-ros2launch = 0.19.6-1
 Obsoletes: ros2-humble-ros2launch < 0.19.6-1
@@ -69,17 +69,17 @@ The launch command for ROS 2 command line tools.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-ros2cli-devel
-Requires:       ros2-humble-ros2pkg-devel
-Requires:       ros2-humble-launch_xml-devel
-Requires:       ros2-humble-launch_yaml-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-ros2cli-devel
+Requires:       ros2-iron-ros2pkg-devel
+Requires:       ros2-iron-launch_xml-devel
+Requires:       ros2-iron-launch_yaml-devel
 
 Provides: ros2-humble-ros2launch-devel = 0.19.6-1
 Obsoletes: ros2-humble-ros2launch-devel < 0.19.6-1

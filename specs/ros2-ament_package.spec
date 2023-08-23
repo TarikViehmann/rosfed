@@ -6,7 +6,7 @@ Summary:        ROS package ament_package
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ament_package-release/archive/release/humble/ament_package/0.14.0-4.tar.gz#/ros2-humble-ament_package-0.14.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ament_package-release/archive/release/iron/ament_package/0.15.3-2.tar.gz#/ros2-iron-ament_package-0.15.3-source0.tar.gz
 
 
 BuildArch: noarch
@@ -46,8 +46,8 @@ BuildRequires:  python3-setuptools
 Requires:       python3
 Requires:       python3-setuptools
 
-Provides:  ros2-humble-ament_package = 0.14.0-1
-Obsoletes: ros2-humble-ament_package < 0.14.0-1
+Provides:  ros2-iron-ament_package = 0.15.3-1
+Obsoletes: ros2-iron-ament_package < 0.15.3-1
 
 
 
@@ -62,8 +62,8 @@ Requires:       python3-flake8
 Requires:       python3-pytest
 Requires:       python3-setuptools
 
-Provides: ros2-humble-ament_package-devel = 0.14.0-1
-Obsoletes: ros2-humble-ament_package-devel < 0.14.0-1
+Provides: ros2-iron-ament_package-devel = 0.15.3-1
+Obsoletes: ros2-iron-ament_package-devel < 0.15.3-1
 
 
 %description devel

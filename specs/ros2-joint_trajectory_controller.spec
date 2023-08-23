@@ -41,36 +41,40 @@ BuildRequires:  poco-devel
 BuildRequires:  tinyxml-devel
 BuildRequires:  tinyxml2-devel
 BuildRequires:  urdfdom-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-angles-devel
-BuildRequires:  ros2-humble-backward_ros-devel
-BuildRequires:  ros2-humble-control_msgs-devel
-BuildRequires:  ros2-humble-control_toolbox-devel
-BuildRequires:  ros2-humble-controller_interface-devel
-BuildRequires:  ros2-humble-controller_manager-devel
-BuildRequires:  ros2-humble-generate_parameter_library-devel
-BuildRequires:  ros2-humble-hardware_interface-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-realtime_tools-devel
-BuildRequires:  ros2-humble-ros2_control_test_assets-devel
-BuildRequires:  ros2-humble-trajectory_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-angles-devel
+BuildRequires:  ros2-iron-backward_ros-devel
+BuildRequires:  ros2-iron-control_msgs-devel
+BuildRequires:  ros2-iron-control_toolbox-devel
+BuildRequires:  ros2-iron-controller_interface-devel
+BuildRequires:  ros2-iron-controller_manager-devel
+BuildRequires:  ros2-iron-generate_parameter_library-devel
+BuildRequires:  ros2-iron-hardware_interface-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-realtime_tools-devel
+BuildRequires:  ros2-iron-ros2_control_test_assets-devel
+BuildRequires:  ros2-iron-rsl-devel
+BuildRequires:  ros2-iron-tl_expected-devel
+BuildRequires:  ros2-iron-trajectory_msgs-devel
 
-Requires:       ros2-humble-angles
-Requires:       ros2-humble-backward_ros
-Requires:       ros2-humble-control_msgs
-Requires:       ros2-humble-control_toolbox
-Requires:       ros2-humble-controller_interface
-Requires:       ros2-humble-generate_parameter_library
-Requires:       ros2-humble-hardware_interface
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-realtime_tools
-Requires:       ros2-humble-trajectory_msgs
+Requires:       ros2-iron-angles
+Requires:       ros2-iron-backward_ros
+Requires:       ros2-iron-control_msgs
+Requires:       ros2-iron-control_toolbox
+Requires:       ros2-iron-controller_interface
+Requires:       ros2-iron-generate_parameter_library
+Requires:       ros2-iron-hardware_interface
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-realtime_tools
+Requires:       ros2-iron-rsl
+Requires:       ros2-iron-tl_expected
+Requires:       ros2-iron-trajectory_msgs
 
 Provides:  ros2-humble-joint_trajectory_controller = 2.28.0-1
 Obsoletes: ros2-humble-joint_trajectory_controller < 2.28.0-1
@@ -83,27 +87,29 @@ Controller for executing joint-space trajectories on a group of joints
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       poco-devel
 Requires:       tinyxml-devel
 Requires:       tinyxml2-devel
 Requires:       urdfdom-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-angles-devel
-Requires:       ros2-humble-backward_ros-devel
-Requires:       ros2-humble-control_msgs-devel
-Requires:       ros2-humble-control_toolbox-devel
-Requires:       ros2-humble-controller_interface-devel
-Requires:       ros2-humble-controller_manager-devel
-Requires:       ros2-humble-generate_parameter_library-devel
-Requires:       ros2-humble-hardware_interface-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-realtime_tools-devel
-Requires:       ros2-humble-ros2_control_test_assets-devel
-Requires:       ros2-humble-trajectory_msgs-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-angles-devel
+Requires:       ros2-iron-backward_ros-devel
+Requires:       ros2-iron-control_msgs-devel
+Requires:       ros2-iron-control_toolbox-devel
+Requires:       ros2-iron-controller_interface-devel
+Requires:       ros2-iron-controller_manager-devel
+Requires:       ros2-iron-generate_parameter_library-devel
+Requires:       ros2-iron-hardware_interface-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-realtime_tools-devel
+Requires:       ros2-iron-ros2_control_test_assets-devel
+Requires:       ros2-iron-rsl-devel
+Requires:       ros2-iron-tl_expected-devel
+Requires:       ros2-iron-trajectory_msgs-devel
 
 Provides: ros2-humble-joint_trajectory_controller-devel = 2.28.0-1
 Obsoletes: ros2-humble-joint_trajectory_controller-devel < 2.28.0-1

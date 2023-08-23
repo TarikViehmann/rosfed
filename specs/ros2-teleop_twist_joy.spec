@@ -6,7 +6,7 @@ Summary:        ROS package teleop_twist_joy
 License:        BSD
 URL:            http://wiki.ros.org/teleop_twist_joy
 
-Source0:        https://github.com/ros2-gbp/teleop_twist_joy-release/archive/release/humble/teleop_twist_joy/2.4.5-1.tar.gz#/ros2-humble-teleop_twist_joy-2.4.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/teleop_twist_joy-release/archive/release/iron/teleop_twist_joy/2.5.0-1.tar.gz#/ros2-iron-teleop_twist_joy-2.5.0-source0.tar.gz
 
 
 
@@ -37,26 +37,26 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-launch_ros-devel
-BuildRequires:  ros2-humble-launch_testing_ament_cmake-devel
-BuildRequires:  ros2-humble-launch_testing_ros-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_components-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-launch_ros-devel
+BuildRequires:  ros2-iron-launch_testing_ament_cmake-devel
+BuildRequires:  ros2-iron-launch_testing_ros-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_components-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
 
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-joy
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_components
-Requires:       ros2-humble-sensor_msgs
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-joy
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_components
+Requires:       ros2-iron-sensor_msgs
 
-Provides:  ros2-humble-teleop_twist_joy = 2.4.5-1
-Obsoletes: ros2-humble-teleop_twist_joy < 2.4.5-1
+Provides:  ros2-iron-teleop_twist_joy = 2.5.0-1
+Obsoletes: ros2-iron-teleop_twist_joy < 2.5.0-1
 
 
 
@@ -66,21 +66,21 @@ Generic joystick teleop for twist robots.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-launch_testing_ament_cmake-devel
-Requires:       ros2-humble-launch_testing_ros-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_components-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-joy-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-launch_testing_ament_cmake-devel
+Requires:       ros2-iron-launch_testing_ros-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_components-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-joy-devel
 
-Provides: ros2-humble-teleop_twist_joy-devel = 2.4.5-1
-Obsoletes: ros2-humble-teleop_twist_joy-devel < 2.4.5-1
+Provides: ros2-iron-teleop_twist_joy-devel = 2.5.0-1
+Obsoletes: ros2-iron-teleop_twist_joy-devel < 2.5.0-1
 
 
 %description devel

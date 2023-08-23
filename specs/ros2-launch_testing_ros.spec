@@ -39,15 +39,16 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-launch_testing
-Requires:       ros2-humble-rclpy
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-launch_testing
+Requires:       ros2-iron-rclpy
 
 Provides:  ros2-humble-launch_testing_ros = 0.19.6-1
 Obsoletes: ros2-humble-launch_testing_ros < 0.19.6-1
@@ -61,14 +62,15 @@ A package providing utilities for writing ROS2 enabled launch tests.
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-rclpy-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-rclpy-devel
 
 Provides: ros2-humble-launch_testing_ros-devel = 0.19.6-1
 Obsoletes: ros2-humble-launch_testing_ros-devel < 0.19.6-1

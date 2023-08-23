@@ -6,7 +6,7 @@ Summary:        ROS package ros2pkg
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ros2cli-release/archive/release/humble/ros2pkg/0.18.7-1.tar.gz#/ros2-humble-ros2pkg-0.18.7-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros2cli-release/archive/release/iron/ros2pkg/0.25.2-1.tar.gz#/ros2-iron-ros2pkg-0.25.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,28 +38,26 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  python3
 BuildRequires:  python3-pytest
 BuildRequires:  python3-pytest-timeout
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-ament_xmllint-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_testing-devel
-BuildRequires:  ros2-humble-launch_testing_ros-devel
-BuildRequires:  ros2-humble-ros2cli-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-ament_xmllint-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_testing-devel
+BuildRequires:  ros2-iron-launch_testing_ros-devel
 
 Requires:       python3
 Requires:       python3-catkin_pkg
 Requires:       python3-empy
 Requires:       python3-setuptools
-Requires:       ros2-humble-ament_copyright
-Requires:       ros2-humble-ament_index_python
-Requires:       ros2-humble-ros2cli
+Requires:       ros2-iron-ament_copyright
+Requires:       ros2-iron-ament_index_python
+Requires:       ros2-iron-ros2cli
 
-Provides:  ros2-humble-ros2pkg = 0.18.7-1
-Obsoletes: ros2-humble-ros2pkg < 0.18.7-1
+Provides:  ros2-iron-ros2pkg = 0.25.2-1
+Obsoletes: ros2-iron-ros2pkg < 0.25.2-1
 
 
 
@@ -69,22 +67,21 @@ The pkg command for ROS 2 command line tools.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       python3
 Requires:       python3-pytest
 Requires:       python3-pytest-timeout
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-ament_xmllint-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_testing-devel
-Requires:       ros2-humble-launch_testing_ros-devel
-Requires:       ros2-humble-ros2cli-devel
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_index_python-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-ament_xmllint-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_testing-devel
+Requires:       ros2-iron-launch_testing_ros-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-ros2cli-devel
 
-Provides: ros2-humble-ros2pkg-devel = 0.18.7-1
-Obsoletes: ros2-humble-ros2pkg-devel < 0.18.7-1
+Provides: ros2-iron-ros2pkg-devel = 0.25.2-1
+Obsoletes: ros2-iron-ros2pkg-devel < 0.25.2-1
 
 
 %description devel

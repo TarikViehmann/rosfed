@@ -6,7 +6,7 @@ Summary:        ROS package test_interface_files
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/test_interface_files-release/archive/release/humble/test_interface_files/0.9.1-2.tar.gz#/ros2-humble-test_interface_files-0.9.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/test_interface_files-release/archive/release/iron/test_interface_files/0.10.2-3.tar.gz#/ros2-iron-test_interface_files-0.10.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,12 +38,12 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-test_interface_files = 0.9.1-1
-Obsoletes: ros2-humble-test_interface_files < 0.9.1-1
+Provides:  ros2-iron-test_interface_files = 0.10.2-1
+Obsoletes: ros2-iron-test_interface_files < 0.10.2-1
 
 
 
@@ -54,11 +54,11 @@ for testing purposes.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-test_interface_files-devel = 0.9.1-1
-Obsoletes: ros2-humble-test_interface_files-devel < 0.9.1-1
+Provides: ros2-iron-test_interface_files-devel = 0.10.2-1
+Obsoletes: ros2-iron-test_interface_files-devel < 0.10.2-1
 
 
 %description devel

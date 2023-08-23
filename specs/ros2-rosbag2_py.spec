@@ -38,29 +38,30 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-pybind11_vendor-devel
-BuildRequires:  ros2-humble-python_cmake_module-devel
-BuildRequires:  ros2-humble-rcl_interfaces-devel
-BuildRequires:  ros2-humble-rclpy-devel
-BuildRequires:  ros2-humble-rosbag2_compression-devel
-BuildRequires:  ros2-humble-rosbag2_cpp-devel
-BuildRequires:  ros2-humble-rosbag2_storage-devel
-BuildRequires:  ros2-humble-rosbag2_storage_default_plugins-devel
-BuildRequires:  ros2-humble-rosbag2_transport-devel
-BuildRequires:  ros2-humble-rosidl_runtime_py-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-pybind11_vendor-devel
+BuildRequires:  ros2-iron-python_cmake_module-devel
+BuildRequires:  ros2-iron-rcl_interfaces-devel
+BuildRequires:  ros2-iron-rclpy-devel
+BuildRequires:  ros2-iron-rosbag2_compression-devel
+BuildRequires:  ros2-iron-rosbag2_cpp-devel
+BuildRequires:  ros2-iron-rosbag2_storage-devel
+BuildRequires:  ros2-iron-rosbag2_storage_default_plugins-devel
+BuildRequires:  ros2-iron-rosbag2_test_common-devel
+BuildRequires:  ros2-iron-rosbag2_transport-devel
+BuildRequires:  ros2-iron-rosidl_runtime_py-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-pybind11_vendor
-Requires:       ros2-humble-rosbag2_compression
-Requires:       ros2-humble-rosbag2_cpp
-Requires:       ros2-humble-rosbag2_storage
-Requires:       ros2-humble-rosbag2_transport
-Requires:       ros2-humble-rpyutils
+Requires:       ros2-iron-pybind11_vendor
+Requires:       ros2-iron-rosbag2_compression
+Requires:       ros2-iron-rosbag2_cpp
+Requires:       ros2-iron-rosbag2_storage
+Requires:       ros2-iron-rosbag2_transport
+Requires:       ros2-iron-rpyutils
 
 Provides:  ros2-humble-rosbag2_py = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2_py < 0.15.8-1
@@ -73,24 +74,25 @@ Python API for rosbag2
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-python_cmake_module-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-python_cmake_module-devel
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-pybind11_vendor-devel
-Requires:       ros2-humble-rcl_interfaces-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-rosbag2_compression-devel
-Requires:       ros2-humble-rosbag2_cpp-devel
-Requires:       ros2-humble-rosbag2_storage-devel
-Requires:       ros2-humble-rosbag2_storage_default_plugins-devel
-Requires:       ros2-humble-rosbag2_transport-devel
-Requires:       ros2-humble-rosidl_runtime_py-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-rpyutils-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-pybind11_vendor-devel
+Requires:       ros2-iron-rcl_interfaces-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-rosbag2_compression-devel
+Requires:       ros2-iron-rosbag2_cpp-devel
+Requires:       ros2-iron-rosbag2_storage-devel
+Requires:       ros2-iron-rosbag2_storage_default_plugins-devel
+Requires:       ros2-iron-rosbag2_test_common-devel
+Requires:       ros2-iron-rosbag2_transport-devel
+Requires:       ros2-iron-rosidl_runtime_py-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-rpyutils-devel
 
 Provides: ros2-humble-rosbag2_py-devel = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2_py-devel < 0.15.8-1

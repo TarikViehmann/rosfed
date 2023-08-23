@@ -6,7 +6,7 @@ Summary:        ROS package interactive_markers
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/interactive_markers-release/archive/release/humble/interactive_markers/2.3.2-2.tar.gz#/ros2-humble-interactive_markers-2.3.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/interactive_markers-release/archive/release/iron/interactive_markers/2.4.0-3.tar.gz#/ros2-iron-interactive_markers-2.4.0-source0.tar.gz
 
 
 
@@ -37,29 +37,29 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rmw-devel
-BuildRequires:  ros2-humble-tf2-devel
-BuildRequires:  ros2-humble-tf2_geometry_msgs-devel
-BuildRequires:  ros2-humble-visualization_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rmw-devel
+BuildRequires:  ros2-iron-tf2-devel
+BuildRequires:  ros2-iron-tf2_geometry_msgs-devel
+BuildRequires:  ros2-iron-visualization_msgs-devel
 
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-rmw
-Requires:       ros2-humble-tf2
-Requires:       ros2-humble-tf2_geometry_msgs
-Requires:       ros2-humble-visualization_msgs
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-rmw
+Requires:       ros2-iron-tf2
+Requires:       ros2-iron-tf2_geometry_msgs
+Requires:       ros2-iron-visualization_msgs
 
-Provides:  ros2-humble-interactive_markers = 2.3.2-1
-Obsoletes: ros2-humble-interactive_markers < 2.3.2-1
+Provides:  ros2-iron-interactive_markers = 2.4.0-1
+Obsoletes: ros2-iron-interactive_markers < 2.4.0-1
 
 
 
@@ -70,23 +70,23 @@ tools.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_python-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rmw-devel
-Requires:       ros2-humble-tf2-devel
-Requires:       ros2-humble-tf2_geometry_msgs-devel
-Requires:       ros2-humble-visualization_msgs-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-rclpy-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_python-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rmw-devel
+Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-tf2_geometry_msgs-devel
+Requires:       ros2-iron-visualization_msgs-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-rclpy-devel
 
-Provides: ros2-humble-interactive_markers-devel = 2.3.2-1
-Obsoletes: ros2-humble-interactive_markers-devel < 2.3.2-1
+Provides: ros2-iron-interactive_markers-devel = 2.4.0-1
+Obsoletes: ros2-iron-interactive_markers-devel < 2.4.0-1
 
 
 %description devel

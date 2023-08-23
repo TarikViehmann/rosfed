@@ -6,7 +6,7 @@ Summary:        ROS package shape_msgs
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/common_interfaces-release/archive/release/humble/shape_msgs/4.2.3-1.tar.gz#/ros2-humble-shape_msgs-4.2.3-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/common_interfaces-release/archive/release/iron/shape_msgs/5.0.0-2.tar.gz#/ros2-iron-shape_msgs-5.0.0-source0.tar.gz
 
 
 
@@ -37,17 +37,17 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
 
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-rosidl_default_runtime
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-rosidl_default_runtime
 
-Provides:  ros2-humble-shape_msgs = 4.2.3-1
-Obsoletes: ros2-humble-shape_msgs < 4.2.3-1
+Provides:  ros2-iron-shape_msgs = 5.0.0-1
+Obsoletes: ros2-iron-shape_msgs < 5.0.0-1
 
 
 
@@ -58,15 +58,15 @@ shapes.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
 
-Provides: ros2-humble-shape_msgs-devel = 4.2.3-1
-Obsoletes: ros2-humble-shape_msgs-devel < 4.2.3-1
+Provides: ros2-iron-shape_msgs-devel = 5.0.0-1
+Obsoletes: ros2-iron-shape_msgs-devel < 5.0.0-1
 
 
 %description devel

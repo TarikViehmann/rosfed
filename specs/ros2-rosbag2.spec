@@ -38,21 +38,20 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rosbag2_test_common-devel
-BuildRequires:  ros2-humble-rosbag2_tests-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-rosbag2_test_common-devel
+BuildRequires:  ros2-iron-rosbag2_tests-devel
 
-Requires:       ros2-humble-ros2bag
-Requires:       ros2-humble-rosbag2_compression
-Requires:       ros2-humble-rosbag2_compression_zstd
-Requires:       ros2-humble-rosbag2_cpp
-Requires:       ros2-humble-rosbag2_py
-Requires:       ros2-humble-rosbag2_storage
-Requires:       ros2-humble-rosbag2_storage_default_plugins
-Requires:       ros2-humble-rosbag2_transport
-Requires:       ros2-humble-shared_queues_vendor
-Requires:       ros2-humble-sqlite3_vendor
+Requires:       ros2-iron-ros2bag
+Requires:       ros2-iron-rosbag2_compression
+Requires:       ros2-iron-rosbag2_compression_zstd
+Requires:       ros2-iron-rosbag2_cpp
+Requires:       ros2-iron-rosbag2_py
+Requires:       ros2-iron-rosbag2_storage
+Requires:       ros2-iron-rosbag2_storage_default_plugins
+Requires:       ros2-iron-rosbag2_transport
+Requires:       ros2-iron-shared_queues_vendor
 
 Provides:  ros2-humble-rosbag2 = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2 < 0.15.8-1
@@ -65,20 +64,19 @@ Meta package for rosbag2 related packages
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rosbag2_test_common-devel
-Requires:       ros2-humble-rosbag2_tests-devel
-Requires:       ros2-humble-ros2bag-devel
-Requires:       ros2-humble-rosbag2_compression-devel
-Requires:       ros2-humble-rosbag2_compression_zstd-devel
-Requires:       ros2-humble-rosbag2_cpp-devel
-Requires:       ros2-humble-rosbag2_py-devel
-Requires:       ros2-humble-rosbag2_storage-devel
-Requires:       ros2-humble-rosbag2_storage_default_plugins-devel
-Requires:       ros2-humble-rosbag2_transport-devel
-Requires:       ros2-humble-shared_queues_vendor-devel
-Requires:       ros2-humble-sqlite3_vendor-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rosbag2_test_common-devel
+Requires:       ros2-iron-rosbag2_tests-devel
+Requires:       ros2-iron-ros2bag-devel
+Requires:       ros2-iron-rosbag2_compression-devel
+Requires:       ros2-iron-rosbag2_compression_zstd-devel
+Requires:       ros2-iron-rosbag2_cpp-devel
+Requires:       ros2-iron-rosbag2_py-devel
+Requires:       ros2-iron-rosbag2_storage-devel
+Requires:       ros2-iron-rosbag2_storage_default_plugins-devel
+Requires:       ros2-iron-rosbag2_transport-devel
+Requires:       ros2-iron-shared_queues_vendor-devel
 
 Provides: ros2-humble-rosbag2-devel = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2-devel < 0.15.8-1

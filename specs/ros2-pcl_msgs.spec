@@ -6,7 +6,7 @@ Summary:        ROS package pcl_msgs
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/pcl_msgs-release/archive/release/humble/pcl_msgs/1.0.0-7.tar.gz#/ros2-humble-pcl_msgs-1.0.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/pcl_msgs-release/archive/release/iron/pcl_msgs/1.0.0-8.tar.gz#/ros2-iron-pcl_msgs-1.0.0-source0.tar.gz
 
 
 
@@ -37,19 +37,19 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-rosidl_default_runtime
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-rosidl_default_runtime
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-std_msgs
 
-Provides:  ros2-humble-pcl_msgs = 1.0.0-1
-Obsoletes: ros2-humble-pcl_msgs < 1.0.0-1
+Provides:  ros2-iron-pcl_msgs = 1.0.0-1
+Obsoletes: ros2-iron-pcl_msgs < 1.0.0-1
 
 
 
@@ -59,16 +59,16 @@ Package containing PCL (Point Cloud Library)-related ROS messages.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
 
-Provides: ros2-humble-pcl_msgs-devel = 1.0.0-1
-Obsoletes: ros2-humble-pcl_msgs-devel < 1.0.0-1
+Provides: ros2-iron-pcl_msgs-devel = 1.0.0-1
+Obsoletes: ros2-iron-pcl_msgs-devel < 1.0.0-1
 
 
 %description devel

@@ -6,7 +6,7 @@ Summary:        ROS package yaml_cpp_vendor
 License:        Apache License 2.0
 URL:            https://github.com/jbeder/yaml-cpp
 
-Source0:        https://github.com/ros2-gbp/yaml_cpp_vendor-release/archive/release/humble/yaml_cpp_vendor/8.0.2-1.tar.gz#/ros2-humble-yaml_cpp_vendor-8.0.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/yaml_cpp_vendor-release/archive/release/iron/yaml_cpp_vendor/8.1.2-3.tar.gz#/ros2-iron-yaml_cpp_vendor-8.1.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,12 +39,12 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  yaml-cpp-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-yaml_cpp_vendor = 8.0.2-1
-Obsoletes: ros2-humble-yaml_cpp_vendor < 8.0.2-1
+Provides:  ros2-iron-yaml_cpp_vendor = 8.1.2-1
+Obsoletes: ros2-iron-yaml_cpp_vendor < 8.1.2-1
 
 
 
@@ -55,12 +55,12 @@ ExternalProject build of it.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       yaml-cpp-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-yaml_cpp_vendor-devel = 8.0.2-1
-Obsoletes: ros2-humble-yaml_cpp_vendor-devel < 8.0.2-1
+Provides: ros2-iron-yaml_cpp_vendor-devel = 8.1.2-1
+Obsoletes: ros2-iron-yaml_cpp_vendor-devel < 8.1.2-1
 
 
 %description devel

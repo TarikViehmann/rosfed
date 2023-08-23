@@ -6,7 +6,7 @@ Summary:        ROS package foonathan_memory_vendor
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/foonathan_memory_vendor-release/archive/release/humble/foonathan_memory_vendor/1.2.0-3.tar.gz#/ros2-humble-foonathan_memory_vendor-1.2.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/foonathan_memory_vendor-release/archive/release/iron/foonathan_memory_vendor/1.3.0-4.tar.gz#/ros2-iron-foonathan_memory_vendor-1.3.0-source0.tar.gz
 
 
 BuildArch: noarch
@@ -40,15 +40,15 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  cmake
 BuildRequires:  git
-BuildRequires:  ros2-humble-ament_cmake_copyright-devel
-BuildRequires:  ros2-humble-ament_cmake_lint_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_test-devel
-BuildRequires:  ros2-humble-ament_cmake_xmllint-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake_copyright-devel
+BuildRequires:  ros2-iron-ament_cmake_lint_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_test-devel
+BuildRequires:  ros2-iron-ament_cmake_xmllint-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-humble-foonathan_memory_vendor = 1.2.0-1
-Obsoletes: ros2-humble-foonathan_memory_vendor < 1.2.0-1
+Provides:  ros2-iron-foonathan_memory_vendor = 1.3.0-1
+Obsoletes: ros2-iron-foonathan_memory_vendor < 1.3.0-1
 
 
 
@@ -60,14 +60,14 @@ Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       cmake
 Requires:       git
-Requires:       ros2-humble-ament_cmake_copyright-devel
-Requires:       ros2-humble-ament_cmake_lint_cmake-devel
-Requires:       ros2-humble-ament_cmake_test-devel
-Requires:       ros2-humble-ament_cmake_xmllint-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_copyright-devel
+Requires:       ros2-iron-ament_cmake_lint_cmake-devel
+Requires:       ros2-iron-ament_cmake_test-devel
+Requires:       ros2-iron-ament_cmake_xmllint-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-foonathan_memory_vendor-devel = 1.2.0-1
-Obsoletes: ros2-humble-foonathan_memory_vendor-devel < 1.2.0-1
+Provides: ros2-iron-foonathan_memory_vendor-devel = 1.3.0-1
+Obsoletes: ros2-iron-foonathan_memory_vendor-devel < 1.3.0-1
 
 
 %description devel

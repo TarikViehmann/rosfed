@@ -8,7 +8,6 @@ URL:            http://www.ros.org/
 
 Source0:        https://github.com/ros2-gbp/rosbag2-release/archive/release/humble/rosbag2_compression/0.15.8-1.tar.gz#/ros2-humble-rosbag2_compression-0.15.8-source0.tar.gz
 
-Patch0: ros2-rosbag2_compression.cstdint.patch
 
 
 # common BRs
@@ -38,22 +37,23 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-rcutils-devel
-BuildRequires:  ros2-humble-rosbag2_cpp-devel
-BuildRequires:  ros2-humble-rosbag2_storage-devel
-BuildRequires:  ros2-humble-rosbag2_test_common-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rcutils-devel
+BuildRequires:  ros2-iron-rosbag2_cpp-devel
+BuildRequires:  ros2-iron-rosbag2_storage-devel
+BuildRequires:  ros2-iron-rosbag2_test_common-devel
+BuildRequires:  ros2-iron-test_msgs-devel
 
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-rcutils
-Requires:       ros2-humble-rosbag2_cpp
-Requires:       ros2-humble-rosbag2_storage
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-rcutils
+Requires:       ros2-iron-rosbag2_cpp
+Requires:       ros2-iron-rosbag2_storage
 
 Provides:  ros2-humble-rosbag2_compression = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2_compression < 0.15.8-1
@@ -66,17 +66,18 @@ Compression implementations for rosbag2 bags and messages.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-rcutils-devel
-Requires:       ros2-humble-rosbag2_cpp-devel
-Requires:       ros2-humble-rosbag2_storage-devel
-Requires:       ros2-humble-rosbag2_test_common-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rcutils-devel
+Requires:       ros2-iron-rosbag2_cpp-devel
+Requires:       ros2-iron-rosbag2_storage-devel
+Requires:       ros2-iron-rosbag2_test_common-devel
+Requires:       ros2-iron-test_msgs-devel
 
 Provides: ros2-humble-rosbag2_compression-devel = 0.15.8-1
 Obsoletes: ros2-humble-rosbag2_compression-devel < 0.15.8-1
@@ -92,7 +93,6 @@ applications that use %{name}.
 
 %setup -c -T
 tar --strip-components=1 -xf %{SOURCE0}
-%patch 0 -p1
 
 %build
 # nothing to do here

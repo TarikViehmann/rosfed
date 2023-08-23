@@ -39,15 +39,16 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
 
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-tf2_msgs
-Requires:       ros2-humble-tf2_py
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-tf2_msgs
+Requires:       ros2-iron-tf2_py
 
 Provides:  ros2-humble-tf2_ros_py = 0.25.5-1
 Obsoletes: ros2-humble-tf2_ros_py < 0.25.5-1
@@ -61,13 +62,14 @@ This package contains the ROS Python bindings for the tf2 library
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-tf2_msgs-devel
-Requires:       ros2-humble-tf2_py-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-tf2_msgs-devel
+Requires:       ros2-iron-tf2_py-devel
 
 Provides: ros2-humble-tf2_ros_py-devel = 0.25.5-1
 Obsoletes: ros2-humble-tf2_ros_py-devel < 0.25.5-1

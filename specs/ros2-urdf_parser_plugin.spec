@@ -6,7 +6,7 @@ Summary:        ROS package urdf_parser_plugin
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/urdf-release/archive/release/humble/urdf_parser_plugin/2.6.0-2.tar.gz#/ros2-humble-urdf_parser_plugin-2.6.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/urdf-release/archive/release/iron/urdf_parser_plugin/2.8.2-3.tar.gz#/ros2-iron-urdf_parser_plugin-2.8.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -38,15 +38,15 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_ros-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-urdfdom_headers-devel
+BuildRequires:  ros2-iron-ament_cmake_ros-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-urdfdom_headers-devel
 
 
-Provides:  ros2-humble-urdf_parser_plugin = 2.6.0-1
-Obsoletes: ros2-humble-urdf_parser_plugin < 2.6.0-1
+Provides:  ros2-iron-urdf_parser_plugin = 2.8.2-1
+Obsoletes: ros2-iron-urdf_parser_plugin < 2.8.2-1
 
 
 
@@ -56,14 +56,14 @@ This package contains a C++ base class for URDF parsers.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_ros-devel
-Requires:       ros2-humble-urdfdom_headers-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_ros-devel
+Requires:       ros2-iron-urdfdom_headers-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-urdf_parser_plugin-devel = 2.6.0-1
-Obsoletes: ros2-humble-urdf_parser_plugin-devel < 2.6.0-1
+Provides: ros2-iron-urdf_parser_plugin-devel = 2.8.2-1
+Obsoletes: ros2-iron-urdf_parser_plugin-devel < 2.8.2-1
 
 
 %description devel

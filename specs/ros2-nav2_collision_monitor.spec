@@ -37,32 +37,34 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-nav2_costmap_2d-devel
-BuildRequires:  ros2-humble-nav2_util-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_components-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
-BuildRequires:  ros2-humble-tf2-devel
-BuildRequires:  ros2-humble-tf2_geometry_msgs-devel
-BuildRequires:  ros2-humble-tf2_ros-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-nav2_costmap_2d-devel
+BuildRequires:  ros2-iron-nav2_msgs-devel
+BuildRequires:  ros2-iron-nav2_util-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_components-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-tf2-devel
+BuildRequires:  ros2-iron-tf2_geometry_msgs-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
 
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-nav2_common
-Requires:       ros2-humble-nav2_costmap_2d
-Requires:       ros2-humble-nav2_util
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_components
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-tf2
-Requires:       ros2-humble-tf2_geometry_msgs
-Requires:       ros2-humble-tf2_ros
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-nav2_common
+Requires:       ros2-iron-nav2_costmap_2d
+Requires:       ros2-iron-nav2_msgs
+Requires:       ros2-iron-nav2_util
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_components
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-tf2
+Requires:       ros2-iron-tf2_geometry_msgs
+Requires:       ros2-iron-tf2_ros
 
 Provides:  ros2-humble-nav2_collision_monitor = 1.1.12-1
 Obsoletes: ros2-humble-nav2_collision_monitor < 1.1.12-1
@@ -75,21 +77,22 @@ Collision Monitor
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-nav2_costmap_2d-devel
-Requires:       ros2-humble-nav2_util-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_components-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-tf2-devel
-Requires:       ros2-humble-tf2_geometry_msgs-devel
-Requires:       ros2-humble-tf2_ros-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-nav2_costmap_2d-devel
+Requires:       ros2-iron-nav2_msgs-devel
+Requires:       ros2-iron-nav2_util-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_components-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-tf2_geometry_msgs-devel
+Requires:       ros2-iron-tf2_ros-devel
 
 Provides: ros2-humble-nav2_collision_monitor-devel = 1.1.12-1
 Obsoletes: ros2-humble-nav2_collision_monitor-devel < 1.1.12-1

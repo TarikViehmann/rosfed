@@ -6,7 +6,7 @@ Summary:        ROS package xacro
 License:        BSD
 URL:            http://ros.org/wiki/xacro
 
-Source0:        https://github.com/ros2-gbp/xacro-release/archive/release/humble/xacro/2.0.8-1.tar.gz#/ros2-humble-xacro-2.0.8-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/xacro-release/archive/release/iron/xacro/2.0.9-3.tar.gz#/ros2-iron-xacro-2.0.9-source0.tar.gz
 
 
 BuildArch: noarch
@@ -39,18 +39,18 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  python3-pyyaml
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_index_python-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_index_python-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       python3-pyyaml
-Requires:       ros2-humble-ament_index_python
+Requires:       ros2-iron-ament_index_python
 
-Provides:  ros2-humble-xacro = 2.0.8-1
-Obsoletes: ros2-humble-xacro < 2.0.8-1
+Provides:  ros2-iron-xacro = 2.0.9-1
+Obsoletes: ros2-iron-xacro < 2.0.9-1
 
 
 
@@ -62,16 +62,16 @@ expand to larger XML expressions.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_python-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_python-devel
 Requires:       python3-pyyaml
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_index_python-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_index_python-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-humble-xacro-devel = 2.0.8-1
-Obsoletes: ros2-humble-xacro-devel < 2.0.8-1
+Provides: ros2-iron-xacro-devel = 2.0.9-1
+Obsoletes: ros2-iron-xacro-devel < 2.0.9-1
 
 
 %description devel

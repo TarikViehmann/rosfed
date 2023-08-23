@@ -38,10 +38,10 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake_core-devel
-BuildRequires:  ros2-humble-ament_cmake_include_directories-devel
-BuildRequires:  ros2-humble-ament_cmake_libraries-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake_core-devel
+BuildRequires:  ros2-iron-ament_cmake_include_directories-devel
+BuildRequires:  ros2-iron-ament_cmake_libraries-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 
 Provides:  ros2-humble-ament_cmake_target_dependencies = 1.3.6-1
@@ -56,10 +56,10 @@ package to a target in the ament buildsystem in CMake.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake_core-devel
-Requires:       ros2-humble-ament_cmake_include_directories-devel
-Requires:       ros2-humble-ament_cmake_libraries-devel
-Requires:       ros2-humble-ament_package-devel
+Requires:       ros2-iron-ament_cmake_core-devel
+Requires:       ros2-iron-ament_cmake_include_directories-devel
+Requires:       ros2-iron-ament_cmake_libraries-devel
+Requires:       ros2-iron-ament_package-devel
 
 Provides: ros2-humble-ament_cmake_target_dependencies-devel = 1.3.6-1
 Obsoletes: ros2-humble-ament_cmake_target_dependencies-devel < 1.3.6-1

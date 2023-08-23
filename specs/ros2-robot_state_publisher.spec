@@ -6,7 +6,7 @@ Summary:        ROS package robot_state_publisher
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/robot_state_publisher-release/archive/release/humble/robot_state_publisher/3.0.2-2.tar.gz#/ros2-humble-robot_state_publisher-3.0.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/robot_state_publisher-release/archive/release/iron/robot_state_publisher/3.2.0-2.tar.gz#/ros2-iron-robot_state_publisher-3.2.0-source0.tar.gz
 
 
 
@@ -37,41 +37,41 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  orocos-kdl-devel
 BuildRequires:  tinyxml-devel
 BuildRequires:  urdfdom-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-builtin_interfaces-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-kdl_parser-devel
-BuildRequires:  ros2-humble-launch_ros-devel
-BuildRequires:  ros2-humble-launch_testing_ament_cmake-devel
-BuildRequires:  ros2-humble-rcl_interfaces-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_components-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-tf2_ros-devel
-BuildRequires:  ros2-humble-urdf-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-kdl_parser-devel
+BuildRequires:  ros2-iron-launch_ros-devel
+BuildRequires:  ros2-iron-launch_testing_ament_cmake-devel
+BuildRequires:  ros2-iron-orocos_kdl_vendor-devel
+BuildRequires:  ros2-iron-rcl_interfaces-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_components-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
+BuildRequires:  ros2-iron-urdf-devel
 
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-kdl_parser
-Requires:       ros2-humble-orocos_kdl_vendor
-Requires:       ros2-humble-rcl_interfaces
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_components
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-tf2_ros
-Requires:       ros2-humble-urdf
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-kdl_parser
+Requires:       ros2-iron-orocos_kdl_vendor
+Requires:       ros2-iron-rcl_interfaces
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_components
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-tf2_ros
+Requires:       ros2-iron-urdf
 
-Provides:  ros2-humble-robot_state_publisher = 3.0.2-1
-Obsoletes: ros2-humble-robot_state_publisher < 3.0.2-1
+Provides:  ros2-iron-robot_state_publisher = 3.2.0-1
+Obsoletes: ros2-iron-robot_state_publisher < 3.2.0-1
 
 
 
@@ -83,30 +83,29 @@ of the robot.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       orocos-kdl-devel
+Requires:       ros2-iron-ament_cmake-devel
 Requires:       tinyxml-devel
 Requires:       urdfdom-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-kdl_parser-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-launch_testing_ament_cmake-devel
-Requires:       ros2-humble-rcl_interfaces-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_components-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-tf2_ros-devel
-Requires:       ros2-humble-urdf-devel
-Requires:       ros2-humble-orocos_kdl_vendor-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-kdl_parser-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-launch_testing_ament_cmake-devel
+Requires:       ros2-iron-orocos_kdl_vendor-devel
+Requires:       ros2-iron-rcl_interfaces-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_components-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-tf2_ros-devel
+Requires:       ros2-iron-urdf-devel
 
-Provides: ros2-humble-robot_state_publisher-devel = 3.0.2-1
-Obsoletes: ros2-humble-robot_state_publisher-devel < 3.0.2-1
+Provides: ros2-iron-robot_state_publisher-devel = 3.2.0-1
+Obsoletes: ros2-iron-robot_state_publisher-devel < 3.2.0-1
 
 
 %description devel

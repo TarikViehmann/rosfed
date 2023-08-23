@@ -6,7 +6,7 @@ Summary:        ROS package webots_ros2_importer
 License:        Apache License 2.0
 URL:            http://wiki.ros.org/webots_ros2
 
-Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/humble/webots_ros2_importer/2023.1.1-2.tar.gz#/ros2-humble-webots_ros2_importer-2023.1.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/webots_ros2-release/archive/release/iron/webots_ros2_importer/2023.1.1-2.tar.gz#/ros2-iron-webots_ros2_importer-2023.1.1-source0.tar.gz
 
 
 BuildArch: noarch
@@ -42,16 +42,16 @@ BuildRequires:  python3-numpy
 BuildRequires:  python3-pillow python3-pillow-qt
 BuildRequires:  python3-pycodestyle
 BuildRequires:  python3-pytest
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
 Requires:       python3-collada
 Requires:       python3-lark-parser
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-xacro
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-xacro
 
-Provides:  ros2-humble-webots_ros2_importer = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_importer < 2023.1.1-1
+Provides:  ros2-iron-webots_ros2_importer = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_importer < 2023.1.1-1
 
 
 
@@ -66,13 +66,13 @@ Requires:       python3-numpy
 Requires:       python3-pillow python3-pillow-qt
 Requires:       python3-pycodestyle
 Requires:       python3-pytest
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-xacro-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-xacro-devel
 
-Provides: ros2-humble-webots_ros2_importer-devel = 2023.1.1-1
-Obsoletes: ros2-humble-webots_ros2_importer-devel < 2023.1.1-1
+Provides: ros2-iron-webots_ros2_importer-devel = 2023.1.1-1
+Obsoletes: ros2-iron-webots_ros2_importer-devel < 2023.1.1-1
 
 
 %description devel

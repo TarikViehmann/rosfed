@@ -37,21 +37,21 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-builtin_interfaces-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-nav_2d_msgs-devel
-BuildRequires:  ros2-humble-nav_msgs-devel
-BuildRequires:  ros2-humble-rosidl_default_runtime-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-nav_2d_msgs-devel
+BuildRequires:  ros2-iron-nav_msgs-devel
+BuildRequires:  ros2-iron-rosidl_default_runtime-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-builtin_interfaces
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-nav_2d_msgs
-Requires:       ros2-humble-nav_msgs
-Requires:       ros2-humble-rosidl_default_runtime
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-nav_2d_msgs
+Requires:       ros2-iron-nav_msgs
+Requires:       ros2-iron-rosidl_default_runtime
+Requires:       ros2-iron-std_msgs
 
 Provides:  ros2-humble-dwb_msgs = 1.1.12-1
 Obsoletes: ros2-humble-dwb_msgs < 1.1.12-1
@@ -64,14 +64,14 @@ Message/Service definitions specifically for the dwb_core
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-builtin_interfaces-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-nav_2d_msgs-devel
-Requires:       ros2-humble-nav_msgs-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
-Requires:       ros2-humble-std_msgs-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-nav_2d_msgs-devel
+Requires:       ros2-iron-nav_msgs-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
+Requires:       ros2-iron-std_msgs-devel
 
 Provides: ros2-humble-dwb_msgs-devel = 1.1.12-1
 Obsoletes: ros2-humble-dwb_msgs-devel < 1.1.12-1

@@ -6,7 +6,7 @@ Summary:        ROS package ros2lifecycle
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ros2cli-release/archive/release/iron/ros2lifecycle/0.25.2-1.tar.gz#/ros2-iron-ros2lifecycle-0.25.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros2cli-release/archive/release/iron/ros2lifecycle/0.25.3-1.tar.gz#/ros2-iron-ros2lifecycle-0.25.3-source0.tar.gz
 
 
 BuildArch: noarch
@@ -22,7 +22,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -57,8 +56,8 @@ Requires:       ros2-iron-ros2cli
 Requires:       ros2-iron-ros2node
 Requires:       ros2-iron-ros2service
 
-Provides:  ros2-iron-ros2lifecycle = 0.25.2-1
-Obsoletes: ros2-iron-ros2lifecycle < 0.25.2-1
+Provides:  ros2-iron-ros2lifecycle = 0.25.3-1
+Obsoletes: ros2-iron-ros2lifecycle < 0.25.3-1
 
 
 
@@ -86,8 +85,8 @@ Requires:       ros2-iron-ros2cli-devel
 Requires:       ros2-iron-ros2node-devel
 Requires:       ros2-iron-ros2service-devel
 
-Provides: ros2-iron-ros2lifecycle-devel = 0.25.2-1
-Obsoletes: ros2-iron-ros2lifecycle-devel < 0.25.2-1
+Provides: ros2-iron-ros2lifecycle-devel = 0.25.3-1
+Obsoletes: ros2-iron-ros2lifecycle-devel < 0.25.3-1
 
 
 %description devel
@@ -129,7 +128,7 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \

@@ -1,12 +1,12 @@
-Name:           ros2-iron-camera_info_manager
-Version:        4.2.2
+Name:           ros2-iron-robot_localization
+Version:        3.5.0
 Release:        1%{?dist}
-Summary:        ROS package camera_info_manager
+Summary:        ROS package robot_localization
 
-License:        BSD
-URL:            http://ros.org/wiki/camera_info_manager
+License:        Apache License 2.0
+URL:            http://ros.org/wiki/robot_localization
 
-Source0:        https://github.com/ros2-gbp/image_common-release/archive/release/iron/camera_info_manager/4.2.2-1.tar.gz#/ros2-iron-camera_info_manager-4.2.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/robot_localization-release/archive/release/iron/robot_localization/3.5.0-3.tar.gz#/ros2-iron-robot_localization-3.5.0-source0.tar.gz
 
 
 
@@ -36,58 +36,100 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  poco-devel
-BuildRequires:  tinyxml-devel
-BuildRequires:  tinyxml2-devel
+BuildRequires:  boost-devel
+BuildRequires:  eigen3-devel
+BuildRequires:  GeographicLib-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
 BuildRequires:  ros2-iron-ament_cmake_gtest-devel
-BuildRequires:  ros2-iron-ament_cmake_ros-devel
-BuildRequires:  ros2-iron-ament_index_cpp-devel
 BuildRequires:  ros2-iron-ament_lint_auto-devel
 BuildRequires:  ros2-iron-ament_lint_common-devel
 BuildRequires:  ros2-iron-ament_package-devel
-BuildRequires:  ros2-iron-camera_calibration_parsers-devel
+BuildRequires:  ros2-iron-angles-devel
+BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-diagnostic_msgs-devel
+BuildRequires:  ros2-iron-diagnostic_updater-devel
+BuildRequires:  ros2-iron-geographic_msgs-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-launch_ros-devel
+BuildRequires:  ros2-iron-launch_testing_ament_cmake-devel
+BuildRequires:  ros2-iron-message_filters-devel
+BuildRequires:  ros2-iron-nav_msgs-devel
 BuildRequires:  ros2-iron-rclcpp-devel
-BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
-BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-rmw_implementation-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
 BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-std_srvs-devel
+BuildRequires:  ros2-iron-tf2-devel
+BuildRequires:  ros2-iron-tf2_eigen-devel
+BuildRequires:  ros2-iron-tf2_geometry_msgs-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
+BuildRequires:  ros2-iron-yaml_cpp_vendor-devel
 
-Requires:       ros2-iron-ament_index_cpp
-Requires:       ros2-iron-camera_calibration_parsers
+Requires:       ros2-iron-angles
+Requires:       ros2-iron-diagnostic_msgs
+Requires:       ros2-iron-diagnostic_updater
+Requires:       ros2-iron-geographic_msgs
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-message_filters
+Requires:       ros2-iron-nav_msgs
 Requires:       ros2-iron-rclcpp
-Requires:       ros2-iron-rclcpp_lifecycle
-Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-rmw_implementation
+Requires:       ros2-iron-rosidl_default_runtime
 Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-std_srvs
+Requires:       ros2-iron-tf2
+Requires:       ros2-iron-tf2_eigen
+Requires:       ros2-iron-tf2_geometry_msgs
+Requires:       ros2-iron-tf2_ros
+Requires:       ros2-iron-yaml_cpp_vendor
 
-Provides:  ros2-iron-camera_info_manager = 4.2.2-1
-Obsoletes: ros2-iron-camera_info_manager < 4.2.2-1
+Provides:  ros2-iron-robot_localization = 3.5.0-1
+Obsoletes: ros2-iron-robot_localization < 3.5.0-1
 
 
 
 %description
-This package provides a C++ interface for camera calibration
-information. It provides CameraInfo, and handles SetCameraInfo service
-requests, saving and restoring the camera calibration data.
+Provides nonlinear state estimation through sensor fusion of an
+abritrary number of sensors.
 
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-iron-ament_cmake_ros-devel
-Requires:       poco-devel
-Requires:       tinyxml-devel
-Requires:       tinyxml2-devel
+Requires:       boost-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       eigen3-devel
+Requires:       GeographicLib-devel
 Requires:       ros2-iron-ament_cmake_gtest-devel
-Requires:       ros2-iron-ament_index_cpp-devel
 Requires:       ros2-iron-ament_lint_auto-devel
 Requires:       ros2-iron-ament_lint_common-devel
 Requires:       ros2-iron-ament_package-devel
-Requires:       ros2-iron-camera_calibration_parsers-devel
+Requires:       ros2-iron-angles-devel
+Requires:       ros2-iron-diagnostic_msgs-devel
+Requires:       ros2-iron-diagnostic_updater-devel
+Requires:       ros2-iron-geographic_msgs-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-launch_testing_ament_cmake-devel
+Requires:       ros2-iron-message_filters-devel
+Requires:       ros2-iron-nav_msgs-devel
 Requires:       ros2-iron-rclcpp-devel
-Requires:       ros2-iron-rclcpp_lifecycle-devel
-Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-rmw_implementation-devel
 Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-std_srvs-devel
+Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-tf2_eigen-devel
+Requires:       ros2-iron-tf2_geometry_msgs-devel
+Requires:       ros2-iron-tf2_ros-devel
+Requires:       ros2-iron-yaml_cpp_vendor-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
 
-Provides: ros2-iron-camera_info_manager-devel = 4.2.2-1
-Obsoletes: ros2-iron-camera_info_manager-devel < 4.2.2-1
+Provides: ros2-iron-robot_localization-devel = 3.5.0-1
+Obsoletes: ros2-iron-robot_localization-devel < 3.5.0-1
 
 
 %description devel
@@ -135,7 +177,7 @@ colcon \
   -DBUILD_TESTING=OFF \
   --base-paths . \
   --install-base %{buildroot}/%{_libdir}/ros2-iron/ \
-  --packages-select camera_info_manager
+  --packages-select robot_localization
 
 
 
@@ -157,7 +199,7 @@ find %{buildroot}/%{_libdir}/ros2-iron/lib*/ -mindepth 1 -maxdepth 1 \
 
 touch files_devel.list
 # TODO: is cmake/ necessary? it stems from the yaml vendor
-find %{buildroot}/%{_libdir}/ros2-iron/{lib*/pkgconfig,include/,cmake/,camera_info_manager/include/,share/camera_info_manager/cmake} \
+find %{buildroot}/%{_libdir}/ros2-iron/{lib*/pkgconfig,include/,cmake/,robot_localization/include/,share/robot_localization/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -196,25 +238,5 @@ done
 
 
 %changelog
-* Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
-* Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
-* Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
-* Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
-* Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
-* Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
-* Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
-* Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
-* Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
-* Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
-* Tue Aug 22 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.4.2.2-1
-- update to latest upstream release
+* Sat Oct 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.3.5.0-1
+- update to latest release

@@ -1,12 +1,12 @@
 Name:           ros2-iron-ament_cmake_clang_format
-Version:        0.14.1
+Version:        0.14.2
 Release:        1%{?dist}
 Summary:        ROS package ament_cmake_clang_format
 
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ament_lint-release/archive/release/iron/ament_cmake_clang_format/0.14.1-2.tar.gz#/ros2-iron-ament_cmake_clang_format-0.14.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ament_lint-release/archive/release/iron/ament_cmake_clang_format/0.14.2-1.tar.gz#/ros2-iron-ament_cmake_clang_format-0.14.2-source0.tar.gz
 
 
 BuildArch: noarch
@@ -22,7 +22,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -46,8 +45,8 @@ BuildRequires:  ros2-iron-ament_cmake_test-devel
 BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-iron-ament_cmake_clang_format = 0.14.1-1
-Obsoletes: ros2-iron-ament_cmake_clang_format < 0.14.1-1
+Provides:  ros2-iron-ament_cmake_clang_format = 0.14.2-1
+Obsoletes: ros2-iron-ament_cmake_clang_format < 0.14.2-1
 
 
 
@@ -65,8 +64,8 @@ Requires:       ros2-iron-ament_cmake_copyright-devel
 Requires:       ros2-iron-ament_cmake_lint_cmake-devel
 Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-iron-ament_cmake_clang_format-devel = 0.14.1-1
-Obsoletes: ros2-iron-ament_cmake_clang_format-devel < 0.14.1-1
+Provides: ros2-iron-ament_cmake_clang_format-devel = 0.14.2-1
+Obsoletes: ros2-iron-ament_cmake_clang_format-devel < 0.14.2-1
 
 
 %description devel
@@ -108,7 +107,7 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \
@@ -175,6 +174,8 @@ done
 
 
 %changelog
+* Sat Oct 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.14.2-1
+- update to latest release
 * Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.14.1-1
 - update to latest upstream release
 * Mon Aug 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.14.1-1

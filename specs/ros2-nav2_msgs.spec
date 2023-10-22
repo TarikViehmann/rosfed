@@ -21,7 +21,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -41,6 +40,7 @@ BuildRequires:  ros2-iron-action_msgs-devel
 BuildRequires:  ros2-iron-ament_cmake-devel
 BuildRequires:  ros2-iron-ament_package-devel
 BuildRequires:  ros2-iron-builtin_interfaces-devel
+BuildRequires:  ros2-iron-geographic_msgs-devel
 BuildRequires:  ros2-iron-geometry_msgs-devel
 BuildRequires:  ros2-iron-nav2_common-devel
 BuildRequires:  ros2-iron-nav_msgs-devel
@@ -50,6 +50,7 @@ BuildRequires:  ros2-iron-std_msgs-devel
 
 Requires:       ros2-iron-action_msgs
 Requires:       ros2-iron-builtin_interfaces
+Requires:       ros2-iron-geographic_msgs
 Requires:       ros2-iron-geometry_msgs
 Requires:       ros2-iron-nav_msgs
 Requires:       ros2-iron-rclcpp
@@ -71,6 +72,7 @@ Requires:       ros2-iron-ament_cmake-devel
 Requires:       ros2-iron-action_msgs-devel
 Requires:       ros2-iron-ament_package-devel
 Requires:       ros2-iron-builtin_interfaces-devel
+Requires:       ros2-iron-geographic_msgs-devel
 Requires:       ros2-iron-geometry_msgs-devel
 Requires:       ros2-iron-nav2_common-devel
 Requires:       ros2-iron-nav_msgs-devel
@@ -121,7 +123,7 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \

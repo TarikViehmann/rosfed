@@ -22,7 +22,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -45,6 +44,7 @@ BuildRequires:  ros2-iron-ament_lint_auto-devel
 BuildRequires:  ros2-iron-ament_lint_common-devel
 BuildRequires:  ros2-iron-ament_package-devel
 BuildRequires:  ros2-iron-cv_bridge-devel
+BuildRequires:  ros2-iron-geographic_msgs-devel
 BuildRequires:  ros2-iron-image_transport-devel
 BuildRequires:  ros2-iron-nav2_common-devel
 BuildRequires:  ros2-iron-nav2_core-devel
@@ -55,9 +55,11 @@ BuildRequires:  ros2-iron-pluginlib-devel
 BuildRequires:  ros2-iron-rclcpp-devel
 BuildRequires:  ros2-iron-rclcpp_action-devel
 BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-robot_localization-devel
 BuildRequires:  ros2-iron-tf2_ros-devel
 
 Requires:       ros2-iron-cv_bridge
+Requires:       ros2-iron-geographic_msgs
 Requires:       ros2-iron-image_transport
 Requires:       ros2-iron-nav2_common
 Requires:       ros2-iron-nav2_core
@@ -68,6 +70,7 @@ Requires:       ros2-iron-pluginlib
 Requires:       ros2-iron-rclcpp
 Requires:       ros2-iron-rclcpp_action
 Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-robot_localization
 Requires:       ros2-iron-tf2_ros
 
 Provides:  ros2-humble-nav2_waypoint_follower = 1.1.12-1
@@ -88,6 +91,7 @@ Requires:       ros2-iron-ament_lint_auto-devel
 Requires:       ros2-iron-ament_lint_common-devel
 Requires:       ros2-iron-ament_package-devel
 Requires:       ros2-iron-cv_bridge-devel
+Requires:       ros2-iron-geographic_msgs-devel
 Requires:       ros2-iron-image_transport-devel
 Requires:       ros2-iron-nav2_common-devel
 Requires:       ros2-iron-nav2_core-devel
@@ -98,6 +102,7 @@ Requires:       ros2-iron-pluginlib-devel
 Requires:       ros2-iron-rclcpp-devel
 Requires:       ros2-iron-rclcpp_action-devel
 Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-robot_localization-devel
 Requires:       ros2-iron-tf2_ros-devel
 
 Provides: ros2-humble-nav2_waypoint_follower-devel = 1.1.12-1
@@ -144,7 +149,7 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \

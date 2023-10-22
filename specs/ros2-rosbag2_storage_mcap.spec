@@ -1,12 +1,12 @@
 Name:           ros2-iron-rosbag2_storage_mcap
-Version:        0.22.2
+Version:        0.22.3
 Release:        1%{?dist}
 Summary:        ROS package rosbag2_storage_mcap
 
 License:        Apache-2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rosbag2-release/archive/release/iron/rosbag2_storage_mcap/0.22.2-1.tar.gz#/ros2-iron-rosbag2_storage_mcap-0.22.2-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rosbag2-release/archive/release/iron/rosbag2_storage_mcap/0.22.3-1.tar.gz#/ros2-iron-rosbag2_storage_mcap-0.22.3-source0.tar.gz
 
 
 
@@ -21,7 +21,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -59,8 +58,8 @@ Requires:       ros2-iron-pluginlib
 Requires:       ros2-iron-rcutils
 Requires:       ros2-iron-rosbag2_storage
 
-Provides:  ros2-iron-rosbag2_storage_mcap = 0.22.2-1
-Obsoletes: ros2-iron-rosbag2_storage_mcap < 0.22.2-1
+Provides:  ros2-iron-rosbag2_storage_mcap = 0.22.3-1
+Obsoletes: ros2-iron-rosbag2_storage_mcap < 0.22.3-1
 
 
 
@@ -86,8 +85,8 @@ Requires:       ros2-iron-rosbag2_storage-devel
 Requires:       ros2-iron-rosbag2_test_common-devel
 Requires:       ros2-iron-std_msgs-devel
 
-Provides: ros2-iron-rosbag2_storage_mcap-devel = 0.22.2-1
-Obsoletes: ros2-iron-rosbag2_storage_mcap-devel < 0.22.2-1
+Provides: ros2-iron-rosbag2_storage_mcap-devel = 0.22.3-1
+Obsoletes: ros2-iron-rosbag2_storage_mcap-devel < 0.22.3-1
 
 
 %description devel
@@ -129,7 +128,7 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \
@@ -196,6 +195,8 @@ done
 
 
 %changelog
+* Sat Oct 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.22.3-1
+- update to latest release
 * Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.22.2-1
 - update to latest upstream release
 * Mon Aug 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.22.2-1

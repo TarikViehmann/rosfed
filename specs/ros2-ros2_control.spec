@@ -22,7 +22,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -38,17 +37,17 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
 
-Requires:       ros2-humble-controller_interface
-Requires:       ros2-humble-controller_manager
-Requires:       ros2-humble-controller_manager_msgs
-Requires:       ros2-humble-hardware_interface
-Requires:       ros2-humble-joint_limits
-Requires:       ros2-humble-ros2_control_test_assets
-Requires:       ros2-humble-ros2controlcli
-Requires:       ros2-humble-transmission_interface
+Requires:       ros2-iron-controller_interface
+Requires:       ros2-iron-controller_manager
+Requires:       ros2-iron-controller_manager_msgs
+Requires:       ros2-iron-hardware_interface
+Requires:       ros2-iron-joint_limits
+Requires:       ros2-iron-ros2_control_test_assets
+Requires:       ros2-iron-ros2controlcli
+Requires:       ros2-iron-transmission_interface
 
 Provides:  ros2-humble-ros2_control = 2.35.1-1
 Obsoletes: ros2-humble-ros2_control < 2.35.1-1
@@ -61,16 +60,16 @@ Metapackage for ROS2 control related packages
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-controller_interface-devel
-Requires:       ros2-humble-controller_manager-devel
-Requires:       ros2-humble-controller_manager_msgs-devel
-Requires:       ros2-humble-hardware_interface-devel
-Requires:       ros2-humble-joint_limits-devel
-Requires:       ros2-humble-ros2_control_test_assets-devel
-Requires:       ros2-humble-ros2controlcli-devel
-Requires:       ros2-humble-transmission_interface-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-controller_interface-devel
+Requires:       ros2-iron-controller_manager-devel
+Requires:       ros2-iron-controller_manager_msgs-devel
+Requires:       ros2-iron-hardware_interface-devel
+Requires:       ros2-iron-joint_limits-devel
+Requires:       ros2-iron-ros2_control_test_assets-devel
+Requires:       ros2-iron-ros2controlcli-devel
+Requires:       ros2-iron-transmission_interface-devel
 
 Provides: ros2-humble-ros2_control-devel = 2.35.1-1
 Obsoletes: ros2-humble-ros2_control-devel < 2.35.1-1
@@ -115,7 +114,7 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \

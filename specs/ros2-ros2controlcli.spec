@@ -22,7 +22,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -38,28 +37,28 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_copyright-devel
-BuildRequires:  ros2-humble-ament_flake8-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-ament_pep257-devel
-BuildRequires:  ros2-humble-ament_xmllint-devel
-BuildRequires:  ros2-humble-controller_manager-devel
-BuildRequires:  ros2-humble-controller_manager_msgs-devel
-BuildRequires:  ros2-humble-rcl_interfaces-devel
-BuildRequires:  ros2-humble-rclpy-devel
-BuildRequires:  ros2-humble-ros2cli-devel
-BuildRequires:  ros2-humble-ros2node-devel
-BuildRequires:  ros2-humble-ros2param-devel
+BuildRequires:  ros2-iron-ament_copyright-devel
+BuildRequires:  ros2-iron-ament_flake8-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-ament_pep257-devel
+BuildRequires:  ros2-iron-ament_xmllint-devel
+BuildRequires:  ros2-iron-controller_manager-devel
+BuildRequires:  ros2-iron-controller_manager_msgs-devel
+BuildRequires:  ros2-iron-rcl_interfaces-devel
+BuildRequires:  ros2-iron-rclpy-devel
+BuildRequires:  ros2-iron-ros2cli-devel
+BuildRequires:  ros2-iron-ros2node-devel
+BuildRequires:  ros2-iron-ros2param-devel
 
 Requires:       python3-pygraphviz
-Requires:       ros2-humble-controller_manager
-Requires:       ros2-humble-controller_manager_msgs
-Requires:       ros2-humble-rcl_interfaces
-Requires:       ros2-humble-rclpy
-Requires:       ros2-humble-ros2cli
-Requires:       ros2-humble-ros2node
-Requires:       ros2-humble-ros2param
-Requires:       ros2-humble-rosidl_runtime_py
+Requires:       ros2-iron-controller_manager
+Requires:       ros2-iron-controller_manager_msgs
+Requires:       ros2-iron-rcl_interfaces
+Requires:       ros2-iron-rclpy
+Requires:       ros2-iron-ros2cli
+Requires:       ros2-iron-ros2node
+Requires:       ros2-iron-ros2param
+Requires:       ros2-iron-rosidl_runtime_py
 
 Provides:  ros2-humble-ros2controlcli = 2.35.1-1
 Obsoletes: ros2-humble-ros2controlcli < 2.35.1-1
@@ -72,19 +71,19 @@ The ROS 2 command line tools for ROS2 Control.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name} = %{version}-%{release}
-Requires:       ros2-humble-ament_copyright-devel
-Requires:       ros2-humble-ament_flake8-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-ament_pep257-devel
-Requires:       ros2-humble-ament_xmllint-devel
-Requires:       ros2-humble-controller_manager-devel
-Requires:       ros2-humble-controller_manager_msgs-devel
-Requires:       ros2-humble-rcl_interfaces-devel
-Requires:       ros2-humble-rclpy-devel
-Requires:       ros2-humble-ros2cli-devel
-Requires:       ros2-humble-ros2node-devel
-Requires:       ros2-humble-ros2param-devel
-Requires:       ros2-humble-rosidl_runtime_py-devel
+Requires:       ros2-iron-ament_copyright-devel
+Requires:       ros2-iron-ament_flake8-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-ament_pep257-devel
+Requires:       ros2-iron-ament_xmllint-devel
+Requires:       ros2-iron-controller_manager-devel
+Requires:       ros2-iron-controller_manager_msgs-devel
+Requires:       ros2-iron-rcl_interfaces-devel
+Requires:       ros2-iron-rclpy-devel
+Requires:       ros2-iron-ros2cli-devel
+Requires:       ros2-iron-ros2node-devel
+Requires:       ros2-iron-ros2param-devel
+Requires:       ros2-iron-rosidl_runtime_py-devel
 
 Provides: ros2-humble-ros2controlcli-devel = 2.35.1-1
 Obsoletes: ros2-humble-ros2controlcli-devel < 2.35.1-1
@@ -129,7 +128,7 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \

@@ -6,7 +6,7 @@ Summary:        ROS package rqt_bag
 License:        BSD
 URL:            http://wiki.ros.org/rqt_bag
 
-Source0:        https://github.com/ros2-gbp/rqt_bag-release/archive/release/iron/rqt_bag/1.3.3-1.tar.gz#/ros2-iron-rqt_bag-1.3.3-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rqt_bag-release/archive/release/iron/rqt_bag/1.3.4-1.tar.gz#/ros2-iron-rqt_bag-1.3.4-source0.tar.gz
 
 
 BuildArch: noarch
@@ -22,7 +22,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -46,8 +45,8 @@ Requires:       ros2-iron-rosbag2_py
 Requires:       ros2-iron-rqt_gui
 Requires:       ros2-iron-rqt_gui_py
 
-Provides:  ros2-iron-rqt_bag = 1.3.3-1
-Obsoletes: ros2-iron-rqt_bag < 1.3.3-1
+Provides:  ros2-iron-rqt_bag = 1.3.4-1
+Obsoletes: ros2-iron-rqt_bag < 1.3.4-1
 
 
 
@@ -65,8 +64,8 @@ Requires:       ros2-iron-rosbag2_py-devel
 Requires:       ros2-iron-rqt_gui-devel
 Requires:       ros2-iron-rqt_gui_py-devel
 
-Provides: ros2-iron-rqt_bag-devel = 1.3.3-1
-Obsoletes: ros2-iron-rqt_bag-devel < 1.3.3-1
+Provides: ros2-iron-rqt_bag-devel = 1.3.4-1
+Obsoletes: ros2-iron-rqt_bag-devel < 1.3.4-1
 
 
 %description devel
@@ -108,7 +107,7 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \

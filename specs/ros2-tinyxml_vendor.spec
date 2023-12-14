@@ -167,6 +167,10 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.9.2-1
+- update to latest upstream
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.0.8.3-1
+- update to latest upstream
 * Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.9.2-1
 - update to latest upstream release
 * Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.9.2-1

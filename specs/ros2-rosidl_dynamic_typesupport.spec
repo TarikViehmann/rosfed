@@ -1,12 +1,12 @@
 Name:           ros2-iron-rosidl_dynamic_typesupport
-Version:        0.0.4
+Version:        0.0.5
 Release:        1%{?dist}
 Summary:        ROS package rosidl_dynamic_typesupport
 
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rosidl_dynamic_typesupport-release/archive/release/iron/rosidl_dynamic_typesupport/0.0.4-1.tar.gz#/ros2-iron-rosidl_dynamic_typesupport-0.0.4-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rosidl_dynamic_typesupport-release/archive/release/iron/rosidl_dynamic_typesupport/0.0.5-1.tar.gz#/ros2-iron-rosidl_dynamic_typesupport-0.0.5-source0.tar.gz
 
 
 
@@ -44,8 +44,8 @@ BuildRequires:  ros2-iron-rosidl_runtime_c-devel
 Requires:       ros2-iron-rcutils
 Requires:       ros2-iron-rosidl_runtime_c
 
-Provides:  ros2-iron-rosidl_dynamic_typesupport = 0.0.4-1
-Obsoletes: ros2-iron-rosidl_dynamic_typesupport < 0.0.4-1
+Provides:  ros2-iron-rosidl_dynamic_typesupport = 0.0.5-1
+Obsoletes: ros2-iron-rosidl_dynamic_typesupport < 0.0.5-1
 
 
 
@@ -60,8 +60,8 @@ Requires:       ros2-iron-ament_package-devel
 Requires:       ros2-iron-rcutils-devel
 Requires:       ros2-iron-rosidl_runtime_c-devel
 
-Provides: ros2-iron-rosidl_dynamic_typesupport-devel = 0.0.4-1
-Obsoletes: ros2-iron-rosidl_dynamic_typesupport-devel < 0.0.4-1
+Provides: ros2-iron-rosidl_dynamic_typesupport-devel = 0.0.5-1
+Obsoletes: ros2-iron-rosidl_dynamic_typesupport-devel < 0.0.5-1
 
 
 %description devel
@@ -170,6 +170,8 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.0.5-1
+- update to latest upstream
 * Sat Oct 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.0.4-1
 - update to latest release
 * Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.0.3-1

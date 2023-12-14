@@ -1,12 +1,12 @@
-Name:           ros2-humble-pilz_industrial_motion_planner
-Version:        2.5.5
+Name:           ros2-iron-pilz_industrial_motion_planner
+Version:        2.8.0
 Release:        1%{?dist}
 Summary:        ROS package pilz_industrial_motion_planner
 
-License:        BSD
+License:        BSD-3-Clause
 URL:            http://moveit.ros.org
 
-Source0:        https://github.com/ros2-gbp/moveit2-release/archive/release/humble/pilz_industrial_motion_planner/2.5.5-1.tar.gz#/ros2-humble-pilz_industrial_motion_planner-2.5.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/moveit2-release/archive/release/iron/pilz_industrial_motion_planner/2.8.0-1.tar.gz#/ros2-iron-pilz_industrial_motion_planner-2.8.0-source0.tar.gz
 
 
 
@@ -21,7 +21,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -39,56 +38,58 @@ BuildRequires: python3-vcstool
 
 BuildRequires:  boost-devel
 BuildRequires:  orocos-kdl-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-eigen3_cmake_module-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-launch_param_builder-devel
-BuildRequires:  ros2-humble-moveit_common-devel
-BuildRequires:  ros2-humble-moveit_configs_utils-devel
-BuildRequires:  ros2-humble-moveit_core-devel
-BuildRequires:  ros2-humble-moveit_msgs-devel
-BuildRequires:  ros2-humble-moveit_resources_panda_moveit_config-devel
-BuildRequires:  ros2-humble-moveit_resources_prbt_moveit_config-devel
-BuildRequires:  ros2-humble-moveit_resources_prbt_pg70_support-devel
-BuildRequires:  ros2-humble-moveit_resources_prbt_support-devel
-BuildRequires:  ros2-humble-moveit_ros_move_group-devel
-BuildRequires:  ros2-humble-moveit_ros_planning-devel
-BuildRequires:  ros2-humble-moveit_ros_planning_interface-devel
-BuildRequires:  ros2-humble-pilz_industrial_motion_planner_testutils-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-ros_testing-devel
-BuildRequires:  ros2-humble-tf2-devel
-BuildRequires:  ros2-humble-tf2_eigen-devel
-BuildRequires:  ros2-humble-tf2_eigen_kdl-devel
-BuildRequires:  ros2-humble-tf2_geometry_msgs-devel
-BuildRequires:  ros2-humble-tf2_kdl-devel
-BuildRequires:  ros2-humble-tf2_ros-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-eigen3_cmake_module-devel
+BuildRequires:  ros2-iron-generate_parameter_library-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-launch_param_builder-devel
+BuildRequires:  ros2-iron-moveit_common-devel
+BuildRequires:  ros2-iron-moveit_configs_utils-devel
+BuildRequires:  ros2-iron-moveit_core-devel
+BuildRequires:  ros2-iron-moveit_msgs-devel
+BuildRequires:  ros2-iron-moveit_resources_panda_moveit_config-devel
+BuildRequires:  ros2-iron-moveit_resources_prbt_moveit_config-devel
+BuildRequires:  ros2-iron-moveit_resources_prbt_pg70_support-devel
+BuildRequires:  ros2-iron-moveit_resources_prbt_support-devel
+BuildRequires:  ros2-iron-moveit_ros_move_group-devel
+BuildRequires:  ros2-iron-moveit_ros_planning-devel
+BuildRequires:  ros2-iron-moveit_ros_planning_interface-devel
+BuildRequires:  ros2-iron-pilz_industrial_motion_planner_testutils-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-ros_testing-devel
+BuildRequires:  ros2-iron-tf2-devel
+BuildRequires:  ros2-iron-tf2_eigen-devel
+BuildRequires:  ros2-iron-tf2_eigen_kdl-devel
+BuildRequires:  ros2-iron-tf2_geometry_msgs-devel
+BuildRequires:  ros2-iron-tf2_kdl-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
 
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-moveit_common
-Requires:       ros2-humble-moveit_core
-Requires:       ros2-humble-moveit_msgs
-Requires:       ros2-humble-moveit_ros_move_group
-Requires:       ros2-humble-moveit_ros_planning
-Requires:       ros2-humble-moveit_ros_planning_interface
-Requires:       ros2-humble-orocos_kdl_vendor
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-tf2
-Requires:       ros2-humble-tf2_eigen
-Requires:       ros2-humble-tf2_eigen_kdl
-Requires:       ros2-humble-tf2_geometry_msgs
-Requires:       ros2-humble-tf2_kdl
-Requires:       ros2-humble-tf2_ros
+Requires:       ros2-iron-generate_parameter_library
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-moveit_common
+Requires:       ros2-iron-moveit_core
+Requires:       ros2-iron-moveit_msgs
+Requires:       ros2-iron-moveit_ros_move_group
+Requires:       ros2-iron-moveit_ros_planning
+Requires:       ros2-iron-moveit_ros_planning_interface
+Requires:       ros2-iron-orocos_kdl_vendor
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-tf2
+Requires:       ros2-iron-tf2_eigen
+Requires:       ros2-iron-tf2_eigen_kdl
+Requires:       ros2-iron-tf2_geometry_msgs
+Requires:       ros2-iron-tf2_kdl
+Requires:       ros2-iron-tf2_ros
 
-Provides:  ros2-humble-pilz_industrial_motion_planner = 2.5.5-1
-Obsoletes: ros2-humble-pilz_industrial_motion_planner < 2.5.5-1
+Provides:  ros2-iron-pilz_industrial_motion_planner = 2.8.0-1
+Obsoletes: ros2-iron-pilz_industrial_motion_planner < 2.8.0-1
 
 
 
@@ -99,42 +100,43 @@ sequences thereof.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-eigen3_cmake_module-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-eigen3_cmake_module-devel
 Requires:       boost-devel
 Requires:       orocos-kdl-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-launch_param_builder-devel
-Requires:       ros2-humble-moveit_common-devel
-Requires:       ros2-humble-moveit_configs_utils-devel
-Requires:       ros2-humble-moveit_core-devel
-Requires:       ros2-humble-moveit_msgs-devel
-Requires:       ros2-humble-moveit_resources_panda_moveit_config-devel
-Requires:       ros2-humble-moveit_resources_prbt_moveit_config-devel
-Requires:       ros2-humble-moveit_resources_prbt_pg70_support-devel
-Requires:       ros2-humble-moveit_resources_prbt_support-devel
-Requires:       ros2-humble-moveit_ros_move_group-devel
-Requires:       ros2-humble-moveit_ros_planning-devel
-Requires:       ros2-humble-moveit_ros_planning_interface-devel
-Requires:       ros2-humble-pilz_industrial_motion_planner_testutils-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-ros_testing-devel
-Requires:       ros2-humble-tf2-devel
-Requires:       ros2-humble-tf2_eigen-devel
-Requires:       ros2-humble-tf2_eigen_kdl-devel
-Requires:       ros2-humble-tf2_geometry_msgs-devel
-Requires:       ros2-humble-tf2_kdl-devel
-Requires:       ros2-humble-tf2_ros-devel
-Requires:       ros2-humble-orocos_kdl_vendor-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-generate_parameter_library-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-launch_param_builder-devel
+Requires:       ros2-iron-moveit_common-devel
+Requires:       ros2-iron-moveit_configs_utils-devel
+Requires:       ros2-iron-moveit_core-devel
+Requires:       ros2-iron-moveit_msgs-devel
+Requires:       ros2-iron-moveit_resources_panda_moveit_config-devel
+Requires:       ros2-iron-moveit_resources_prbt_moveit_config-devel
+Requires:       ros2-iron-moveit_resources_prbt_pg70_support-devel
+Requires:       ros2-iron-moveit_resources_prbt_support-devel
+Requires:       ros2-iron-moveit_ros_move_group-devel
+Requires:       ros2-iron-moveit_ros_planning-devel
+Requires:       ros2-iron-moveit_ros_planning_interface-devel
+Requires:       ros2-iron-pilz_industrial_motion_planner_testutils-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-ros_testing-devel
+Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-tf2_eigen-devel
+Requires:       ros2-iron-tf2_eigen_kdl-devel
+Requires:       ros2-iron-tf2_geometry_msgs-devel
+Requires:       ros2-iron-tf2_kdl-devel
+Requires:       ros2-iron-tf2_ros-devel
+Requires:       ros2-iron-orocos_kdl_vendor-devel
 
-Provides: ros2-humble-pilz_industrial_motion_planner-devel = 2.5.5-1
-Obsoletes: ros2-humble-pilz_industrial_motion_planner-devel < 2.5.5-1
+Provides: ros2-iron-pilz_industrial_motion_planner-devel = 2.8.0-1
+Obsoletes: ros2-iron-pilz_industrial_motion_planner-devel < 2.8.0-1
 
 
 %description devel
@@ -162,7 +164,7 @@ FFLAGS="${FFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FFLAGS ; \
 FCFLAGS="${FCFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FCFLAGS ; \
 %{?__global_ldflags:LDFLAGS="${LDFLAGS:-%__global_ldflags}" ; export LDFLAGS ;} \
 
-source %{_libdir}/ros2-humble/setup.bash
+source %{_libdir}/ros2-iron/setup.bash
 
 # substitute shebang before install block because we run the local catkin script
 %py3_shebang_fix .
@@ -176,35 +178,35 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \
   --base-paths . \
-  --install-base %{buildroot}/%{_libdir}/ros2-humble/ \
+  --install-base %{buildroot}/%{_libdir}/ros2-iron/ \
   --packages-select pilz_industrial_motion_planner
 
 
 
 # remove wrong buildroot prefixes
-find %{buildroot}/%{_libdir}/ros2-humble/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
 
-rm -rf %{buildroot}/%{_libdir}/ros2-humble/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
+rm -rf %{buildroot}/%{_libdir}/ros2-iron/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
 
 # remove __pycache__
 find %{buildroot} -type d -name '__pycache__' -exec rm -rf {} +
 find . -name '*.pyc' -delete
 
 touch files.list
-find %{buildroot}/%{_libdir}/ros2-humble/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
+find %{buildroot}/%{_libdir}/ros2-iron/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files.list
-find %{buildroot}/%{_libdir}/ros2-humble/lib*/ -mindepth 1 -maxdepth 1 \
+find %{buildroot}/%{_libdir}/ros2-iron/lib*/ -mindepth 1 -maxdepth 1 \
   ! -name pkgconfig ! -name "python*" \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
 # TODO: is cmake/ necessary? it stems from the yaml vendor
-find %{buildroot}/%{_libdir}/ros2-humble/{lib*/pkgconfig,include/,cmake/,pilz_industrial_motion_planner/include/,share/pilz_industrial_motion_planner/cmake} \
+find %{buildroot}/%{_libdir}/ros2-iron/{lib*/pkgconfig,include/,cmake/,pilz_industrial_motion_planner/include/,share/pilz_industrial_motion_planner/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -212,8 +214,8 @@ find . -maxdepth 1 -type f -iname "*license*" | sed "s:^:%%license :" >> files.l
 
 
 
-find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
-# find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
+# find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
 
 # replace cmake python macro in shebang
 for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@.*$' %{buildroot}) ; do
@@ -243,6 +245,8 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.2.8.0-1
+- update to latest upstream
 * Wed Sep 27 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.2.5.5-1
 - update to latest release
 * Thu Mar 09 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.2.5.4-1

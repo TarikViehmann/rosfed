@@ -1,12 +1,12 @@
-Name:           ros2-humble-moveit_msgs
-Version:        2.2.1
+Name:           ros2-iron-moveit_msgs
+Version:        2.3.0
 Release:        1%{?dist}
 Summary:        ROS package moveit_msgs
 
 License:        BSD
 URL:            http://moveit.ros.org
 
-Source0:        https://github.com/ros2-gbp/moveit_msgs-release/archive/release/humble/moveit_msgs/2.2.1-1.tar.gz#/ros2-humble-moveit_msgs-2.2.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/moveit_msgs-release/archive/release/iron/moveit_msgs/2.3.0-1.tar.gz#/ros2-iron-moveit_msgs-2.3.0-source0.tar.gz
 
 
 
@@ -21,7 +21,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -37,32 +36,32 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-action_msgs-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_cmake-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-object_recognition_msgs-devel
-BuildRequires:  ros2-humble-octomap_msgs-devel
-BuildRequires:  ros2-humble-rosidl_default_generators-devel
-BuildRequires:  ros2-humble-sensor_msgs-devel
-BuildRequires:  ros2-humble-shape_msgs-devel
-BuildRequires:  ros2-humble-std_msgs-devel
-BuildRequires:  ros2-humble-trajectory_msgs-devel
+BuildRequires:  ros2-iron-action_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_cmake-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-object_recognition_msgs-devel
+BuildRequires:  ros2-iron-octomap_msgs-devel
+BuildRequires:  ros2-iron-rosidl_default_generators-devel
+BuildRequires:  ros2-iron-sensor_msgs-devel
+BuildRequires:  ros2-iron-shape_msgs-devel
+BuildRequires:  ros2-iron-std_msgs-devel
+BuildRequires:  ros2-iron-trajectory_msgs-devel
 
-Requires:       ros2-humble-action_msgs
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-object_recognition_msgs
-Requires:       ros2-humble-octomap_msgs
-Requires:       ros2-humble-rosidl_default_runtime
-Requires:       ros2-humble-sensor_msgs
-Requires:       ros2-humble-shape_msgs
-Requires:       ros2-humble-std_msgs
-Requires:       ros2-humble-trajectory_msgs
+Requires:       ros2-iron-action_msgs
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-object_recognition_msgs
+Requires:       ros2-iron-octomap_msgs
+Requires:       ros2-iron-rosidl_default_runtime
+Requires:       ros2-iron-sensor_msgs
+Requires:       ros2-iron-shape_msgs
+Requires:       ros2-iron-std_msgs
+Requires:       ros2-iron-trajectory_msgs
 
-Provides:  ros2-humble-moveit_msgs = 2.2.1-1
-Obsoletes: ros2-humble-moveit_msgs < 2.2.1-1
+Provides:  ros2-iron-moveit_msgs = 2.3.0-1
+Obsoletes: ros2-iron-moveit_msgs < 2.3.0-1
 
 
 
@@ -72,23 +71,23 @@ Messages, services and actions used by MoveIt
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-action_msgs-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_cmake-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-object_recognition_msgs-devel
-Requires:       ros2-humble-octomap_msgs-devel
-Requires:       ros2-humble-rosidl_default_generators-devel
-Requires:       ros2-humble-sensor_msgs-devel
-Requires:       ros2-humble-shape_msgs-devel
-Requires:       ros2-humble-std_msgs-devel
-Requires:       ros2-humble-trajectory_msgs-devel
-Requires:       ros2-humble-rosidl_default_runtime-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-action_msgs-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_cmake-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-object_recognition_msgs-devel
+Requires:       ros2-iron-octomap_msgs-devel
+Requires:       ros2-iron-rosidl_default_generators-devel
+Requires:       ros2-iron-sensor_msgs-devel
+Requires:       ros2-iron-shape_msgs-devel
+Requires:       ros2-iron-std_msgs-devel
+Requires:       ros2-iron-trajectory_msgs-devel
+Requires:       ros2-iron-rosidl_default_runtime-devel
 
-Provides: ros2-humble-moveit_msgs-devel = 2.2.1-1
-Obsoletes: ros2-humble-moveit_msgs-devel < 2.2.1-1
+Provides: ros2-iron-moveit_msgs-devel = 2.3.0-1
+Obsoletes: ros2-iron-moveit_msgs-devel < 2.3.0-1
 
 
 %description devel
@@ -116,7 +115,7 @@ FFLAGS="${FFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FFLAGS ; \
 FCFLAGS="${FCFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FCFLAGS ; \
 %{?__global_ldflags:LDFLAGS="${LDFLAGS:-%__global_ldflags}" ; export LDFLAGS ;} \
 
-source %{_libdir}/ros2-humble/setup.bash
+source %{_libdir}/ros2-iron/setup.bash
 
 # substitute shebang before install block because we run the local catkin script
 %py3_shebang_fix .
@@ -130,35 +129,35 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \
   --base-paths . \
-  --install-base %{buildroot}/%{_libdir}/ros2-humble/ \
+  --install-base %{buildroot}/%{_libdir}/ros2-iron/ \
   --packages-select moveit_msgs
 
 
 
 # remove wrong buildroot prefixes
-find %{buildroot}/%{_libdir}/ros2-humble/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
 
-rm -rf %{buildroot}/%{_libdir}/ros2-humble/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
+rm -rf %{buildroot}/%{_libdir}/ros2-iron/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
 
 # remove __pycache__
 find %{buildroot} -type d -name '__pycache__' -exec rm -rf {} +
 find . -name '*.pyc' -delete
 
 touch files.list
-find %{buildroot}/%{_libdir}/ros2-humble/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
+find %{buildroot}/%{_libdir}/ros2-iron/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files.list
-find %{buildroot}/%{_libdir}/ros2-humble/lib*/ -mindepth 1 -maxdepth 1 \
+find %{buildroot}/%{_libdir}/ros2-iron/lib*/ -mindepth 1 -maxdepth 1 \
   ! -name pkgconfig ! -name "python*" \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
 # TODO: is cmake/ necessary? it stems from the yaml vendor
-find %{buildroot}/%{_libdir}/ros2-humble/{lib*/pkgconfig,include/,cmake/,moveit_msgs/include/,share/moveit_msgs/cmake} \
+find %{buildroot}/%{_libdir}/ros2-iron/{lib*/pkgconfig,include/,cmake/,moveit_msgs/include/,share/moveit_msgs/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -166,8 +165,8 @@ find . -maxdepth 1 -type f -iname "*license*" | sed "s:^:%%license :" >> files.l
 
 
 
-find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
-# find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
+# find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
 
 # replace cmake python macro in shebang
 for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@.*$' %{buildroot}) ; do
@@ -197,6 +196,8 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.2.3.0-1
+- update to latest upstream
 * Wed Sep 27 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.2.2.1-1
 - update to latest release
 * Thu Mar 09 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.2.2.1-1

@@ -1,12 +1,12 @@
-Name:           ros2-humble-bicycle_steering_controller
-Version:        2.28.0
+Name:           ros2-iron-bicycle_steering_controller
+Version:        3.19.1
 Release:        1%{?dist}
 Summary:        ROS package bicycle_steering_controller
 
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ros2_controllers-release/archive/release/humble/bicycle_steering_controller/2.28.0-1.tar.gz#/ros2-humble-bicycle_steering_controller-2.28.0-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros2_controllers-release/archive/release/iron/bicycle_steering_controller/3.19.1-1.tar.gz#/ros2-iron-bicycle_steering_controller-3.19.1-source0.tar.gz
 
 
 
@@ -21,7 +21,6 @@ BuildRequires: python3-devel
 BuildRequires: python-unversioned-command
 BuildRequires: python3-colcon-common-extensions
 BuildRequires: python3-pip
-BuildRequires: python3-pydocstyle
 BuildRequires: python3-pytest
 BuildRequires: python3-pytest-repeat
 BuildRequires: python3-pytest-rerunfailures
@@ -37,32 +36,32 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python3-colcon-common-extensions
 # BuildRequires:  python-unversioned-command
 
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-control_msgs-devel
-BuildRequires:  ros2-humble-controller_interface-devel
-BuildRequires:  ros2-humble-controller_manager-devel
-BuildRequires:  ros2-humble-generate_parameter_library-devel
-BuildRequires:  ros2-humble-hardware_interface-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-ros2_control_test_assets-devel
-BuildRequires:  ros2-humble-std_srvs-devel
-BuildRequires:  ros2-humble-steering_controllers_library-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-control_msgs-devel
+BuildRequires:  ros2-iron-controller_interface-devel
+BuildRequires:  ros2-iron-controller_manager-devel
+BuildRequires:  ros2-iron-generate_parameter_library-devel
+BuildRequires:  ros2-iron-hardware_interface-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-ros2_control_test_assets-devel
+BuildRequires:  ros2-iron-std_srvs-devel
+BuildRequires:  ros2-iron-steering_controllers_library-devel
 
-Requires:       ros2-humble-control_msgs
-Requires:       ros2-humble-controller_interface
-Requires:       ros2-humble-hardware_interface
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-std_srvs
-Requires:       ros2-humble-steering_controllers_library
+Requires:       ros2-iron-control_msgs
+Requires:       ros2-iron-controller_interface
+Requires:       ros2-iron-hardware_interface
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-std_srvs
+Requires:       ros2-iron-steering_controllers_library
 
-Provides:  ros2-humble-bicycle_steering_controller = 2.28.0-1
-Obsoletes: ros2-humble-bicycle_steering_controller < 2.28.0-1
+Provides:  ros2-iron-bicycle_steering_controller = 3.19.1-1
+Obsoletes: ros2-iron-bicycle_steering_controller < 3.19.1-1
 
 
 
@@ -73,23 +72,23 @@ powering the vehicle and front wheel is steering.
 %package        devel
 Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
-Requires:       ros2-humble-ament_cmake-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-control_msgs-devel
-Requires:       ros2-humble-controller_interface-devel
-Requires:       ros2-humble-controller_manager-devel
-Requires:       ros2-humble-generate_parameter_library-devel
-Requires:       ros2-humble-hardware_interface-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-ros2_control_test_assets-devel
-Requires:       ros2-humble-std_srvs-devel
-Requires:       ros2-humble-steering_controllers_library-devel
+Requires:       ros2-iron-ament_cmake-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-control_msgs-devel
+Requires:       ros2-iron-controller_interface-devel
+Requires:       ros2-iron-controller_manager-devel
+Requires:       ros2-iron-generate_parameter_library-devel
+Requires:       ros2-iron-hardware_interface-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-ros2_control_test_assets-devel
+Requires:       ros2-iron-std_srvs-devel
+Requires:       ros2-iron-steering_controllers_library-devel
 
-Provides: ros2-humble-bicycle_steering_controller-devel = 2.28.0-1
-Obsoletes: ros2-humble-bicycle_steering_controller-devel < 2.28.0-1
+Provides: ros2-iron-bicycle_steering_controller-devel = 3.19.1-1
+Obsoletes: ros2-iron-bicycle_steering_controller-devel < 3.19.1-1
 
 
 %description devel
@@ -117,7 +116,7 @@ FFLAGS="${FFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FFLAGS ; \
 FCFLAGS="${FCFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FCFLAGS ; \
 %{?__global_ldflags:LDFLAGS="${LDFLAGS:-%__global_ldflags}" ; export LDFLAGS ;} \
 
-source %{_libdir}/ros2-humble/setup.bash
+source %{_libdir}/ros2-iron/setup.bash
 
 # substitute shebang before install block because we run the local catkin script
 %py3_shebang_fix .
@@ -131,35 +130,35 @@ colcon \
   --cmake-args -DPYTHON_EXECUTABLE="/usr/bin/python" \
   -DTHIRDPARTY_Asio=ON \
   -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
+  -DCMAKE_CXX_FLAGS="$CXXFLAGS -Wno-error=maybe-uninitialized -Wno-error=null-dereference" \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \
   --base-paths . \
-  --install-base %{buildroot}/%{_libdir}/ros2-humble/ \
+  --install-base %{buildroot}/%{_libdir}/ros2-iron/ \
   --packages-select bicycle_steering_controller
 
 
 
 # remove wrong buildroot prefixes
-find %{buildroot}/%{_libdir}/ros2-humble/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
 
-rm -rf %{buildroot}/%{_libdir}/ros2-humble/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
+rm -rf %{buildroot}/%{_libdir}/ros2-iron/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
 
 # remove __pycache__
 find %{buildroot} -type d -name '__pycache__' -exec rm -rf {} +
 find . -name '*.pyc' -delete
 
 touch files.list
-find %{buildroot}/%{_libdir}/ros2-humble/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
+find %{buildroot}/%{_libdir}/ros2-iron/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files.list
-find %{buildroot}/%{_libdir}/ros2-humble/lib*/ -mindepth 1 -maxdepth 1 \
+find %{buildroot}/%{_libdir}/ros2-iron/lib*/ -mindepth 1 -maxdepth 1 \
   ! -name pkgconfig ! -name "python*" \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
 # TODO: is cmake/ necessary? it stems from the yaml vendor
-find %{buildroot}/%{_libdir}/ros2-humble/{lib*/pkgconfig,include/,cmake/,bicycle_steering_controller/include/,share/bicycle_steering_controller/cmake} \
+find %{buildroot}/%{_libdir}/ros2-iron/{lib*/pkgconfig,include/,cmake/,bicycle_steering_controller/include/,share/bicycle_steering_controller/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -167,8 +166,8 @@ find . -maxdepth 1 -type f -iname "*license*" | sed "s:^:%%license :" >> files.l
 
 
 
-find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
-# find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
+# find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
 
 # replace cmake python macro in shebang
 for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@.*$' %{buildroot}) ; do
@@ -198,6 +197,8 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.3.19.1-1
+- update to latest upstream
 * Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.2.28.0-1
 - update to latest upstream
 * Sat Oct 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.2.26.0-1

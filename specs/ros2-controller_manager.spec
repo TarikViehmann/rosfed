@@ -1,12 +1,12 @@
-Name:           ros2-humble-controller_manager
-Version:        2.35.1
+Name:           ros2-iron-controller_manager
+Version:        3.21.2
 Release:        1%{?dist}
 Summary:        ROS package controller_manager
 
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/ros2_control-release/archive/release/humble/controller_manager/2.35.1-1.tar.gz#/ros2-humble-controller_manager-2.35.1-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/ros2_control-release/archive/release/iron/controller_manager/3.21.2-1.tar.gz#/ros2-iron-controller_manager-3.21.2-source0.tar.gz
 
 
 
@@ -39,44 +39,46 @@ BuildRequires: python3-vcstool
 BuildRequires:  poco-devel
 BuildRequires:  tinyxml-devel
 BuildRequires:  tinyxml2-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gmock-devel
-BuildRequires:  ros2-humble-ament_cmake_python-devel
-BuildRequires:  ros2-humble-ament_index_cpp-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-backward_ros-devel
-BuildRequires:  ros2-humble-controller_interface-devel
-BuildRequires:  ros2-humble-controller_manager_msgs-devel
-BuildRequires:  ros2-humble-hardware_interface-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_ros-devel
-BuildRequires:  ros2-humble-pluginlib-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rcpputils-devel
-BuildRequires:  ros2-humble-realtime_tools-devel
-BuildRequires:  ros2-humble-ros2_control_test_assets-devel
-BuildRequires:  ros2-humble-ros2param-devel
-BuildRequires:  ros2-humble-ros2run-devel
-BuildRequires:  ros2-humble-std_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gmock-devel
+BuildRequires:  ros2-iron-ament_cmake_python-devel
+BuildRequires:  ros2-iron-ament_index_cpp-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-backward_ros-devel
+BuildRequires:  ros2-iron-controller_interface-devel
+BuildRequires:  ros2-iron-controller_manager_msgs-devel
+BuildRequires:  ros2-iron-diagnostic_updater-devel
+BuildRequires:  ros2-iron-hardware_interface-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_ros-devel
+BuildRequires:  ros2-iron-pluginlib-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rcpputils-devel
+BuildRequires:  ros2-iron-realtime_tools-devel
+BuildRequires:  ros2-iron-ros2_control_test_assets-devel
+BuildRequires:  ros2-iron-ros2param-devel
+BuildRequires:  ros2-iron-ros2run-devel
+BuildRequires:  ros2-iron-std_msgs-devel
 
-Requires:       ros2-humble-ament_index_cpp
-Requires:       ros2-humble-backward_ros
-Requires:       ros2-humble-controller_interface
-Requires:       ros2-humble-controller_manager_msgs
-Requires:       ros2-humble-hardware_interface
-Requires:       ros2-humble-launch
-Requires:       ros2-humble-launch_ros
-Requires:       ros2-humble-pluginlib
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rcpputils
-Requires:       ros2-humble-realtime_tools
-Requires:       ros2-humble-ros2_control_test_assets
-Requires:       ros2-humble-ros2param
-Requires:       ros2-humble-ros2run
-Requires:       ros2-humble-std_msgs
+Requires:       ros2-iron-ament_index_cpp
+Requires:       ros2-iron-backward_ros
+Requires:       ros2-iron-controller_interface
+Requires:       ros2-iron-controller_manager_msgs
+Requires:       ros2-iron-diagnostic_updater
+Requires:       ros2-iron-hardware_interface
+Requires:       ros2-iron-launch
+Requires:       ros2-iron-launch_ros
+Requires:       ros2-iron-pluginlib
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rcpputils
+Requires:       ros2-iron-realtime_tools
+Requires:       ros2-iron-ros2_control_test_assets
+Requires:       ros2-iron-ros2param
+Requires:       ros2-iron-ros2run
+Requires:       ros2-iron-std_msgs
 
-Provides:  ros2-humble-controller_manager = 2.35.1-1
-Obsoletes: ros2-humble-controller_manager < 2.35.1-1
+Provides:  ros2-iron-controller_manager = 3.21.2-1
+Obsoletes: ros2-iron-controller_manager < 3.21.2-1
 
 
 
@@ -91,26 +93,27 @@ Requires:       ros2-iron-ament_cmake_python-devel
 Requires:       poco-devel
 Requires:       tinyxml-devel
 Requires:       tinyxml2-devel
-Requires:       ros2-humble-ament_cmake_gmock-devel
-Requires:       ros2-humble-ament_index_cpp-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-backward_ros-devel
-Requires:       ros2-humble-controller_interface-devel
-Requires:       ros2-humble-controller_manager_msgs-devel
-Requires:       ros2-humble-hardware_interface-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_ros-devel
-Requires:       ros2-humble-pluginlib-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rcpputils-devel
-Requires:       ros2-humble-realtime_tools-devel
-Requires:       ros2-humble-ros2_control_test_assets-devel
-Requires:       ros2-humble-ros2param-devel
-Requires:       ros2-humble-ros2run-devel
-Requires:       ros2-humble-std_msgs-devel
+Requires:       ros2-iron-ament_cmake_gmock-devel
+Requires:       ros2-iron-ament_index_cpp-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-backward_ros-devel
+Requires:       ros2-iron-controller_interface-devel
+Requires:       ros2-iron-controller_manager_msgs-devel
+Requires:       ros2-iron-diagnostic_updater-devel
+Requires:       ros2-iron-hardware_interface-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_ros-devel
+Requires:       ros2-iron-pluginlib-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rcpputils-devel
+Requires:       ros2-iron-realtime_tools-devel
+Requires:       ros2-iron-ros2_control_test_assets-devel
+Requires:       ros2-iron-ros2param-devel
+Requires:       ros2-iron-ros2run-devel
+Requires:       ros2-iron-std_msgs-devel
 
-Provides: ros2-humble-controller_manager-devel = 2.35.1-1
-Obsoletes: ros2-humble-controller_manager-devel < 2.35.1-1
+Provides: ros2-iron-controller_manager-devel = 3.21.2-1
+Obsoletes: ros2-iron-controller_manager-devel < 3.21.2-1
 
 
 %description devel
@@ -138,7 +141,7 @@ FFLAGS="${FFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FFLAGS ; \
 FCFLAGS="${FCFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FCFLAGS ; \
 %{?__global_ldflags:LDFLAGS="${LDFLAGS:-%__global_ldflags}" ; export LDFLAGS ;} \
 
-source %{_libdir}/ros2-humble/setup.bash
+source %{_libdir}/ros2-iron/setup.bash
 
 # substitute shebang before install block because we run the local catkin script
 %py3_shebang_fix .
@@ -157,30 +160,30 @@ colcon \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \
   --base-paths . \
-  --install-base %{buildroot}/%{_libdir}/ros2-humble/ \
+  --install-base %{buildroot}/%{_libdir}/ros2-iron/ \
   --packages-select controller_manager
 
 
 
 # remove wrong buildroot prefixes
-find %{buildroot}/%{_libdir}/ros2-humble/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
 
-rm -rf %{buildroot}/%{_libdir}/ros2-humble/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
+rm -rf %{buildroot}/%{_libdir}/ros2-iron/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
 
 # remove __pycache__
 find %{buildroot} -type d -name '__pycache__' -exec rm -rf {} +
 find . -name '*.pyc' -delete
 
 touch files.list
-find %{buildroot}/%{_libdir}/ros2-humble/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
+find %{buildroot}/%{_libdir}/ros2-iron/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files.list
-find %{buildroot}/%{_libdir}/ros2-humble/lib*/ -mindepth 1 -maxdepth 1 \
+find %{buildroot}/%{_libdir}/ros2-iron/lib*/ -mindepth 1 -maxdepth 1 \
   ! -name pkgconfig ! -name "python*" \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
 # TODO: is cmake/ necessary? it stems from the yaml vendor
-find %{buildroot}/%{_libdir}/ros2-humble/{lib*/pkgconfig,include/,cmake/,controller_manager/include/,share/controller_manager/cmake} \
+find %{buildroot}/%{_libdir}/ros2-iron/{lib*/pkgconfig,include/,cmake/,controller_manager/include/,share/controller_manager/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -188,8 +191,8 @@ find . -maxdepth 1 -type f -iname "*license*" | sed "s:^:%%license :" >> files.l
 
 
 
-find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
-# find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
+# find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
 
 # replace cmake python macro in shebang
 for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@.*$' %{buildroot}) ; do
@@ -219,6 +222,8 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.3.21.2-1
+- update to latest upstream
 * Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.2.35.1-1
 - update to latest upstream
 * Sat Oct 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.2.33.0-1

@@ -1,5 +1,5 @@
-Name:           ros2-humble-ompl
-Version:        1.6.0
+Name:           ros2-iron-ompl
+Version:        1.5.2
 Release:        1%{?dist}
 Summary:        ROS package ompl
 
@@ -93,7 +93,7 @@ FFLAGS="${FFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FFLAGS ; \
 FCFLAGS="${FCFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FCFLAGS ; \
 %{?__global_ldflags:LDFLAGS="${LDFLAGS:-%__global_ldflags}" ; export LDFLAGS ;} \
 
-source %{_libdir}/ros2-humble/setup.bash
+source %{_libdir}/ros2-iron/setup.bash
 
 # substitute shebang before install block because we run the local catkin script
 %py3_shebang_fix .
@@ -111,33 +111,33 @@ colcon \
   -DCMAKE_C_FLAGS="$CFLAGS" \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \
-  -DCMAKE_INSTALL_LIBDIR=%{buildroot}/%{_libdir}/ros2-humble/lib \
+  -DCMAKE_INSTALL_LIBDIR=%{buildroot}/%{_libdir}/ros2-iron/lib \
   -DOMPL_REGISTRATION=OFF \
   --base-paths . \
-  --install-base %{buildroot}/%{_libdir}/ros2-humble/ \
+  --install-base %{buildroot}/%{_libdir}/ros2-iron/ \
   --packages-select ompl
 
 
 
 # remove wrong buildroot prefixes
-find %{buildroot}/%{_libdir}/ros2-humble/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
 
-rm -rf %{buildroot}/%{_libdir}/ros2-humble/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
+rm -rf %{buildroot}/%{_libdir}/ros2-iron/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
 
 # remove __pycache__
 find %{buildroot} -type d -name '__pycache__' -exec rm -rf {} +
 find . -name '*.pyc' -delete
 
 touch files.list
-find %{buildroot}/%{_libdir}/ros2-humble/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
+find %{buildroot}/%{_libdir}/ros2-iron/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files.list
-find %{buildroot}/%{_libdir}/ros2-humble/lib*/ -mindepth 1 -maxdepth 1 \
+find %{buildroot}/%{_libdir}/ros2-iron/lib*/ -mindepth 1 -maxdepth 1 \
   ! -name pkgconfig ! -name "python*" \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
 # TODO: is cmake/ necessary? it stems from the yaml vendor
-find %{buildroot}/%{_libdir}/ros2-humble/{lib*/pkgconfig,include/,cmake/,ompl/include/,share/ompl/cmake} \
+find %{buildroot}/%{_libdir}/ros2-iron/{lib*/pkgconfig,include/,cmake/,ompl/include/,share/ompl/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -147,11 +147,11 @@ find . -maxdepth 1 -type f -iname "*license*" | sed "s:^:%%license :" >> files.l
 
 # For some reason the libraries in buildroot are completely broken,
 # the ones in the builddir are fine ...
-cp %{_builddir}/%{name}-%{version}/build/ompl/lib/* %{buildroot}/%{_libdir}/ros2-humble/lib/
+cp %{_builddir}/%{name}-%{version}/build/ompl/lib/* %{buildroot}/%{_libdir}/ros2-iron/lib/
 
 # ... but still has a screwed up rpath
-find %{buildroot}/%{_libdir}/ros2-humble/lib -type f -exec patchelf --remove-rpath  {} \;
-find %{buildroot}/%{_libdir}/ros2-humble/lib -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/lib -type f -exec patchelf --remove-rpath  {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/lib -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
 
 # replace cmake python macro in shebang
 for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@.*$' %{buildroot}) ; do
@@ -181,6 +181,8 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.1.5.2-1
+- update to latest upstream
 * Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.1.6.0-1
 - update to latest upstream release
 * Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.1.6.0-1

@@ -1,12 +1,12 @@
-Name:           ros2-humble-tf2_eigen_kdl
-Version:        0.25.5
+Name:           ros2-iron-tf2_eigen_kdl
+Version:        0.31.5
 Release:        1%{?dist}
 Summary:        ROS package tf2_eigen_kdl
 
 License:        BSD
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/geometry2-release/archive/release/humble/tf2_eigen_kdl/0.25.5-1.tar.gz#/ros2-humble-tf2_eigen_kdl-0.25.5-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/geometry2-release/archive/release/iron/tf2_eigen_kdl/0.31.5-1.tar.gz#/ros2-iron-tf2_eigen_kdl-0.31.5-source0.tar.gz
 
 Patch0: ros-tf2_eigen_kdl.remove-orocos-kdl-vendor.patch
 
@@ -38,19 +38,19 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  eigen3-devel
+BuildRequires:  orocos-kdl-devel
 BuildRequires:  ros2-iron-ament_cmake-devel
 BuildRequires:  ros2-iron-ament_cmake_gtest-devel
 BuildRequires:  ros2-iron-ament_lint_auto-devel
 BuildRequires:  ros2-iron-ament_lint_common-devel
 BuildRequires:  ros2-iron-ament_package-devel
-BuildRequires:  ros2-iron-orocos_kdl_vendor-devel
 BuildRequires:  ros2-iron-tf2-devel
 
 Requires:       ros2-iron-orocos_kdl_vendor
 Requires:       ros2-iron-tf2
 
-Provides:  ros2-humble-tf2_eigen_kdl = 0.25.5-1
-Obsoletes: ros2-humble-tf2_eigen_kdl < 0.25.5-1
+Provides:  ros2-iron-tf2_eigen_kdl = 0.31.5-1
+Obsoletes: ros2-iron-tf2_eigen_kdl < 0.31.5-1
 
 
 
@@ -62,15 +62,16 @@ Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       eigen3-devel
 Requires:       ros2-iron-ament_cmake-devel
+Requires:       orocos-kdl-devel
 Requires:       ros2-iron-ament_cmake_gtest-devel
 Requires:       ros2-iron-ament_lint_auto-devel
 Requires:       ros2-iron-ament_lint_common-devel
 Requires:       ros2-iron-ament_package-devel
-Requires:       ros2-iron-orocos_kdl_vendor-devel
 Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-orocos_kdl_vendor-devel
 
-Provides: ros2-humble-tf2_eigen_kdl-devel = 0.25.5-1
-Obsoletes: ros2-humble-tf2_eigen_kdl-devel < 0.25.5-1
+Provides: ros2-iron-tf2_eigen_kdl-devel = 0.31.5-1
+Obsoletes: ros2-iron-tf2_eigen_kdl-devel < 0.31.5-1
 
 
 %description devel
@@ -99,7 +100,7 @@ FFLAGS="${FFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FFLAGS ; \
 FCFLAGS="${FCFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FCFLAGS ; \
 %{?__global_ldflags:LDFLAGS="${LDFLAGS:-%__global_ldflags}" ; export LDFLAGS ;} \
 
-source %{_libdir}/ros2-humble/setup.bash
+source %{_libdir}/ros2-iron/setup.bash
 
 # substitute shebang before install block because we run the local catkin script
 %py3_shebang_fix .
@@ -118,30 +119,30 @@ colcon \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \
   --base-paths . \
-  --install-base %{buildroot}/%{_libdir}/ros2-humble/ \
+  --install-base %{buildroot}/%{_libdir}/ros2-iron/ \
   --packages-select tf2_eigen_kdl
 
 
 
 # remove wrong buildroot prefixes
-find %{buildroot}/%{_libdir}/ros2-humble/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
 
-rm -rf %{buildroot}/%{_libdir}/ros2-humble/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
+rm -rf %{buildroot}/%{_libdir}/ros2-iron/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
 
 # remove __pycache__
 find %{buildroot} -type d -name '__pycache__' -exec rm -rf {} +
 find . -name '*.pyc' -delete
 
 touch files.list
-find %{buildroot}/%{_libdir}/ros2-humble/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
+find %{buildroot}/%{_libdir}/ros2-iron/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files.list
-find %{buildroot}/%{_libdir}/ros2-humble/lib*/ -mindepth 1 -maxdepth 1 \
+find %{buildroot}/%{_libdir}/ros2-iron/lib*/ -mindepth 1 -maxdepth 1 \
   ! -name pkgconfig ! -name "python*" \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
 # TODO: is cmake/ necessary? it stems from the yaml vendor
-find %{buildroot}/%{_libdir}/ros2-humble/{lib*/pkgconfig,include/,cmake/,tf2_eigen_kdl/include/,share/tf2_eigen_kdl/cmake} \
+find %{buildroot}/%{_libdir}/ros2-iron/{lib*/pkgconfig,include/,cmake/,tf2_eigen_kdl/include/,share/tf2_eigen_kdl/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -149,8 +150,8 @@ find . -maxdepth 1 -type f -iname "*license*" | sed "s:^:%%license :" >> files.l
 
 
 
-find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
-# find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
+# find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
 
 # replace cmake python macro in shebang
 for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@.*$' %{buildroot}) ; do
@@ -180,6 +181,8 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.31.5-1
+- update to latest upstream
 * Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.0.25.5-1
 - update to latest upstream
 * Wed Sep 27 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.0.25.4-1

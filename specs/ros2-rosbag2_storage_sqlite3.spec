@@ -1,12 +1,12 @@
 Name:           ros2-iron-rosbag2_storage_sqlite3
-Version:        0.22.3
+Version:        0.22.5
 Release:        1%{?dist}
 Summary:        ROS package rosbag2_storage_sqlite3
 
 License:        Apache License 2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/ros2-gbp/rosbag2-release/archive/release/iron/rosbag2_storage_sqlite3/0.22.3-1.tar.gz#/ros2-iron-rosbag2_storage_sqlite3-0.22.3-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rosbag2-release/archive/release/iron/rosbag2_storage_sqlite3/0.22.5-1.tar.gz#/ros2-iron-rosbag2_storage_sqlite3-0.22.5-source0.tar.gz
 
 
 
@@ -57,8 +57,8 @@ Requires:       ros2-iron-rosbag2_storage
 Requires:       ros2-iron-sqlite3_vendor
 Requires:       ros2-iron-yaml_cpp_vendor
 
-Provides:  ros2-iron-rosbag2_storage_sqlite3 = 0.22.3-1
-Obsoletes: ros2-iron-rosbag2_storage_sqlite3 < 0.22.3-1
+Provides:  ros2-iron-rosbag2_storage_sqlite3 = 0.22.5-1
+Obsoletes: ros2-iron-rosbag2_storage_sqlite3 < 0.22.5-1
 
 
 
@@ -82,8 +82,8 @@ Requires:       ros2-iron-rosbag2_test_common-devel
 Requires:       ros2-iron-sqlite3_vendor-devel
 Requires:       ros2-iron-yaml_cpp_vendor-devel
 
-Provides: ros2-iron-rosbag2_storage_sqlite3-devel = 0.22.3-1
-Obsoletes: ros2-iron-rosbag2_storage_sqlite3-devel < 0.22.3-1
+Provides: ros2-iron-rosbag2_storage_sqlite3-devel = 0.22.5-1
+Obsoletes: ros2-iron-rosbag2_storage_sqlite3-devel < 0.22.5-1
 
 
 %description devel
@@ -192,6 +192,8 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.22.5-1
+- update to latest upstream
 * Sat Oct 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.22.3-1
 - update to latest release
 * Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.22.2-1

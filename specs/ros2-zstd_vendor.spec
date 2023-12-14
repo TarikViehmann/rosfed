@@ -1,12 +1,12 @@
 Name:           ros2-iron-zstd_vendor
-Version:        0.22.3
+Version:        0.22.5
 Release:        1%{?dist}
 Summary:        ROS package zstd_vendor
 
 License:        Apache License 2.0
 URL:            https://facebook.github.io/zstd/
 
-Source0:        https://github.com/ros2-gbp/rosbag2-release/archive/release/iron/zstd_vendor/0.22.3-1.tar.gz#/ros2-iron-zstd_vendor-0.22.3-source0.tar.gz
+Source0:        https://github.com/ros2-gbp/rosbag2-release/archive/release/iron/zstd_vendor/0.22.5-1.tar.gz#/ros2-iron-zstd_vendor-0.22.5-source0.tar.gz
 
 
 BuildArch: noarch
@@ -43,8 +43,8 @@ BuildRequires:  ros2-iron-ament_cmake-devel
 BuildRequires:  ros2-iron-ament_package-devel
 
 
-Provides:  ros2-iron-zstd_vendor = 0.22.3-1
-Obsoletes: ros2-iron-zstd_vendor < 0.22.3-1
+Provides:  ros2-iron-zstd_vendor = 0.22.5-1
+Obsoletes: ros2-iron-zstd_vendor < 0.22.5-1
 
 
 
@@ -59,8 +59,8 @@ Requires:       ros2-iron-ament_cmake-devel
 Requires:       libzstd-devel
 Requires:       ros2-iron-ament_package-devel
 
-Provides: ros2-iron-zstd_vendor-devel = 0.22.3-1
-Obsoletes: ros2-iron-zstd_vendor-devel < 0.22.3-1
+Provides: ros2-iron-zstd_vendor-devel = 0.22.5-1
+Obsoletes: ros2-iron-zstd_vendor-devel < 0.22.5-1
 
 
 %description devel
@@ -169,6 +169,8 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.22.5-1
+- update to latest upstream
 * Sat Oct 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.22.3-1
 - update to latest release
 * Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.0.22.2-1

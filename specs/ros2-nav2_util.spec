@@ -1,12 +1,12 @@
-Name:           ros2-humble-nav2_util
-Version:        1.1.12
+Name:           ros2-iron-nav2_util
+Version:        1.2.5
 Release:        1%{?dist}
 Summary:        ROS package nav2_util
 
 License:        Apache-2.0
 URL:            http://www.ros.org/
 
-Source0:        https://github.com/SteveMacenski/navigation2-release/archive/release/humble/nav2_util/1.1.12-1.tar.gz#/ros2-humble-nav2_util-1.1.12-source0.tar.gz
+Source0:        https://github.com/SteveMacenski/navigation2-release/archive/release/iron/nav2_util/1.2.5-2.tar.gz#/ros2-iron-nav2_util-1.2.5-source0.tar.gz
 
 
 
@@ -37,54 +37,54 @@ BuildRequires: python3-vcstool
 # BuildRequires:  python-unversioned-command
 
 BuildRequires:  boost-devel
-BuildRequires:  ros2-humble-action_msgs-devel
-BuildRequires:  ros2-humble-ament_cmake-devel
-BuildRequires:  ros2-humble-ament_cmake_gtest-devel
-BuildRequires:  ros2-humble-ament_cmake_pytest-devel
-BuildRequires:  ros2-humble-ament_lint_auto-devel
-BuildRequires:  ros2-humble-ament_lint_common-devel
-BuildRequires:  ros2-humble-ament_package-devel
-BuildRequires:  ros2-humble-bond-devel
-BuildRequires:  ros2-humble-bondcpp-devel
-BuildRequires:  ros2-humble-geometry_msgs-devel
-BuildRequires:  ros2-humble-launch-devel
-BuildRequires:  ros2-humble-launch_testing_ament_cmake-devel
-BuildRequires:  ros2-humble-launch_testing_ros-devel
-BuildRequires:  ros2-humble-lifecycle_msgs-devel
-BuildRequires:  ros2-humble-nav2_common-devel
-BuildRequires:  ros2-humble-nav2_msgs-devel
-BuildRequires:  ros2-humble-nav_msgs-devel
-BuildRequires:  ros2-humble-rcl_interfaces-devel
-BuildRequires:  ros2-humble-rclcpp-devel
-BuildRequires:  ros2-humble-rclcpp_action-devel
-BuildRequires:  ros2-humble-rclcpp_lifecycle-devel
-BuildRequires:  ros2-humble-std_srvs-devel
-BuildRequires:  ros2-humble-test_msgs-devel
-BuildRequires:  ros2-humble-tf2-devel
-BuildRequires:  ros2-humble-tf2_geometry_msgs-devel
-BuildRequires:  ros2-humble-tf2_ros-devel
+BuildRequires:  ros2-iron-action_msgs-devel
+BuildRequires:  ros2-iron-ament_cmake-devel
+BuildRequires:  ros2-iron-ament_cmake_gtest-devel
+BuildRequires:  ros2-iron-ament_cmake_pytest-devel
+BuildRequires:  ros2-iron-ament_lint_auto-devel
+BuildRequires:  ros2-iron-ament_lint_common-devel
+BuildRequires:  ros2-iron-ament_package-devel
+BuildRequires:  ros2-iron-bond-devel
+BuildRequires:  ros2-iron-bondcpp-devel
+BuildRequires:  ros2-iron-geometry_msgs-devel
+BuildRequires:  ros2-iron-launch-devel
+BuildRequires:  ros2-iron-launch_testing_ament_cmake-devel
+BuildRequires:  ros2-iron-launch_testing_ros-devel
+BuildRequires:  ros2-iron-lifecycle_msgs-devel
+BuildRequires:  ros2-iron-nav2_common-devel
+BuildRequires:  ros2-iron-nav2_msgs-devel
+BuildRequires:  ros2-iron-nav_msgs-devel
+BuildRequires:  ros2-iron-rcl_interfaces-devel
+BuildRequires:  ros2-iron-rclcpp-devel
+BuildRequires:  ros2-iron-rclcpp_action-devel
+BuildRequires:  ros2-iron-rclcpp_lifecycle-devel
+BuildRequires:  ros2-iron-std_srvs-devel
+BuildRequires:  ros2-iron-test_msgs-devel
+BuildRequires:  ros2-iron-tf2-devel
+BuildRequires:  ros2-iron-tf2_geometry_msgs-devel
+BuildRequires:  ros2-iron-tf2_ros-devel
 
 Requires:       boost-program-options
-Requires:       ros2-humble-action_msgs
-Requires:       ros2-humble-bond
-Requires:       ros2-humble-bondcpp
-Requires:       ros2-humble-geometry_msgs
-Requires:       ros2-humble-launch
-Requires:       ros2-humble-launch_testing_ament_cmake
-Requires:       ros2-humble-lifecycle_msgs
-Requires:       ros2-humble-nav2_common
-Requires:       ros2-humble-nav2_msgs
-Requires:       ros2-humble-nav_msgs
-Requires:       ros2-humble-rcl_interfaces
-Requires:       ros2-humble-rclcpp
-Requires:       ros2-humble-rclcpp_action
-Requires:       ros2-humble-rclcpp_lifecycle
-Requires:       ros2-humble-tf2
-Requires:       ros2-humble-tf2_geometry_msgs
-Requires:       ros2-humble-tf2_ros
+Requires:       ros2-iron-action_msgs
+Requires:       ros2-iron-bond
+Requires:       ros2-iron-bondcpp
+Requires:       ros2-iron-geometry_msgs
+Requires:       ros2-iron-launch
+Requires:       ros2-iron-launch_testing_ament_cmake
+Requires:       ros2-iron-lifecycle_msgs
+Requires:       ros2-iron-nav2_common
+Requires:       ros2-iron-nav2_msgs
+Requires:       ros2-iron-nav_msgs
+Requires:       ros2-iron-rcl_interfaces
+Requires:       ros2-iron-rclcpp
+Requires:       ros2-iron-rclcpp_action
+Requires:       ros2-iron-rclcpp_lifecycle
+Requires:       ros2-iron-tf2
+Requires:       ros2-iron-tf2_geometry_msgs
+Requires:       ros2-iron-tf2_ros
 
-Provides:  ros2-humble-nav2_util = 1.1.12-1
-Obsoletes: ros2-humble-nav2_util < 1.1.12-1
+Provides:  ros2-iron-nav2_util = 1.2.5-1
+Obsoletes: ros2-iron-nav2_util < 1.2.5-1
 
 
 
@@ -96,34 +96,34 @@ Summary:        Development files for %{name}
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Requires:       ros2-iron-ament_cmake-devel
 Requires:       boost-devel
-Requires:       ros2-humble-action_msgs-devel
-Requires:       ros2-humble-ament_cmake_gtest-devel
-Requires:       ros2-humble-ament_cmake_pytest-devel
-Requires:       ros2-humble-ament_lint_auto-devel
-Requires:       ros2-humble-ament_lint_common-devel
-Requires:       ros2-humble-ament_package-devel
-Requires:       ros2-humble-bond-devel
-Requires:       ros2-humble-bondcpp-devel
-Requires:       ros2-humble-geometry_msgs-devel
-Requires:       ros2-humble-launch-devel
-Requires:       ros2-humble-launch_testing_ament_cmake-devel
-Requires:       ros2-humble-launch_testing_ros-devel
-Requires:       ros2-humble-lifecycle_msgs-devel
-Requires:       ros2-humble-nav2_common-devel
-Requires:       ros2-humble-nav2_msgs-devel
-Requires:       ros2-humble-nav_msgs-devel
-Requires:       ros2-humble-rcl_interfaces-devel
-Requires:       ros2-humble-rclcpp-devel
-Requires:       ros2-humble-rclcpp_action-devel
-Requires:       ros2-humble-rclcpp_lifecycle-devel
-Requires:       ros2-humble-std_srvs-devel
-Requires:       ros2-humble-test_msgs-devel
-Requires:       ros2-humble-tf2-devel
-Requires:       ros2-humble-tf2_geometry_msgs-devel
-Requires:       ros2-humble-tf2_ros-devel
+Requires:       ros2-iron-action_msgs-devel
+Requires:       ros2-iron-ament_cmake_gtest-devel
+Requires:       ros2-iron-ament_cmake_pytest-devel
+Requires:       ros2-iron-ament_lint_auto-devel
+Requires:       ros2-iron-ament_lint_common-devel
+Requires:       ros2-iron-ament_package-devel
+Requires:       ros2-iron-bond-devel
+Requires:       ros2-iron-bondcpp-devel
+Requires:       ros2-iron-geometry_msgs-devel
+Requires:       ros2-iron-launch-devel
+Requires:       ros2-iron-launch_testing_ament_cmake-devel
+Requires:       ros2-iron-launch_testing_ros-devel
+Requires:       ros2-iron-lifecycle_msgs-devel
+Requires:       ros2-iron-nav2_common-devel
+Requires:       ros2-iron-nav2_msgs-devel
+Requires:       ros2-iron-nav_msgs-devel
+Requires:       ros2-iron-rcl_interfaces-devel
+Requires:       ros2-iron-rclcpp-devel
+Requires:       ros2-iron-rclcpp_action-devel
+Requires:       ros2-iron-rclcpp_lifecycle-devel
+Requires:       ros2-iron-std_srvs-devel
+Requires:       ros2-iron-test_msgs-devel
+Requires:       ros2-iron-tf2-devel
+Requires:       ros2-iron-tf2_geometry_msgs-devel
+Requires:       ros2-iron-tf2_ros-devel
 
-Provides: ros2-humble-nav2_util-devel = 1.1.12-1
-Obsoletes: ros2-humble-nav2_util-devel < 1.1.12-1
+Provides: ros2-iron-nav2_util-devel = 1.2.5-1
+Obsoletes: ros2-iron-nav2_util-devel < 1.2.5-1
 
 
 %description devel
@@ -151,7 +151,7 @@ FFLAGS="${FFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FFLAGS ; \
 FCFLAGS="${FCFLAGS:-%optflags%{?_fmoddir: -I%_fmoddir}}" ; export FCFLAGS ; \
 %{?__global_ldflags:LDFLAGS="${LDFLAGS:-%__global_ldflags}" ; export LDFLAGS ;} \
 
-source %{_libdir}/ros2-humble/setup.bash
+source %{_libdir}/ros2-iron/setup.bash
 
 # substitute shebang before install block because we run the local catkin script
 %py3_shebang_fix .
@@ -170,30 +170,30 @@ colcon \
   -DCMAKE_LD_FLAGS="$LDFLAGS" \
   -DBUILD_TESTING=OFF \
   --base-paths . \
-  --install-base %{buildroot}/%{_libdir}/ros2-humble/ \
+  --install-base %{buildroot}/%{_libdir}/ros2-iron/ \
   --packages-select nav2_util
 
 
 
 # remove wrong buildroot prefixes
-find %{buildroot}/%{_libdir}/ros2-humble/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -type f -exec sed -i "s:%{buildroot}::g" {} \;
 
-rm -rf %{buildroot}/%{_libdir}/ros2-humble/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
+rm -rf %{buildroot}/%{_libdir}/ros2-iron/{.catkin,.rosinstall,_setup*,local_setup*,setup*,env.sh,.colcon_install_layout,COLCON_IGNORE,_local_setup*,_local_setup*}
 
 # remove __pycache__
 find %{buildroot} -type d -name '__pycache__' -exec rm -rf {} +
 find . -name '*.pyc' -delete
 
 touch files.list
-find %{buildroot}/%{_libdir}/ros2-humble/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
+find %{buildroot}/%{_libdir}/ros2-iron/{bin,etc,tools,lib64/python*,lib/python*/site-packages,share} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files.list
-find %{buildroot}/%{_libdir}/ros2-humble/lib*/ -mindepth 1 -maxdepth 1 \
+find %{buildroot}/%{_libdir}/ros2-iron/lib*/ -mindepth 1 -maxdepth 1 \
   ! -name pkgconfig ! -name "python*" \
   | sed "s:%{buildroot}/::" >> files.list
 
 touch files_devel.list
 # TODO: is cmake/ necessary? it stems from the yaml vendor
-find %{buildroot}/%{_libdir}/ros2-humble/{lib*/pkgconfig,include/,cmake/,nav2_util/include/,share/nav2_util/cmake} \
+find %{buildroot}/%{_libdir}/ros2-iron/{lib*/pkgconfig,include/,cmake/,nav2_util/include/,share/nav2_util/cmake} \
   -mindepth 1 -maxdepth 1 | sed "s:%{buildroot}/::" > files_devel.list
 
 find . -maxdepth 1 -type f -iname "*readme*" | sed "s:^:%%doc :" >> files.list
@@ -201,8 +201,8 @@ find . -maxdepth 1 -type f -iname "*license*" | sed "s:^:%%license :" >> files.l
 
 
 
-find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
-# find %{buildroot}/%{_libdir}/ros2-humble/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
+find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --remove-rpath  {} \;
+# find %{buildroot}/%{_libdir}/ros2-iron/ -name *__rosidl_generator_py.so -type f -exec patchelf --force-rpath --add-rpath "%{_libdir}/ros2/lib" {} \;
 
 # replace cmake python macro in shebang
 for file in $(grep -rIl '^#!.*@PYTHON_EXECUTABLE@.*$' %{buildroot}) ; do
@@ -232,6 +232,8 @@ done
 
 
 %changelog
+* Wed Dec 06 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - iron.1.2.5-1
+- update to latest upstream
 * Sat Oct 21 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.1.1.12-1
 - update to latest release
 * Wed Aug 23 2023 Tarik Viehmann <viehmann@kbsg.rwth-aachen.de> - humble.1.1.9-1

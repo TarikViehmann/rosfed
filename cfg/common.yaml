@@ -16,13 +16,6 @@ common:
           to:
             type: system
             pkg: python3-qt5
-        - zstd:
-          from:
-            type: ros
-            pkg: zstd_vendor
-          to:
-            type: system
-            pkg: libzstd-devel
               #- yamlcpp:
               #  from:
               #    type: ros
@@ -102,13 +95,6 @@ common:
             pkg: python3-sip-devel
     run:
       translate:
-        - zstd:
-          from:
-            type: ros
-            pkg: zstd_vendor
-          to:
-            type: system
-            pkg: libzstd-devel
         - qt_bindings:
           from:
             type: system

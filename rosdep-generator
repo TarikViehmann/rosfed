@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+import urllib.request
+import yaml
+
+parser = argparse.ArgumentParser(description="Generate rosdep key mapping so that bloom can resolve dependencies for an overlaid rosdistro.")
+parser.add_argument("--org", default="ros", help="Github org from which to fetch rosdistro.")
+parser.add_argument("--repo", default="rosdistro", help="Github repo from which to fetch rosdistro.")
+parser.add_argument("--distro", default="humble", help="Distro to generate for.")
+parser.add_argument("--url", help="rosdistro to be used.")
+args = parser.parse_args()
+
+if args.url:
+    url = args.url
+else:
+    url = f"https://github.com/{args.org}/{args.repo}/raw/master/{args.distro}/distribution.yaml"
+
+print("Downloading:", url)
+response = urllib.request.urlopen(url)
+response_text = response.read()
+print("Parsing {} bytes of yaml.".format(len(response_text)))
+distribution = yaml.load(response_text, Loader=yaml.FullLoader)
+# CHANGE FOR NEWER VERSION
+distribution['release_platforms']['fedora'] = ['45', '44', '43', '42', '41', '40', '39']
+
+print("Extracting package names.")
+platforms = list(distribution['release_platforms'].keys())
+packages = set()
+for name, meta in distribution['repositories'].items():
+    if 'release' in meta:
+        if 'packages' in meta['release']:
+            packages.update(meta['release']['packages'])
+        else:
+            packages.add(name)
+
+output_yaml = {}
+print("Assembling output yaml structure.")
+for package in packages:
+    output_yaml[package] = {}
+    for platform in platforms:
+        output_yaml[package][platform] = f"ros-{args.distro}-{package.replace('_', '-')}"
+
+output_file = f"{args.org}-{args.repo}-{args.distro}.yaml"
+print("Outputting:", output_file)
+with open(output_file, "w") as f:
+    yaml.dump(output_yaml, f)
+
+print("Complete. Suggested next steps:")
+print()
+print(f'  sudo sh -c \'echo "yaml file://{os.getcwd()}/{output_file} {args.distro}" > /etc/ros/rosdep/sources.list.d/90-{args.org}-{args.repo}-{args.distro}.list\'')
+print('  rosdep update')
+print()

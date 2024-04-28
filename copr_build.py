@@ -42,6 +42,7 @@ class SrpmBuilder:
             wait_for_completion: If set to true, wait for the build to finish
         """
         print('Building {} for chroot {}'.format(spec, chroot))
+        self.new_build = True
         res = subprocess.run(
             [
                 'spectool', '-g', spec, '-C',
@@ -197,6 +198,17 @@ class CoprBuilder:
     def get_builds(self):
         return self.copr_client.build_proxy.get_list(self.owner, self.project)
 
+    build_cache = {}
+    new_build = True
+    def get_from_cache(self, pkg_name):
+        matches = []
+
+        # Iterate over each entry in the data
+        for entry in self.build_cache:
+            if entry.source_package['name'] == pkg_name:
+                matches.append(entry)
+        return matches
+
     def pkg_is_built(self, chroot, pkg_name, pkg_version):
         """ Check if the given package is already built in the COPR.
 
@@ -208,8 +220,12 @@ class CoprBuilder:
         Returns:
             True iff the package was already built in the project and chroot.
         """
-        for build in self.copr_client.build_proxy.get_list(
-                self.owner, self.project, pkg_name):
+        if self.new_build:
+            self.build_cache = self.copr_client.build_proxy.get_list(self.owner, self.project)
+            self.new_build = False
+        for build in self.get_from_cache(pkg_name):
+            if build == None:
+                return False
             if build.state != 'succeeded':
                 continue
             if chroot not in build.chroots:
